@@ -1,0 +1,335 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_spender",
+						"type": "address"
+					},
+					{
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [
+					{
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [
+					{
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "decimals",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "standard",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "address"
+					},
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "allowance",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"name": "_symbol",
+						"type": "string"
+					},
+					{
+						"name": "_supply",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "_spender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"approve(address,uint256)": {
+					"details": "allow another account/contract to spend some tokens on your behalf throws on any error rather then return a false flag to minimize user errors also, to minimize the risk of the approve/transferFrom attack vector (see https://docs.google.com/document/d/1YLPtQxZu1UAvO9cZ1O2RPXBbT0mooh4DYKjA_jp-RLM/), approve has to be called twice in 2 separate transactions - once to change the allowance to 0 and secondly to change it to the new allowance value",
+					"params": {
+						"_spender": "approved address",
+						"_value": "allowance amount"
+					},
+					"return": "true if the approval was successful, false if it wasn't"
+				},
+				"transfer(address,uint256)": {
+					"details": "send coins throws on any error rather then return a false flag to minimize user errors",
+					"params": {
+						"_to": "target address",
+						"_value": "transfer amount"
+					},
+					"return": "true if the transfer was successful, false if it wasn't"
+				},
+				"transferFrom(address,address,uint256)": {
+					"details": "an account/contract attempts to get the coins throws on any error rather then return a false flag to minimize user errors",
+					"params": {
+						"_from": "source address",
+						"_to": "target address",
+						"_value": "transfer amount"
+					},
+					"return": "true if the transfer was successful, false if it wasn't"
+				}
+			}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/helpers/TestERC20Token.sol": "TestERC20Token"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/helpers/TestERC20Token.sol": {
+			"keccak256": "0x38d6096c479caa6eca0117de232df146893b06c150e81a0f3bde726b413b34cd",
+			"urls": [
+				"bzzr://da4c1062148ea14513c6eafbb0526c3d373567e6a35651059e1742619c7ff6e7"
+			]
+		},
+		"contracts/token/ERC20Token.sol": {
+			"keccak256": "0x929ec114142a62c2ece2d8af464a8ba95f7d76f68f3b9ae1c5a0cc0707bfad9c",
+			"urls": [
+				"bzzr://6c0316adc3c109b011c9db2d137bcbe4162e38c4607d0e33ccf82486cdbd699a"
+			]
+		},
+		"contracts/token/interfaces/IERC20Token.sol": {
+			"keccak256": "0x465f98ed290fb4f65f2d74e938f47c2fa9f7302e766266d8f9326d4c703d5ce3",
+			"urls": [
+				"bzzr://9746fbda9ee3a4d1e0ed3c5f5d27ebb93114139ad29ae04f313de057f9d1bc92"
+			]
+		},
+		"contracts/utility/SafeMath.sol": {
+			"keccak256": "0xcc762e1392acd929f86bc79f2d553fefa6692756d84640d3d4530db81bfdae3a",
+			"urls": [
+				"bzzr://d78ab9d7e21198a64398840779fce2f9631685aab56066e4dbb0826950f40a35"
+			]
+		},
+		"contracts/utility/Utils.sol": {
+			"keccak256": "0x4aaa2acf58cbeaed5f484bdca75daf7caacde07d62ca44b97f020381fc8801e3",
+			"urls": [
+				"bzzr://feed4fa84f6d4ea9f8e2520e8748cc4e7f8cf2104c8dcdff086db6129fba6f10"
+			]
+		}
+	},
+	"version": 1
+}

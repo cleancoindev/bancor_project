@@ -1,0 +1,363 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_supply",
+						"type": "uint256"
+					},
+					{
+						"name": "_connectorBalance",
+						"type": "uint256"
+					},
+					{
+						"name": "_connectorWeight",
+						"type": "uint32"
+					},
+					{
+						"name": "_depositAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "calculatePurchaseReturn",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "x",
+						"type": "uint256"
+					}
+				],
+				"name": "optimalLogTest",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "x",
+						"type": "uint256"
+					}
+				],
+				"name": "generalLogTest",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_supply",
+						"type": "uint256"
+					},
+					{
+						"name": "_connectorBalance",
+						"type": "uint256"
+					},
+					{
+						"name": "_connectorWeight",
+						"type": "uint32"
+					},
+					{
+						"name": "_sellAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "calculateSaleReturn",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "version",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_fromConnectorBalance",
+						"type": "uint256"
+					},
+					{
+						"name": "_fromConnectorWeight",
+						"type": "uint32"
+					},
+					{
+						"name": "_toConnectorBalance",
+						"type": "uint256"
+					},
+					{
+						"name": "_toConnectorWeight",
+						"type": "uint32"
+					},
+					{
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "calculateCrossConnectorReturn",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_x",
+						"type": "uint256"
+					},
+					{
+						"name": "_precision",
+						"type": "uint8"
+					}
+				],
+				"name": "generalExpTest",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_baseN",
+						"type": "uint256"
+					},
+					{
+						"name": "_baseD",
+						"type": "uint256"
+					},
+					{
+						"name": "_expN",
+						"type": "uint32"
+					},
+					{
+						"name": "_expD",
+						"type": "uint32"
+					}
+				],
+				"name": "powerTest",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_x",
+						"type": "uint256"
+					}
+				],
+				"name": "findPositionInMaxExpArrayTest",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "x",
+						"type": "uint256"
+					}
+				],
+				"name": "optimalExpTest",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_n",
+						"type": "uint256"
+					}
+				],
+				"name": "floorLog2Test",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"calculateCrossConnectorReturn(uint256,uint32,uint256,uint32,uint256)": {
+					"details": "given two connector balances/weights and a sell amount (in the first connector token), calculates the return for a conversion from the first connector token to the second connector token (in the second connector token) Formula: Return = _toConnectorBalance * (1 - (_fromConnectorBalance / (_fromConnectorBalance + _amount)) ^ (_fromConnectorWeight / _toConnectorWeight))",
+					"params": {
+						"_amount": "input connector amount",
+						"_fromConnectorBalance": "input connector balance",
+						"_fromConnectorWeight": "input connector weight, represented in ppm, 1-1000000",
+						"_toConnectorBalance": "output connector balance",
+						"_toConnectorWeight": "output connector weight, represented in ppm, 1-1000000"
+					},
+					"return": "second connector amount"
+				},
+				"calculatePurchaseReturn(uint256,uint256,uint32,uint256)": {
+					"details": "given a token supply, connector balance, weight and a deposit amount (in the connector token), calculates the return for a given conversion (in the main token) Formula: Return = _supply * ((1 + _depositAmount / _connectorBalance) ^ (_connectorWeight / 1000000) - 1)",
+					"params": {
+						"_connectorBalance": "total connector balance",
+						"_connectorWeight": "connector weight, represented in ppm, 1-1000000",
+						"_depositAmount": "deposit amount, in connector token",
+						"_supply": "token total supply"
+					},
+					"return": "purchase return amount"
+				},
+				"calculateSaleReturn(uint256,uint256,uint32,uint256)": {
+					"details": "given a token supply, connector balance, weight and a sell amount (in the main token), calculates the return for a given conversion (in the connector token) Formula: Return = _connectorBalance * (1 - (1 - _sellAmount / _supply) ^ (1 / (_connectorWeight / 1000000)))",
+					"params": {
+						"_connectorBalance": "total connector",
+						"_connectorWeight": "constant connector Weight, represented in ppm, 1-1000000",
+						"_sellAmount": "sell amount, in the token itself",
+						"_supply": "token total supply"
+					},
+					"return": "sale return amount"
+				}
+			}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/helpers/TestBancorFormula.sol": "TestBancorFormula"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/converter/BancorFormula.sol": {
+			"keccak256": "0x9628d75da2a96e7db2c205c52442bf11fd6b1b77824d638490dbee53ee112820",
+			"urls": [
+				"bzzr://30ecbce3a807c54c70ad5e55b38d5466950618f1f68ef67b514cb17fda00c64e"
+			]
+		},
+		"contracts/converter/interfaces/IBancorFormula.sol": {
+			"keccak256": "0x74e9b0c619770252c5bd6cbb5b707849c13cd9cb089689f003359a8d4538c063",
+			"urls": [
+				"bzzr://16e3303e7fb66363b4e6ce4b59066a3fec0882a0ea99775795cc819ae44d3a1d"
+			]
+		},
+		"contracts/helpers/TestBancorFormula.sol": {
+			"keccak256": "0x109cd3e3f2058d0564a7531f556f01bdd86c76e020ac50f7924cdd4e5c1f279c",
+			"urls": [
+				"bzzr://3d9fd0204b69ea3fa2a805c55066f776406d27572abdc9c419aaef53cb324097"
+			]
+		},
+		"contracts/utility/SafeMath.sol": {
+			"keccak256": "0xcc762e1392acd929f86bc79f2d553fefa6692756d84640d3d4530db81bfdae3a",
+			"urls": [
+				"bzzr://d78ab9d7e21198a64398840779fce2f9631685aab56066e4dbb0826950f40a35"
+			]
+		},
+		"contracts/utility/Utils.sol": {
+			"keccak256": "0x4aaa2acf58cbeaed5f484bdca75daf7caacde07d62ca44b97f020381fc8801e3",
+			"urls": [
+				"bzzr://feed4fa84f6d4ea9f8e2520e8748cc4e7f8cf2104c8dcdff086db6129fba6f10"
+			]
+		}
+	},
+	"version": 1
+}

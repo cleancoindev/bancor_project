@@ -1,0 +1,1301 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "bntConverter",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_reporters",
+						"type": "address[]"
+					}
+				],
+				"name": "upgrade",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "BANCOR_CONVERTER_UPGRADER",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "prevLockLimit",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "getCurrentLockLimit",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "prevLockBlockNumber",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "BNT_TOKEN",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "getCurrentReleaseLimit",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "minLimit",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "allowRegistryUpdate",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "CONTRACT_REGISTRY",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "reporters",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_toBlockchain",
+						"type": "bytes32"
+					},
+					{
+						"name": "_to",
+						"type": "bytes32"
+					},
+					{
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "xTransfer",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_toBlockchain",
+						"type": "bytes32"
+					},
+					{
+						"name": "_to",
+						"type": "bytes32"
+					},
+					{
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "xTransfer",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "updateRegistry",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "setBNTConverterAddress",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "prevReleaseBlockNumber",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "maxReleaseLimit",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "version",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint16"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "BANCOR_CONVERTER_FACTORY",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_token",
+						"type": "address"
+					},
+					{
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdrawTokens",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "prevRegistry",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "BNT_CONVERTER",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "BANCOR_FORMULA",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_fromBlockchain",
+						"type": "bytes32"
+					},
+					{
+						"name": "_txId",
+						"type": "uint256"
+					},
+					{
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"name": "_xTransferId",
+						"type": "uint256"
+					}
+				],
+				"name": "reportTx",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_minLimit",
+						"type": "uint256"
+					}
+				],
+				"name": "setMinLimit",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "limitIncPerBlock",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "acceptOwnership",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "registry",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "CONTRACT_FEATURES",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "reportedTxs",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "BANCOR_NETWORK",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "BANCOR_GAS_PRICE_LIMIT",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "reportingEnabled",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "transactions",
+				"outputs": [
+					{
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"name": "fromBlockchain",
+						"type": "bytes32"
+					},
+					{
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"name": "numOfReports",
+						"type": "uint8"
+					},
+					{
+						"name": "completed",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_limitIncPerBlock",
+						"type": "uint256"
+					}
+				],
+				"name": "setLimitIncPerBlock",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_enable",
+						"type": "bool"
+					}
+				],
+				"name": "enableXTransfers",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "maxLockLimit",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_xTransferId",
+						"type": "uint256"
+					},
+					{
+						"name": "_for",
+						"type": "address"
+					}
+				],
+				"name": "getXTransferAmount",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_maxLockLimit",
+						"type": "uint256"
+					}
+				],
+				"name": "setMaxLockLimit",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "bntToken",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "restoreRegistry",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_maxReleaseLimit",
+						"type": "uint256"
+					}
+				],
+				"name": "setMaxReleaseLimit",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "BANCOR_X",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "minRequiredReports",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "BANCOR_X_UPGRADER",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "newOwner",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_minRequiredReports",
+						"type": "uint256"
+					}
+				],
+				"name": "setMinRequiredReports",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_reporter",
+						"type": "address"
+					},
+					{
+						"name": "_active",
+						"type": "bool"
+					}
+				],
+				"name": "setReporter",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "transactionIds",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_enable",
+						"type": "bool"
+					}
+				],
+				"name": "enableReporting",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "NON_STANDARD_TOKEN_REGISTRY",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "prevReleaseLimit",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_disable",
+						"type": "bool"
+					}
+				],
+				"name": "disableRegistryUpdate",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "xTransfersEnabled",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"name": "_maxLockLimit",
+						"type": "uint256"
+					},
+					{
+						"name": "_maxReleaseLimit",
+						"type": "uint256"
+					},
+					{
+						"name": "_minLimit",
+						"type": "uint256"
+					},
+					{
+						"name": "_limitIncPerBlock",
+						"type": "uint256"
+					},
+					{
+						"name": "_minRequiredReports",
+						"type": "uint256"
+					},
+					{
+						"name": "_registry",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "TokensLock",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "TokensRelease",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "_toBlockchain",
+						"type": "bytes32"
+					},
+					{
+						"indexed": true,
+						"name": "_to",
+						"type": "bytes32"
+					},
+					{
+						"indexed": false,
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "XTransfer",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "_reporter",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "_fromBlockchain",
+						"type": "bytes32"
+					},
+					{
+						"indexed": false,
+						"name": "_txId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"name": "_xTransferId",
+						"type": "uint256"
+					}
+				],
+				"name": "TxReport",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "XTransferComplete",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "_prevOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "_newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnerUpdate",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"acceptOwnership()": {
+					"details": "used by a new owner to accept an ownership transfer"
+				},
+				"disableRegistryUpdate(bool)": {
+					"details": "disables the registry update functionality this is a safety mechanism in case of a emergency can only be called by the manager or owner",
+					"params": {
+						"_disable": "true to disable registry updates, false to re-enable them"
+					}
+				},
+				"enableReporting(bool)": {
+					"details": "allows the owner enable/disable the reportTransaction method",
+					"params": {
+						"_enable": "true to enable, false to disable"
+					}
+				},
+				"enableXTransfers(bool)": {
+					"details": "allows the owner enable/disable the xTransfer method",
+					"params": {
+						"_enable": "true to enable, false to disable"
+					}
+				},
+				"getCurrentLockLimit()": {
+					"details": "method for calculating current lock limit",
+					"return": "the current maximum limit of BNT that can be locked"
+				},
+				"getCurrentReleaseLimit()": {
+					"details": "method for calculating current release limit",
+					"return": "the current maximum limit of BNT that can be released"
+				},
+				"getXTransferAmount(uint256,address)": {
+					"details": "gets x transfer amount by xTransferId (not txId)",
+					"params": {
+						"_for": "address corresponding to xTransferId",
+						"_xTransferId": "unique (if non zero) pre-determined id (unlike _txId which is determined after the transactions been broadcasted)"
+					},
+					"return": "amount that was sent in xTransfer corresponding to _xTransferId"
+				},
+				"reportTx(bytes32,uint256,address,uint256,uint256)": {
+					"details": "allows reporter to report transaction which occured on another blockchain",
+					"params": {
+						"_amount": "amount of BNT destroyed on another blockchain",
+						"_fromBlockchain": "blockchain BNT was destroyed in",
+						"_to": "address to receive BNT",
+						"_txId": "transactionId of transaction thats being reported",
+						"_xTransferId": "unique (if non zero) pre-determined id (unlike _txId which is determined after the transactions been mined)"
+					}
+				},
+				"restoreRegistry()": {
+					"details": "security mechanism allowing the converter owner to revert to the previous registry, to be used in emergency scenario"
+				},
+				"setBNTConverterAddress()": {
+					"details": "allows the owner to set the BNT converters address to wherever the contract registry currently points to"
+				},
+				"setLimitIncPerBlock(uint256)": {
+					"details": "setter",
+					"params": {
+						"_limitIncPerBlock": "new limitIncPerBlock"
+					}
+				},
+				"setMaxLockLimit(uint256)": {
+					"details": "setter",
+					"params": {
+						"_maxLockLimit": "new maxLockLimit"
+					}
+				},
+				"setMaxReleaseLimit(uint256)": {
+					"details": "setter",
+					"params": {
+						"_maxReleaseLimit": "new maxReleaseLimit"
+					}
+				},
+				"setMinLimit(uint256)": {
+					"details": "setter",
+					"params": {
+						"_minLimit": "new minLimit"
+					}
+				},
+				"setMinRequiredReports(uint256)": {
+					"details": "setter",
+					"params": {
+						"_minRequiredReports": "new minRequiredReports"
+					}
+				},
+				"setReporter(address,bool)": {
+					"details": "allows the owner to set/remove reporters",
+					"params": {
+						"_active": "true if the reporter is approved, false otherwise",
+						"_reporter": "reporter whos status is to be set"
+					}
+				},
+				"transferOwnership(address)": {
+					"details": "allows transferring the contract ownership the new owner still needs to accept the transfer can only be called by the contract owner",
+					"params": {
+						"_newOwner": "new contract owner"
+					}
+				},
+				"updateRegistry()": {
+					"details": "sets the contract registry to whichever address the current registry is pointing to"
+				},
+				"upgrade(address[])": {
+					"details": "upgrades the contract to the latest version can only be called by the owner note that the owner needs to call acceptOwnership on the new contract after the upgrade",
+					"params": {
+						"_reporters": "new list of reporters"
+					}
+				},
+				"withdrawTokens(address,address,uint256)": {
+					"details": "withdraws tokens held by the contract and sends them to an account can only be called by the owner",
+					"params": {
+						"_amount": "amount to withdraw",
+						"_to": "account to receive the new amount",
+						"_token": "ERC20 token contract address"
+					}
+				},
+				"xTransfer(bytes32,bytes32,uint256)": {
+					"details": "claims BNT from msg.sender to be converted to BNT on another blockchain",
+					"params": {
+						"_amount": "the amount to transfer",
+						"_to": "address to send the BNT to",
+						"_toBlockchain": "blockchain BNT will be issued on"
+					}
+				},
+				"xTransfer(bytes32,bytes32,uint256,uint256)": {
+					"details": "claims BNT from msg.sender to be converted to BNT on another blockchain",
+					"params": {
+						"_amount": "the amount to transfer",
+						"_id": "pre-determined unique (if non zero) id which refers to this transaction ",
+						"_to": "address to send the BNT to",
+						"_toBlockchain": "blockchain BNT will be issued on"
+					}
+				}
+			}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/bancorx/BancorX.sol": "BancorX"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ContractIds.sol": {
+			"keccak256": "0x797ef82b25e32d08de1df3cf988c9e25b1b0aa6d3c7cabfc959ea3aaa2e1b8bb",
+			"urls": [
+				"bzzr://050610331e8915acbf660d1650d4dafb4f49423cfa70b76fb99898db93e765eb"
+			]
+		},
+		"contracts/bancorx/BancorX.sol": {
+			"keccak256": "0xd7ccbc1828db87702c82192bc6ed15e9d0083fdede18f912c1ba9fcaeaa4d656",
+			"urls": [
+				"bzzr://57691f2dd89ab65eb5b77c682592face9f8e8db0f3545c9a76f4a80ac191cc93"
+			]
+		},
+		"contracts/bancorx/interfaces/IBancorX.sol": {
+			"keccak256": "0x23d2f7e6d9f9028d547860714cf0494ee508ba525f1d50ecdb05665a04908cea",
+			"urls": [
+				"bzzr://4062f3a5102874394adffa0b616e2f9bf7faa0dc37cc9611505e2943e451cc0a"
+			]
+		},
+		"contracts/bancorx/interfaces/IBancorXUpgrader.sol": {
+			"keccak256": "0xa795d2234fc724ffe1a300e0d654d825d739aa75c1a713ffc7cd184a279a1e7e",
+			"urls": [
+				"bzzr://91c107913358416b65c89c50588d5b2ae8ac9abf712b4bd454af50876f933dcf"
+			]
+		},
+		"contracts/converter/interfaces/IBancorConverter.sol": {
+			"keccak256": "0x2af1dc3731bc3d9c2b6b9f512fd04face50efc7c253a31552ce1121a80ec89c1",
+			"urls": [
+				"bzzr://4f258d6672c4e44ad1bd19ca0d6072181e1634d06d9250a0b1dd0d1d7351cbf2"
+			]
+		},
+		"contracts/token/interfaces/IERC20Token.sol": {
+			"keccak256": "0x465f98ed290fb4f65f2d74e938f47c2fa9f7302e766266d8f9326d4c703d5ce3",
+			"urls": [
+				"bzzr://9746fbda9ee3a4d1e0ed3c5f5d27ebb93114139ad29ae04f313de057f9d1bc92"
+			]
+		},
+		"contracts/token/interfaces/INonStandardERC20.sol": {
+			"keccak256": "0x26596dd8e564493f7e821102865fb382c21bbedd44ebc920c8d63626f1bf19dc",
+			"urls": [
+				"bzzr://c750029c9ba7521fbe0c1827a4854a4b8db274d4402e00daaa4683a024c44d93"
+			]
+		},
+		"contracts/token/interfaces/ISmartToken.sol": {
+			"keccak256": "0xd9369c561a659cdf78c9b7ad6458c5fd566296bc743f06011b5b02ffeadf0310",
+			"urls": [
+				"bzzr://b3f5f823967d07420b2c919fb28a51f94206f541124f4f63d835285d0fff8910"
+			]
+		},
+		"contracts/utility/Owned.sol": {
+			"keccak256": "0x420234d13d5a10debece92f5264fe4e548d38e4ddba4bb0fae67f121efb5cfb8",
+			"urls": [
+				"bzzr://6a0a7136d5633bc5e94e7b5f7fd84df2949ec87061ef16d4cb5ec869ebc6de3d"
+			]
+		},
+		"contracts/utility/SafeMath.sol": {
+			"keccak256": "0xcc762e1392acd929f86bc79f2d553fefa6692756d84640d3d4530db81bfdae3a",
+			"urls": [
+				"bzzr://d78ab9d7e21198a64398840779fce2f9631685aab56066e4dbb0826950f40a35"
+			]
+		},
+		"contracts/utility/TokenHolder.sol": {
+			"keccak256": "0xea5c8f330999bb5e7360127d38d5a1ce4b1a4b85392c28da43b8c2238884b3c0",
+			"urls": [
+				"bzzr://6415cecbff420d0f0e0568b73f182000c0bc3d0c1b48930bc84392d1b6c29e03"
+			]
+		},
+		"contracts/utility/Utils.sol": {
+			"keccak256": "0x4aaa2acf58cbeaed5f484bdca75daf7caacde07d62ca44b97f020381fc8801e3",
+			"urls": [
+				"bzzr://feed4fa84f6d4ea9f8e2520e8748cc4e7f8cf2104c8dcdff086db6129fba6f10"
+			]
+		},
+		"contracts/utility/interfaces/IContractRegistry.sol": {
+			"keccak256": "0x4fc9f35a48ef73f00d5ea0a6fb2018eb5801f1c5b828935a34cfebf479084c86",
+			"urls": [
+				"bzzr://3f880643a62ae35a2592ea2f079452a9276dc1d54d5d1c33462738109c787db5"
+			]
+		},
+		"contracts/utility/interfaces/IOwned.sol": {
+			"keccak256": "0x3bfadfd06a9f37a8687474694252513f00d84ff9074c9d3c69c311d62686e588",
+			"urls": [
+				"bzzr://b168ba3d91c3119b53b54679bec05592fe124e42f2345e785a4fd08c8225b39e"
+			]
+		},
+		"contracts/utility/interfaces/ITokenHolder.sol": {
+			"keccak256": "0x894a791236cbfdc5fd00d2d48f5be0b988d98804b89d9ce3f3c3c90477d590a1",
+			"urls": [
+				"bzzr://30f405a05448cc0f2efa99e3fc61ff424a8b6c1cee5c2ad05b5542fe41b58b39"
+			]
+		},
+		"contracts/utility/interfaces/IWhitelist.sol": {
+			"keccak256": "0x6f2de503926432c5e49191520bdb0c0463ed69924287529b0f83ef95565287fb",
+			"urls": [
+				"bzzr://75da01831a1c6509463537ea59b0cfc88349b8ebb5d3fc56a1260d0e1953acdc"
+			]
+		}
+	},
+	"version": 1
+}
