@@ -535,9 +535,9 @@
 			]
 		},
 		"contracts/utility/interfaces/IOwned.sol": {
-			"keccak256": "0x3bfadfd06a9f37a8687474694252513f00d84ff9074c9d3c69c311d62686e588",
+			"keccak256": "0x03d97389586320f3dc96c0904ad6e9452da744861798d27b950a43769008a1dd",
 			"urls": [
-				"bzzr://b168ba3d91c3119b53b54679bec05592fe124e42f2345e785a4fd08c8225b39e"
+				"bzzr://30747c61f8bfa916f859e9bd52a83c03ff4c695d8f2296db6a94e9999f74a557"
 			]
 		},
 		"contracts/utility/interfaces/ITokenHolder.sol": {

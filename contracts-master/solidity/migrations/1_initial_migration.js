@@ -1,7 +1,7 @@
 /* global artifacts */
 
-const Migrations = artifacts.require('../contracts/helpers/Migrations.sol');
-const BancorFormula = artifacts.require('../contracts/converter/BancorFormula.sol');
+const Migrations = artifacts.require('Migrations.sol');
+const BancorFormula = artifacts.require('BancorFormula.sol');
 
 module.exports =async (deployer) => {
     deployer.deploy(Migrations);

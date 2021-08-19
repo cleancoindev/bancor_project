@@ -24,7 +24,7 @@ const BancorConverterRegistry = artifacts.require('BancorConverterRegistry.sol')
 const CrowdsaleController = artifacts.require('CrowdsaleController.sol');
 
 module.exports = async function(deployer, network, accounts) {
-    if (network == "production") {
+    if (network == "development") {
         deployer.deploy(Utils);
         deployer.deploy(Owned);
         deployer.deploy(Managed);
@@ -34,7 +34,7 @@ module.exports = async function(deployer, network, accounts) {
         await deployer.deploy(ContractRegistry);
         deployer.deploy(ContractFeatures);
         deployer.deploy(Whitelist);
-        await deployer.deploy(SmartToken, 'Token1', 'TKN1', 2);
+        await deployer.deploy(SmartToken, 'OvidexToken1', 'OTKN1', 2);
         deployer.deploy(SmartTokenController, SmartToken.address);
         deployer.deploy(BancorFormula);
         deployer.deploy(BancorGasPriceLimit, '22000000000');

@@ -36,7 +36,7 @@ contract('SmartToken', accounts => {
     });
 
     it('verifies that the owner can disable & re-enable transfers', async () => {
-        let token = await SmartToken.new('Token1', 'TKN1', 2);
+        let token = await SmartToken.new('OvidexToken1', 'OTKN1', 2);
         await token.disableTransfers(true);
         let transfersEnabled = await token.transfersEnabled.call();
         assert.equal(transfersEnabled, false);
