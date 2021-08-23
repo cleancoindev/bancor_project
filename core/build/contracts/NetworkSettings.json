@@ -237,7 +237,7 @@
         "id": 4534,
         "nodeType": "ImportDirective",
         "scope": 4667,
-        "sourceUnit": 32592,
+        "sourceUnit": 32589,
         "src": "110:29:15",
         "symbolAliases": [],
         "unitAlias": ""
@@ -248,7 +248,7 @@
         "id": 4535,
         "nodeType": "ImportDirective",
         "scope": 4667,
-        "sourceUnit": 32911,
+        "sourceUnit": 32908,
         "src": "140:29:15",
         "symbolAliases": [],
         "unitAlias": ""
@@ -281,10 +281,10 @@
               "id": 4539,
               "name": "Owned",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 32591,
+              "referencedDeclaration": 32588,
               "src": "282:5:15",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Owned_$32591",
+                "typeIdentifier": "t_contract$_Owned_$32588",
                 "typeString": "contract Owned"
               }
             },
@@ -299,10 +299,10 @@
               "id": 4541,
               "name": "Utils",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 32910,
+              "referencedDeclaration": 32907,
               "src": "289:5:15",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Utils_$32910",
+                "typeIdentifier": "t_contract$_Utils_$32907",
                 "typeString": "contract Utils"
               }
             },
@@ -313,9 +313,9 @@
         ],
         "contractDependencies": [
           4497,
-          32591,
-          32910,
-          33117
+          32588,
+          32907,
+          33114
         ],
         "contractKind": "contract",
         "documentation": {
@@ -328,9 +328,9 @@
         "id": 4666,
         "linearizedBaseContracts": [
           4666,
-          32910,
-          32591,
-          33117,
+          32907,
+          32588,
+          33114,
           4497
         ],
         "name": "NetworkSettings",
@@ -348,7 +348,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+              "typeIdentifier": "t_contract$_ITokenHolder_$33144",
               "typeString": "contract ITokenHolder"
             },
             "typeName": {
@@ -356,10 +356,10 @@
               "id": 4543,
               "name": "ITokenHolder",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 33147,
+              "referencedDeclaration": 33144,
               "src": "301:12:15",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                 "typeString": "contract ITokenHolder"
               }
             },
@@ -422,7 +422,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                    "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                     "typeString": "contract ITokenHolder"
                   },
                   "typeName": {
@@ -430,10 +430,10 @@
                     "id": 4548,
                     "name": "ITokenHolder",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 33147,
+                    "referencedDeclaration": 33144,
                     "src": "615:12:15",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                      "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                       "typeString": "contract ITokenHolder"
                     }
                   },
@@ -453,7 +453,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                    "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                     "typeString": "contract ITokenHolder"
                   },
                   "typeName": {
@@ -461,10 +461,10 @@
                     "id": 4550,
                     "name": "ITokenHolder",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 33147,
+                    "referencedDeclaration": 33144,
                     "src": "650:12:15",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                      "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                       "typeString": "contract ITokenHolder"
                     }
                   },
@@ -577,7 +577,7 @@
                       "referencedDeclaration": 4544,
                       "src": "1347:17:15",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                        "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                         "typeString": "contract ITokenHolder"
                       }
                     },
@@ -592,13 +592,13 @@
                       "referencedDeclaration": 4563,
                       "src": "1367:23:15",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                        "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                         "typeString": "contract ITokenHolder"
                       }
                     },
                     "src": "1347:43:15",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                      "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                       "typeString": "contract ITokenHolder"
                     }
                   },
@@ -678,7 +678,7 @@
                         "referencedDeclaration": 4563,
                         "src": "1271:23:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                          "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                           "typeString": "contract ITokenHolder"
                         }
                       }
@@ -686,7 +686,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                          "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                           "typeString": "contract ITokenHolder"
                         }
                       ],
@@ -735,7 +735,7 @@
                   "name": "validAddress",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 32795,
+                  "referencedDeclaration": 32792,
                   "src": "1250:12:15",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$_t_address_$",
@@ -768,7 +768,7 @@
                   "name": "validFee",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 32881,
+                  "referencedDeclaration": 32878,
                   "src": "1305:8:15",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$_t_uint32_$",
@@ -798,7 +798,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                    "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                     "typeString": "contract ITokenHolder"
                   },
                   "typeName": {
@@ -806,10 +806,10 @@
                     "id": 4562,
                     "name": "ITokenHolder",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 33147,
+                    "referencedDeclaration": 33144,
                     "src": "1163:12:15",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                      "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                       "typeString": "contract ITokenHolder"
                     }
                   },
@@ -881,7 +881,7 @@
                         "referencedDeclaration": 4544,
                         "src": "1688:17:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                          "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                           "typeString": "contract ITokenHolder"
                         }
                       },
@@ -908,7 +908,7 @@
                     "nodeType": "TupleExpression",
                     "src": "1687:32:15",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$_t_contract$_ITokenHolder_$33147_$_t_uint32_$",
+                      "typeIdentifier": "t_tuple$_t_contract$_ITokenHolder_$33144_$_t_uint32_$",
                       "typeString": "tuple(contract ITokenHolder,uint32)"
                     }
                   },
@@ -960,7 +960,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                    "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                     "typeString": "contract ITokenHolder"
                   },
                   "typeName": {
@@ -968,10 +968,10 @@
                     "id": 4590,
                     "name": "ITokenHolder",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 33147,
+                    "referencedDeclaration": 33144,
                     "src": "1648:12:15",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                      "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                       "typeString": "contract ITokenHolder"
                     }
                   },
@@ -1034,7 +1034,7 @@
                     "referencedDeclaration": 4544,
                     "src": "1949:17:15",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                      "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                       "typeString": "contract ITokenHolder"
                     }
                   },
@@ -1086,7 +1086,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                    "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                     "typeString": "contract ITokenHolder"
                   },
                   "typeName": {
@@ -1094,10 +1094,10 @@
                     "id": 4604,
                     "name": "ITokenHolder",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 33147,
+                    "referencedDeclaration": 33144,
                     "src": "1918:12:15",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                      "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                       "typeString": "contract ITokenHolder"
                     }
                   },
@@ -1228,7 +1228,7 @@
                         "referencedDeclaration": 4544,
                         "src": "2610:17:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                          "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                           "typeString": "contract ITokenHolder"
                         }
                       },
@@ -1241,7 +1241,7 @@
                         "referencedDeclaration": 4623,
                         "src": "2629:19:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                          "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                           "typeString": "contract ITokenHolder"
                         }
                       }
@@ -1249,11 +1249,11 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                          "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                           "typeString": "contract ITokenHolder"
                         },
                         {
-                          "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                          "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                           "typeString": "contract ITokenHolder"
                         }
                       ],
@@ -1264,7 +1264,7 @@
                       "referencedDeclaration": 4553,
                       "src": "2586:23:15",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_event_nonpayable$_t_contract$_ITokenHolder_$33147_$_t_contract$_ITokenHolder_$33147_$returns$__$",
+                        "typeIdentifier": "t_function_event_nonpayable$_t_contract$_ITokenHolder_$33144_$_t_contract$_ITokenHolder_$33144_$returns$__$",
                         "typeString": "function (contract ITokenHolder,contract ITokenHolder)"
                       }
                     },
@@ -1304,7 +1304,7 @@
                       "referencedDeclaration": 4544,
                       "src": "2659:17:15",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                        "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                         "typeString": "contract ITokenHolder"
                       }
                     },
@@ -1319,13 +1319,13 @@
                       "referencedDeclaration": 4623,
                       "src": "2679:19:15",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                        "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                         "typeString": "contract ITokenHolder"
                       }
                     },
                     "src": "2659:39:15",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                      "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                       "typeString": "contract ITokenHolder"
                     }
                   },
@@ -1355,7 +1355,7 @@
                   "name": "ownerOnly",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 32527,
+                  "referencedDeclaration": 32524,
                   "src": "2506:9:15",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1379,7 +1379,7 @@
                         "referencedDeclaration": 4623,
                         "src": "2545:19:15",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                          "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                           "typeString": "contract ITokenHolder"
                         }
                       }
@@ -1387,7 +1387,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                          "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                           "typeString": "contract ITokenHolder"
                         }
                       ],
@@ -1436,7 +1436,7 @@
                   "name": "validAddress",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 32795,
+                  "referencedDeclaration": 32792,
                   "src": "2524:12:15",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$_t_address_$",
@@ -1466,7 +1466,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                    "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                     "typeString": "contract ITokenHolder"
                   },
                   "typeName": {
@@ -1474,10 +1474,10 @@
                     "id": 4622,
                     "name": "ITokenHolder",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 33147,
+                    "referencedDeclaration": 33144,
                     "src": "2447:12:15",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                      "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                       "typeString": "contract ITokenHolder"
                     }
                   },
@@ -1645,7 +1645,7 @@
                   "name": "ownerOnly",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 32527,
+                  "referencedDeclaration": 32524,
                   "src": "2919:9:15",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1678,7 +1678,7 @@
                   "name": "validFee",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 32881,
+                  "referencedDeclaration": 32878,
                   "src": "2929:8:15",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$_t_uint32_$",
@@ -1786,7 +1786,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 32592,
+          "SourceUnit": 32589,
           "absolutePath": "project:/contracts/utility/Owned.sol",
           "file": "./utility/Owned.sol",
           "scope": 4667,
@@ -1801,7 +1801,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 32911,
+          "SourceUnit": 32908,
           "absolutePath": "project:/contracts/utility/Utils.sol",
           "file": "./utility/Utils.sol",
           "scope": 4667,
@@ -1819,17 +1819,17 @@
           "abstract": false,
           "contractDependencies": [
             4497,
-            32591,
-            32910,
-            33117
+            32588,
+            32907,
+            33114
           ],
           "contractKind": "contract",
           "fullyImplemented": true,
           "linearizedBaseContracts": [
             4666,
-            32910,
-            32591,
-            33117,
+            32907,
+            32588,
+            33114,
             4497
           ],
           "name": "NetworkSettings",
@@ -1874,7 +1874,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "Owned",
-                  "referencedDeclaration": 32591,
+                  "referencedDeclaration": 32588,
                   "type": "contract Owned"
                 },
                 "id": 4539,
@@ -1895,7 +1895,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "Utils",
-                  "referencedDeclaration": 32910,
+                  "referencedDeclaration": 32907,
                   "type": "contract Utils"
                 },
                 "id": 4541,
@@ -1925,7 +1925,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "ITokenHolder",
-                  "referencedDeclaration": 33147,
+                  "referencedDeclaration": 33144,
                   "type": "contract ITokenHolder"
                 },
                 "id": 4543,
@@ -2000,7 +2000,7 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "ITokenHolder",
-                          "referencedDeclaration": 33147,
+                          "referencedDeclaration": 33144,
                           "type": "contract ITokenHolder"
                         },
                         "id": 4548,
@@ -2031,7 +2031,7 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "ITokenHolder",
-                          "referencedDeclaration": 33147,
+                          "referencedDeclaration": 33144,
                           "type": "contract ITokenHolder"
                         },
                         "id": 4550,
@@ -2178,7 +2178,7 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "ITokenHolder",
-                          "referencedDeclaration": 33147,
+                          "referencedDeclaration": 33144,
                           "type": "contract ITokenHolder"
                         },
                         "id": 4562,
@@ -2242,7 +2242,7 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 32795,
+                      "referencedDeclaration": 32792,
                       "type": "modifier (address)",
                       "value": "validAddress"
                     },
@@ -2270,7 +2270,7 @@
                         "attributes": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                              "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                               "typeString": "contract ITokenHolder"
                             }
                           ],
@@ -2327,7 +2327,7 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 32881,
+                      "referencedDeclaration": 32878,
                       "type": "modifier (uint32)",
                       "value": "validFee"
                     },
@@ -2536,7 +2536,7 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "ITokenHolder",
-                          "referencedDeclaration": 33147,
+                          "referencedDeclaration": 33144,
                           "type": "contract ITokenHolder"
                         },
                         "id": 4590,
@@ -2715,7 +2715,7 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "ITokenHolder",
-                          "referencedDeclaration": 33147,
+                          "referencedDeclaration": 33144,
                           "type": "contract ITokenHolder"
                         },
                         "id": 4604,
@@ -2929,7 +2929,7 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "ITokenHolder",
-                          "referencedDeclaration": 33147,
+                          "referencedDeclaration": 33144,
                           "type": "contract ITokenHolder"
                         },
                         "id": 4622,
@@ -2968,7 +2968,7 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 32527,
+                      "referencedDeclaration": 32524,
                       "type": "modifier ()",
                       "value": "ownerOnly"
                     },
@@ -2989,7 +2989,7 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 32795,
+                      "referencedDeclaration": 32792,
                       "type": "modifier (address)",
                       "value": "validAddress"
                     },
@@ -3017,7 +3017,7 @@
                         "attributes": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                              "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                               "typeString": "contract ITokenHolder"
                             }
                           ],
@@ -3090,11 +3090,11 @@
                             "attributes": {
                               "argumentTypes": [
                                 {
-                                  "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                                  "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                                   "typeString": "contract ITokenHolder"
                                 },
                                 {
-                                  "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                                  "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                                   "typeString": "contract ITokenHolder"
                                 }
                               ],
@@ -3287,7 +3287,7 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 32527,
+                      "referencedDeclaration": 32524,
                       "type": "modifier ()",
                       "value": "ownerOnly"
                     },
@@ -3308,7 +3308,7 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 32881,
+                      "referencedDeclaration": 32878,
                       "type": "modifier (uint32)",
                       "value": "validFee"
                     },
@@ -3493,7 +3493,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-08-23T03:19:29.360Z",
+  "updatedAt": "2021-08-23T11:45:53.687Z",
   "devdoc": {
     "details": "This contract maintains the network settings.",
     "events": {

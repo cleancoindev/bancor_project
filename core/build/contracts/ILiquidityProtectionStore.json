@@ -413,7 +413,7 @@
         "id": 30328,
         "nodeType": "ImportDirective",
         "scope": 30464,
-        "sourceUnit": 31137,
+        "sourceUnit": 31134,
         "src": "135:45:74",
         "symbolAliases": [],
         "unitAlias": ""
@@ -424,7 +424,7 @@
         "id": 30329,
         "nodeType": "ImportDirective",
         "scope": 30464,
-        "sourceUnit": 31141,
+        "sourceUnit": 31138,
         "src": "181:50:74",
         "symbolAliases": [],
         "unitAlias": ""
@@ -435,7 +435,7 @@
         "id": 30330,
         "nodeType": "ImportDirective",
         "scope": 30464,
-        "sourceUnit": 33118,
+        "sourceUnit": 33115,
         "src": "233:45:74",
         "symbolAliases": [],
         "unitAlias": ""
@@ -450,10 +450,10 @@
               "id": 30331,
               "name": "IOwned",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 33117,
+              "referencedDeclaration": 33114,
               "src": "366:6:74",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IOwned_$33117",
+                "typeIdentifier": "t_contract$_IOwned_$33114",
                 "typeString": "contract IOwned"
               }
             },
@@ -463,7 +463,7 @@
           }
         ],
         "contractDependencies": [
-          33117
+          33114
         ],
         "contractKind": "interface",
         "documentation": null,
@@ -471,7 +471,7 @@
         "id": 30463,
         "linearizedBaseContracts": [
           30463,
-          33117
+          33114
         ],
         "name": "ILiquidityProtectionStore",
         "nodeType": "ContractDefinition",
@@ -503,7 +503,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                    "typeIdentifier": "t_contract$_IReserveToken_$31137",
                     "typeString": "contract IReserveToken"
                   },
                   "typeName": {
@@ -511,10 +511,10 @@
                     "id": 30333,
                     "name": "IReserveToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 31140,
+                    "referencedDeclaration": 31137,
                     "src": "412:13:74",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                      "typeIdentifier": "t_contract$_IReserveToken_$31137",
                       "typeString": "contract IReserveToken"
                     }
                   },
@@ -684,7 +684,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IDSToken_$31136",
+                    "typeIdentifier": "t_contract$_IDSToken_$31133",
                     "typeString": "contract IDSToken"
                   },
                   "typeName": {
@@ -692,10 +692,10 @@
                     "id": 30347,
                     "name": "IDSToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 31136,
+                    "referencedDeclaration": 31133,
                     "src": "622:8:74",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IDSToken_$31136",
+                      "typeIdentifier": "t_contract$_IDSToken_$31133",
                       "typeString": "contract IDSToken"
                     }
                   },
@@ -714,7 +714,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                    "typeIdentifier": "t_contract$_IReserveToken_$31137",
                     "typeString": "contract IReserveToken"
                   },
                   "typeName": {
@@ -722,10 +722,10 @@
                     "id": 30349,
                     "name": "IReserveToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 31140,
+                    "referencedDeclaration": 31137,
                     "src": "644:13:74",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                      "typeIdentifier": "t_contract$_IReserveToken_$31137",
                       "typeString": "contract IReserveToken"
                     }
                   },
@@ -937,7 +937,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IDSToken_$31136",
+                    "typeIdentifier": "t_contract$_IDSToken_$31133",
                     "typeString": "contract IDSToken"
                   },
                   "typeName": {
@@ -945,10 +945,10 @@
                     "id": 30365,
                     "name": "IDSToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 31136,
+                    "referencedDeclaration": 31133,
                     "src": "846:8:74",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IDSToken_$31136",
+                      "typeIdentifier": "t_contract$_IDSToken_$31133",
                       "typeString": "contract IDSToken"
                     }
                   },
@@ -967,7 +967,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                    "typeIdentifier": "t_contract$_IReserveToken_$31137",
                     "typeString": "contract IReserveToken"
                   },
                   "typeName": {
@@ -975,10 +975,10 @@
                     "id": 30367,
                     "name": "IReserveToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 31140,
+                    "referencedDeclaration": 31137,
                     "src": "875:13:74",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                      "typeIdentifier": "t_contract$_IReserveToken_$31137",
                       "typeString": "contract IReserveToken"
                     }
                   },
@@ -1935,7 +1935,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                    "typeIdentifier": "t_contract$_IReserveToken_$31137",
                     "typeString": "contract IReserveToken"
                   },
                   "typeName": {
@@ -1943,10 +1943,10 @@
                     "id": 30442,
                     "name": "IReserveToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 31140,
+                    "referencedDeclaration": 31137,
                     "src": "1851:13:74",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                      "typeIdentifier": "t_contract$_IReserveToken_$31137",
                       "typeString": "contract IReserveToken"
                     }
                   },
@@ -2024,7 +2024,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                    "typeIdentifier": "t_contract$_IReserveToken_$31137",
                     "typeString": "contract IReserveToken"
                   },
                   "typeName": {
@@ -2032,10 +2032,10 @@
                     "id": 30449,
                     "name": "IReserveToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 31140,
+                    "referencedDeclaration": 31137,
                     "src": "1941:13:74",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                      "typeIdentifier": "t_contract$_IReserveToken_$31137",
                       "typeString": "contract IReserveToken"
                     }
                   },
@@ -2112,7 +2112,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                    "typeIdentifier": "t_contract$_IReserveToken_$31137",
                     "typeString": "contract IReserveToken"
                   },
                   "typeName": {
@@ -2120,10 +2120,10 @@
                     "id": 30456,
                     "name": "IReserveToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 31140,
+                    "referencedDeclaration": 31137,
                     "src": "2029:13:74",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                      "typeIdentifier": "t_contract$_IReserveToken_$31137",
                       "typeString": "contract IReserveToken"
                     }
                   },
@@ -2220,7 +2220,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 31137,
+          "SourceUnit": 31134,
           "absolutePath": "project:/contracts/token/interfaces/IDSToken.sol",
           "file": "../../token/interfaces/IDSToken.sol",
           "scope": 30464,
@@ -2235,7 +2235,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 31141,
+          "SourceUnit": 31138,
           "absolutePath": "project:/contracts/token/interfaces/IReserveToken.sol",
           "file": "../../token/interfaces/IReserveToken.sol",
           "scope": 30464,
@@ -2250,7 +2250,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 33118,
+          "SourceUnit": 33115,
           "absolutePath": "project:/contracts/utility/interfaces/IOwned.sol",
           "file": "../../utility/interfaces/IOwned.sol",
           "scope": 30464,
@@ -2267,14 +2267,14 @@
         "attributes": {
           "abstract": false,
           "contractDependencies": [
-            33117
+            33114
           ],
           "contractKind": "interface",
           "documentation": null,
           "fullyImplemented": false,
           "linearizedBaseContracts": [
             30463,
-            33117
+            33114
           ],
           "name": "ILiquidityProtectionStore",
           "scope": 30464
@@ -2289,7 +2289,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "IOwned",
-                  "referencedDeclaration": 33117,
+                  "referencedDeclaration": 33114,
                   "type": "contract IOwned"
                 },
                 "id": 30331,
@@ -2340,7 +2340,7 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "IReserveToken",
-                          "referencedDeclaration": 31140,
+                          "referencedDeclaration": 31137,
                           "type": "contract IReserveToken"
                         },
                         "id": 30333,
@@ -2533,7 +2533,7 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "IDSToken",
-                          "referencedDeclaration": 31136,
+                          "referencedDeclaration": 31133,
                           "type": "contract IDSToken"
                         },
                         "id": 30347,
@@ -2563,7 +2563,7 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "IReserveToken",
-                          "referencedDeclaration": 31140,
+                          "referencedDeclaration": 31137,
                           "type": "contract IReserveToken"
                         },
                         "id": 30349,
@@ -2793,7 +2793,7 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "IDSToken",
-                          "referencedDeclaration": 31136,
+                          "referencedDeclaration": 31133,
                           "type": "contract IDSToken"
                         },
                         "id": 30365,
@@ -2823,7 +2823,7 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "IReserveToken",
-                          "referencedDeclaration": 31140,
+                          "referencedDeclaration": 31137,
                           "type": "contract IReserveToken"
                         },
                         "id": 30367,
@@ -3857,7 +3857,7 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "IReserveToken",
-                          "referencedDeclaration": 31140,
+                          "referencedDeclaration": 31137,
                           "type": "contract IReserveToken"
                         },
                         "id": 30442,
@@ -3953,7 +3953,7 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "IReserveToken",
-                          "referencedDeclaration": 31140,
+                          "referencedDeclaration": 31137,
                           "type": "contract IReserveToken"
                         },
                         "id": 30449,
@@ -4053,7 +4053,7 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "IReserveToken",
-                          "referencedDeclaration": 31140,
+                          "referencedDeclaration": 31137,
                           "type": "contract IReserveToken"
                         },
                         "id": 30456,
@@ -4130,7 +4130,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-08-23T03:19:30.219Z",
+  "updatedAt": "2021-08-23T11:45:54.556Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

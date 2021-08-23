@@ -187,7 +187,7 @@
         "id": 5570,
         "nodeType": "ImportDirective",
         "scope": 5643,
-        "sourceUnit": 32592,
+        "sourceUnit": 32589,
         "src": "75:30:17",
         "symbolAliases": [],
         "unitAlias": ""
@@ -202,10 +202,10 @@
               "id": 5571,
               "name": "Owned",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 32591,
+              "referencedDeclaration": 32588,
               "src": "137:5:17",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Owned_$32591",
+                "typeIdentifier": "t_contract$_Owned_$32588",
                 "typeString": "contract Owned"
               }
             },
@@ -215,8 +215,8 @@
           }
         ],
         "contractDependencies": [
-          32591,
-          33117
+          32588,
+          33114
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -224,8 +224,8 @@
         "id": 5642,
         "linearizedBaseContracts": [
           5642,
-          32591,
-          33117
+          32588,
+          33114
         ],
         "name": "XTransferRerouter",
         "nodeType": "ContractDefinition",
@@ -549,7 +549,7 @@
                   "name": "ownerOnly",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 32527,
+                  "referencedDeclaration": 32524,
                   "src": "763:9:17",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1054,7 +1054,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 32592,
+          "SourceUnit": 32589,
           "absolutePath": "project:/contracts/utility/Owned.sol",
           "file": "../utility/Owned.sol",
           "scope": 5643,
@@ -1071,16 +1071,16 @@
         "attributes": {
           "abstract": false,
           "contractDependencies": [
-            32591,
-            33117
+            32588,
+            33114
           ],
           "contractKind": "contract",
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
             5642,
-            32591,
-            33117
+            32588,
+            33114
           ],
           "name": "XTransferRerouter",
           "scope": 5643
@@ -1095,7 +1095,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "Owned",
-                  "referencedDeclaration": 32591,
+                  "referencedDeclaration": 32588,
                   "type": "contract Owned"
                 },
                 "id": 5571,
@@ -1454,7 +1454,7 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 32527,
+                      "referencedDeclaration": 32524,
                       "type": "modifier ()",
                       "value": "ownerOnly"
                     },
@@ -2021,7 +2021,8 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-08-23T03:19:29.388Z",
+  "updatedAt": "2021-08-23T11:48:38.599Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {

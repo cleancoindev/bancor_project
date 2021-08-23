@@ -63,7 +63,7 @@
         "id": 23307,
         "nodeType": "ImportDirective",
         "scope": 23333,
-        "sourceUnit": 32649,
+        "sourceUnit": 32646,
         "src": "76:29:61",
         "symbolAliases": [],
         "unitAlias": ""
@@ -78,10 +78,10 @@
               "id": 23308,
               "name": "Time",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 32648,
+              "referencedDeclaration": 32645,
               "src": "128:4:61",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Time_$32648",
+                "typeIdentifier": "t_contract$_Time_$32645",
                 "typeString": "contract Time"
               }
             },
@@ -91,7 +91,7 @@
           }
         ],
         "contractDependencies": [
-          32648
+          32645
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -99,7 +99,7 @@
         "id": 23332,
         "linearizedBaseContracts": [
           23332,
-          32648
+          32645
         ],
         "name": "TestTime",
         "nodeType": "ContractDefinition",
@@ -152,7 +152,7 @@
           },
           {
             "baseFunctions": [
-              32647
+              32644
             ],
             "body": {
               "id": 23320,
@@ -382,7 +382,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 32649,
+          "SourceUnit": 32646,
           "absolutePath": "project:/contracts/utility/Time.sol",
           "file": "../utility/Time.sol",
           "scope": 23333,
@@ -399,14 +399,14 @@
         "attributes": {
           "abstract": false,
           "contractDependencies": [
-            32648
+            32645
           ],
           "contractKind": "contract",
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
             23332,
-            32648
+            32645
           ],
           "name": "TestTime",
           "scope": 23333
@@ -421,7 +421,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "Time",
-                  "referencedDeclaration": 32648,
+                  "referencedDeclaration": 32645,
                   "type": "contract Time"
                 },
                 "id": 23308,
@@ -481,7 +481,7 @@
           {
             "attributes": {
               "baseFunctions": [
-                32647
+                32644
               ],
               "documentation": null,
               "implemented": true,
@@ -732,7 +732,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-08-23T03:19:29.926Z",
+  "updatedAt": "2021-08-23T11:45:54.260Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

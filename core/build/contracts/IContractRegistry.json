@@ -33,15 +33,15 @@
     "absolutePath": "project:/contracts/utility/interfaces/IContractRegistry.sol",
     "exportedSymbols": {
       "IContractRegistry": [
-        33101
+        33098
       ]
     },
-    "id": 33102,
+    "id": 33099,
     "license": "SEE LICENSE IN LICENSE",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 33093,
+        "id": 33090,
         "literals": [
           "solidity",
           "0.6",
@@ -57,9 +57,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 33101,
+        "id": 33098,
         "linearizedBaseContracts": [
-          33101
+          33098
         ],
         "name": "IContractRegistry",
         "nodeType": "ContractDefinition",
@@ -68,7 +68,7 @@
             "body": null,
             "documentation": null,
             "functionSelector": "bb34534c",
-            "id": 33100,
+            "id": 33097,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -76,17 +76,17 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 33096,
+              "id": 33093,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 33095,
+                  "id": 33092,
                   "mutability": "mutable",
                   "name": "_contractName",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 33100,
+                  "scope": 33097,
                   "src": "167:21:100",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -95,7 +95,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 33094,
+                    "id": 33091,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "167:7:100",
@@ -111,17 +111,17 @@
               "src": "166:23:100"
             },
             "returnParameters": {
-              "id": 33099,
+              "id": 33096,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 33098,
+                  "id": 33095,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 33100,
+                  "scope": 33097,
                   "src": "213:7:100",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -130,7 +130,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 33097,
+                    "id": 33094,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "213:7:100",
@@ -146,14 +146,14 @@
               ],
               "src": "212:9:100"
             },
-            "scope": 33101,
+            "scope": 33098,
             "src": "148:74:100",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 33102,
+        "scope": 33099,
         "src": "114:110:100"
       }
     ],
@@ -164,7 +164,7 @@
       "absolutePath": "project:/contracts/utility/interfaces/IContractRegistry.sol",
       "exportedSymbols": {
         "IContractRegistry": [
-          33101
+          33098
         ]
       },
       "license": "SEE LICENSE IN LICENSE"
@@ -178,7 +178,7 @@
             ".12"
           ]
         },
-        "id": 33093,
+        "id": 33090,
         "name": "PragmaDirective",
         "src": "51:23:100"
       },
@@ -195,10 +195,10 @@
           "documentation": null,
           "fullyImplemented": false,
           "linearizedBaseContracts": [
-            33101
+            33098
           ],
           "name": "IContractRegistry",
-          "scope": 33102
+          "scope": 33099
         },
         "children": [
           {
@@ -214,7 +214,7 @@
               ],
               "name": "addressOf",
               "overrides": null,
-              "scope": 33101,
+              "scope": 33098,
               "stateMutability": "view",
               "virtual": false,
               "visibility": "external"
@@ -228,7 +228,7 @@
                       "mutability": "mutable",
                       "name": "_contractName",
                       "overrides": null,
-                      "scope": 33100,
+                      "scope": 33097,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "bytes32",
@@ -241,17 +241,17 @@
                           "name": "bytes32",
                           "type": "bytes32"
                         },
-                        "id": 33094,
+                        "id": 33091,
                         "name": "ElementaryTypeName",
                         "src": "167:7:100"
                       }
                     ],
-                    "id": 33095,
+                    "id": 33092,
                     "name": "VariableDeclaration",
                     "src": "167:21:100"
                   }
                 ],
-                "id": 33096,
+                "id": 33093,
                 "name": "ParameterList",
                 "src": "166:23:100"
               },
@@ -263,7 +263,7 @@
                       "mutability": "mutable",
                       "name": "",
                       "overrides": null,
-                      "scope": 33100,
+                      "scope": 33097,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -277,32 +277,32 @@
                           "stateMutability": "nonpayable",
                           "type": "address"
                         },
-                        "id": 33097,
+                        "id": 33094,
                         "name": "ElementaryTypeName",
                         "src": "213:7:100"
                       }
                     ],
-                    "id": 33098,
+                    "id": 33095,
                     "name": "VariableDeclaration",
                     "src": "213:7:100"
                   }
                 ],
-                "id": 33099,
+                "id": 33096,
                 "name": "ParameterList",
                 "src": "212:9:100"
               }
             ],
-            "id": 33100,
+            "id": 33097,
             "name": "FunctionDefinition",
             "src": "148:74:100"
           }
         ],
-        "id": 33101,
+        "id": 33098,
         "name": "ContractDefinition",
         "src": "114:110:100"
       }
     ],
-    "id": 33102,
+    "id": 33099,
     "name": "SourceUnit",
     "src": "51:174:100"
   },
@@ -312,7 +312,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-08-23T03:19:30.307Z",
+  "updatedAt": "2021-08-23T11:45:54.638Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

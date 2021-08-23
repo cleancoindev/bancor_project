@@ -179,7 +179,7 @@
         "id": 22004,
         "nodeType": "ImportDirective",
         "scope": 22017,
-        "sourceUnit": 31888,
+        "sourceUnit": 31885,
         "src": "75:47:47",
         "symbolAliases": [],
         "unitAlias": ""
@@ -194,10 +194,10 @@
               "id": 22005,
               "name": "ContractRegistryClient",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 31887,
+              "referencedDeclaration": 31884,
               "src": "243:22:47",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ContractRegistryClient_$31887",
+                "typeIdentifier": "t_contract$_ContractRegistryClient_$31884",
                 "typeString": "contract ContractRegistryClient"
               }
             },
@@ -207,10 +207,10 @@
           }
         ],
         "contractDependencies": [
-          31887,
-          32591,
-          32910,
-          33117
+          31884,
+          32588,
+          32907,
+          33114
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -218,10 +218,10 @@
         "id": 22016,
         "linearizedBaseContracts": [
           22016,
-          31887,
-          32910,
-          32591,
-          33117
+          31884,
+          32907,
+          32588,
+          33114
         ],
         "name": "TestContractRegistryClient",
         "nodeType": "ContractDefinition",
@@ -249,7 +249,7 @@
                     "referencedDeclaration": 22008,
                     "src": "343:9:47",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IContractRegistry_$33101",
+                      "typeIdentifier": "t_contract$_IContractRegistry_$33098",
                       "typeString": "contract IContractRegistry"
                     }
                   }
@@ -261,10 +261,10 @@
                   "name": "ContractRegistryClient",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 31887,
+                  "referencedDeclaration": 31884,
                   "src": "320:22:47",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_type$_t_contract$_ContractRegistryClient_$31887_$",
+                    "typeIdentifier": "t_type$_t_contract$_ContractRegistryClient_$31884_$",
                     "typeString": "type(contract ContractRegistryClient)"
                   }
                 },
@@ -291,7 +291,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IContractRegistry_$33101",
+                    "typeIdentifier": "t_contract$_IContractRegistry_$33098",
                     "typeString": "contract IContractRegistry"
                   },
                   "typeName": {
@@ -299,10 +299,10 @@
                     "id": 22007,
                     "name": "IContractRegistry",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 33101,
+                    "referencedDeclaration": 33098,
                     "src": "284:17:47",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IContractRegistry_$33101",
+                      "typeIdentifier": "t_contract$_IContractRegistry_$33098",
                       "typeString": "contract IContractRegistry"
                     }
                   },
@@ -356,7 +356,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 31888,
+          "SourceUnit": 31885,
           "absolutePath": "project:/contracts/utility/ContractRegistryClient.sol",
           "file": "../utility/ContractRegistryClient.sol",
           "scope": 22017,
@@ -373,20 +373,20 @@
         "attributes": {
           "abstract": false,
           "contractDependencies": [
-            31887,
-            32591,
-            32910,
-            33117
+            31884,
+            32588,
+            32907,
+            33114
           ],
           "contractKind": "contract",
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
             22016,
-            31887,
-            32910,
-            32591,
-            33117
+            31884,
+            32907,
+            32588,
+            33114
           ],
           "name": "TestContractRegistryClient",
           "scope": 22017
@@ -401,7 +401,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "ContractRegistryClient",
-                  "referencedDeclaration": 31887,
+                  "referencedDeclaration": 31884,
                   "type": "contract ContractRegistryClient"
                 },
                 "id": 22005,
@@ -447,7 +447,7 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "IContractRegistry",
-                          "referencedDeclaration": 33101,
+                          "referencedDeclaration": 33098,
                           "type": "contract IContractRegistry"
                         },
                         "id": 22007,
@@ -483,7 +483,7 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 31887,
+                      "referencedDeclaration": 31884,
                       "type": "type(contract ContractRegistryClient)",
                       "value": "ContractRegistryClient"
                     },
@@ -542,7 +542,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-08-23T03:19:29.865Z",
+  "updatedAt": "2021-08-23T11:45:54.196Z",
   "devdoc": {
     "kind": "dev",
     "methods": {

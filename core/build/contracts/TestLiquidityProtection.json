@@ -1144,11 +1144,11 @@
           23332,
           27226,
           30156,
-          32591,
-          32635,
-          32648,
-          32910,
-          33117
+          32588,
+          32632,
+          32645,
+          32907,
+          33114
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -1158,11 +1158,11 @@
           22654,
           23332,
           27226,
-          32648,
-          32635,
-          32591,
-          33117,
-          32910,
+          32645,
+          32632,
+          32588,
+          33114,
+          32907,
           30156
         ],
         "name": "TestLiquidityProtection",
@@ -1327,7 +1327,7 @@
                     "referencedDeclaration": 22352,
                     "src": "864:6:53",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                      "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                       "typeString": "contract ITokenHolder"
                     }
                   },
@@ -1366,7 +1366,7 @@
                     "referencedDeclaration": 22358,
                     "src": "952:25:53",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ICheckpointStore_$33091",
+                      "typeIdentifier": "t_contract$_ICheckpointStore_$33088",
                       "typeString": "contract ICheckpointStore"
                     }
                   }
@@ -1528,7 +1528,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                    "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                     "typeString": "contract ITokenHolder"
                   },
                   "typeName": {
@@ -1536,10 +1536,10 @@
                     "id": 22351,
                     "name": "ITokenHolder",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 33147,
+                    "referencedDeclaration": 33144,
                     "src": "551:12:53",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                      "typeIdentifier": "t_contract$_ITokenHolder_$33144",
                       "typeString": "contract ITokenHolder"
                     }
                   },
@@ -1618,7 +1618,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_ICheckpointStore_$33091",
+                    "typeIdentifier": "t_contract$_ICheckpointStore_$33088",
                     "typeString": "contract ICheckpointStore"
                   },
                   "typeName": {
@@ -1626,10 +1626,10 @@
                     "id": 22357,
                     "name": "ICheckpointStore",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 33091,
+                    "referencedDeclaration": 33088,
                     "src": "674:16:53",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ICheckpointStore_$33091",
+                      "typeIdentifier": "t_contract$_ICheckpointStore_$33088",
                       "typeString": "contract ICheckpointStore"
                     }
                   },
@@ -1674,7 +1674,7 @@
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                        "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                         "typeString": "struct Fraction"
                       },
                       "typeName": {
@@ -1682,10 +1682,10 @@
                         "id": 22391,
                         "name": "Fraction",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 32755,
+                        "referencedDeclaration": 32752,
                         "src": "1276:8:53",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Fraction_$32755_storage_ptr",
+                          "typeIdentifier": "t_struct$_Fraction_$32752_storage_ptr",
                           "typeString": "struct Fraction"
                         }
                       },
@@ -1739,10 +1739,10 @@
                       "name": "Fraction",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 32755,
+                      "referencedDeclaration": 32752,
                       "src": "1303:8:53",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_struct$_Fraction_$32755_storage_ptr_$",
+                        "typeIdentifier": "t_type$_t_struct$_Fraction_$32752_storage_ptr_$",
                         "typeString": "type(struct Fraction storage pointer)"
                       }
                     },
@@ -1760,7 +1760,7 @@
                     "src": "1303:40:53",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                      "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                       "typeString": "struct Fraction memory"
                     }
                   },
@@ -1784,7 +1784,7 @@
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                        "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                         "typeString": "struct Fraction"
                       },
                       "typeName": {
@@ -1792,10 +1792,10 @@
                         "id": 22398,
                         "name": "Fraction",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 32755,
+                        "referencedDeclaration": 32752,
                         "src": "1353:8:53",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Fraction_$32755_storage_ptr",
+                          "typeIdentifier": "t_struct$_Fraction_$32752_storage_ptr",
                           "typeString": "struct Fraction"
                         }
                       },
@@ -1849,10 +1849,10 @@
                       "name": "Fraction",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 32755,
+                      "referencedDeclaration": 32752,
                       "src": "1379:8:53",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_struct$_Fraction_$32755_storage_ptr_$",
+                        "typeIdentifier": "t_type$_t_struct$_Fraction_$32752_storage_ptr_$",
                         "typeString": "type(struct Fraction storage pointer)"
                       }
                     },
@@ -1870,7 +1870,7 @@
                     "src": "1379:38:53",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                      "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                       "typeString": "struct Fraction memory"
                     }
                   },
@@ -1894,7 +1894,7 @@
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                        "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                         "typeString": "struct Fraction"
                       },
                       "typeName": {
@@ -1902,10 +1902,10 @@
                         "id": 22405,
                         "name": "Fraction",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 32755,
+                        "referencedDeclaration": 32752,
                         "src": "1427:8:53",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Fraction_$32755_storage_ptr",
+                          "typeIdentifier": "t_struct$_Fraction_$32752_storage_ptr",
                           "typeString": "struct Fraction"
                         }
                       },
@@ -1959,10 +1959,10 @@
                       "name": "Fraction",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 32755,
+                      "referencedDeclaration": 32752,
                       "src": "1456:8:53",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_struct$_Fraction_$32755_storage_ptr_$",
+                        "typeIdentifier": "t_type$_t_struct$_Fraction_$32752_storage_ptr_$",
                         "typeString": "type(struct Fraction storage pointer)"
                       }
                     },
@@ -1980,7 +1980,7 @@
                     "src": "1456:44:53",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                      "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                       "typeString": "struct Fraction memory"
                     }
                   },
@@ -2013,7 +2013,7 @@
                         "referencedDeclaration": 22392,
                         "src": "1552:8:53",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                          "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                           "typeString": "struct Fraction memory"
                         }
                       },
@@ -2026,7 +2026,7 @@
                         "referencedDeclaration": 22399,
                         "src": "1562:7:53",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                          "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                           "typeString": "struct Fraction memory"
                         }
                       },
@@ -2039,7 +2039,7 @@
                         "referencedDeclaration": 22406,
                         "src": "1571:10:53",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                          "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                           "typeString": "struct Fraction memory"
                         }
                       }
@@ -2051,15 +2051,15 @@
                           "typeString": "uint256"
                         },
                         {
-                          "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                          "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                           "typeString": "struct Fraction memory"
                         },
                         {
-                          "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                          "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                           "typeString": "struct Fraction memory"
                         },
                         {
-                          "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                          "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                           "typeString": "struct Fraction memory"
                         }
                       ],
@@ -2070,7 +2070,7 @@
                       "referencedDeclaration": 26718,
                       "src": "1517:22:53",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_struct$_Fraction_$32755_memory_ptr_$_t_struct$_Fraction_$32755_memory_ptr_$_t_struct$_Fraction_$32755_memory_ptr_$returns$_t_uint256_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_struct$_Fraction_$32752_memory_ptr_$_t_struct$_Fraction_$32752_memory_ptr_$_t_struct$_Fraction_$32752_memory_ptr_$returns$_t_uint256_$",
                         "typeString": "function (uint256,struct Fraction memory,struct Fraction memory,struct Fraction memory) pure returns (uint256)"
                       }
                     },
@@ -2372,7 +2372,7 @@
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                        "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                         "typeString": "struct Fraction"
                       },
                       "typeName": {
@@ -2380,10 +2380,10 @@
                         "id": 22435,
                         "name": "Fraction",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 32755,
+                        "referencedDeclaration": 32752,
                         "src": "1793:8:53",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Fraction_$32755_storage_ptr",
+                          "typeIdentifier": "t_struct$_Fraction_$32752_storage_ptr",
                           "typeString": "struct Fraction"
                         }
                       },
@@ -2437,10 +2437,10 @@
                       "name": "Fraction",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 32755,
+                      "referencedDeclaration": 32752,
                       "src": "1823:8:53",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_struct$_Fraction_$32755_storage_ptr_$",
+                        "typeIdentifier": "t_type$_t_struct$_Fraction_$32752_storage_ptr_$",
                         "typeString": "type(struct Fraction storage pointer)"
                       }
                     },
@@ -2458,7 +2458,7 @@
                     "src": "1823:46:53",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                      "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                       "typeString": "struct Fraction memory"
                     }
                   },
@@ -2482,7 +2482,7 @@
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                        "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                         "typeString": "struct Fraction"
                       },
                       "typeName": {
@@ -2490,10 +2490,10 @@
                         "id": 22442,
                         "name": "Fraction",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 32755,
+                        "referencedDeclaration": 32752,
                         "src": "1879:8:53",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Fraction_$32755_storage_ptr",
+                          "typeIdentifier": "t_struct$_Fraction_$32752_storage_ptr",
                           "typeString": "struct Fraction"
                         }
                       },
@@ -2547,10 +2547,10 @@
                       "name": "Fraction",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 32755,
+                      "referencedDeclaration": 32752,
                       "src": "1909:8:53",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_struct$_Fraction_$32755_storage_ptr_$",
+                        "typeIdentifier": "t_type$_t_struct$_Fraction_$32752_storage_ptr_$",
                         "typeString": "type(struct Fraction storage pointer)"
                       }
                     },
@@ -2568,7 +2568,7 @@
                     "src": "1909:46:53",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                      "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                       "typeString": "struct Fraction memory"
                     }
                   },
@@ -2592,7 +2592,7 @@
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                        "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                         "typeString": "struct Fraction"
                       },
                       "typeName": {
@@ -2600,10 +2600,10 @@
                         "id": 22449,
                         "name": "Fraction",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 32755,
+                        "referencedDeclaration": 32752,
                         "src": "1965:8:53",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Fraction_$32755_storage_ptr",
+                          "typeIdentifier": "t_struct$_Fraction_$32752_storage_ptr",
                           "typeString": "struct Fraction"
                         }
                       },
@@ -2624,7 +2624,7 @@
                         "referencedDeclaration": 22436,
                         "src": "2003:11:53",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                          "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                           "typeString": "struct Fraction memory"
                         }
                       },
@@ -2637,7 +2637,7 @@
                         "referencedDeclaration": 22443,
                         "src": "2016:11:53",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                          "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                           "typeString": "struct Fraction memory"
                         }
                       }
@@ -2645,11 +2645,11 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                          "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                           "typeString": "struct Fraction memory"
                         },
                         {
-                          "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                          "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                           "typeString": "struct Fraction memory"
                         }
                       ],
@@ -2660,7 +2660,7 @@
                       "referencedDeclaration": 26809,
                       "src": "1995:7:53",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_struct$_Fraction_$32755_memory_ptr_$_t_struct$_Fraction_$32755_memory_ptr_$returns$_t_struct$_Fraction_$32755_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_Fraction_$32752_memory_ptr_$_t_struct$_Fraction_$32752_memory_ptr_$returns$_t_struct$_Fraction_$32752_memory_ptr_$",
                         "typeString": "function (struct Fraction memory,struct Fraction memory) pure returns (struct Fraction memory)"
                       }
                     },
@@ -2675,7 +2675,7 @@
                     "src": "1995:33:53",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                      "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                       "typeString": "struct Fraction memory"
                     }
                   },
@@ -2697,7 +2697,7 @@
                           "referencedDeclaration": 22450,
                           "src": "2046:11:53",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                            "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                             "typeString": "struct Fraction memory"
                           }
                         },
@@ -2708,7 +2708,7 @@
                         "lValueRequested": false,
                         "memberName": "n",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 32752,
+                        "referencedDeclaration": 32749,
                         "src": "2046:13:53",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2726,7 +2726,7 @@
                           "referencedDeclaration": 22450,
                           "src": "2061:11:53",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                            "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                             "typeString": "struct Fraction memory"
                           }
                         },
@@ -2737,7 +2737,7 @@
                         "lValueRequested": false,
                         "memberName": "d",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 32754,
+                        "referencedDeclaration": 32751,
                         "src": "2061:13:53",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2985,7 +2985,7 @@
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                        "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                         "typeString": "struct Fraction"
                       },
                       "typeName": {
@@ -2993,10 +2993,10 @@
                         "id": 22480,
                         "name": "Fraction",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 32755,
+                        "referencedDeclaration": 32752,
                         "src": "2309:8:53",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Fraction_$32755_storage_ptr",
+                          "typeIdentifier": "t_struct$_Fraction_$32752_storage_ptr",
                           "typeString": "struct Fraction"
                         }
                       },
@@ -3050,10 +3050,10 @@
                       "name": "Fraction",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 32755,
+                      "referencedDeclaration": 32752,
                       "src": "2332:8:53",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_struct$_Fraction_$32755_storage_ptr_$",
+                        "typeIdentifier": "t_type$_t_struct$_Fraction_$32752_storage_ptr_$",
                         "typeString": "type(struct Fraction storage pointer)"
                       }
                     },
@@ -3071,7 +3071,7 @@
                     "src": "2332:32:53",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                      "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                       "typeString": "struct Fraction memory"
                     }
                   },
@@ -3095,7 +3095,7 @@
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                        "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                         "typeString": "struct Fraction"
                       },
                       "typeName": {
@@ -3103,10 +3103,10 @@
                         "id": 22487,
                         "name": "Fraction",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 32755,
+                        "referencedDeclaration": 32752,
                         "src": "2374:8:53",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Fraction_$32755_storage_ptr",
+                          "typeIdentifier": "t_struct$_Fraction_$32752_storage_ptr",
                           "typeString": "struct Fraction"
                         }
                       },
@@ -3160,10 +3160,10 @@
                       "name": "Fraction",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 32755,
+                      "referencedDeclaration": 32752,
                       "src": "2398:8:53",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_struct$_Fraction_$32755_storage_ptr_$",
+                        "typeIdentifier": "t_type$_t_struct$_Fraction_$32752_storage_ptr_$",
                         "typeString": "type(struct Fraction storage pointer)"
                       }
                     },
@@ -3181,7 +3181,7 @@
                     "src": "2398:34:53",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                      "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                       "typeString": "struct Fraction memory"
                     }
                   },
@@ -3227,7 +3227,7 @@
                         "referencedDeclaration": 22481,
                         "src": "2483:4:53",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                          "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                           "typeString": "struct Fraction memory"
                         }
                       },
@@ -3240,7 +3240,7 @@
                         "referencedDeclaration": 22488,
                         "src": "2489:5:53",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                          "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                           "typeString": "struct Fraction memory"
                         }
                       }
@@ -3256,11 +3256,11 @@
                           "typeString": "uint256"
                         },
                         {
-                          "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                          "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                           "typeString": "struct Fraction memory"
                         },
                         {
-                          "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                          "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                           "typeString": "struct Fraction memory"
                         }
                       ],
@@ -3271,7 +3271,7 @@
                       "referencedDeclaration": 26942,
                       "src": "2449:18:53",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$_t_struct$_Fraction_$32755_memory_ptr_$_t_struct$_Fraction_$32755_memory_ptr_$returns$_t_uint256_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$_t_struct$_Fraction_$32752_memory_ptr_$_t_struct$_Fraction_$32752_memory_ptr_$returns$_t_uint256_$",
                         "typeString": "function (uint256,uint256,struct Fraction memory,struct Fraction memory) pure returns (uint256)"
                       }
                     },
@@ -3546,7 +3546,7 @@
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                        "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                         "typeString": "struct Fraction"
                       },
                       "typeName": {
@@ -3554,10 +3554,10 @@
                         "id": 22513,
                         "name": "Fraction",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 32755,
+                        "referencedDeclaration": 32752,
                         "src": "2633:8:53",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Fraction_$32755_storage_ptr",
+                          "typeIdentifier": "t_struct$_Fraction_$32752_storage_ptr",
                           "typeString": "struct Fraction"
                         }
                       },
@@ -3576,7 +3576,7 @@
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                        "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                         "typeString": "struct Fraction"
                       },
                       "typeName": {
@@ -3584,10 +3584,10 @@
                         "id": 22515,
                         "name": "Fraction",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 32755,
+                        "referencedDeclaration": 32752,
                         "src": "2659:8:53",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Fraction_$32755_storage_ptr",
+                          "typeIdentifier": "t_struct$_Fraction_$32752_storage_ptr",
                           "typeString": "struct Fraction"
                         }
                       },
@@ -3608,7 +3608,7 @@
                         "referencedDeclaration": 22504,
                         "src": "2708:9:53",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IDSToken_$31136",
+                          "typeIdentifier": "t_contract$_IDSToken_$31133",
                           "typeString": "contract IDSToken"
                         }
                       },
@@ -3621,7 +3621,7 @@
                         "referencedDeclaration": 22506,
                         "src": "2719:12:53",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                          "typeIdentifier": "t_contract$_IReserveToken_$31137",
                           "typeString": "contract IReserveToken"
                         }
                       }
@@ -3629,11 +3629,11 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IDSToken_$31136",
+                          "typeIdentifier": "t_contract$_IDSToken_$31133",
                           "typeString": "contract IDSToken"
                         },
                         {
-                          "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                          "typeIdentifier": "t_contract$_IReserveToken_$31137",
                           "typeString": "contract IReserveToken"
                         }
                       ],
@@ -3644,7 +3644,7 @@
                       "referencedDeclaration": 26228,
                       "src": "2690:17:53",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_view$_t_contract$_IDSToken_$31136_$_t_contract$_IReserveToken_$31140_$returns$_t_struct$_Fraction_$32755_memory_ptr_$_t_struct$_Fraction_$32755_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_view$_t_contract$_IDSToken_$31133_$_t_contract$_IReserveToken_$31137_$returns$_t_struct$_Fraction_$32752_memory_ptr_$_t_struct$_Fraction_$32752_memory_ptr_$",
                         "typeString": "function (contract IDSToken,contract IReserveToken) view returns (struct Fraction memory,struct Fraction memory)"
                       }
                     },
@@ -3659,7 +3659,7 @@
                     "src": "2690:42:53",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$_t_struct$_Fraction_$32755_memory_ptr_$_t_struct$_Fraction_$32755_memory_ptr_$",
+                      "typeIdentifier": "t_tuple$_t_struct$_Fraction_$32752_memory_ptr_$_t_struct$_Fraction_$32752_memory_ptr_$",
                       "typeString": "tuple(struct Fraction memory,struct Fraction memory)"
                     }
                   },
@@ -3681,7 +3681,7 @@
                           "referencedDeclaration": 22514,
                           "src": "2762:8:53",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                            "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                             "typeString": "struct Fraction memory"
                           }
                         },
@@ -3692,7 +3692,7 @@
                         "lValueRequested": false,
                         "memberName": "n",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 32752,
+                        "referencedDeclaration": 32749,
                         "src": "2762:10:53",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -3710,7 +3710,7 @@
                           "referencedDeclaration": 22514,
                           "src": "2774:8:53",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                            "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                             "typeString": "struct Fraction memory"
                           }
                         },
@@ -3721,7 +3721,7 @@
                         "lValueRequested": false,
                         "memberName": "d",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 32754,
+                        "referencedDeclaration": 32751,
                         "src": "2774:10:53",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -3739,7 +3739,7 @@
                           "referencedDeclaration": 22516,
                           "src": "2786:11:53",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                            "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                             "typeString": "struct Fraction memory"
                           }
                         },
@@ -3750,7 +3750,7 @@
                         "lValueRequested": false,
                         "memberName": "n",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 32752,
+                        "referencedDeclaration": 32749,
                         "src": "2786:13:53",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -3768,7 +3768,7 @@
                           "referencedDeclaration": 22516,
                           "src": "2801:11:53",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                            "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                             "typeString": "struct Fraction memory"
                           }
                         },
@@ -3779,7 +3779,7 @@
                         "lValueRequested": false,
                         "memberName": "d",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 32754,
+                        "referencedDeclaration": 32751,
                         "src": "2801:13:53",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -3851,7 +3851,7 @@
                           "referencedDeclaration": 22516,
                           "src": "2833:11:53",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                            "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                             "typeString": "struct Fraction memory"
                           }
                         },
@@ -3862,7 +3862,7 @@
                         "lValueRequested": false,
                         "memberName": "n",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 32752,
+                        "referencedDeclaration": 32749,
                         "src": "2833:13:53",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -3880,7 +3880,7 @@
                           "referencedDeclaration": 22516,
                           "src": "2848:11:53",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                            "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                             "typeString": "struct Fraction memory"
                           }
                         },
@@ -3891,7 +3891,7 @@
                         "lValueRequested": false,
                         "memberName": "d",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 32754,
+                        "referencedDeclaration": 32751,
                         "src": "2848:13:53",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -3944,7 +3944,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IDSToken_$31136",
+                    "typeIdentifier": "t_contract$_IDSToken_$31133",
                     "typeString": "contract IDSToken"
                   },
                   "typeName": {
@@ -3952,10 +3952,10 @@
                     "id": 22503,
                     "name": "IDSToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 31136,
+                    "referencedDeclaration": 31133,
                     "src": "2533:8:53",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IDSToken_$31136",
+                      "typeIdentifier": "t_contract$_IDSToken_$31133",
                       "typeString": "contract IDSToken"
                     }
                   },
@@ -3974,7 +3974,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                    "typeIdentifier": "t_contract$_IReserveToken_$31137",
                     "typeString": "contract IReserveToken"
                   },
                   "typeName": {
@@ -3982,10 +3982,10 @@
                     "id": 22505,
                     "name": "IReserveToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 31140,
+                    "referencedDeclaration": 31137,
                     "src": "2553:13:53",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                      "typeIdentifier": "t_contract$_IReserveToken_$31137",
                       "typeString": "contract IReserveToken"
                     }
                   },
@@ -4466,10 +4466,10 @@
                           "name": "IDSToken",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 31136,
+                          "referencedDeclaration": 31133,
                           "src": "3930:8:53",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_IDSToken_$31136_$",
+                            "typeIdentifier": "t_type$_t_contract$_IDSToken_$31133_$",
                             "typeString": "type(contract IDSToken)"
                           }
                         },
@@ -4484,7 +4484,7 @@
                         "src": "3930:11:53",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IDSToken_$31136",
+                          "typeIdentifier": "t_contract$_IDSToken_$31133",
                           "typeString": "contract IDSToken"
                         }
                       },
@@ -4521,10 +4521,10 @@
                           "name": "IReserveToken",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 31140,
+                          "referencedDeclaration": 31137,
                           "src": "3959:13:53",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_IReserveToken_$31140_$",
+                            "typeIdentifier": "t_type$_t_contract$_IReserveToken_$31137_$",
                             "typeString": "type(contract IReserveToken)"
                           }
                         },
@@ -4539,7 +4539,7 @@
                         "src": "3959:16:53",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                          "typeIdentifier": "t_contract$_IReserveToken_$31137",
                           "typeString": "contract IReserveToken"
                         }
                       },
@@ -4612,11 +4612,11 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IDSToken_$31136",
+                          "typeIdentifier": "t_contract$_IDSToken_$31133",
                           "typeString": "contract IDSToken"
                         },
                         {
-                          "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                          "typeIdentifier": "t_contract$_IReserveToken_$31137",
                           "typeString": "contract IReserveToken"
                         },
                         {
@@ -4647,7 +4647,7 @@
                       "referencedDeclaration": 25594,
                       "src": "3885:27:53",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_view$_t_contract$_IDSToken_$31136_$_t_contract$_IReserveToken_$31140_$_t_uint256_$_t_uint256_$_t_struct$_PackedRates_$24084_memory_ptr_$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
+                        "typeIdentifier": "t_function_internal_view$_t_contract$_IDSToken_$31133_$_t_contract$_IReserveToken_$31137_$_t_uint256_$_t_uint256_$_t_struct$_PackedRates_$24084_memory_ptr_$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
                         "typeString": "function (contract IDSToken,contract IReserveToken,uint256,uint256,struct LiquidityProtection.PackedRates memory,uint256,uint256) view returns (uint256)"
                       }
                     },
@@ -5212,10 +5212,10 @@
                             "name": "Fraction",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 32755,
+                            "referencedDeclaration": 32752,
                             "src": "4437:8:53",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_struct$_Fraction_$32755_storage_ptr_$",
+                              "typeIdentifier": "t_type$_t_struct$_Fraction_$32752_storage_ptr_$",
                               "typeString": "type(struct Fraction storage pointer)"
                             }
                           },
@@ -5233,7 +5233,7 @@
                           "src": "4437:52:53",
                           "tryCall": false,
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                            "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                             "typeString": "struct Fraction memory"
                           }
                         },
@@ -5258,7 +5258,7 @@
                         "referencedDeclaration": 22617,
                         "src": "4536:9:53",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IDSToken_$31136",
+                          "typeIdentifier": "t_contract$_IDSToken_$31133",
                           "typeString": "contract IDSToken"
                         }
                       },
@@ -5271,7 +5271,7 @@
                         "referencedDeclaration": 22619,
                         "src": "4547:12:53",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                          "typeIdentifier": "t_contract$_IReserveToken_$31137",
                           "typeString": "contract IReserveToken"
                         }
                       }
@@ -5279,11 +5279,11 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IDSToken_$31136",
+                          "typeIdentifier": "t_contract$_IDSToken_$31133",
                           "typeString": "contract IDSToken"
                         },
                         {
-                          "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                          "typeIdentifier": "t_contract$_IReserveToken_$31137",
                           "typeString": "contract IReserveToken"
                         }
                       ],
@@ -5310,7 +5310,7 @@
                       "referencedDeclaration": 26168,
                       "src": "4516:19:53",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_view$_t_contract$_IDSToken_$31136_$_t_contract$_IReserveToken_$31140_$returns$_t_struct$_Fraction_$32755_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_view$_t_contract$_IDSToken_$31133_$_t_contract$_IReserveToken_$31137_$returns$_t_struct$_Fraction_$32752_memory_ptr_$",
                         "typeString": "function (contract IDSToken,contract IReserveToken) view returns (struct Fraction memory)"
                       }
                     },
@@ -5325,7 +5325,7 @@
                     "src": "4516:44:53",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                      "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                       "typeString": "struct Fraction memory"
                     }
                   },
@@ -5365,7 +5365,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IDSToken_$31136",
+                    "typeIdentifier": "t_contract$_IDSToken_$31133",
                     "typeString": "contract IDSToken"
                   },
                   "typeName": {
@@ -5373,10 +5373,10 @@
                     "id": 22616,
                     "name": "IDSToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 31136,
+                    "referencedDeclaration": 31133,
                     "src": "4245:8:53",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IDSToken_$31136",
+                      "typeIdentifier": "t_contract$_IDSToken_$31133",
                       "typeString": "contract IDSToken"
                     }
                   },
@@ -5395,7 +5395,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                    "typeIdentifier": "t_contract$_IReserveToken_$31137",
                     "typeString": "contract IReserveToken"
                   },
                   "typeName": {
@@ -5403,10 +5403,10 @@
                     "id": 22618,
                     "name": "IReserveToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 31140,
+                    "referencedDeclaration": 31137,
                     "src": "4265:13:53",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                      "typeIdentifier": "t_contract$_IReserveToken_$31137",
                       "typeString": "contract IReserveToken"
                     }
                   },
@@ -5432,7 +5432,7 @@
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                    "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                     "typeString": "struct Fraction"
                   },
                   "typeName": {
@@ -5440,10 +5440,10 @@
                     "id": 22622,
                     "name": "Fraction",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 32755,
+                    "referencedDeclaration": 32752,
                     "src": "4357:8:53",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Fraction_$32755_storage_ptr",
+                      "typeIdentifier": "t_struct$_Fraction_$32752_storage_ptr",
                       "typeString": "struct Fraction"
                     }
                   },
@@ -5462,7 +5462,7 @@
           {
             "baseFunctions": [
               23321,
-              32647
+              32644
             ],
             "body": {
               "id": 22652,
@@ -5540,10 +5540,10 @@
                   "id": 22642,
                   "name": "Time",
                   "nodeType": "UserDefinedTypeName",
-                  "referencedDeclaration": 32648,
+                  "referencedDeclaration": 32645,
                   "src": "4612:4:53",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_Time_$32648",
+                    "typeIdentifier": "t_contract$_Time_$32645",
                     "typeString": "contract Time"
                   }
                 },
@@ -5676,11 +5676,11 @@
             23332,
             27226,
             30156,
-            32591,
-            32635,
-            32648,
-            32910,
-            33117
+            32588,
+            32632,
+            32645,
+            32907,
+            33114
           ],
           "contractKind": "contract",
           "documentation": null,
@@ -5689,11 +5689,11 @@
             22654,
             23332,
             27226,
-            32648,
-            32635,
-            32591,
-            33117,
-            32910,
+            32645,
+            32632,
+            32588,
+            33114,
+            32907,
             30156
           ],
           "name": "TestLiquidityProtection",
@@ -5980,7 +5980,7 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "ITokenHolder",
-                          "referencedDeclaration": 33147,
+                          "referencedDeclaration": 33144,
                           "type": "contract ITokenHolder"
                         },
                         "id": 22351,
@@ -6070,7 +6070,7 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "ICheckpointStore",
-                          "referencedDeclaration": 33091,
+                          "referencedDeclaration": 33088,
                           "type": "contract ICheckpointStore"
                         },
                         "id": 22357,
@@ -6530,7 +6530,7 @@
                             "attributes": {
                               "contractScope": null,
                               "name": "Fraction",
-                              "referencedDeclaration": 32755,
+                              "referencedDeclaration": 32752,
                               "type": "struct Fraction"
                             },
                             "id": 22391,
@@ -6574,7 +6574,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 32755,
+                              "referencedDeclaration": 32752,
                               "type": "type(struct Fraction storage pointer)",
                               "value": "Fraction"
                             },
@@ -6645,7 +6645,7 @@
                             "attributes": {
                               "contractScope": null,
                               "name": "Fraction",
-                              "referencedDeclaration": 32755,
+                              "referencedDeclaration": 32752,
                               "type": "struct Fraction"
                             },
                             "id": 22398,
@@ -6689,7 +6689,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 32755,
+                              "referencedDeclaration": 32752,
                               "type": "type(struct Fraction storage pointer)",
                               "value": "Fraction"
                             },
@@ -6760,7 +6760,7 @@
                             "attributes": {
                               "contractScope": null,
                               "name": "Fraction",
-                              "referencedDeclaration": 32755,
+                              "referencedDeclaration": 32752,
                               "type": "struct Fraction"
                             },
                             "id": 22405,
@@ -6804,7 +6804,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 32755,
+                              "referencedDeclaration": 32752,
                               "type": "type(struct Fraction storage pointer)",
                               "value": "Fraction"
                             },
@@ -6879,15 +6879,15 @@
                                   "typeString": "uint256"
                                 },
                                 {
-                                  "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                                  "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                                   "typeString": "struct Fraction memory"
                                 },
                                 {
-                                  "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                                  "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                                   "typeString": "struct Fraction memory"
                                 },
                                 {
-                                  "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                                  "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                                   "typeString": "struct Fraction memory"
                                 }
                               ],
@@ -7205,7 +7205,7 @@
                             "attributes": {
                               "contractScope": null,
                               "name": "Fraction",
-                              "referencedDeclaration": 32755,
+                              "referencedDeclaration": 32752,
                               "type": "struct Fraction"
                             },
                             "id": 22435,
@@ -7249,7 +7249,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 32755,
+                              "referencedDeclaration": 32752,
                               "type": "type(struct Fraction storage pointer)",
                               "value": "Fraction"
                             },
@@ -7320,7 +7320,7 @@
                             "attributes": {
                               "contractScope": null,
                               "name": "Fraction",
-                              "referencedDeclaration": 32755,
+                              "referencedDeclaration": 32752,
                               "type": "struct Fraction"
                             },
                             "id": 22442,
@@ -7364,7 +7364,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 32755,
+                              "referencedDeclaration": 32752,
                               "type": "type(struct Fraction storage pointer)",
                               "value": "Fraction"
                             },
@@ -7435,7 +7435,7 @@
                             "attributes": {
                               "contractScope": null,
                               "name": "Fraction",
-                              "referencedDeclaration": 32755,
+                              "referencedDeclaration": 32752,
                               "type": "struct Fraction"
                             },
                             "id": 22449,
@@ -7467,11 +7467,11 @@
                             "attributes": {
                               "argumentTypes": [
                                 {
-                                  "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                                  "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                                   "typeString": "struct Fraction memory"
                                 },
                                 {
-                                  "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                                  "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                                   "typeString": "struct Fraction memory"
                                 }
                               ],
@@ -7548,7 +7548,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "n",
-                              "referencedDeclaration": 32752,
+                              "referencedDeclaration": 32749,
                               "type": "uint256"
                             },
                             "children": [
@@ -7579,7 +7579,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "d",
-                              "referencedDeclaration": 32754,
+                              "referencedDeclaration": 32751,
                               "type": "uint256"
                             },
                             "children": [
@@ -7877,7 +7877,7 @@
                             "attributes": {
                               "contractScope": null,
                               "name": "Fraction",
-                              "referencedDeclaration": 32755,
+                              "referencedDeclaration": 32752,
                               "type": "struct Fraction"
                             },
                             "id": 22480,
@@ -7921,7 +7921,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 32755,
+                              "referencedDeclaration": 32752,
                               "type": "type(struct Fraction storage pointer)",
                               "value": "Fraction"
                             },
@@ -7992,7 +7992,7 @@
                             "attributes": {
                               "contractScope": null,
                               "name": "Fraction",
-                              "referencedDeclaration": 32755,
+                              "referencedDeclaration": 32752,
                               "type": "struct Fraction"
                             },
                             "id": 22487,
@@ -8036,7 +8036,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 32755,
+                              "referencedDeclaration": 32752,
                               "type": "type(struct Fraction storage pointer)",
                               "value": "Fraction"
                             },
@@ -8115,11 +8115,11 @@
                                   "typeString": "uint256"
                                 },
                                 {
-                                  "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                                  "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                                   "typeString": "struct Fraction memory"
                                 },
                                 {
-                                  "typeIdentifier": "t_struct$_Fraction_$32755_memory_ptr",
+                                  "typeIdentifier": "t_struct$_Fraction_$32752_memory_ptr",
                                   "typeString": "struct Fraction memory"
                                 }
                               ],
@@ -8248,7 +8248,7 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "IDSToken",
-                          "referencedDeclaration": 31136,
+                          "referencedDeclaration": 31133,
                           "type": "contract IDSToken"
                         },
                         "id": 22503,
@@ -8278,7 +8278,7 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "IReserveToken",
-                          "referencedDeclaration": 31140,
+                          "referencedDeclaration": 31137,
                           "type": "contract IReserveToken"
                         },
                         "id": 22505,
@@ -8386,7 +8386,7 @@
                             "attributes": {
                               "contractScope": null,
                               "name": "Fraction",
-                              "referencedDeclaration": 32755,
+                              "referencedDeclaration": 32752,
                               "type": "struct Fraction"
                             },
                             "id": 22513,
@@ -8416,7 +8416,7 @@
                             "attributes": {
                               "contractScope": null,
                               "name": "Fraction",
-                              "referencedDeclaration": 32755,
+                              "referencedDeclaration": 32752,
                               "type": "struct Fraction"
                             },
                             "id": 22515,
@@ -8448,11 +8448,11 @@
                             "attributes": {
                               "argumentTypes": [
                                 {
-                                  "typeIdentifier": "t_contract$_IDSToken_$31136",
+                                  "typeIdentifier": "t_contract$_IDSToken_$31133",
                                   "typeString": "contract IDSToken"
                                 },
                                 {
-                                  "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                                  "typeIdentifier": "t_contract$_IReserveToken_$31137",
                                   "typeString": "contract IReserveToken"
                                 }
                               ],
@@ -8562,7 +8562,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "n",
-                              "referencedDeclaration": 32752,
+                              "referencedDeclaration": 32749,
                               "type": "uint256"
                             },
                             "children": [
@@ -8593,7 +8593,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "d",
-                              "referencedDeclaration": 32754,
+                              "referencedDeclaration": 32751,
                               "type": "uint256"
                             },
                             "children": [
@@ -8624,7 +8624,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "n",
-                              "referencedDeclaration": 32752,
+                              "referencedDeclaration": 32749,
                               "type": "uint256"
                             },
                             "children": [
@@ -8655,7 +8655,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "d",
-                              "referencedDeclaration": 32754,
+                              "referencedDeclaration": 32751,
                               "type": "uint256"
                             },
                             "children": [
@@ -8712,7 +8712,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "n",
-                              "referencedDeclaration": 32752,
+                              "referencedDeclaration": 32749,
                               "type": "uint256"
                             },
                             "children": [
@@ -8743,7 +8743,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "d",
-                              "referencedDeclaration": 32754,
+                              "referencedDeclaration": 32751,
                               "type": "uint256"
                             },
                             "children": [
@@ -9586,11 +9586,11 @@
                             "attributes": {
                               "argumentTypes": [
                                 {
-                                  "typeIdentifier": "t_contract$_IDSToken_$31136",
+                                  "typeIdentifier": "t_contract$_IDSToken_$31133",
                                   "typeString": "contract IDSToken"
                                 },
                                 {
-                                  "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                                  "typeIdentifier": "t_contract$_IReserveToken_$31137",
                                   "typeString": "contract IReserveToken"
                                 },
                                 {
@@ -9652,7 +9652,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 31136,
+                                  "referencedDeclaration": 31133,
                                   "type": "type(contract IDSToken)",
                                   "value": "IDSToken"
                                 },
@@ -9709,7 +9709,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 31140,
+                                  "referencedDeclaration": 31137,
                                   "type": "type(contract IReserveToken)",
                                   "value": "IReserveToken"
                                 },
@@ -9956,7 +9956,7 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "IDSToken",
-                          "referencedDeclaration": 31136,
+                          "referencedDeclaration": 31133,
                           "type": "contract IDSToken"
                         },
                         "id": 22616,
@@ -9986,7 +9986,7 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "IReserveToken",
-                          "referencedDeclaration": 31140,
+                          "referencedDeclaration": 31137,
                           "type": "contract IReserveToken"
                         },
                         "id": 22618,
@@ -10023,7 +10023,7 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "Fraction",
-                          "referencedDeclaration": 32755,
+                          "referencedDeclaration": 32752,
                           "type": "struct Fraction"
                         },
                         "id": 22622,
@@ -10100,7 +10100,7 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 32755,
+                                      "referencedDeclaration": 32752,
                                       "type": "type(struct Fraction storage pointer)",
                                       "value": "Fraction"
                                     },
@@ -10181,11 +10181,11 @@
                             "attributes": {
                               "argumentTypes": [
                                 {
-                                  "typeIdentifier": "t_contract$_IDSToken_$31136",
+                                  "typeIdentifier": "t_contract$_IDSToken_$31133",
                                   "typeString": "contract IDSToken"
                                 },
                                 {
-                                  "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                                  "typeIdentifier": "t_contract$_IReserveToken_$31137",
                                   "typeString": "contract IReserveToken"
                                 }
                               ],
@@ -10269,7 +10269,7 @@
             "attributes": {
               "baseFunctions": [
                 23321,
-                32647
+                32644
               ],
               "documentation": null,
               "implemented": true,
@@ -10291,7 +10291,7 @@
                     "attributes": {
                       "contractScope": null,
                       "name": "Time",
-                      "referencedDeclaration": 32648,
+                      "referencedDeclaration": 32645,
                       "type": "contract Time"
                     },
                     "id": 22642,
@@ -10455,7 +10455,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-08-23T03:19:29.892Z",
+  "updatedAt": "2021-08-23T11:45:54.224Z",
   "devdoc": {
     "kind": "dev",
     "methods": {

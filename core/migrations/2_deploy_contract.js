@@ -19,25 +19,25 @@ module.exports = async function (deployer, network, addresses) {
     if(network == 'mainnet') {
 
     } else {
-        deployer.deploy(Utils);
-        deployer.deploy(Owned);
-        deployer.deploy(TokenHolder);
+        // deployer.deploy(Utils);
+        // deployer.deploy(Owned);
+        // deployer.deploy(TokenHolder);
 
-        await deployer.deploy(ContractRegistry);
-        registryAddress = await ContractRegistry.deployed();
+        // await deployer.deploy(ContractRegistry);
+        // registryAddress = await ContractRegistry.deployed();
 
-        deployer.deploy(Whitelist);
+        // deployer.deploy(Whitelist);
 
-        await deployer.deploy(OvidexToken, 'Ovidex Token', 'OVX');
+        await deployer.deploy(OvidexToken, 'test Ovidex Token', 'testOVX');
         tokenAdress = await OvidexToken.deployed();
 
-        deployer.deploy(BancorFormula);
-        deployer.deploy(BancorNetwork, registryAddress);
-        deployer.deploy(ConverterBase, tokenAdress, registryAddress, 0);
+        // // deployer.deploy(BancorFormula);
+        // // deployer.deploy(BancorNetwork, tokenAdress);
+        // // deployer.deploy(ConverterBase, tokenAdress, registryAddress, 0);
 
-        await deployer.deploy(ConverterFactory);
-        await deployer.deploy(ConverterUpgrader, registryAddress);
-        await deployer.deploy(ConverterRegistry);
-        deployer.deploy(XTransferRerouter, true);
+        // await deployer.deploy(ConverterFactory);
+        // // await deployer.deploy(ConverterUpgrader, registryAddress);
+        // await deployer.deploy(ConverterRegistry, tokenAdress);
+        // deployer.deploy(XTransferRerouter, true);
     }
 };

@@ -264,7 +264,7 @@
         "id": 14464,
         "nodeType": "ImportDirective",
         "scope": 15047,
-        "sourceUnit": 31888,
+        "sourceUnit": 31885,
         "src": "79:47:25",
         "symbolAliases": [],
         "unitAlias": ""
@@ -275,7 +275,7 @@
         "id": 14465,
         "nodeType": "ImportDirective",
         "scope": 15047,
-        "sourceUnit": 31052,
+        "sourceUnit": 31049,
         "src": "130:35:25",
         "symbolAliases": [],
         "unitAlias": ""
@@ -337,7 +337,7 @@
         ],
         "contractDependencies": [
           15409,
-          33117
+          33114
         ],
         "contractKind": "interface",
         "documentation": null,
@@ -346,7 +346,7 @@
         "linearizedBaseContracts": [
           14485,
           15409,
-          33117
+          33114
         ],
         "name": "ILegacyConverterVersion45",
         "nodeType": "ContractDefinition",
@@ -378,7 +378,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                    "typeIdentifier": "t_contract$_IReserveToken_$31137",
                     "typeString": "contract IReserveToken"
                   },
                   "typeName": {
@@ -386,10 +386,10 @@
                     "id": 14471,
                     "name": "IReserveToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 31140,
+                    "referencedDeclaration": 31137,
                     "src": "394:13:25",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                      "typeIdentifier": "t_contract$_IReserveToken_$31137",
                       "typeString": "contract IReserveToken"
                     }
                   },
@@ -559,10 +559,10 @@
               "id": 14489,
               "name": "ContractRegistryClient",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 31887,
+              "referencedDeclaration": 31884,
               "src": "1365:22:25",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ContractRegistryClient_$31887",
+                "typeIdentifier": "t_contract$_ContractRegistryClient_$31884",
                 "typeString": "contract ContractRegistryClient"
               }
             },
@@ -573,10 +573,10 @@
         ],
         "contractDependencies": [
           15733,
-          31887,
-          32591,
-          32910,
-          33117
+          31884,
+          32588,
+          32907,
+          33114
         ],
         "contractKind": "contract",
         "documentation": {
@@ -589,10 +589,10 @@
         "id": 15046,
         "linearizedBaseContracts": [
           15046,
-          31887,
-          32910,
-          32591,
-          33117,
+          31884,
+          32907,
+          32588,
+          33114,
           15733
         ],
         "name": "ConverterUpgrader",
@@ -605,10 +605,10 @@
               "id": 14491,
               "name": "ReserveToken",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 31051,
+              "referencedDeclaration": 31048,
               "src": "1401:12:25",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ReserveToken_$31051",
+                "typeIdentifier": "t_contract$_ReserveToken_$31048",
                 "typeString": "library ReserveToken"
               }
             },
@@ -619,10 +619,10 @@
               "id": 14492,
               "name": "IReserveToken",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 31140,
+              "referencedDeclaration": 31137,
               "src": "1418:13:25",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                "typeIdentifier": "t_contract$_IReserveToken_$31137",
                 "typeString": "contract IReserveToken"
               }
             }
@@ -816,7 +816,7 @@
                     "referencedDeclaration": 14510,
                     "src": "2237:9:25",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IContractRegistry_$33101",
+                      "typeIdentifier": "t_contract$_IContractRegistry_$33098",
                       "typeString": "contract IContractRegistry"
                     }
                   }
@@ -828,10 +828,10 @@
                   "name": "ContractRegistryClient",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 31887,
+                  "referencedDeclaration": 31884,
                   "src": "2214:22:25",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_type$_t_contract$_ContractRegistryClient_$31887_$",
+                    "typeIdentifier": "t_type$_t_contract$_ContractRegistryClient_$31884_$",
                     "typeString": "type(contract ContractRegistryClient)"
                   }
                 },
@@ -858,7 +858,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IContractRegistry_$33101",
+                    "typeIdentifier": "t_contract$_IContractRegistry_$33098",
                     "typeString": "contract IContractRegistry"
                   },
                   "typeName": {
@@ -866,10 +866,10 @@
                     "id": 14509,
                     "name": "IContractRegistry",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 33101,
+                    "referencedDeclaration": 33098,
                     "src": "2178:17:25",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IContractRegistry_$33101",
+                      "typeIdentifier": "t_contract$_IContractRegistry_$33098",
                       "typeString": "contract IContractRegistry"
                     }
                   },
@@ -1628,7 +1628,7 @@
                       "lValueRequested": false,
                       "memberName": "owner",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 33108,
+                      "referencedDeclaration": 33105,
                       "src": "4516:15:25",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$__$returns$_t_address_$",
@@ -2155,7 +2155,7 @@
                         "lValueRequested": false,
                         "memberName": "owner",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 33108,
+                        "referencedDeclaration": 33105,
                         "src": "4883:12:25",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_external_view$__$returns$_t_address_$",
@@ -2474,7 +2474,7 @@
                       "lValueRequested": false,
                       "memberName": "transferOwnership",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 33113,
+                      "referencedDeclaration": 33110,
                       "src": "5066:27:25",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$__$",
@@ -2545,7 +2545,7 @@
                       "lValueRequested": false,
                       "memberName": "transferOwnership",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 33113,
+                      "referencedDeclaration": 33110,
                       "src": "5115:30:25",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$__$",
@@ -2915,7 +2915,7 @@
                       "lValueRequested": false,
                       "memberName": "acceptOwnership",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 33116,
+                      "referencedDeclaration": 33113,
                       "src": "5747:29:25",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
@@ -3927,7 +3927,7 @@
                                 "referencedDeclaration": 15361,
                                 "src": "7031:29:25",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_contract$_IReserveToken_$31140_$",
+                                  "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_contract$_IReserveToken_$31137_$",
                                   "typeString": "function (uint256) view external returns (contract IReserveToken)"
                                 }
                               },
@@ -3942,7 +3942,7 @@
                               "src": "7031:32:25",
                               "tryCall": false,
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                                "typeIdentifier": "t_contract$_IReserveToken_$31137",
                                 "typeString": "contract IReserveToken"
                               }
                             }
@@ -3950,7 +3950,7 @@
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                                "typeIdentifier": "t_contract$_IReserveToken_$31137",
                                 "typeString": "contract IReserveToken"
                               }
                             ],
@@ -3977,7 +3977,7 @@
                             "referencedDeclaration": 15347,
                             "src": "7006:24:25",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_function_external_view$_t_contract$_IReserveToken_$31140_$returns$_t_uint256_$_t_uint32_$_t_bool_$_t_bool_$_t_bool_$",
+                              "typeIdentifier": "t_function_external_view$_t_contract$_IReserveToken_$31137_$returns$_t_uint256_$_t_uint32_$_t_bool_$_t_bool_$_t_bool_$",
                               "typeString": "function (contract IReserveToken) view external returns (uint256,uint32,bool,bool,bool)"
                             }
                           },
@@ -4097,7 +4097,7 @@
                                 "referencedDeclaration": 15361,
                                 "src": "7131:29:25",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_contract$_IReserveToken_$31140_$",
+                                  "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_contract$_IReserveToken_$31137_$",
                                   "typeString": "function (uint256) view external returns (contract IReserveToken)"
                                 }
                               },
@@ -4112,7 +4112,7 @@
                               "src": "7131:32:25",
                               "tryCall": false,
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                                "typeIdentifier": "t_contract$_IReserveToken_$31137",
                                 "typeString": "contract IReserveToken"
                               }
                             }
@@ -4120,7 +4120,7 @@
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                                "typeIdentifier": "t_contract$_IReserveToken_$31137",
                                 "typeString": "contract IReserveToken"
                               }
                             ],
@@ -4147,7 +4147,7 @@
                             "referencedDeclaration": 15347,
                             "src": "7106:24:25",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_function_external_view$_t_contract$_IReserveToken_$31140_$returns$_t_uint256_$_t_uint32_$_t_bool_$_t_bool_$_t_bool_$",
+                              "typeIdentifier": "t_function_external_view$_t_contract$_IReserveToken_$31137_$returns$_t_uint256_$_t_uint32_$_t_bool_$_t_bool_$_t_bool_$",
                               "typeString": "function (contract IReserveToken) view external returns (uint256,uint32,bool,bool,bool)"
                             }
                           },
@@ -4224,7 +4224,7 @@
                                 "name": "PPM_RESOLUTION",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 32762,
+                                "referencedDeclaration": 32759,
                                 "src": "7194:14:25",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint32",
@@ -4308,7 +4308,7 @@
                                 "name": "PPM_RESOLUTION",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 32762,
+                                "referencedDeclaration": 32759,
                                 "src": "7227:14:25",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint32",
@@ -4468,7 +4468,7 @@
                             "name": "CONVERTER_FACTORY",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 31701,
+                            "referencedDeclaration": 31698,
                             "src": "7381:17:25",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bytes32",
@@ -4487,7 +4487,7 @@
                           "name": "addressOf",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 31886,
+                          "referencedDeclaration": 31883,
                           "src": "7371:9:25",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_bytes32_$returns$_t_address_$",
@@ -4618,10 +4618,10 @@
                         "name": "registry",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 31730,
+                        "referencedDeclaration": 31727,
                         "src": "7484:8:25",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IContractRegistry_$33101",
+                          "typeIdentifier": "t_contract$_IContractRegistry_$33098",
                           "typeString": "contract IContractRegistry"
                         }
                       },
@@ -4650,7 +4650,7 @@
                           "typeString": "contract IConverterAnchor"
                         },
                         {
-                          "typeIdentifier": "t_contract$_IContractRegistry_$33101",
+                          "typeIdentifier": "t_contract$_IContractRegistry_$33098",
                           "typeString": "contract IContractRegistry"
                         },
                         {
@@ -4681,7 +4681,7 @@
                       "referencedDeclaration": 15446,
                       "src": "7434:32:25",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_nonpayable$_t_uint16_$_t_contract$_IConverterAnchor_$15415_$_t_contract$_IContractRegistry_$33101_$_t_uint32_$returns$_t_contract$_IConverter_$15409_$",
+                        "typeIdentifier": "t_function_external_nonpayable$_t_uint16_$_t_contract$_IConverterAnchor_$15415_$_t_contract$_IContractRegistry_$33098_$_t_uint32_$returns$_t_contract$_IConverter_$15409_$",
                         "typeString": "function (uint16,contract IConverterAnchor,contract IContractRegistry,uint32) external returns (contract IConverter)"
                       }
                     },
@@ -4729,7 +4729,7 @@
                       "lValueRequested": false,
                       "memberName": "acceptOwnership",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 33116,
+                      "referencedDeclaration": 33113,
                       "src": "7524:25:25",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
@@ -4983,7 +4983,7 @@
                             "stateVariable": false,
                             "storageLocation": "default",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                              "typeIdentifier": "t_contract$_IReserveToken_$31137",
                               "typeString": "contract IReserveToken"
                             },
                             "typeName": {
@@ -4991,10 +4991,10 @@
                               "id": 14834,
                               "name": "IReserveToken",
                               "nodeType": "UserDefinedTypeName",
-                              "referencedDeclaration": 31140,
+                              "referencedDeclaration": 31137,
                               "src": "8157:13:25",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                                "typeIdentifier": "t_contract$_IReserveToken_$31137",
                                 "typeString": "contract IReserveToken"
                               }
                             },
@@ -5050,7 +5050,7 @@
                             "referencedDeclaration": 15361,
                             "src": "8188:29:25",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_contract$_IReserveToken_$31140_$",
+                              "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_contract$_IReserveToken_$31137_$",
                               "typeString": "function (uint256) view external returns (contract IReserveToken)"
                             }
                           },
@@ -5065,7 +5065,7 @@
                           "src": "8188:32:25",
                           "tryCall": false,
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                            "typeIdentifier": "t_contract$_IReserveToken_$31137",
                             "typeString": "contract IReserveToken"
                           }
                         },
@@ -5127,7 +5127,7 @@
                               "referencedDeclaration": 14835,
                               "src": "8286:14:25",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                                "typeIdentifier": "t_contract$_IReserveToken_$31137",
                                 "typeString": "contract IReserveToken"
                               }
                             }
@@ -5135,7 +5135,7 @@
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                                "typeIdentifier": "t_contract$_IReserveToken_$31137",
                                 "typeString": "contract IReserveToken"
                               }
                             ],
@@ -5162,7 +5162,7 @@
                             "referencedDeclaration": 15347,
                             "src": "8261:24:25",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_function_external_view$_t_contract$_IReserveToken_$31140_$returns$_t_uint256_$_t_uint32_$_t_bool_$_t_bool_$_t_bool_$",
+                              "typeIdentifier": "t_function_external_view$_t_contract$_IReserveToken_$31137_$returns$_t_uint256_$_t_uint32_$_t_bool_$_t_bool_$_t_bool_$",
                               "typeString": "function (contract IReserveToken) view external returns (uint256,uint32,bool,bool,bool)"
                             }
                           },
@@ -5197,7 +5197,7 @@
                               "referencedDeclaration": 14835,
                               "src": "8343:14:25",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                                "typeIdentifier": "t_contract$_IReserveToken_$31137",
                                 "typeString": "contract IReserveToken"
                               }
                             },
@@ -5218,7 +5218,7 @@
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                                "typeIdentifier": "t_contract$_IReserveToken_$31137",
                                 "typeString": "contract IReserveToken"
                               },
                               {
@@ -5249,7 +5249,7 @@
                             "referencedDeclaration": 15311,
                             "src": "8318:24:25",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_function_external_nonpayable$_t_contract$_IReserveToken_$31140_$_t_uint32_$returns$__$",
+                              "typeIdentifier": "t_function_external_nonpayable$_t_contract$_IReserveToken_$31137_$_t_uint32_$returns$__$",
                               "typeString": "function (contract IReserveToken,uint32) external"
                             }
                           },
@@ -6351,7 +6351,7 @@
                             "stateVariable": false,
                             "storageLocation": "default",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                              "typeIdentifier": "t_contract$_IReserveToken_$31137",
                               "typeString": "contract IReserveToken"
                             },
                             "typeName": {
@@ -6359,10 +6359,10 @@
                               "id": 14939,
                               "name": "IReserveToken",
                               "nodeType": "UserDefinedTypeName",
-                              "referencedDeclaration": 31140,
+                              "referencedDeclaration": 31137,
                               "src": "10481:13:25",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                                "typeIdentifier": "t_contract$_IReserveToken_$31137",
                                 "typeString": "contract IReserveToken"
                               }
                             },
@@ -6418,7 +6418,7 @@
                             "referencedDeclaration": 15361,
                             "src": "10510:29:25",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_contract$_IReserveToken_$31140_$",
+                              "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_contract$_IReserveToken_$31137_$",
                               "typeString": "function (uint256) view external returns (contract IReserveToken)"
                             }
                           },
@@ -6433,7 +6433,7 @@
                           "src": "10510:32:25",
                           "tryCall": false,
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                            "typeIdentifier": "t_contract$_IReserveToken_$31137",
                             "typeString": "contract IReserveToken"
                           }
                         },
@@ -6556,7 +6556,7 @@
                               "referencedDeclaration": 14940,
                               "src": "10584:12:25",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                                "typeIdentifier": "t_contract$_IReserveToken_$31137",
                                 "typeString": "contract IReserveToken"
                               }
                             },
@@ -6567,10 +6567,10 @@
                             "lValueRequested": false,
                             "memberName": "balanceOf",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 30938,
+                            "referencedDeclaration": 30935,
                             "src": "10584:22:25",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_function_internal_view$_t_contract$_IReserveToken_$31140_$_t_address_$returns$_t_uint256_$bound_to$_t_contract$_IReserveToken_$31140_$",
+                              "typeIdentifier": "t_function_internal_view$_t_contract$_IReserveToken_$31137_$_t_address_$returns$_t_uint256_$bound_to$_t_contract$_IReserveToken_$31137_$",
                               "typeString": "function (contract IReserveToken,address) view returns (uint256)"
                             }
                           },
@@ -6667,7 +6667,7 @@
                                     "referencedDeclaration": 14940,
                                     "src": "10692:12:25",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                                      "typeIdentifier": "t_contract$_IReserveToken_$31137",
                                       "typeString": "contract IReserveToken"
                                     }
                                   },
@@ -6678,10 +6678,10 @@
                                   "lValueRequested": false,
                                   "memberName": "isNativeToken",
                                   "nodeType": "MemberAccess",
-                                  "referencedDeclaration": 30912,
+                                  "referencedDeclaration": 30909,
                                   "src": "10692:26:25",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_function_internal_pure$_t_contract$_IReserveToken_$31140_$returns$_t_bool_$bound_to$_t_contract$_IReserveToken_$31140_$",
+                                    "typeIdentifier": "t_function_internal_pure$_t_contract$_IReserveToken_$31137_$returns$_t_bool_$bound_to$_t_contract$_IReserveToken_$31137_$",
                                     "typeString": "function (contract IReserveToken) pure returns (bool)"
                                   }
                                 },
@@ -6718,7 +6718,7 @@
                                           "referencedDeclaration": 14940,
                                           "src": "10872:12:25",
                                           "typeDescriptions": {
-                                            "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                                            "typeIdentifier": "t_contract$_IReserveToken_$31137",
                                             "typeString": "contract IReserveToken"
                                           }
                                         },
@@ -6800,7 +6800,7 @@
                                       "expression": {
                                         "argumentTypes": [
                                           {
-                                            "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                                            "typeIdentifier": "t_contract$_IReserveToken_$31137",
                                             "typeString": "contract IReserveToken"
                                           },
                                           {
@@ -6835,7 +6835,7 @@
                                         "referencedDeclaration": 14479,
                                         "src": "10843:28:25",
                                         "typeDescriptions": {
-                                          "typeIdentifier": "t_function_external_nonpayable$_t_contract$_IReserveToken_$31140_$_t_address_$_t_uint256_$returns$__$",
+                                          "typeIdentifier": "t_function_external_nonpayable$_t_contract$_IReserveToken_$31137_$_t_address_$_t_uint256_$returns$__$",
                                           "typeString": "function (contract IReserveToken,address,uint256) external"
                                         }
                                       },
@@ -8066,7 +8066,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 31888,
+          "SourceUnit": 31885,
           "absolutePath": "project:/contracts/utility/ContractRegistryClient.sol",
           "file": "../utility/ContractRegistryClient.sol",
           "scope": 15047,
@@ -8081,7 +8081,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 31052,
+          "SourceUnit": 31049,
           "absolutePath": "project:/contracts/token/ReserveToken.sol",
           "file": "../token/ReserveToken.sol",
           "scope": 15047,
@@ -8144,7 +8144,7 @@
           "abstract": false,
           "contractDependencies": [
             15409,
-            33117
+            33114
           ],
           "contractKind": "interface",
           "documentation": null,
@@ -8152,7 +8152,7 @@
           "linearizedBaseContracts": [
             14485,
             15409,
-            33117
+            33114
           ],
           "name": "ILegacyConverterVersion45",
           "scope": 15047
@@ -8218,7 +8218,7 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "IReserveToken",
-                          "referencedDeclaration": 31140,
+                          "referencedDeclaration": 31137,
                           "type": "contract IReserveToken"
                         },
                         "id": 14471,
@@ -8389,19 +8389,19 @@
           "abstract": false,
           "contractDependencies": [
             15733,
-            31887,
-            32591,
-            32910,
-            33117
+            31884,
+            32588,
+            32907,
+            33114
           ],
           "contractKind": "contract",
           "fullyImplemented": true,
           "linearizedBaseContracts": [
             15046,
-            31887,
-            32910,
-            32591,
-            33117,
+            31884,
+            32907,
+            32588,
+            33114,
             15733
           ],
           "name": "ConverterUpgrader",
@@ -8446,7 +8446,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "ContractRegistryClient",
-                  "referencedDeclaration": 31887,
+                  "referencedDeclaration": 31884,
                   "type": "contract ContractRegistryClient"
                 },
                 "id": 14489,
@@ -8464,7 +8464,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "ReserveToken",
-                  "referencedDeclaration": 31051,
+                  "referencedDeclaration": 31048,
                   "type": "library ReserveToken"
                 },
                 "id": 14491,
@@ -8475,7 +8475,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "IReserveToken",
-                  "referencedDeclaration": 31140,
+                  "referencedDeclaration": 31137,
                   "type": "contract IReserveToken"
                 },
                 "id": 14492,
@@ -8701,7 +8701,7 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "IContractRegistry",
-                          "referencedDeclaration": 33101,
+                          "referencedDeclaration": 33098,
                           "type": "contract IContractRegistry"
                         },
                         "id": 14509,
@@ -8737,7 +8737,7 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 31887,
+                      "referencedDeclaration": 31884,
                       "type": "type(contract ContractRegistryClient)",
                       "value": "ContractRegistryClient"
                     },
@@ -9700,7 +9700,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "owner",
-                              "referencedDeclaration": 33108,
+                              "referencedDeclaration": 33105,
                               "type": "function () view external returns (address)"
                             },
                             "children": [
@@ -10293,7 +10293,7 @@
                                   "isPure": false,
                                   "lValueRequested": false,
                                   "member_name": "owner",
-                                  "referencedDeclaration": 33108,
+                                  "referencedDeclaration": 33105,
                                   "type": "function () view external returns (address)"
                                 },
                                 "children": [
@@ -10625,7 +10625,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "transferOwnership",
-                              "referencedDeclaration": 33113,
+                              "referencedDeclaration": 33110,
                               "type": "function (address) external"
                             },
                             "children": [
@@ -10703,7 +10703,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "transferOwnership",
-                              "referencedDeclaration": 33113,
+                              "referencedDeclaration": 33110,
                               "type": "function (address) external"
                             },
                             "children": [
@@ -11108,7 +11108,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "acceptOwnership",
-                              "referencedDeclaration": 33116,
+                              "referencedDeclaration": 33113,
                               "type": "function () external"
                             },
                             "children": [
@@ -12202,7 +12202,7 @@
                                     "attributes": {
                                       "argumentTypes": [
                                         {
-                                          "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                                          "typeIdentifier": "t_contract$_IReserveToken_$31137",
                                           "typeString": "contract IReserveToken"
                                         }
                                       ],
@@ -12377,7 +12377,7 @@
                                     "attributes": {
                                       "argumentTypes": [
                                         {
-                                          "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                                          "typeIdentifier": "t_contract$_IReserveToken_$31137",
                                           "typeString": "contract IReserveToken"
                                         }
                                       ],
@@ -12563,7 +12563,7 @@
                                               "overloadedDeclarations": [
                                                 null
                                               ],
-                                              "referencedDeclaration": 32762,
+                                              "referencedDeclaration": 32759,
                                               "type": "uint32",
                                               "value": "PPM_RESOLUTION"
                                             },
@@ -12648,7 +12648,7 @@
                                               "overloadedDeclarations": [
                                                 null
                                               ],
-                                              "referencedDeclaration": 32762,
+                                              "referencedDeclaration": 32759,
                                               "type": "uint32",
                                               "value": "PPM_RESOLUTION"
                                             },
@@ -12863,7 +12863,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 31886,
+                                  "referencedDeclaration": 31883,
                                   "type": "function (bytes32) view returns (address)",
                                   "value": "addressOf"
                                 },
@@ -12877,7 +12877,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 31701,
+                                  "referencedDeclaration": 31698,
                                   "type": "bytes32",
                                   "value": "CONVERTER_FACTORY"
                                 },
@@ -12965,7 +12965,7 @@
                                   "typeString": "contract IConverterAnchor"
                                 },
                                 {
-                                  "typeIdentifier": "t_contract$_IContractRegistry_$33101",
+                                  "typeIdentifier": "t_contract$_IContractRegistry_$33098",
                                   "typeString": "contract IContractRegistry"
                                 },
                                 {
@@ -13035,7 +13035,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 31730,
+                              "referencedDeclaration": 31727,
                               "type": "contract IContractRegistry",
                               "value": "registry"
                             },
@@ -13098,7 +13098,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "acceptOwnership",
-                              "referencedDeclaration": 33116,
+                              "referencedDeclaration": 33113,
                               "type": "function () external"
                             },
                             "children": [
@@ -13538,7 +13538,7 @@
                                     "attributes": {
                                       "contractScope": null,
                                       "name": "IReserveToken",
-                                      "referencedDeclaration": 31140,
+                                      "referencedDeclaration": 31137,
                                       "type": "contract IReserveToken"
                                     },
                                     "id": 14834,
@@ -13685,7 +13685,7 @@
                                     "attributes": {
                                       "argumentTypes": [
                                         {
-                                          "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                                          "typeIdentifier": "t_contract$_IReserveToken_$31137",
                                           "typeString": "contract IReserveToken"
                                         }
                                       ],
@@ -13763,7 +13763,7 @@
                                     "attributes": {
                                       "argumentTypes": [
                                         {
-                                          "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                                          "typeIdentifier": "t_contract$_IReserveToken_$31137",
                                           "typeString": "contract IReserveToken"
                                         },
                                         {
@@ -15035,7 +15035,7 @@
                                     "attributes": {
                                       "contractScope": null,
                                       "name": "IReserveToken",
-                                      "referencedDeclaration": 31140,
+                                      "referencedDeclaration": 31137,
                                       "type": "contract IReserveToken"
                                     },
                                     "id": 14939,
@@ -15187,7 +15187,7 @@
                                       "isPure": false,
                                       "lValueRequested": false,
                                       "member_name": "balanceOf",
-                                      "referencedDeclaration": 30938,
+                                      "referencedDeclaration": 30935,
                                       "type": "function (contract IReserveToken,address) view returns (uint256)"
                                     },
                                     "children": [
@@ -15373,7 +15373,7 @@
                                               "isPure": false,
                                               "lValueRequested": false,
                                               "member_name": "isNativeToken",
-                                              "referencedDeclaration": 30912,
+                                              "referencedDeclaration": 30909,
                                               "type": "function (contract IReserveToken) pure returns (bool)"
                                             },
                                             "children": [
@@ -15560,7 +15560,7 @@
                                                     "attributes": {
                                                       "argumentTypes": [
                                                         {
-                                                          "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                                                          "typeIdentifier": "t_contract$_IReserveToken_$31137",
                                                           "typeString": "contract IReserveToken"
                                                         },
                                                         {
@@ -16612,7 +16612,8 @@
     }
   },
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-08-23T03:19:29.617Z",
+  "updatedAt": "2021-08-23T11:48:38.553Z",
+  "networkType": "ethereum",
   "devdoc": {
     "details": "This contract contract allows upgrading an older converter contract (0.4 and up) to the latest version. To begin the upgrade process, simply execute the 'upgrade' function. At the end of the process, the ownership of the newly upgraded converter will be transferred back to the original owner and the original owner will need to execute the 'acceptOwnership' function. The address of the new converter is available in the ConverterUpgrade event. Note that for older converters that don't yet have the 'upgrade' function, ownership should first be transferred manually to the ConverterUpgrader contract using the 'transferOwnership' function and then the upgrader 'upgrade' function should be executed directly.",
     "events": {

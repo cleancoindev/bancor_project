@@ -1252,12 +1252,12 @@
           16167,
           21489,
           23332,
-          31887,
-          32591,
-          32635,
-          32648,
-          32910,
-          33117
+          31884,
+          32588,
+          32632,
+          32645,
+          32907,
+          33114
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -1268,13 +1268,13 @@
           23332,
           16167,
           21489,
-          32648,
-          32635,
-          31887,
-          32910,
-          32591,
+          32645,
+          32632,
+          31884,
+          32907,
+          32588,
           15409,
-          33117,
+          33114,
           15052
         ],
         "name": "TestFixedRatePoolConverter",
@@ -1342,7 +1342,7 @@
                     "referencedDeclaration": 22178,
                     "src": "441:6:50",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IDSToken_$31136",
+                      "typeIdentifier": "t_contract$_IDSToken_$31133",
                       "typeString": "contract IDSToken"
                     }
                   },
@@ -1355,7 +1355,7 @@
                     "referencedDeclaration": 22180,
                     "src": "449:9:50",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IContractRegistry_$33101",
+                      "typeIdentifier": "t_contract$_IContractRegistry_$33098",
                       "typeString": "contract IContractRegistry"
                     }
                   },
@@ -1410,7 +1410,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IDSToken_$31136",
+                    "typeIdentifier": "t_contract$_IDSToken_$31133",
                     "typeString": "contract IDSToken"
                   },
                   "typeName": {
@@ -1418,10 +1418,10 @@
                     "id": 22177,
                     "name": "IDSToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 31136,
+                    "referencedDeclaration": 31133,
                     "src": "318:8:50",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IDSToken_$31136",
+                      "typeIdentifier": "t_contract$_IDSToken_$31133",
                       "typeString": "contract IDSToken"
                     }
                   },
@@ -1440,7 +1440,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IContractRegistry_$33101",
+                    "typeIdentifier": "t_contract$_IContractRegistry_$33098",
                     "typeString": "contract IContractRegistry"
                   },
                   "typeName": {
@@ -1448,10 +1448,10 @@
                     "id": 22179,
                     "name": "IContractRegistry",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 33101,
+                    "referencedDeclaration": 33098,
                     "src": "343:17:50",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IContractRegistry_$33101",
+                      "typeIdentifier": "t_contract$_IContractRegistry_$33098",
                       "typeString": "contract IContractRegistry"
                     }
                   },
@@ -1555,7 +1555,7 @@
                           "referencedDeclaration": 22196,
                           "src": "711:14:50",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_array$_t_contract$_IReserveToken_$31140_$dyn_memory_ptr",
+                            "typeIdentifier": "t_array$_t_contract$_IReserveToken_$31137_$dyn_memory_ptr",
                             "typeString": "contract IReserveToken[] memory"
                           }
                         },
@@ -1580,7 +1580,7 @@
                             "typeString": "uint256"
                           },
                           {
-                            "typeIdentifier": "t_array$_t_contract$_IReserveToken_$31140_$dyn_memory_ptr",
+                            "typeIdentifier": "t_array$_t_contract$_IReserveToken_$31137_$dyn_memory_ptr",
                             "typeString": "contract IReserveToken[] memory"
                           },
                           {
@@ -1595,7 +1595,7 @@
                         "referencedDeclaration": 20410,
                         "src": "686:15:50",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$_t_array$_t_contract$_IReserveToken_$31140_$dyn_memory_ptr_$_t_array$_t_uint256_$dyn_memory_ptr_$returns$_t_array$_t_uint256_$dyn_memory_ptr_$",
+                          "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$_t_array$_t_contract$_IReserveToken_$31137_$dyn_memory_ptr_$_t_array$_t_uint256_$dyn_memory_ptr_$returns$_t_array$_t_uint256_$dyn_memory_ptr_$",
                           "typeString": "function (uint256,contract IReserveToken[] memory,uint256[] memory) returns (uint256[] memory)"
                         }
                       },
@@ -1679,7 +1679,7 @@
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_contract$_IReserveToken_$31140_$dyn_memory_ptr",
+                    "typeIdentifier": "t_array$_t_contract$_IReserveToken_$31137_$dyn_memory_ptr",
                     "typeString": "contract IReserveToken[]"
                   },
                   "typeName": {
@@ -1688,10 +1688,10 @@
                       "id": 22194,
                       "name": "IReserveToken",
                       "nodeType": "UserDefinedTypeName",
-                      "referencedDeclaration": 31140,
+                      "referencedDeclaration": 31137,
                       "src": "550:13:50",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                        "typeIdentifier": "t_contract$_IReserveToken_$31137",
                         "typeString": "contract IReserveToken"
                       }
                     },
@@ -1700,7 +1700,7 @@
                     "nodeType": "ArrayTypeName",
                     "src": "550:15:50",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_contract$_IReserveToken_$31140_$dyn_storage_ptr",
+                      "typeIdentifier": "t_array$_t_contract$_IReserveToken_$31137_$dyn_storage_ptr",
                       "typeString": "contract IReserveToken[]"
                     }
                   },
@@ -1763,7 +1763,7 @@
           {
             "baseFunctions": [
               23321,
-              32647
+              32644
             ],
             "body": {
               "id": 22223,
@@ -1841,10 +1841,10 @@
                   "id": 22213,
                   "name": "Time",
                   "nodeType": "UserDefinedTypeName",
-                  "referencedDeclaration": 32648,
+                  "referencedDeclaration": 32645,
                   "src": "804:4:50",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_Time_$32648",
+                    "typeIdentifier": "t_contract$_Time_$32645",
                     "typeString": "contract Time"
                   }
                 },
@@ -1979,12 +1979,12 @@
             16167,
             21489,
             23332,
-            31887,
-            32591,
-            32635,
-            32648,
-            32910,
-            33117
+            31884,
+            32588,
+            32632,
+            32645,
+            32907,
+            33114
           ],
           "contractKind": "contract",
           "documentation": null,
@@ -1994,13 +1994,13 @@
             23332,
             16167,
             21489,
-            32648,
-            32635,
-            31887,
-            32910,
-            32591,
+            32645,
+            32632,
+            31884,
+            32907,
+            32588,
             15409,
-            33117,
+            33114,
             15052
           ],
           "name": "TestFixedRatePoolConverter",
@@ -2123,7 +2123,7 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "IDSToken",
-                          "referencedDeclaration": 31136,
+                          "referencedDeclaration": 31133,
                           "type": "contract IDSToken"
                         },
                         "id": 22177,
@@ -2153,7 +2153,7 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "IContractRegistry",
-                          "referencedDeclaration": 33101,
+                          "referencedDeclaration": 33098,
                           "type": "contract IContractRegistry"
                         },
                         "id": 22179,
@@ -2360,7 +2360,7 @@
                             "attributes": {
                               "contractScope": null,
                               "name": "IReserveToken",
-                              "referencedDeclaration": 31140,
+                              "referencedDeclaration": 31137,
                               "type": "contract IReserveToken"
                             },
                             "id": 22194,
@@ -2485,7 +2485,7 @@
                                       "typeString": "uint256"
                                     },
                                     {
-                                      "typeIdentifier": "t_array$_t_contract$_IReserveToken_$31140_$dyn_memory_ptr",
+                                      "typeIdentifier": "t_array$_t_contract$_IReserveToken_$31137_$dyn_memory_ptr",
                                       "typeString": "contract IReserveToken[] memory"
                                     },
                                     {
@@ -2575,7 +2575,7 @@
             "attributes": {
               "baseFunctions": [
                 23321,
-                32647
+                32644
               ],
               "documentation": null,
               "implemented": true,
@@ -2597,7 +2597,7 @@
                     "attributes": {
                       "contractScope": null,
                       "name": "Time",
-                      "referencedDeclaration": 32648,
+                      "referencedDeclaration": 32645,
                       "type": "contract Time"
                     },
                     "id": 22213,
@@ -2761,7 +2761,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-08-23T03:19:29.876Z",
+  "updatedAt": "2021-08-23T11:45:54.207Z",
   "devdoc": {
     "kind": "dev",
     "methods": {

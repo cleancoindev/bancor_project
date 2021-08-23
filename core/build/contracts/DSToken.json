@@ -473,7 +473,7 @@
         "id": 30760,
         "nodeType": "ImportDirective",
         "scope": 30861,
-        "sourceUnit": 31137,
+        "sourceUnit": 31134,
         "src": "133:35:82",
         "symbolAliases": [],
         "unitAlias": ""
@@ -484,7 +484,7 @@
         "id": 30761,
         "nodeType": "ImportDirective",
         "scope": 30861,
-        "sourceUnit": 32592,
+        "sourceUnit": 32589,
         "src": "169:30:82",
         "symbolAliases": [],
         "unitAlias": ""
@@ -495,7 +495,7 @@
         "id": 30762,
         "nodeType": "ImportDirective",
         "scope": 30861,
-        "sourceUnit": 32911,
+        "sourceUnit": 32908,
         "src": "200:30:82",
         "symbolAliases": [],
         "unitAlias": ""
@@ -510,10 +510,10 @@
               "id": 30764,
               "name": "IDSToken",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 31136,
+              "referencedDeclaration": 31133,
               "src": "393:8:82",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IDSToken_$31136",
+                "typeIdentifier": "t_contract$_IDSToken_$31133",
                 "typeString": "contract IDSToken"
               }
             },
@@ -546,10 +546,10 @@
               "id": 30768,
               "name": "Owned",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 32591,
+              "referencedDeclaration": 32588,
               "src": "410:5:82",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Owned_$32591",
+                "typeIdentifier": "t_contract$_Owned_$32588",
                 "typeString": "contract Owned"
               }
             },
@@ -564,10 +564,10 @@
               "id": 30770,
               "name": "Utils",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 32910,
+              "referencedDeclaration": 32907,
               "src": "417:5:82",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Utils_$32910",
+                "typeIdentifier": "t_contract$_Utils_$32907",
                 "typeString": "contract Utils"
               }
             },
@@ -581,10 +581,10 @@
           1291,
           1823,
           15415,
-          31136,
-          32591,
-          32910,
-          33117
+          31133,
+          32588,
+          32907,
+          33114
         ],
         "contractKind": "contract",
         "documentation": {
@@ -597,14 +597,14 @@
         "id": 30860,
         "linearizedBaseContracts": [
           30860,
-          32910,
-          32591,
+          32907,
+          32588,
           1213,
-          31136,
+          31133,
           1291,
           1823,
           15415,
-          33117
+          33114
         ],
         "name": "DSToken",
         "nodeType": "ContractDefinition",
@@ -1072,7 +1072,7 @@
           },
           {
             "baseFunctions": [
-              31128
+              31125
             ],
             "body": {
               "id": 30837,
@@ -1228,7 +1228,7 @@
                   "name": "ownerOnly",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 32527,
+                  "referencedDeclaration": 32524,
                   "src": "1704:9:82",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1261,7 +1261,7 @@
                   "name": "validExternalAddress",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 32848,
+                  "referencedDeclaration": 32845,
                   "src": "1714:20:82",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$_t_address_$",
@@ -1358,7 +1358,7 @@
           },
           {
             "baseFunctions": [
-              31135
+              31132
             ],
             "body": {
               "id": 30858,
@@ -1514,7 +1514,7 @@
                   "name": "ownerOnly",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 32527,
+                  "referencedDeclaration": 32524,
                   "src": "2145:9:82",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1656,7 +1656,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 31137,
+          "SourceUnit": 31134,
           "absolutePath": "project:/contracts/token/interfaces/IDSToken.sol",
           "file": "./interfaces/IDSToken.sol",
           "scope": 30861,
@@ -1671,7 +1671,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 32592,
+          "SourceUnit": 32589,
           "absolutePath": "project:/contracts/utility/Owned.sol",
           "file": "../utility/Owned.sol",
           "scope": 30861,
@@ -1686,7 +1686,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 32911,
+          "SourceUnit": 32908,
           "absolutePath": "project:/contracts/utility/Utils.sol",
           "file": "../utility/Utils.sol",
           "scope": 30861,
@@ -1707,23 +1707,23 @@
             1291,
             1823,
             15415,
-            31136,
-            32591,
-            32910,
-            33117
+            31133,
+            32588,
+            32907,
+            33114
           ],
           "contractKind": "contract",
           "fullyImplemented": true,
           "linearizedBaseContracts": [
             30860,
-            32910,
-            32591,
+            32907,
+            32588,
             1213,
-            31136,
+            31133,
             1291,
             1823,
             15415,
-            33117
+            33114
           ],
           "name": "DSToken",
           "scope": 30861
@@ -1746,7 +1746,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "IDSToken",
-                  "referencedDeclaration": 31136,
+                  "referencedDeclaration": 31133,
                   "type": "contract IDSToken"
                 },
                 "id": 30764,
@@ -1788,7 +1788,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "Owned",
-                  "referencedDeclaration": 32591,
+                  "referencedDeclaration": 32588,
                   "type": "contract Owned"
                 },
                 "id": 30768,
@@ -1809,7 +1809,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "Utils",
-                  "referencedDeclaration": 32910,
+                  "referencedDeclaration": 32907,
                   "type": "contract Utils"
                 },
                 "id": 30770,
@@ -2336,7 +2336,7 @@
           {
             "attributes": {
               "baseFunctions": [
-                31128
+                31125
               ],
               "functionSelector": "867904b4",
               "implemented": true,
@@ -2453,7 +2453,7 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 32527,
+                      "referencedDeclaration": 32524,
                       "type": "modifier ()",
                       "value": "ownerOnly"
                     },
@@ -2474,7 +2474,7 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 32848,
+                      "referencedDeclaration": 32845,
                       "type": "modifier (address)",
                       "value": "validExternalAddress"
                     },
@@ -2656,7 +2656,7 @@
           {
             "attributes": {
               "baseFunctions": [
-                31135
+                31132
               ],
               "functionSelector": "a24835d1",
               "implemented": true,
@@ -2773,7 +2773,7 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 32527,
+                      "referencedDeclaration": 32524,
                       "type": "modifier ()",
                       "value": "ownerOnly"
                     },
@@ -2952,9 +2952,17 @@
     "name": "solc",
     "version": "0.6.12+commit.27d51765.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "3": {
+      "events": {},
+      "links": {},
+      "address": "0x9673F98C106B6fFE815d38EBF06364dEe98D409D",
+      "transactionHash": "0x90105567ba8a625d4f374d2de91e4c22f924cbb7fc86d6c4d8bcd24a7f0287cd"
+    }
+  },
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-08-23T03:19:30.235Z",
+  "updatedAt": "2021-08-23T11:48:38.226Z",
+  "networkType": "ethereum",
   "devdoc": {
     "details": "This contract represents a token with dynamic supply. The owner of the token can mint/burn tokens to/from any account.",
     "events": {

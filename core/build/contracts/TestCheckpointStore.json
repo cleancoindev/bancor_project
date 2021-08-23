@@ -404,7 +404,7 @@
         "id": 21982,
         "nodeType": "ImportDirective",
         "scope": 22002,
-        "sourceUnit": 31377,
+        "sourceUnit": 31374,
         "src": "76:40:46",
         "symbolAliases": [],
         "unitAlias": ""
@@ -430,10 +430,10 @@
               "id": 21984,
               "name": "CheckpointStore",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 31376,
+              "referencedDeclaration": 31373,
               "src": "175:15:46",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_CheckpointStore_$31376",
+                "typeIdentifier": "t_contract$_CheckpointStore_$31373",
                 "typeString": "contract CheckpointStore"
               }
             },
@@ -464,10 +464,10 @@
           282,
           1823,
           23332,
-          31376,
-          32648,
-          32910,
-          33091
+          31373,
+          32645,
+          32907,
+          33088
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -476,12 +476,12 @@
         "linearizedBaseContracts": [
           22001,
           23332,
-          31376,
-          32648,
-          32910,
+          31373,
+          32645,
+          32907,
           282,
           1823,
-          33091
+          33088
         ],
         "name": "TestCheckpointStore",
         "nodeType": "ContractDefinition",
@@ -489,7 +489,7 @@
           {
             "baseFunctions": [
               23321,
-              32647
+              32644
             ],
             "body": {
               "id": 21999,
@@ -567,10 +567,10 @@
                   "id": 21989,
                   "name": "Time",
                   "nodeType": "UserDefinedTypeName",
-                  "referencedDeclaration": 32648,
+                  "referencedDeclaration": 32645,
                   "src": "254:4:46",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_Time_$32648",
+                    "typeIdentifier": "t_contract$_Time_$32645",
                     "typeString": "contract Time"
                   }
                 },
@@ -668,7 +668,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 31377,
+          "SourceUnit": 31374,
           "absolutePath": "project:/contracts/utility/CheckpointStore.sol",
           "file": "../utility/CheckpointStore.sol",
           "scope": 22002,
@@ -703,10 +703,10 @@
             282,
             1823,
             23332,
-            31376,
-            32648,
-            32910,
-            33091
+            31373,
+            32645,
+            32907,
+            33088
           ],
           "contractKind": "contract",
           "documentation": null,
@@ -714,12 +714,12 @@
           "linearizedBaseContracts": [
             22001,
             23332,
-            31376,
-            32648,
-            32910,
+            31373,
+            32645,
+            32907,
             282,
             1823,
-            33091
+            33088
           ],
           "name": "TestCheckpointStore",
           "scope": 22002
@@ -734,7 +734,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "CheckpointStore",
-                  "referencedDeclaration": 31376,
+                  "referencedDeclaration": 31373,
                   "type": "contract CheckpointStore"
                 },
                 "id": 21984,
@@ -771,7 +771,7 @@
             "attributes": {
               "baseFunctions": [
                 23321,
-                32647
+                32644
               ],
               "documentation": null,
               "implemented": true,
@@ -793,7 +793,7 @@
                     "attributes": {
                       "contractScope": null,
                       "name": "Time",
-                      "referencedDeclaration": 32648,
+                      "referencedDeclaration": 32645,
                       "type": "contract Time"
                     },
                     "id": 21989,
@@ -957,7 +957,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-08-23T03:19:29.863Z",
+  "updatedAt": "2021-08-23T11:45:54.194Z",
   "devdoc": {
     "kind": "dev",
     "methods": {

@@ -942,11 +942,11 @@
           12060,
           15052,
           15409,
-          31887,
-          32591,
-          32635,
-          32910,
-          33117
+          31884,
+          32588,
+          32632,
+          32907,
+          33114
         ],
         "contractKind": "contract",
         "documentation": {
@@ -960,12 +960,12 @@
         "linearizedBaseContracts": [
           15120,
           12060,
-          32635,
-          31887,
-          32910,
-          32591,
+          32632,
+          31884,
+          32907,
+          32588,
           15409,
-          33117,
+          33114,
           15052
         ],
         "name": "LiquidityPoolConverter",
@@ -1029,7 +1029,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                    "typeIdentifier": "t_contract$_IReserveToken_$31137",
                     "typeString": "contract IReserveToken"
                   },
                   "typeName": {
@@ -1037,10 +1037,10 @@
                     "id": 15062,
                     "name": "IReserveToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 31140,
+                    "referencedDeclaration": 31137,
                     "src": "916:13:27",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                      "typeIdentifier": "t_contract$_IReserveToken_$31137",
                       "typeString": "contract IReserveToken"
                     }
                   },
@@ -1197,7 +1197,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                    "typeIdentifier": "t_contract$_IReserveToken_$31137",
                     "typeString": "contract IReserveToken"
                   },
                   "typeName": {
@@ -1205,10 +1205,10 @@
                     "id": 15075,
                     "name": "IReserveToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 31140,
+                    "referencedDeclaration": 31137,
                     "src": "1450:13:27",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                      "typeIdentifier": "t_contract$_IReserveToken_$31137",
                       "typeString": "contract IReserveToken"
                     }
                   },
@@ -1348,7 +1348,7 @@
                     "referencedDeclaration": 15089,
                     "src": "2041:9:27",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IContractRegistry_$33101",
+                      "typeIdentifier": "t_contract$_IContractRegistry_$33098",
                       "typeString": "contract IContractRegistry"
                     }
                   },
@@ -1433,7 +1433,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IContractRegistry_$33101",
+                    "typeIdentifier": "t_contract$_IContractRegistry_$33098",
                     "typeString": "contract IContractRegistry"
                   },
                   "typeName": {
@@ -1441,10 +1441,10 @@
                     "id": 15088,
                     "name": "IContractRegistry",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 33101,
+                    "referencedDeclaration": 33098,
                     "src": "1941:17:27",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IContractRegistry_$33101",
+                      "typeIdentifier": "t_contract$_IContractRegistry_$33098",
                       "typeString": "contract IContractRegistry"
                     }
                   },
@@ -1781,23 +1781,23 @@
             12060,
             15052,
             15409,
-            31887,
-            32591,
-            32635,
-            32910,
-            33117
+            31884,
+            32588,
+            32632,
+            32907,
+            33114
           ],
           "contractKind": "contract",
           "fullyImplemented": false,
           "linearizedBaseContracts": [
             15120,
             12060,
-            32635,
-            31887,
-            32910,
-            32591,
+            32632,
+            31884,
+            32907,
+            32588,
             15409,
-            33117,
+            33114,
             15052
           ],
           "name": "LiquidityPoolConverter",
@@ -1898,7 +1898,7 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "IReserveToken",
-                          "referencedDeclaration": 31140,
+                          "referencedDeclaration": 31137,
                           "type": "contract IReserveToken"
                         },
                         "id": 15062,
@@ -2072,7 +2072,7 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "IReserveToken",
-                          "referencedDeclaration": 31140,
+                          "referencedDeclaration": 31137,
                           "type": "contract IReserveToken"
                         },
                         "id": 15075,
@@ -2252,7 +2252,7 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "IContractRegistry",
-                          "referencedDeclaration": 33101,
+                          "referencedDeclaration": 33098,
                           "type": "contract IContractRegistry"
                         },
                         "id": 15088,
@@ -2684,7 +2684,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-08-23T03:19:29.645Z",
+  "updatedAt": "2021-08-23T11:45:53.972Z",
   "devdoc": {
     "details": "This contract is the base contract for specific types of converters that manage liquidity pools. Liquidity pools have 2 reserves or more and they allow converting between them. Note that TokenRateUpdate events are dispatched for pool tokens as well. The pool token is the first token in the event in that case.",
     "events": {

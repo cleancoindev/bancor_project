@@ -608,7 +608,7 @@
                       "lValueRequested": false,
                       "memberName": "transferOwnership",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 33113,
+                      "referencedDeclaration": 33110,
                       "src": "750:24:65",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$__$",
@@ -1522,7 +1522,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "transferOwnership",
-                              "referencedDeclaration": 33113,
+                              "referencedDeclaration": 33110,
                               "type": "function (address) external"
                             },
                             "children": [
@@ -1636,7 +1636,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-08-23T03:19:29.986Z",
+  "updatedAt": "2021-08-23T11:45:54.321Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

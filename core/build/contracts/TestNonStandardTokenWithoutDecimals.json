@@ -272,7 +272,7 @@
         "id": 23351,
         "nodeType": "ImportDirective",
         "scope": 23863,
-        "sourceUnit": 32911,
+        "sourceUnit": 32908,
         "src": "129:30:63",
         "symbolAliases": [],
         "unitAlias": ""
@@ -287,10 +287,10 @@
               "id": 23353,
               "name": "Utils",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 32910,
+              "referencedDeclaration": 32907,
               "src": "246:5:63",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Utils_$32910",
+                "typeIdentifier": "t_contract$_Utils_$32907",
                 "typeString": "contract Utils"
               }
             },
@@ -300,7 +300,7 @@
           }
         ],
         "contractDependencies": [
-          32910
+          32907
         ],
         "contractKind": "contract",
         "documentation": {
@@ -313,7 +313,7 @@
         "id": 23552,
         "linearizedBaseContracts": [
           23552,
-          32910
+          32907
         ],
         "name": "NonStandardToken",
         "nodeType": "ContractDefinition",
@@ -1384,7 +1384,7 @@
                   "name": "validAddress",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 32795,
+                  "referencedDeclaration": 32792,
                   "src": "1118:12:63",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$_t_address_$",
@@ -2149,7 +2149,7 @@
                   "name": "validAddress",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 32795,
+                  "referencedDeclaration": 32792,
                   "src": "1702:12:63",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$_t_address_$",
@@ -2182,7 +2182,7 @@
                   "name": "validAddress",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 32795,
+                  "referencedDeclaration": 32792,
                   "src": "1722:12:63",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$_t_address_$",
@@ -2797,7 +2797,7 @@
                   "name": "validAddress",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 32795,
+                  "referencedDeclaration": 32792,
                   "src": "2645:12:63",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$_t_address_$",
@@ -2915,7 +2915,7 @@
         ],
         "contractDependencies": [
           23552,
-          32910
+          32907
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -2924,7 +2924,7 @@
         "linearizedBaseContracts": [
           23589,
           23552,
-          32910
+          32907
         ],
         "name": "NonStandardTokenDetailed",
         "nodeType": "ContractDefinition",
@@ -3369,7 +3369,7 @@
         "contractDependencies": [
           23552,
           23589,
-          32910
+          32907
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -3379,7 +3379,7 @@
           23680,
           23589,
           23552,
-          32910
+          32907
         ],
         "name": "TestNonStandardToken",
         "nodeType": "ContractDefinition",
@@ -4546,7 +4546,7 @@
         ],
         "contractDependencies": [
           23552,
-          32910
+          32907
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -4555,7 +4555,7 @@
         "linearizedBaseContracts": [
           23750,
           23552,
-          32910
+          32907
         ],
         "name": "TestNonStandardTokenWithoutDecimals",
         "nodeType": "ContractDefinition",
@@ -5433,7 +5433,7 @@
         "contractDependencies": [
           23552,
           23589,
-          32910
+          32907
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -5443,7 +5443,7 @@
           23862,
           23589,
           23552,
-          32910
+          32907
         ],
         "name": "TestStandardToken",
         "nodeType": "ContractDefinition",
@@ -6910,7 +6910,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 32911,
+          "SourceUnit": 32908,
           "absolutePath": "project:/contracts/utility/Utils.sol",
           "file": "../utility/Utils.sol",
           "scope": 23863,
@@ -6927,13 +6927,13 @@
         "attributes": {
           "abstract": false,
           "contractDependencies": [
-            32910
+            32907
           ],
           "contractKind": "contract",
           "fullyImplemented": true,
           "linearizedBaseContracts": [
             23552,
-            32910
+            32907
           ],
           "name": "NonStandardToken",
           "scope": 23863
@@ -6956,7 +6956,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "Utils",
-                  "referencedDeclaration": 32910,
+                  "referencedDeclaration": 32907,
                   "type": "contract Utils"
                 },
                 "id": 23353,
@@ -7689,7 +7689,7 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 32795,
+                      "referencedDeclaration": 32792,
                       "type": "modifier (address)",
                       "value": "validAddress"
                     },
@@ -8341,7 +8341,7 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 32795,
+                      "referencedDeclaration": 32792,
                       "type": "modifier (address)",
                       "value": "validAddress"
                     },
@@ -8376,7 +8376,7 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 32795,
+                      "referencedDeclaration": 32792,
                       "type": "modifier (address)",
                       "value": "validAddress"
                     },
@@ -9206,7 +9206,7 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 32795,
+                      "referencedDeclaration": 32792,
                       "type": "modifier (address)",
                       "value": "validAddress"
                     },
@@ -9740,7 +9740,7 @@
           "abstract": false,
           "contractDependencies": [
             23552,
-            32910
+            32907
           ],
           "contractKind": "contract",
           "documentation": null,
@@ -9748,7 +9748,7 @@
           "linearizedBaseContracts": [
             23589,
             23552,
-            32910
+            32907
           ],
           "name": "NonStandardTokenDetailed",
           "scope": 23863
@@ -10224,7 +10224,7 @@
           "contractDependencies": [
             23552,
             23589,
-            32910
+            32907
           ],
           "contractKind": "contract",
           "documentation": null,
@@ -10233,7 +10233,7 @@
             23680,
             23589,
             23552,
-            32910
+            32907
           ],
           "name": "TestNonStandardToken",
           "scope": 23863
@@ -11508,7 +11508,7 @@
           "abstract": false,
           "contractDependencies": [
             23552,
-            32910
+            32907
           ],
           "contractKind": "contract",
           "documentation": null,
@@ -11516,7 +11516,7 @@
           "linearizedBaseContracts": [
             23750,
             23552,
-            32910
+            32907
           ],
           "name": "TestNonStandardTokenWithoutDecimals",
           "scope": 23863
@@ -12476,7 +12476,7 @@
           "contractDependencies": [
             23552,
             23589,
-            32910
+            32907
           ],
           "contractKind": "contract",
           "documentation": null,
@@ -12485,7 +12485,7 @@
             23862,
             23589,
             23552,
-            32910
+            32907
           ],
           "name": "TestStandardToken",
           "scope": 23863
@@ -14039,7 +14039,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-08-23T03:19:29.966Z",
+  "updatedAt": "2021-08-23T11:45:54.301Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

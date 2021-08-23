@@ -137,9 +137,8 @@ export const getTokenMeta = async (currentNetwork: EthNetworks) => {
         symbol: "XXX"
       },
       {
-        symbol: "OVX",
-        contract: "0xfB8b9B5C0613e5b03B6983B2857e2BFa75486e71",
-        precision: 18
+        symbol: "testOVX",
+        contract: "0x9AFDe19C413Af7B4f56107D6Cf64A0893c1fd867"
       }
     ].map(
       (x): TokenMeta => ({
