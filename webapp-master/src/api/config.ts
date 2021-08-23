@@ -40,6 +40,7 @@ export const getNetworkVariables = (
         govToken: "0x83ec8129b1f54ba5b0f47bd902a79c803e20a249",
         ethToken,
         vBntToken: "0x83ec8129b1f54ba5b0f47bd902a79c803e20a249",
+        // vBntToken: "0xfB8b9B5C0613e5b03B6983B2857e2BFa75486e71",
         liquidityProtectionToken: ethToken,
         multiCall: "0xf3ad7e31b052ff96566eedd218a823430e74b406",
         converterContractForMaths: "0x9a36b31ca768a860dab246cf080e7f042d1b7c0f",

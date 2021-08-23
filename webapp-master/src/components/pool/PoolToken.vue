@@ -29,14 +29,14 @@
         <span>
           <img
             :key="item.relay.reserves[0].id"
-            class="img-avatar img-avatar32 border-colouring bg-white mr-1"
+            class="img-avatar bg-white logo-shadow overlap img-avatar32 mr-1"
             :src="item.relay.reserves[0].logo"
             :alt="$t('token_logo')"
           />
           {{ `${item.relay.reserves[0].symbol} ${prettifyNumber(item.bnt)} +` }}
           <img
             :key="item.relay.reserves[1].id"
-            class="img-avatar img-avatar32 border-colouring bg-white mr-1 ml-1"
+            class="img-avatar bg-white logo-shadow overlap img-avatar32 mr-1 ml-1"
             :src="item.relay.reserves[1].logo"
             :alt="$t('token_logo')"
           />

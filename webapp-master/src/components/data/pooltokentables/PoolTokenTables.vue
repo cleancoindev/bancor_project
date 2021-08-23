@@ -3,10 +3,12 @@
     <div class="float-right d-flex align-items-center mr-2">
       <b-btn
         @click="$router.push({ name: 'PoolCreate' })"
-        class="d-lg-none mx-2"
-        :variant="darkMode ? 'outline-alt-dark' : 'outline-alt-light'"
+        class="d-lg-none mx-2 block-rounded btn-outline-gray-dark"
+        :variant="darkMode ? 'outline-grey-dark' : 'outline-grey-dark'"
       >
+        <div>
         {{ `+ ${$t("pool")}` }}
+      </div>
       </b-btn>
       <multi-input-field
         class="max-search-width-xs"
@@ -18,7 +20,7 @@
       <b-btn
         @click="$router.push({ name: 'PoolCreate' })"
         class="d-none d-lg-block ml-2 mr-2"
-        :variant="darkMode ? 'outline-alt-dark' : 'outline-alt-light'"
+        :variant="darkMode ? 'outline-gray-dark' : 'outline-gray-dark'"
         style="height: 35x; width: 121px"
       >
         <div>

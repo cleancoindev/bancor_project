@@ -1,0 +1,642 @@
+{
+  "contractName": "INetworkSettings",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "networkFeeParams",
+      "outputs": [
+        {
+          "internalType": "contract ITokenHolder",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "networkFeeWallet",
+      "outputs": [
+        {
+          "internalType": "contract ITokenHolder",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "networkFee",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"networkFee\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"networkFeeParams\",\"outputs\":[{\"internalType\":\"contract ITokenHolder\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"networkFeeWallet\",\"outputs\":[{\"internalType\":\"contract ITokenHolder\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/INetworkSettings.sol\":\"INetworkSettings\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/INetworkSettings.sol\":{\"keccak256\":\"0x5a33cbd2ce32e83c2404bb1716f47c4b1950c3acba7c77f9124a4d906a37762c\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://2434e1e9a712b2880805522a30e0229ac29d63f486f7a52bcf6d974f9eca77f5\",\"dweb:/ipfs/QmX4HTCmNCURu3nkwdJvqEj3SwAktJfuLVaEWEh9LYJYVj\"]},\"project:/contracts/token/interfaces/IReserveToken.sol\":{\"keccak256\":\"0x7380cdd30fc2b427d1dab7f7f30bb93e4562d91b405aecfc5a7b9ef3e24e7cee\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://b728fed30c2d9027e03a5e46cb67932f021851924c47b7cd658431ee8f5bdb15\",\"dweb:/ipfs/QmfLiprUayVjHj9pTUapayU1R4nP3Lm1a6YuyU6LeChBzZ\"]},\"project:/contracts/utility/interfaces/IOwned.sol\":{\"keccak256\":\"0x4cfffe7abcbf4a0a49d154837711a38e9c34da4891b86167b9e15d80b24f9b14\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://0b398ddfbcae48adc05489f7be940135a14150c38de9b75897ca9193a1ac99d0\",\"dweb:/ipfs/QmXPh5dHCZqshzmCWPRc3TSQsjc6Sr1SG2XFZe3NdKWMRC\"]},\"project:/contracts/utility/interfaces/ITokenHolder.sol\":{\"keccak256\":\"0x4dbfa5edbbe28ebd0183fca763184956132e68d9d0842f13d4b9ef9475c01d87\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://a2cf433e0c003c730b7f15b9ed76d8b36cfaa26ed12cacb4ad91d7afa0c0b8da\",\"dweb:/ipfs/QmYXWZhAHEA1WqrP5AnyGSarjndaeSfWzDrwYxhd9wgk4m\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: SEE LICENSE IN LICENSE\npragma solidity 0.6.12;\n\nimport \"./utility/interfaces/ITokenHolder.sol\";\n\ninterface INetworkSettings {\n    function networkFeeParams() external view returns (ITokenHolder, uint32);\n\n    function networkFeeWallet() external view returns (ITokenHolder);\n\n    function networkFee() external view returns (uint32);\n}\n",
+  "sourcePath": "D:\\Work Space\\bancor_project\\core\\contracts\\INetworkSettings.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/INetworkSettings.sol",
+    "exportedSymbols": {
+      "INetworkSettings": [
+        4497
+      ]
+    },
+    "id": 4498,
+    "license": "SEE LICENSE IN LICENSE",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 4478,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "51:23:13"
+      },
+      {
+        "absolutePath": "project:/contracts/utility/interfaces/ITokenHolder.sol",
+        "file": "./utility/interfaces/ITokenHolder.sol",
+        "id": 4479,
+        "nodeType": "ImportDirective",
+        "scope": 4498,
+        "sourceUnit": 33148,
+        "src": "76:47:13",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 4497,
+        "linearizedBaseContracts": [
+          4497
+        ],
+        "name": "INetworkSettings",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "e33b5f5f",
+            "id": 4486,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "networkFeeParams",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 4480,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "183:2:13"
+            },
+            "returnParameters": {
+              "id": 4485,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4482,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4486,
+                  "src": "209:12:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                    "typeString": "contract ITokenHolder"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 4481,
+                    "name": "ITokenHolder",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 33147,
+                    "src": "209:12:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                      "typeString": "contract ITokenHolder"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4484,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4486,
+                  "src": "223:6:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 4483,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "223:6:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "208:22:13"
+            },
+            "scope": 4497,
+            "src": "158:73:13",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "3e456504",
+            "id": 4491,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "networkFeeWallet",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 4487,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "262:2:13"
+            },
+            "returnParameters": {
+              "id": 4490,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4489,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4491,
+                  "src": "288:12:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                    "typeString": "contract ITokenHolder"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 4488,
+                    "name": "ITokenHolder",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 33147,
+                    "src": "288:12:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                      "typeString": "contract ITokenHolder"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "287:14:13"
+            },
+            "scope": 4497,
+            "src": "237:65:13",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "9db9e18b",
+            "id": 4496,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "networkFee",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 4492,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "327:2:13"
+            },
+            "returnParameters": {
+              "id": 4495,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4494,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4496,
+                  "src": "353:6:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 4493,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "353:6:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "352:8:13"
+            },
+            "scope": 4497,
+            "src": "308:53:13",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 4498,
+        "src": "125:238:13"
+      }
+    ],
+    "src": "51:313:13"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/INetworkSettings.sol",
+      "exportedSymbols": {
+        "INetworkSettings": [
+          4497
+        ]
+      },
+      "license": "SEE LICENSE IN LICENSE"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.6",
+            ".12"
+          ]
+        },
+        "id": 4478,
+        "name": "PragmaDirective",
+        "src": "51:23:13"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 33148,
+          "absolutePath": "project:/contracts/utility/interfaces/ITokenHolder.sol",
+          "file": "./utility/interfaces/ITokenHolder.sol",
+          "scope": 4498,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 4479,
+        "name": "ImportDirective",
+        "src": "76:47:13"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            4497
+          ],
+          "name": "INetworkSettings",
+          "scope": 4498
+        },
+        "children": [
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "e33b5f5f",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "networkFeeParams",
+              "overrides": null,
+              "scope": 4497,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4480,
+                "name": "ParameterList",
+                "src": "183:2:13"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 4486,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract ITokenHolder",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "ITokenHolder",
+                          "referencedDeclaration": 33147,
+                          "type": "contract ITokenHolder"
+                        },
+                        "id": 4481,
+                        "name": "UserDefinedTypeName",
+                        "src": "209:12:13"
+                      }
+                    ],
+                    "id": 4482,
+                    "name": "VariableDeclaration",
+                    "src": "209:12:13"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 4486,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint32",
+                          "type": "uint32"
+                        },
+                        "id": 4483,
+                        "name": "ElementaryTypeName",
+                        "src": "223:6:13"
+                      }
+                    ],
+                    "id": 4484,
+                    "name": "VariableDeclaration",
+                    "src": "223:6:13"
+                  }
+                ],
+                "id": 4485,
+                "name": "ParameterList",
+                "src": "208:22:13"
+              }
+            ],
+            "id": 4486,
+            "name": "FunctionDefinition",
+            "src": "158:73:13"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "3e456504",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "networkFeeWallet",
+              "overrides": null,
+              "scope": 4497,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4487,
+                "name": "ParameterList",
+                "src": "262:2:13"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 4491,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract ITokenHolder",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "ITokenHolder",
+                          "referencedDeclaration": 33147,
+                          "type": "contract ITokenHolder"
+                        },
+                        "id": 4488,
+                        "name": "UserDefinedTypeName",
+                        "src": "288:12:13"
+                      }
+                    ],
+                    "id": 4489,
+                    "name": "VariableDeclaration",
+                    "src": "288:12:13"
+                  }
+                ],
+                "id": 4490,
+                "name": "ParameterList",
+                "src": "287:14:13"
+              }
+            ],
+            "id": 4491,
+            "name": "FunctionDefinition",
+            "src": "237:65:13"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "9db9e18b",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "networkFee",
+              "overrides": null,
+              "scope": 4497,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4492,
+                "name": "ParameterList",
+                "src": "327:2:13"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 4496,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint32",
+                          "type": "uint32"
+                        },
+                        "id": 4493,
+                        "name": "ElementaryTypeName",
+                        "src": "353:6:13"
+                      }
+                    ],
+                    "id": 4494,
+                    "name": "VariableDeclaration",
+                    "src": "353:6:13"
+                  }
+                ],
+                "id": 4495,
+                "name": "ParameterList",
+                "src": "352:8:13"
+              }
+            ],
+            "id": 4496,
+            "name": "FunctionDefinition",
+            "src": "308:53:13"
+          }
+        ],
+        "id": 4497,
+        "name": "ContractDefinition",
+        "src": "125:238:13"
+      }
+    ],
+    "id": 4498,
+    "name": "SourceUnit",
+    "src": "51:313:13"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-08-23T03:19:29.356Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

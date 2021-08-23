@@ -1,0 +1,27 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Donald Werner\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @openzeppelin/test-environment@3.4.0
+
+PATH: 
+  C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\gnupg\bin;C:\Program Files\VisualSVN Server\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\nodejs\;C:\Users\Donald Werner\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Donald Werner\AppData\Local\Programs\Python\Python37\;C:\Users\Donald Werner\AppData\Local\Microsoft\WindowsApps;C:\Users\Donald Werner\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Donald Werner\AppData\Local\gitkraken\bin;D:\xampp\php;C:\Users\Donald Werner\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.11
+
+Node version: 
+  14.17.5
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: unexpected end of file
+      at Zlib.zlibOnError [as onerror] (zlib.js:188:17)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

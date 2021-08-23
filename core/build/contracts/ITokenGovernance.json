@@ -1,0 +1,691 @@
+{
+  "contractName": "ITokenGovernance",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "token",
+      "outputs": [
+        {
+          "internalType": "contract IMintableToken",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "mint",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "burn",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"burn\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"mint\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"token\",\"outputs\":[{\"internalType\":\"contract IMintableToken\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"burn(uint256)\":{\"details\":\"Burns tokens from the caller.\",\"params\":{\"amount\":\"Amount to decrease the supply by.\"}},\"mint(address,uint256)\":{\"details\":\"Mints new tokens.\",\"params\":{\"amount\":\"Amount to increase the supply by.\",\"to\":\"Account to receive the new amount.\"}}},\"title\":\"The interface for mintable/burnable token governance.\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/token-governance/ITokenGovernance.sol\":\"ITokenGovernance\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x5f02220344881ce43204ae4a6281145a67bc52c2bb1290a791857df3d19d78f5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://24427744bd3e6cb73c17010119af12a318289c0253a4d9acb8576c9fb3797b08\",\"dweb:/ipfs/QmTLDqpKRBuxGxRAmjgXt9AkXyACW3MtKzi7PYjm5iMfGC\"]},\"project:/contracts/token-governance/IClaimable.sol\":{\"keccak256\":\"0x17620afd14ae6f799589f76369ab27e95110f8ce47cf26979394aba6fd3f07a2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ba8a42b6f6d645d40a90c655a4b2de34cefa609891443d60746969a2c731b113\",\"dweb:/ipfs/QmNdYvF3NcfchDtA8wzDXpt93u9tUMUnBVKjeXnUdhajJ6\"]},\"project:/contracts/token-governance/IMintableToken.sol\":{\"keccak256\":\"0x143d85ba15d10c0c6229f86d42f2ff603f87517026fc7924dc438fca180640e8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ae886e54a525ca6c17dd008482c637e68b136cec366f78c6483f75b6e2ce3e1c\",\"dweb:/ipfs/QmSN1pBNmtU3RwKp43UmrsR94Ud6XxF5zsCHuHj1D2pHqD\"]},\"project:/contracts/token-governance/ITokenGovernance.sol\":{\"keccak256\":\"0x557afb8adfc5c47781d178062fa3db30b18718ea5d8446e8077e8f8252f19e1d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e8119d8fcdb47f5397b0386dd0628393fe36d182177e26020199048a3f722400\",\"dweb:/ipfs/QmanqurG1Z65pA63JKyaxS4mpSwpyhroVVe9RZa2WSySNh\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity 0.6.12;\n\nimport \"./IMintableToken.sol\";\n\n/// @title The interface for mintable/burnable token governance.\ninterface ITokenGovernance {\n    // The address of the mintable ERC20 token.\n    function token() external view returns (IMintableToken);\n\n    /// @dev Mints new tokens.\n    ///\n    /// @param to Account to receive the new amount.\n    /// @param amount Amount to increase the supply by.\n    ///\n    function mint(address to, uint256 amount) external;\n\n    /// @dev Burns tokens from the caller.\n    ///\n    /// @param amount Amount to decrease the supply by.\n    ///\n    function burn(uint256 amount) external;\n}\n",
+  "sourcePath": "D:\\Work Space\\bancor_project\\core\\contracts\\token-governance\\ITokenGovernance.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/token-governance/ITokenGovernance.sol",
+    "exportedSymbols": {
+      "ITokenGovernance": [
+        30622
+      ]
+    },
+    "id": 30623,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 30600,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:80"
+      },
+      {
+        "absolutePath": "project:/contracts/token-governance/IMintableToken.sol",
+        "file": "./IMintableToken.sol",
+        "id": 30601,
+        "nodeType": "ImportDirective",
+        "scope": 30623,
+        "sourceUnit": 30599,
+        "src": "57:30:80",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 30602,
+          "nodeType": "StructuredDocumentation",
+          "src": "89:65:80",
+          "text": "@title The interface for mintable/burnable token governance."
+        },
+        "fullyImplemented": false,
+        "id": 30622,
+        "linearizedBaseContracts": [
+          30622
+        ],
+        "name": "ITokenGovernance",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "fc0c546a",
+            "id": 30607,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "token",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 30603,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "249:2:80"
+            },
+            "returnParameters": {
+              "id": 30606,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30605,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30607,
+                  "src": "275:14:80",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IMintableToken_$30598",
+                    "typeString": "contract IMintableToken"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 30604,
+                    "name": "IMintableToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 30598,
+                    "src": "275:14:80",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IMintableToken_$30598",
+                      "typeString": "contract IMintableToken"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "274:16:80"
+            },
+            "scope": 30622,
+            "src": "235:56:80",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 30608,
+              "nodeType": "StructuredDocumentation",
+              "src": "297:151:80",
+              "text": "@dev Mints new tokens.\n @param to Account to receive the new amount.\n @param amount Amount to increase the supply by."
+            },
+            "functionSelector": "40c10f19",
+            "id": 30615,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "mint",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 30613,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30610,
+                  "mutability": "mutable",
+                  "name": "to",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30615,
+                  "src": "467:10:80",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 30609,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "467:7:80",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 30612,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30615,
+                  "src": "479:14:80",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 30611,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "479:7:80",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "466:28:80"
+            },
+            "returnParameters": {
+              "id": 30614,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "503:0:80"
+            },
+            "scope": 30622,
+            "src": "453:51:80",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 30616,
+              "nodeType": "StructuredDocumentation",
+              "src": "510:110:80",
+              "text": "@dev Burns tokens from the caller.\n @param amount Amount to decrease the supply by."
+            },
+            "functionSelector": "42966c68",
+            "id": 30621,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "burn",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 30619,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30618,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30621,
+                  "src": "639:14:80",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 30617,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "639:7:80",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "638:16:80"
+            },
+            "returnParameters": {
+              "id": 30620,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "663:0:80"
+            },
+            "scope": 30622,
+            "src": "625:39:80",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 30623,
+        "src": "154:512:80"
+      }
+    ],
+    "src": "32:635:80"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/token-governance/ITokenGovernance.sol",
+      "exportedSymbols": {
+        "ITokenGovernance": [
+          30622
+        ]
+      },
+      "license": "MIT"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.6",
+            ".12"
+          ]
+        },
+        "id": 30600,
+        "name": "PragmaDirective",
+        "src": "32:23:80"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 30599,
+          "absolutePath": "project:/contracts/token-governance/IMintableToken.sol",
+          "file": "./IMintableToken.sol",
+          "scope": 30623,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 30601,
+        "name": "ImportDirective",
+        "src": "57:30:80"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            30622
+          ],
+          "name": "ITokenGovernance",
+          "scope": 30623
+        },
+        "children": [
+          {
+            "attributes": {
+              "text": "@title The interface for mintable/burnable token governance."
+            },
+            "id": 30602,
+            "name": "StructuredDocumentation",
+            "src": "89:65:80"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "fc0c546a",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "token",
+              "overrides": null,
+              "scope": 30622,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 30603,
+                "name": "ParameterList",
+                "src": "249:2:80"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 30607,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IMintableToken",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IMintableToken",
+                          "referencedDeclaration": 30598,
+                          "type": "contract IMintableToken"
+                        },
+                        "id": 30604,
+                        "name": "UserDefinedTypeName",
+                        "src": "275:14:80"
+                      }
+                    ],
+                    "id": 30605,
+                    "name": "VariableDeclaration",
+                    "src": "275:14:80"
+                  }
+                ],
+                "id": 30606,
+                "name": "ParameterList",
+                "src": "274:16:80"
+              }
+            ],
+            "id": 30607,
+            "name": "FunctionDefinition",
+            "src": "235:56:80"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "40c10f19",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "mint",
+              "overrides": null,
+              "scope": 30622,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@dev Mints new tokens.\n @param to Account to receive the new amount.\n @param amount Amount to increase the supply by."
+                },
+                "id": 30608,
+                "name": "StructuredDocumentation",
+                "src": "297:151:80"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "to",
+                      "overrides": null,
+                      "scope": 30615,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 30609,
+                        "name": "ElementaryTypeName",
+                        "src": "467:7:80"
+                      }
+                    ],
+                    "id": 30610,
+                    "name": "VariableDeclaration",
+                    "src": "467:10:80"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "amount",
+                      "overrides": null,
+                      "scope": 30615,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 30611,
+                        "name": "ElementaryTypeName",
+                        "src": "479:7:80"
+                      }
+                    ],
+                    "id": 30612,
+                    "name": "VariableDeclaration",
+                    "src": "479:14:80"
+                  }
+                ],
+                "id": 30613,
+                "name": "ParameterList",
+                "src": "466:28:80"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 30614,
+                "name": "ParameterList",
+                "src": "503:0:80"
+              }
+            ],
+            "id": 30615,
+            "name": "FunctionDefinition",
+            "src": "453:51:80"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "42966c68",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "burn",
+              "overrides": null,
+              "scope": 30622,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@dev Burns tokens from the caller.\n @param amount Amount to decrease the supply by."
+                },
+                "id": 30616,
+                "name": "StructuredDocumentation",
+                "src": "510:110:80"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "amount",
+                      "overrides": null,
+                      "scope": 30621,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 30617,
+                        "name": "ElementaryTypeName",
+                        "src": "639:7:80"
+                      }
+                    ],
+                    "id": 30618,
+                    "name": "VariableDeclaration",
+                    "src": "639:14:80"
+                  }
+                ],
+                "id": 30619,
+                "name": "ParameterList",
+                "src": "638:16:80"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 30620,
+                "name": "ParameterList",
+                "src": "663:0:80"
+              }
+            ],
+            "id": 30621,
+            "name": "FunctionDefinition",
+            "src": "625:39:80"
+          }
+        ],
+        "id": 30622,
+        "name": "ContractDefinition",
+        "src": "154:512:80"
+      }
+    ],
+    "id": 30623,
+    "name": "SourceUnit",
+    "src": "32:635:80"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-08-23T03:19:30.229Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "burn(uint256)": {
+        "details": "Burns tokens from the caller.",
+        "params": {
+          "amount": "Amount to decrease the supply by."
+        }
+      },
+      "mint(address,uint256)": {
+        "details": "Mints new tokens.",
+        "params": {
+          "amount": "Amount to increase the supply by.",
+          "to": "Account to receive the new amount."
+        }
+      }
+    },
+    "title": "The interface for mintable/burnable token governance.",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

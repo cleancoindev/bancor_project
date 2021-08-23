@@ -26,6 +26,9 @@
 
 .bg-block-light {
   background: $white !important;
+  border:1px solid #e6ebf2;
+  box-shadow:none !important;
+  -webkit-box-shadow: none !important;
 }
 
 .bg-light {
@@ -33,11 +36,12 @@
 }
 
 .bg-block-dark {
-  background: #0a2540 !important;
+  background: #171d28 !important;
+  border:1px solid #222a3b !important;
 }
 
 .border-top-menu-dark {
-  border-top: 1px solid #1f3a55 !important;
+  border-top: 1px solid #222a3b !important;
 
 }
 .border-top-menu-light {
@@ -241,8 +245,7 @@
   }
 
   &.block-shadow {
-    box-shadow: 0 2px 22px 0 rgba(15, 89, 209, 0.12),
-      0 2px 19px 0 rgba(82, 105, 141, 0.12);
+    box-shadow: none;
   }
 
   &.block-shadow-light {
@@ -270,11 +273,17 @@
   }
 
   &.btn-outline-gray {
-    color: $text-color-light !important;
+    color: #41b883 !important;
+    border-color: #41b883 !important
+  }
+  &.btn-outline-gray:hover {
+    color: #fff !important;
+    background:#41b883 !important;
   }
 
   &.btn-outline-gray-dark {
-    color: $text-color-dark !important;
+    color: #41b883 !important;
+    border-color: #41b883 !important
   }
 
   &.btn-circle-gray {
@@ -290,7 +299,8 @@
   }
 
   &.btn-outline-gray-dark:hover {
-    color: $text-color-light !important;
+    color: #fff !important;
+    background:#41b883 !important;
   }
 
   &.btn-outline-alt-light {
@@ -301,7 +311,7 @@
   &.btn-outline-alt-dark {
     color: $light-white !important;
     border-color: $light-white !important;
-    background-color: $bg-body-dark !important;
+    background-color: $bg-btn-outline-dark !important;
   }
   &.btn-outline-alt-light:hover {
     color: $text-color-light !important;
@@ -314,7 +324,7 @@
     background-color: $light-white !important;
   }
   &.btn-outline-primary {
-    background-color: $bg-btn-outline-light !important;
+    background-color: #fff !important;
     color: $text-color-light !important;
   }
   &.btn-outline-primary-dark {
@@ -374,13 +384,13 @@
   }
   &.btn-outline-dark {
     color: $light-white !important;
-    border-color: $light-white !important;
-    background-color: $bg-body-dark !important;
+    border: none !important;
+    background-color: $bg-btn-outline-dark;
   }
   &.btn-outline-light {
-    color: $primary !important;
-    border-color: $gray-placeholder !important;
-    background-color: $bg-body-light !important;
+    color: #171d28 !important;
+    border-color: #dfe8f9 !important;
+    background-color: #f0f5f9 !important;
   }
   &.btn-outline-light-alt {
     color: $text-color-light !important;
@@ -481,8 +491,8 @@
 
   .nav-tabs .nav-link.active,
   .nav-tabs .nav-item.show .nav-link {
-    color: #ffffff !important;
-    border-bottom: 2px solid #ffffff !important;
+    color:#41b883 !important;
+    border-bottom: 2px solid #41b883 !important;
   }
 }
 
@@ -491,6 +501,7 @@
     border: white;
     font-size: 20px !important;
     font-weight: 600 !important;
+
   }
   .nav-tabs .nav-link {
     color: $text-muted-light;
@@ -500,7 +511,7 @@
   .nav-link.active {
     color: $text-color-light;
     background: white;
-    border: white;
+    border:1px solid #e6ebf2;
     padding: 10px 20px;
   }
 }
@@ -519,7 +530,7 @@
   .nav-link.active {
     color: $text-color-dark;
     background: $text-color-light;
-    border: $text-color-light;
+    border: 1px solid #222a3b;
     padding: 10px 20px;
   }
 }
@@ -558,7 +569,7 @@
 .progress {
   height: 4px !important;
 }
- 
+
 .form-control-date {
   height: 35px !important;
   width: 220px !important;

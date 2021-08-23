@@ -1,0 +1,138 @@
+{
+  "contractName": "IReserveToken",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"details\":\"This contract is used to represent reserve tokens, which are tokens that can either be regular ERC20 tokens or native ETH (represented by the NATIVE_TOKEN_ADDRESS address) Please note that this interface is intentionally doesn't inherit from IERC20, so that it'd be possible to effectively override its balanceOf() function in the ReserveToken library\",\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/token/interfaces/IReserveToken.sol\":\"IReserveToken\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/token/interfaces/IReserveToken.sol\":{\"keccak256\":\"0x7380cdd30fc2b427d1dab7f7f30bb93e4562d91b405aecfc5a7b9ef3e24e7cee\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://b728fed30c2d9027e03a5e46cb67932f021851924c47b7cd658431ee8f5bdb15\",\"dweb:/ipfs/QmfLiprUayVjHj9pTUapayU1R4nP3Lm1a6YuyU6LeChBzZ\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: SEE LICENSE IN LICENSE\npragma solidity 0.6.12;\n\n/**\n * @dev This contract is used to represent reserve tokens, which are tokens that can either be regular ERC20 tokens or\n * native ETH (represented by the NATIVE_TOKEN_ADDRESS address)\n *\n * Please note that this interface is intentionally doesn't inherit from IERC20, so that it'd be possible to effectively\n * override its balanceOf() function in the ReserveToken library\n */\ninterface IReserveToken {\n\n}\n",
+  "sourcePath": "D:\\Work Space\\bancor_project\\core\\contracts\\token\\interfaces\\IReserveToken.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/token/interfaces/IReserveToken.sol",
+    "exportedSymbols": {
+      "IReserveToken": [
+        31140
+      ]
+    },
+    "id": 31141,
+    "license": "SEE LICENSE IN LICENSE",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 31138,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "51:23:87"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 31139,
+          "nodeType": "StructuredDocumentation",
+          "src": "76:379:87",
+          "text": " @dev This contract is used to represent reserve tokens, which are tokens that can either be regular ERC20 tokens or\n native ETH (represented by the NATIVE_TOKEN_ADDRESS address)\n Please note that this interface is intentionally doesn't inherit from IERC20, so that it'd be possible to effectively\n override its balanceOf() function in the ReserveToken library"
+        },
+        "fullyImplemented": true,
+        "id": 31140,
+        "linearizedBaseContracts": [
+          31140
+        ],
+        "name": "IReserveToken",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 31141,
+        "src": "456:28:87"
+      }
+    ],
+    "src": "51:434:87"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/token/interfaces/IReserveToken.sol",
+      "exportedSymbols": {
+        "IReserveToken": [
+          31140
+        ]
+      },
+      "license": "SEE LICENSE IN LICENSE"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.6",
+            ".12"
+          ]
+        },
+        "id": 31138,
+        "name": "PragmaDirective",
+        "src": "51:23:87"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            31140
+          ],
+          "name": "IReserveToken",
+          "nodes": [
+            null
+          ],
+          "scope": 31141
+        },
+        "children": [
+          {
+            "attributes": {
+              "text": " @dev This contract is used to represent reserve tokens, which are tokens that can either be regular ERC20 tokens or\n native ETH (represented by the NATIVE_TOKEN_ADDRESS address)\n Please note that this interface is intentionally doesn't inherit from IERC20, so that it'd be possible to effectively\n override its balanceOf() function in the ReserveToken library"
+            },
+            "id": 31139,
+            "name": "StructuredDocumentation",
+            "src": "76:379:87"
+          }
+        ],
+        "id": 31140,
+        "name": "ContractDefinition",
+        "src": "456:28:87"
+      }
+    ],
+    "id": 31141,
+    "name": "SourceUnit",
+    "src": "51:434:87"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-08-23T03:19:30.248Z",
+  "devdoc": {
+    "details": "This contract is used to represent reserve tokens, which are tokens that can either be regular ERC20 tokens or native ETH (represented by the NATIVE_TOKEN_ADDRESS address) Please note that this interface is intentionally doesn't inherit from IERC20, so that it'd be possible to effectively override its balanceOf() function in the ReserveToken library",
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

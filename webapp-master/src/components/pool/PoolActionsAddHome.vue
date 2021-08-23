@@ -9,7 +9,7 @@
         <ol class="m-0 pl-3">
           <li>
             <a
-              href="https://blog.bancor.network/how-to-stake-liquidity-earn-fees-on-bancor-bff8369274a1"
+              href="#"
               target="_blank"
               :class="darkMode ? 'text-primary-dark' : 'text-primary-light'"
             >
@@ -18,7 +18,7 @@
           </li>
           <li>
             <a
-              href="https://blog.bancor.network/beginners-guide-to-getting-rekt-by-impermanent-loss-7c9510cb2f22"
+              href="#"
               target="_blank"
               :class="darkMode ? 'text-primary-dark' : 'text-primary-light'"
             >
@@ -27,7 +27,7 @@
           </li>
           <li>
             <a
-              href="https://bankless.substack.com/p/how-to-protect-yourself-from-impermanent"
+              href="#"
               target="_blank"
               :class="darkMode ? 'text-primary-dark' : 'text-primary-light'"
             >

@@ -1,0 +1,406 @@
+{
+  "contractName": "IConverterUpgrader",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint16",
+          "name": "_version",
+          "type": "uint16"
+        }
+      ],
+      "name": "upgrade",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_version",
+          "type": "bytes32"
+        }
+      ],
+      "name": "upgrade",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint16\",\"name\":\"_version\",\"type\":\"uint16\"}],\"name\":\"upgrade\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_version\",\"type\":\"bytes32\"}],\"name\":\"upgrade\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/converter/interfaces/IConverterUpgrader.sol\":\"IConverterUpgrader\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/converter/interfaces/IConverterUpgrader.sol\":{\"keccak256\":\"0x27d06befc80f9ed047ab15f54cf928385a01c66742760a0cf8cefa31e7de3010\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://cf7a74a7f732a6cca75017a0b2b043f84269b779131c24ea30f25a529c34fa54\",\"dweb:/ipfs/QmTUdaPS8L85weXp5DsRXX9isLuctKXHs1Zi9xgLiuojPS\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: SEE LICENSE IN LICENSE\npragma solidity 0.6.12;\n\n/*\n    Converter Upgrader interface\n*/\ninterface IConverterUpgrader {\n    function upgrade(bytes32 _version) external;\n\n    function upgrade(uint16 _version) external;\n}\n",
+  "sourcePath": "D:\\Work Space\\bancor_project\\core\\contracts\\converter\\interfaces\\IConverterUpgrader.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/converter/interfaces/IConverterUpgrader.sol",
+    "exportedSymbols": {
+      "IConverterUpgrader": [
+        15733
+      ]
+    },
+    "id": 15734,
+    "license": "SEE LICENSE IN LICENSE",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 15722,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "51:23:34"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 15733,
+        "linearizedBaseContracts": [
+          15733
+        ],
+        "name": "IConverterUpgrader",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "bc444e13",
+            "id": 15727,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "upgrade",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 15725,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15724,
+                  "mutability": "mutable",
+                  "name": "_version",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 15727,
+                  "src": "167:16:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 15723,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "167:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "166:18:34"
+            },
+            "returnParameters": {
+              "id": 15726,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "193:0:34"
+            },
+            "scope": 15733,
+            "src": "150:44:34",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "90f58c96",
+            "id": 15732,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "upgrade",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 15730,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15729,
+                  "mutability": "mutable",
+                  "name": "_version",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 15732,
+                  "src": "217:15:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  },
+                  "typeName": {
+                    "id": 15728,
+                    "name": "uint16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "217:6:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "216:17:34"
+            },
+            "returnParameters": {
+              "id": 15731,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "242:0:34"
+            },
+            "scope": 15733,
+            "src": "200:43:34",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 15734,
+        "src": "115:130:34"
+      }
+    ],
+    "src": "51:195:34"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/converter/interfaces/IConverterUpgrader.sol",
+      "exportedSymbols": {
+        "IConverterUpgrader": [
+          15733
+        ]
+      },
+      "license": "SEE LICENSE IN LICENSE"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.6",
+            ".12"
+          ]
+        },
+        "id": 15722,
+        "name": "PragmaDirective",
+        "src": "51:23:34"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            15733
+          ],
+          "name": "IConverterUpgrader",
+          "scope": 15734
+        },
+        "children": [
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "bc444e13",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "upgrade",
+              "overrides": null,
+              "scope": 15733,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_version",
+                      "overrides": null,
+                      "scope": 15727,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 15723,
+                        "name": "ElementaryTypeName",
+                        "src": "167:7:34"
+                      }
+                    ],
+                    "id": 15724,
+                    "name": "VariableDeclaration",
+                    "src": "167:16:34"
+                  }
+                ],
+                "id": 15725,
+                "name": "ParameterList",
+                "src": "166:18:34"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 15726,
+                "name": "ParameterList",
+                "src": "193:0:34"
+              }
+            ],
+            "id": 15727,
+            "name": "FunctionDefinition",
+            "src": "150:44:34"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "90f58c96",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "upgrade",
+              "overrides": null,
+              "scope": 15733,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_version",
+                      "overrides": null,
+                      "scope": 15732,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint16",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint16",
+                          "type": "uint16"
+                        },
+                        "id": 15728,
+                        "name": "ElementaryTypeName",
+                        "src": "217:6:34"
+                      }
+                    ],
+                    "id": 15729,
+                    "name": "VariableDeclaration",
+                    "src": "217:15:34"
+                  }
+                ],
+                "id": 15730,
+                "name": "ParameterList",
+                "src": "216:17:34"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 15731,
+                "name": "ParameterList",
+                "src": "242:0:34"
+              }
+            ],
+            "id": 15732,
+            "name": "FunctionDefinition",
+            "src": "200:43:34"
+          }
+        ],
+        "id": 15733,
+        "name": "ContractDefinition",
+        "src": "115:130:34"
+      }
+    ],
+    "id": 15734,
+    "name": "SourceUnit",
+    "src": "51:195:34"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-08-23T03:19:29.665Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

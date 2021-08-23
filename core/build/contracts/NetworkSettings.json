@@ -1,0 +1,3572 @@
+{
+  "contractName": "NetworkSettings",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract ITokenHolder",
+          "name": "initialNetworkFeeWallet",
+          "type": "address"
+        },
+        {
+          "internalType": "uint32",
+          "name": "initialNetworkFee",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint32",
+          "name": "prevNetworkFee",
+          "type": "uint32"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint32",
+          "name": "newNetworkFee",
+          "type": "uint32"
+        }
+      ],
+      "name": "NetworkFeeUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "contract ITokenHolder",
+          "name": "prevNetworkFeeWallet",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "contract ITokenHolder",
+          "name": "newNetworkFeeWallet",
+          "type": "address"
+        }
+      ],
+      "name": "NetworkFeeWalletUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "_prevOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "_newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnerUpdate",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "acceptOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "newOwner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "networkFeeParams",
+      "outputs": [
+        {
+          "internalType": "contract ITokenHolder",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "networkFeeWallet",
+      "outputs": [
+        {
+          "internalType": "contract ITokenHolder",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "networkFee",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract ITokenHolder",
+          "name": "newNetworkFeeWallet",
+          "type": "address"
+        }
+      ],
+      "name": "setNetworkFeeWallet",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "newNetworkFee",
+          "type": "uint32"
+        }
+      ],
+      "name": "setNetworkFee",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract ITokenHolder\",\"name\":\"initialNetworkFeeWallet\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"initialNetworkFee\",\"type\":\"uint32\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint32\",\"name\":\"prevNetworkFee\",\"type\":\"uint32\"},{\"indexed\":false,\"internalType\":\"uint32\",\"name\":\"newNetworkFee\",\"type\":\"uint32\"}],\"name\":\"NetworkFeeUpdated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"contract ITokenHolder\",\"name\":\"prevNetworkFeeWallet\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"contract ITokenHolder\",\"name\":\"newNetworkFeeWallet\",\"type\":\"address\"}],\"name\":\"NetworkFeeWalletUpdated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"_prevOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"_newOwner\",\"type\":\"address\"}],\"name\":\"OwnerUpdate\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"acceptOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"networkFee\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"networkFeeParams\",\"outputs\":[{\"internalType\":\"contract ITokenHolder\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"networkFeeWallet\",\"outputs\":[{\"internalType\":\"contract ITokenHolder\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"newOwner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint32\",\"name\":\"newNetworkFee\",\"type\":\"uint32\"}],\"name\":\"setNetworkFee\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"contract ITokenHolder\",\"name\":\"newNetworkFeeWallet\",\"type\":\"address\"}],\"name\":\"setNetworkFeeWallet\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"This contract maintains the network settings.\",\"events\":{\"NetworkFeeUpdated(uint32,uint32)\":{\"details\":\"triggered when the network fee is updated\",\"params\":{\"newNetworkFee\":\"new network fee\",\"prevNetworkFee\":\"previous network fee\"}},\"NetworkFeeWalletUpdated(address,address)\":{\"details\":\"triggered when the network fee wallet is updated\",\"params\":{\"newNetworkFeeWallet\":\"new network fee wallet\",\"prevNetworkFeeWallet\":\"previous network fee wallet\"}}},\"kind\":\"dev\",\"methods\":{\"acceptOwnership()\":{\"details\":\"used by a new owner to accept an ownership transfer\"},\"constructor\":{\"details\":\"initializes a new NetworkSettings contract\",\"params\":{\"initialNetworkFee\":\"initial network fee in ppm units\",\"initialNetworkFeeWallet\":\"initial network fee wallet\"}},\"networkFee()\":{\"details\":\"returns the global network fee the network fee is a portion of the total fees from each pool\",\"returns\":{\"_0\":\"network fee in ppm units\"}},\"networkFeeParams()\":{\"details\":\"returns the network fee parameters\",\"returns\":{\"_0\":\"network fee wallet\",\"_1\":\"network fee in ppm units\"}},\"networkFeeWallet()\":{\"details\":\"returns the wallet that receives the global network fees\",\"returns\":{\"_0\":\"network fee wallet\"}},\"setNetworkFee(uint32)\":{\"details\":\"sets the network fee can be executed only by the owner\",\"params\":{\"newNetworkFee\":\"new network fee in ppm units\"}},\"setNetworkFeeWallet(address)\":{\"details\":\"sets the network fee wallet can be executed only by the owner\",\"params\":{\"newNetworkFeeWallet\":\"new network fee wallet\"}},\"transferOwnership(address)\":{\"details\":\"allows transferring the contract ownership the new owner still needs to accept the transfer can only be called by the contract owner\",\"params\":{\"_newOwner\":\"new contract owner\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/NetworkSettings.sol\":\"NetworkSettings\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x5f02220344881ce43204ae4a6281145a67bc52c2bb1290a791857df3d19d78f5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://24427744bd3e6cb73c17010119af12a318289c0253a4d9acb8576c9fb3797b08\",\"dweb:/ipfs/QmTLDqpKRBuxGxRAmjgXt9AkXyACW3MtKzi7PYjm5iMfGC\"]},\"project:/contracts/INetworkSettings.sol\":{\"keccak256\":\"0x5a33cbd2ce32e83c2404bb1716f47c4b1950c3acba7c77f9124a4d906a37762c\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://2434e1e9a712b2880805522a30e0229ac29d63f486f7a52bcf6d974f9eca77f5\",\"dweb:/ipfs/QmX4HTCmNCURu3nkwdJvqEj3SwAktJfuLVaEWEh9LYJYVj\"]},\"project:/contracts/NetworkSettings.sol\":{\"keccak256\":\"0xf6df0fa049d1ccb9e1b70ad4ffe20905eb18c80b074fc30741801d28231f9a46\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://a82aab2a911ba67f147d9933b6cd37173fdc41416af1d801e1430b2bacd7ae0a\",\"dweb:/ipfs/QmQyJBXkbyDkSP1K9oZsfyGQbLousu7xSHBu5m9hgGXqdm\"]},\"project:/contracts/token/interfaces/IReserveToken.sol\":{\"keccak256\":\"0x7380cdd30fc2b427d1dab7f7f30bb93e4562d91b405aecfc5a7b9ef3e24e7cee\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://b728fed30c2d9027e03a5e46cb67932f021851924c47b7cd658431ee8f5bdb15\",\"dweb:/ipfs/QmfLiprUayVjHj9pTUapayU1R4nP3Lm1a6YuyU6LeChBzZ\"]},\"project:/contracts/utility/Owned.sol\":{\"keccak256\":\"0xbb76fde028fb0088932e47e056e981b36a326f9794db3152b575694049be1508\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://938eec59bcf43cc1c0b3f7f06c87e03f8f098ae3e92b288c51c3fd57b35eb03e\",\"dweb:/ipfs/QmZcxPbkiKdGqTx2rVHHDkYoVLhqu93rtzy4WCofPQT3J5\"]},\"project:/contracts/utility/Utils.sol\":{\"keccak256\":\"0x899246860525b94641587ca447a21614629ea1abc5cc739efc8621810b7abe16\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://6e9417d4da14e99bd583f4b4d2ee82d914c0495bd57fd52c58bfa97bed6d8f2a\",\"dweb:/ipfs/QmPiWDGE9QayHTytivEt4HsGqxUkMLcHyuu4QZbvrhfWWD\"]},\"project:/contracts/utility/interfaces/IOwned.sol\":{\"keccak256\":\"0x4cfffe7abcbf4a0a49d154837711a38e9c34da4891b86167b9e15d80b24f9b14\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://0b398ddfbcae48adc05489f7be940135a14150c38de9b75897ca9193a1ac99d0\",\"dweb:/ipfs/QmXPh5dHCZqshzmCWPRc3TSQsjc6Sr1SG2XFZe3NdKWMRC\"]},\"project:/contracts/utility/interfaces/ITokenHolder.sol\":{\"keccak256\":\"0x4dbfa5edbbe28ebd0183fca763184956132e68d9d0842f13d4b9ef9475c01d87\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://a2cf433e0c003c730b7f15b9ed76d8b36cfaa26ed12cacb4ad91d7afa0c0b8da\",\"dweb:/ipfs/QmYXWZhAHEA1WqrP5AnyGSarjndaeSfWzDrwYxhd9wgk4m\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50604051610c36380380610c368339818101604052604081101561003357600080fd5b810190808051906020019092919080519060200190929190505050336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055508161009e8161011960201b60201c565b816100ae816101bf60201b60201c565b83600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555082600260146101000a81548163ffffffff021916908363ffffffff16021790555050505050610247565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614156101bc576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260138152602001807f4552525f494e56414c49445f414444524553530000000000000000000000000081525060200191505060405180910390fd5b50565b620f424063ffffffff168163ffffffff161115610244576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252600f8152602001807f4552525f494e56414c49445f464545000000000000000000000000000000000081525060200191505060405180910390fd5b50565b6109e0806102566000396000f3fe608060405234801561001057600080fd5b50600436106100935760003560e01c80638da5cb5b116100665780638da5cb5b1461014e5780639db9e18b14610182578063d4ee1d90146101a6578063e33b5f5f146101da578063f2fde38b1461021b57610093565b8063155bb726146100985780633e456504146100cc578063551e9a6f1461010057806379ba509714610144575b600080fd5b6100ca600480360360208110156100ae57600080fd5b81019080803563ffffffff16906020019092919050505061025f565b005b6100d46102f3565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101426004803603602081101561011657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061031d565b005b61014c610401565b005b610156610606565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61018a61062a565b604051808263ffffffff16815260200191505060405180910390f35b6101ae610644565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101e261066a565b604051808373ffffffffffffffffffffffffffffffffffffffff1681526020018263ffffffff1681526020019250505060405180910390f35b61025d6004803603602081101561023157600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506106ab565b005b6102676107b9565b806102718161087c565b7f3f421a4eb9000b7b5fd6b0947132c94b9d04fa31e65a2f4843261c186bb3bec6600260149054906101000a900463ffffffff1683604051808363ffffffff1681526020018263ffffffff1681526020019250505060405180910390a181600260146101000a81548163ffffffff021916908363ffffffff1602179055505050565b6000600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b6103256107b9565b8061032f81610904565b7f70c95ab75c8116dcc974957f01a8ff5e6c23a3413e7c94c5a31de9779b2cdbb8600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1683604051808373ffffffffffffffffffffffffffffffffffffffff1681526020018273ffffffffffffffffffffffffffffffffffffffff1681526020019250505060405180910390a181600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146104c4576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260118152602001807f4552525f4143434553535f44454e49454400000000000000000000000000000081525060200191505060405180910390fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1660008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f343765429aea5a34b3ff6a3785a98a5abb2597aca87bfbb58632c173d585373a60405160405180910390a3600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff166000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506000600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000600260149054906101000a900463ffffffff16905090565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600080600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16600260149054906101000a900463ffffffff16915091509091565b6106b36107b9565b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415610775576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252600e8152602001807f4552525f53414d455f4f574e455200000000000000000000000000000000000081525060200191505060405180910390fd5b80600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461087a576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260118152602001807f4552525f4143434553535f44454e49454400000000000000000000000000000081525060200191505060405180910390fd5b565b620f424063ffffffff168163ffffffff161115610901576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252600f8152602001807f4552525f494e56414c49445f464545000000000000000000000000000000000081525060200191505060405180910390fd5b50565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614156109a7576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260138152602001807f4552525f494e56414c49445f414444524553530000000000000000000000000081525060200191505060405180910390fd5b5056fea2646970667358221220a09a86e9900d65e04e87d90209d58379e564d2e8ec2542ffe2862360a725381b64736f6c634300060c0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100935760003560e01c80638da5cb5b116100665780638da5cb5b1461014e5780639db9e18b14610182578063d4ee1d90146101a6578063e33b5f5f146101da578063f2fde38b1461021b57610093565b8063155bb726146100985780633e456504146100cc578063551e9a6f1461010057806379ba509714610144575b600080fd5b6100ca600480360360208110156100ae57600080fd5b81019080803563ffffffff16906020019092919050505061025f565b005b6100d46102f3565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101426004803603602081101561011657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061031d565b005b61014c610401565b005b610156610606565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61018a61062a565b604051808263ffffffff16815260200191505060405180910390f35b6101ae610644565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101e261066a565b604051808373ffffffffffffffffffffffffffffffffffffffff1681526020018263ffffffff1681526020019250505060405180910390f35b61025d6004803603602081101561023157600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506106ab565b005b6102676107b9565b806102718161087c565b7f3f421a4eb9000b7b5fd6b0947132c94b9d04fa31e65a2f4843261c186bb3bec6600260149054906101000a900463ffffffff1683604051808363ffffffff1681526020018263ffffffff1681526020019250505060405180910390a181600260146101000a81548163ffffffff021916908363ffffffff1602179055505050565b6000600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b6103256107b9565b8061032f81610904565b7f70c95ab75c8116dcc974957f01a8ff5e6c23a3413e7c94c5a31de9779b2cdbb8600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1683604051808373ffffffffffffffffffffffffffffffffffffffff1681526020018273ffffffffffffffffffffffffffffffffffffffff1681526020019250505060405180910390a181600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146104c4576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260118152602001807f4552525f4143434553535f44454e49454400000000000000000000000000000081525060200191505060405180910390fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1660008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f343765429aea5a34b3ff6a3785a98a5abb2597aca87bfbb58632c173d585373a60405160405180910390a3600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff166000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506000600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000600260149054906101000a900463ffffffff16905090565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600080600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16600260149054906101000a900463ffffffff16915091509091565b6106b36107b9565b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415610775576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252600e8152602001807f4552525f53414d455f4f574e455200000000000000000000000000000000000081525060200191505060405180910390fd5b80600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461087a576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260118152602001807f4552525f4143434553535f44454e49454400000000000000000000000000000081525060200191505060405180910390fd5b565b620f424063ffffffff168163ffffffff161115610901576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252600f8152602001807f4552525f494e56414c49445f464545000000000000000000000000000000000081525060200191505060405180910390fd5b50565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614156109a7576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260138152602001807f4552525f494e56414c49445f414444524553530000000000000000000000000081525060200191505060405180910390fd5b5056fea2646970667358221220a09a86e9900d65e04e87d90209d58379e564d2e8ec2542ffe2862360a725381b64736f6c634300060c0033",
+  "immutableReferences": {},
+  "sourceMap": "236:2823:15:-:0;;;1151:287;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;616:10:92;608:5;;:18;;;;;;;;;;;;;;;;;;1271:23:15;688::97;702:8;688:13;;;:23;;:::i;:::-;1314:17:15::1;1749:14:97;1759:3;1749:9;;;:14;;:::i;:::-;1367:23:15::2;1347:17;;:43;;;;;;;;;;;;;;;;;;1414:17;1400:11;;:31;;;;;;;;;;;;;;;;;;721:1:97::1;1151:287:15::0;;;236:2823;;781:126:97;874:1;854:22;;:8;:22;;;;846:54;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;781:126;:::o;1833:111::-;242:7;1896:21;;:3;:21;;;;1888:49;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1833:111;:::o;236:2823:15:-;;;;;;;",
+  "deployedSourceMap": "236:2823:15:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2865:192;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;1858:115;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;2418:287;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;1378:212:92;;;:::i;:::-;;226:29;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;2154:97:15;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;261:23:92;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;1588:138:15;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1128:164:92;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;2865:192:15;710:12:92;:10;:12::i;:::-;2938:13:15::1;1749:14:97;1759:3;1749:9;:14::i;:::-;2968:45:15::2;2986:11;;;;;;;;;;;2999:13;2968:45;;;;;;;;;;;;;;;;;;;;;;;;;;;;3037:13;3023:11;;:27;;;;;;;;;;;;;;;;;;732:1:92::1;2865:192:15::0;:::o;1858:115::-;1918:12;1949:17;;;;;;;;;;;1942:24;;1858:115;:::o;2418:287::-;710:12:92;:10;:12::i;:::-;2545:19:15::1;688:23:97;702:8;688:13;:23::i;:::-;2586:63:15::2;2610:17;;;;;;;;;;;2629:19;2586:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;2679:19;2659:17;;:39;;;;;;;;;;;;;;;;;;732:1:92::1;2418:287:15::0;:::o;1378:212:92:-;1453:8;;;;;;;;;;;1439:22;;:10;:22;;;1431:52;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1517:8;;;;;;;;;;;1498:28;;1510:5;;;;;;;;;;1498:28;;;;;;;;;;;;1544:8;;;;;;;;;;;1536:5;;:16;;;;;;;;;;;;;;;;;;1581:1;1562:8;;:21;;;;;;;;;;;;;;;;;;1378:212::o;226:29::-;;;;;;;;;;;;:::o;2154:97:15:-;2208:6;2233:11;;;;;;;;;;;2226:18;;2154:97;:::o;261:23:92:-;;;;;;;;;;;;;:::o;1588:138:15:-;1648:12;1662:6;1688:17;;;;;;;;;;;1707:11;;;;;;;;;;;1680:39;;;;1588:138;;:::o;1128:164:92:-;710:12;:10;:12::i;:::-;1231:5:::1;::::0;::::1;;;;;;;;1218:18;;:9;:18;;;;1210:45;;;;;;;;;;;;;;;;;;;;;;;;;;;::::0;::::1;;;;;;;;;;;;;1276:9;1265:8;;:20;;;;;;;;;;;;;;;;;;1128:164:::0;:::o;792:102::-;860:5;;;;;;;;;;846:19;;:10;:19;;;838:49;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;792:102::o;1833:111:97:-;242:7;1896:21;;:3;:21;;;;1888:49;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1833:111;:::o;781:126::-;874:1;854:22;;:8;:22;;;;846:54;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;781:126;:::o",
+  "source": "// SPDX-License-Identifier: SEE LICENSE IN LICENSE\npragma solidity 0.6.12;\n\nimport \"./INetworkSettings.sol\";\n\nimport \"./utility/Owned.sol\";\nimport \"./utility/Utils.sol\";\n\n/**\n * @dev This contract maintains the network settings.\n *\n */\ncontract NetworkSettings is INetworkSettings, Owned, Utils {\n    ITokenHolder private _networkFeeWallet;\n    uint32 private _networkFee;\n\n    /**\n     * @dev triggered when the network fee wallet is updated\n     *\n     * @param prevNetworkFeeWallet  previous network fee wallet\n     * @param newNetworkFeeWallet   new network fee wallet\n     */\n    event NetworkFeeWalletUpdated(ITokenHolder prevNetworkFeeWallet, ITokenHolder newNetworkFeeWallet);\n\n    /**\n     * @dev triggered when the network fee is updated\n     *\n     * @param prevNetworkFee    previous network fee\n     * @param newNetworkFee     new network fee\n     */\n    event NetworkFeeUpdated(uint32 prevNetworkFee, uint32 newNetworkFee);\n\n    /**\n     * @dev initializes a new NetworkSettings contract\n     *\n     * @param initialNetworkFeeWallet initial network fee wallet\n     * @param initialNetworkFee initial network fee in ppm units\n     */\n    constructor(ITokenHolder initialNetworkFeeWallet, uint32 initialNetworkFee)\n        public\n        validAddress(address(initialNetworkFeeWallet))\n        validFee(initialNetworkFee)\n    {\n        _networkFeeWallet = initialNetworkFeeWallet;\n        _networkFee = initialNetworkFee;\n    }\n\n    /**\n     * @dev returns the network fee parameters\n     *\n     * @return network fee wallet\n     * @return network fee in ppm units\n     */\n    function networkFeeParams() external view override returns (ITokenHolder, uint32) {\n        return (_networkFeeWallet, _networkFee);\n    }\n\n    /**\n     * @dev returns the wallet that receives the global network fees\n     *\n     * @return network fee wallet\n     */\n    function networkFeeWallet() external view override returns (ITokenHolder) {\n        return _networkFeeWallet;\n    }\n\n    /**\n     * @dev returns the global network fee\n     * the network fee is a portion of the total fees from each pool\n     *\n     * @return network fee in ppm units\n     */\n    function networkFee() external view override returns (uint32) {\n        return _networkFee;\n    }\n\n    /**\n     * @dev sets the network fee wallet\n     * can be executed only by the owner\n     *\n     * @param newNetworkFeeWallet new network fee wallet\n     */\n    function setNetworkFeeWallet(ITokenHolder newNetworkFeeWallet)\n        external\n        ownerOnly\n        validAddress(address(newNetworkFeeWallet))\n    {\n        emit NetworkFeeWalletUpdated(_networkFeeWallet, newNetworkFeeWallet);\n        _networkFeeWallet = newNetworkFeeWallet;\n    }\n\n    /**\n     * @dev sets the network fee\n     * can be executed only by the owner\n     *\n     * @param newNetworkFee new network fee in ppm units\n     */\n    function setNetworkFee(uint32 newNetworkFee) external ownerOnly validFee(newNetworkFee) {\n        emit NetworkFeeUpdated(_networkFee, newNetworkFee);\n        _networkFee = newNetworkFee;\n    }\n}\n",
+  "sourcePath": "D:\\Work Space\\bancor_project\\core\\contracts\\NetworkSettings.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/NetworkSettings.sol",
+    "exportedSymbols": {
+      "NetworkSettings": [
+        4666
+      ]
+    },
+    "id": 4667,
+    "license": "SEE LICENSE IN LICENSE",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 4532,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "51:23:15"
+      },
+      {
+        "absolutePath": "project:/contracts/INetworkSettings.sol",
+        "file": "./INetworkSettings.sol",
+        "id": 4533,
+        "nodeType": "ImportDirective",
+        "scope": 4667,
+        "sourceUnit": 4498,
+        "src": "76:32:15",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "project:/contracts/utility/Owned.sol",
+        "file": "./utility/Owned.sol",
+        "id": 4534,
+        "nodeType": "ImportDirective",
+        "scope": 4667,
+        "sourceUnit": 32592,
+        "src": "110:29:15",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "project:/contracts/utility/Utils.sol",
+        "file": "./utility/Utils.sol",
+        "id": 4535,
+        "nodeType": "ImportDirective",
+        "scope": 4667,
+        "sourceUnit": 32911,
+        "src": "140:29:15",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 4537,
+              "name": "INetworkSettings",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4497,
+              "src": "264:16:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_INetworkSettings_$4497",
+                "typeString": "contract INetworkSettings"
+              }
+            },
+            "id": 4538,
+            "nodeType": "InheritanceSpecifier",
+            "src": "264:16:15"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 4539,
+              "name": "Owned",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 32591,
+              "src": "282:5:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Owned_$32591",
+                "typeString": "contract Owned"
+              }
+            },
+            "id": 4540,
+            "nodeType": "InheritanceSpecifier",
+            "src": "282:5:15"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 4541,
+              "name": "Utils",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 32910,
+              "src": "289:5:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Utils_$32910",
+                "typeString": "contract Utils"
+              }
+            },
+            "id": 4542,
+            "nodeType": "InheritanceSpecifier",
+            "src": "289:5:15"
+          }
+        ],
+        "contractDependencies": [
+          4497,
+          32591,
+          32910,
+          33117
+        ],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 4536,
+          "nodeType": "StructuredDocumentation",
+          "src": "171:64:15",
+          "text": " @dev This contract maintains the network settings."
+        },
+        "fullyImplemented": true,
+        "id": 4666,
+        "linearizedBaseContracts": [
+          4666,
+          32910,
+          32591,
+          33117,
+          4497
+        ],
+        "name": "NetworkSettings",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 4544,
+            "mutability": "mutable",
+            "name": "_networkFeeWallet",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 4666,
+            "src": "301:38:15",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+              "typeString": "contract ITokenHolder"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 4543,
+              "name": "ITokenHolder",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 33147,
+              "src": "301:12:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                "typeString": "contract ITokenHolder"
+              }
+            },
+            "value": null,
+            "visibility": "private"
+          },
+          {
+            "constant": false,
+            "id": 4546,
+            "mutability": "mutable",
+            "name": "_networkFee",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 4666,
+            "src": "345:26:15",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint32",
+              "typeString": "uint32"
+            },
+            "typeName": {
+              "id": 4545,
+              "name": "uint32",
+              "nodeType": "ElementaryTypeName",
+              "src": "345:6:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint32",
+                "typeString": "uint32"
+              }
+            },
+            "value": null,
+            "visibility": "private"
+          },
+          {
+            "anonymous": false,
+            "documentation": {
+              "id": 4547,
+              "nodeType": "StructuredDocumentation",
+              "src": "378:202:15",
+              "text": " @dev triggered when the network fee wallet is updated\n @param prevNetworkFeeWallet  previous network fee wallet\n @param newNetworkFeeWallet   new network fee wallet"
+            },
+            "id": 4553,
+            "name": "NetworkFeeWalletUpdated",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 4552,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4549,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "prevNetworkFeeWallet",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4553,
+                  "src": "615:33:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                    "typeString": "contract ITokenHolder"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 4548,
+                    "name": "ITokenHolder",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 33147,
+                    "src": "615:12:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                      "typeString": "contract ITokenHolder"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4551,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "newNetworkFeeWallet",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4553,
+                  "src": "650:32:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                    "typeString": "contract ITokenHolder"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 4550,
+                    "name": "ITokenHolder",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 33147,
+                    "src": "650:12:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                      "typeString": "contract ITokenHolder"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "614:69:15"
+            },
+            "src": "585:99:15"
+          },
+          {
+            "anonymous": false,
+            "documentation": {
+              "id": 4554,
+              "nodeType": "StructuredDocumentation",
+              "src": "690:173:15",
+              "text": " @dev triggered when the network fee is updated\n @param prevNetworkFee    previous network fee\n @param newNetworkFee     new network fee"
+            },
+            "id": 4560,
+            "name": "NetworkFeeUpdated",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 4559,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4556,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "prevNetworkFee",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4560,
+                  "src": "892:21:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 4555,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "892:6:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4558,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "newNetworkFee",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4560,
+                  "src": "915:20:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 4557,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "915:6:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "891:45:15"
+            },
+            "src": "868:69:15"
+          },
+          {
+            "body": {
+              "id": 4585,
+              "nodeType": "Block",
+              "src": "1337:101:15",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 4579,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 4577,
+                      "name": "_networkFeeWallet",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4544,
+                      "src": "1347:17:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                        "typeString": "contract ITokenHolder"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 4578,
+                      "name": "initialNetworkFeeWallet",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4563,
+                      "src": "1367:23:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                        "typeString": "contract ITokenHolder"
+                      }
+                    },
+                    "src": "1347:43:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                      "typeString": "contract ITokenHolder"
+                    }
+                  },
+                  "id": 4580,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1347:43:15"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 4583,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 4581,
+                      "name": "_networkFee",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4546,
+                      "src": "1400:11:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint32",
+                        "typeString": "uint32"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 4582,
+                      "name": "initialNetworkFee",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4565,
+                      "src": "1414:17:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint32",
+                        "typeString": "uint32"
+                      }
+                    },
+                    "src": "1400:31:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "id": 4584,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1400:31:15"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 4561,
+              "nodeType": "StructuredDocumentation",
+              "src": "943:203:15",
+              "text": " @dev initializes a new NetworkSettings contract\n @param initialNetworkFeeWallet initial network fee wallet\n @param initialNetworkFee initial network fee in ppm units"
+            },
+            "id": 4586,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 4570,
+                        "name": "initialNetworkFeeWallet",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4563,
+                        "src": "1271:23:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                          "typeString": "contract ITokenHolder"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                          "typeString": "contract ITokenHolder"
+                        }
+                      ],
+                      "id": 4569,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "nodeType": "ElementaryTypeNameExpression",
+                      "src": "1263:7:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_address_$",
+                        "typeString": "type(address)"
+                      },
+                      "typeName": {
+                        "id": 4568,
+                        "name": "address",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "1263:7:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": null,
+                          "typeString": null
+                        }
+                      }
+                    },
+                    "id": 4571,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "typeConversion",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1263:32:15",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address_payable",
+                      "typeString": "address payable"
+                    }
+                  }
+                ],
+                "id": 4572,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 4567,
+                  "name": "validAddress",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 32795,
+                  "src": "1250:12:15",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$_t_address_$",
+                    "typeString": "modifier (address)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1250:46:15"
+              },
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "id": 4574,
+                    "name": "initialNetworkFee",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 4565,
+                    "src": "1314:17:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  }
+                ],
+                "id": 4575,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 4573,
+                  "name": "validFee",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 32881,
+                  "src": "1305:8:15",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$_t_uint32_$",
+                    "typeString": "modifier (uint32)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1305:27:15"
+              }
+            ],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 4566,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4563,
+                  "mutability": "mutable",
+                  "name": "initialNetworkFeeWallet",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4586,
+                  "src": "1163:36:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                    "typeString": "contract ITokenHolder"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 4562,
+                    "name": "ITokenHolder",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 33147,
+                    "src": "1163:12:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                      "typeString": "contract ITokenHolder"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4565,
+                  "mutability": "mutable",
+                  "name": "initialNetworkFee",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4586,
+                  "src": "1201:24:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 4564,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1201:6:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1162:64:15"
+            },
+            "returnParameters": {
+              "id": 4576,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1337:0:15"
+            },
+            "scope": 4666,
+            "src": "1151:287:15",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "baseFunctions": [
+              4486
+            ],
+            "body": {
+              "id": 4599,
+              "nodeType": "Block",
+              "src": "1670:56:15",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "components": [
+                      {
+                        "argumentTypes": null,
+                        "id": 4595,
+                        "name": "_networkFeeWallet",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4544,
+                        "src": "1688:17:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                          "typeString": "contract ITokenHolder"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 4596,
+                        "name": "_networkFee",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4546,
+                        "src": "1707:11:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint32",
+                          "typeString": "uint32"
+                        }
+                      }
+                    ],
+                    "id": 4597,
+                    "isConstant": false,
+                    "isInlineArray": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "TupleExpression",
+                    "src": "1687:32:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_contract$_ITokenHolder_$33147_$_t_uint32_$",
+                      "typeString": "tuple(contract ITokenHolder,uint32)"
+                    }
+                  },
+                  "functionReturnParameters": 4594,
+                  "id": 4598,
+                  "nodeType": "Return",
+                  "src": "1680:39:15"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 4587,
+              "nodeType": "StructuredDocumentation",
+              "src": "1444:139:15",
+              "text": " @dev returns the network fee parameters\n @return network fee wallet\n @return network fee in ppm units"
+            },
+            "functionSelector": "e33b5f5f",
+            "id": 4600,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "networkFeeParams",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 4589,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "1630:8:15"
+            },
+            "parameters": {
+              "id": 4588,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1613:2:15"
+            },
+            "returnParameters": {
+              "id": 4594,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4591,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4600,
+                  "src": "1648:12:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                    "typeString": "contract ITokenHolder"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 4590,
+                    "name": "ITokenHolder",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 33147,
+                    "src": "1648:12:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                      "typeString": "contract ITokenHolder"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4593,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4600,
+                  "src": "1662:6:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 4592,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1662:6:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1647:22:15"
+            },
+            "scope": 4666,
+            "src": "1588:138:15",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "baseFunctions": [
+              4491
+            ],
+            "body": {
+              "id": 4609,
+              "nodeType": "Block",
+              "src": "1932:41:15",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 4607,
+                    "name": "_networkFeeWallet",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 4544,
+                    "src": "1949:17:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                      "typeString": "contract ITokenHolder"
+                    }
+                  },
+                  "functionReturnParameters": 4606,
+                  "id": 4608,
+                  "nodeType": "Return",
+                  "src": "1942:24:15"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 4601,
+              "nodeType": "StructuredDocumentation",
+              "src": "1732:121:15",
+              "text": " @dev returns the wallet that receives the global network fees\n @return network fee wallet"
+            },
+            "functionSelector": "3e456504",
+            "id": 4610,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "networkFeeWallet",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 4603,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "1900:8:15"
+            },
+            "parameters": {
+              "id": 4602,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1883:2:15"
+            },
+            "returnParameters": {
+              "id": 4606,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4605,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4610,
+                  "src": "1918:12:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                    "typeString": "contract ITokenHolder"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 4604,
+                    "name": "ITokenHolder",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 33147,
+                    "src": "1918:12:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                      "typeString": "contract ITokenHolder"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1917:14:15"
+            },
+            "scope": 4666,
+            "src": "1858:115:15",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "baseFunctions": [
+              4496
+            ],
+            "body": {
+              "id": 4619,
+              "nodeType": "Block",
+              "src": "2216:35:15",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 4617,
+                    "name": "_networkFee",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 4546,
+                    "src": "2233:11:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "functionReturnParameters": 4616,
+                  "id": 4618,
+                  "nodeType": "Return",
+                  "src": "2226:18:15"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 4611,
+              "nodeType": "StructuredDocumentation",
+              "src": "1979:170:15",
+              "text": " @dev returns the global network fee\n the network fee is a portion of the total fees from each pool\n @return network fee in ppm units"
+            },
+            "functionSelector": "9db9e18b",
+            "id": 4620,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "networkFee",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 4613,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "2190:8:15"
+            },
+            "parameters": {
+              "id": 4612,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2173:2:15"
+            },
+            "returnParameters": {
+              "id": 4616,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4615,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4620,
+                  "src": "2208:6:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 4614,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2208:6:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2207:8:15"
+            },
+            "scope": 4666,
+            "src": "2154:97:15",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 4643,
+              "nodeType": "Block",
+              "src": "2571:134:15",
+              "statements": [
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 4635,
+                        "name": "_networkFeeWallet",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4544,
+                        "src": "2610:17:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                          "typeString": "contract ITokenHolder"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 4636,
+                        "name": "newNetworkFeeWallet",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4623,
+                        "src": "2629:19:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                          "typeString": "contract ITokenHolder"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                          "typeString": "contract ITokenHolder"
+                        },
+                        {
+                          "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                          "typeString": "contract ITokenHolder"
+                        }
+                      ],
+                      "id": 4634,
+                      "name": "NetworkFeeWalletUpdated",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4553,
+                      "src": "2586:23:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_contract$_ITokenHolder_$33147_$_t_contract$_ITokenHolder_$33147_$returns$__$",
+                        "typeString": "function (contract ITokenHolder,contract ITokenHolder)"
+                      }
+                    },
+                    "id": 4637,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2586:63:15",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 4638,
+                  "nodeType": "EmitStatement",
+                  "src": "2581:68:15"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 4641,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 4639,
+                      "name": "_networkFeeWallet",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4544,
+                      "src": "2659:17:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                        "typeString": "contract ITokenHolder"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 4640,
+                      "name": "newNetworkFeeWallet",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4623,
+                      "src": "2679:19:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                        "typeString": "contract ITokenHolder"
+                      }
+                    },
+                    "src": "2659:39:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                      "typeString": "contract ITokenHolder"
+                    }
+                  },
+                  "id": 4642,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2659:39:15"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 4621,
+              "nodeType": "StructuredDocumentation",
+              "src": "2257:156:15",
+              "text": " @dev sets the network fee wallet\n can be executed only by the owner\n @param newNetworkFeeWallet new network fee wallet"
+            },
+            "functionSelector": "551e9a6f",
+            "id": 4644,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 4626,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 4625,
+                  "name": "ownerOnly",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 32527,
+                  "src": "2506:9:15",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "2506:9:15"
+              },
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 4630,
+                        "name": "newNetworkFeeWallet",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4623,
+                        "src": "2545:19:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                          "typeString": "contract ITokenHolder"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                          "typeString": "contract ITokenHolder"
+                        }
+                      ],
+                      "id": 4629,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "nodeType": "ElementaryTypeNameExpression",
+                      "src": "2537:7:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_address_$",
+                        "typeString": "type(address)"
+                      },
+                      "typeName": {
+                        "id": 4628,
+                        "name": "address",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "2537:7:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": null,
+                          "typeString": null
+                        }
+                      }
+                    },
+                    "id": 4631,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "typeConversion",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2537:28:15",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address_payable",
+                      "typeString": "address payable"
+                    }
+                  }
+                ],
+                "id": 4632,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 4627,
+                  "name": "validAddress",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 32795,
+                  "src": "2524:12:15",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$_t_address_$",
+                    "typeString": "modifier (address)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "2524:42:15"
+              }
+            ],
+            "name": "setNetworkFeeWallet",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 4624,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4623,
+                  "mutability": "mutable",
+                  "name": "newNetworkFeeWallet",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4644,
+                  "src": "2447:32:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                    "typeString": "contract ITokenHolder"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 4622,
+                    "name": "ITokenHolder",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 33147,
+                    "src": "2447:12:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                      "typeString": "contract ITokenHolder"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2446:34:15"
+            },
+            "returnParameters": {
+              "id": 4633,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2571:0:15"
+            },
+            "scope": 4666,
+            "src": "2418:287:15",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 4664,
+              "nodeType": "Block",
+              "src": "2953:104:15",
+              "statements": [
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 4656,
+                        "name": "_networkFee",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4546,
+                        "src": "2986:11:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint32",
+                          "typeString": "uint32"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 4657,
+                        "name": "newNetworkFee",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4647,
+                        "src": "2999:13:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint32",
+                          "typeString": "uint32"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint32",
+                          "typeString": "uint32"
+                        },
+                        {
+                          "typeIdentifier": "t_uint32",
+                          "typeString": "uint32"
+                        }
+                      ],
+                      "id": 4655,
+                      "name": "NetworkFeeUpdated",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4560,
+                      "src": "2968:17:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_uint32_$_t_uint32_$returns$__$",
+                        "typeString": "function (uint32,uint32)"
+                      }
+                    },
+                    "id": 4658,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2968:45:15",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 4659,
+                  "nodeType": "EmitStatement",
+                  "src": "2963:50:15"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 4662,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 4660,
+                      "name": "_networkFee",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4546,
+                      "src": "3023:11:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint32",
+                        "typeString": "uint32"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 4661,
+                      "name": "newNetworkFee",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4647,
+                      "src": "3037:13:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint32",
+                        "typeString": "uint32"
+                      }
+                    },
+                    "src": "3023:27:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "id": 4663,
+                  "nodeType": "ExpressionStatement",
+                  "src": "3023:27:15"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 4645,
+              "nodeType": "StructuredDocumentation",
+              "src": "2711:149:15",
+              "text": " @dev sets the network fee\n can be executed only by the owner\n @param newNetworkFee new network fee in ppm units"
+            },
+            "functionSelector": "155bb726",
+            "id": 4665,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 4650,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 4649,
+                  "name": "ownerOnly",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 32527,
+                  "src": "2919:9:15",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "2919:9:15"
+              },
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "id": 4652,
+                    "name": "newNetworkFee",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 4647,
+                    "src": "2938:13:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  }
+                ],
+                "id": 4653,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 4651,
+                  "name": "validFee",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 32881,
+                  "src": "2929:8:15",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$_t_uint32_$",
+                    "typeString": "modifier (uint32)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "2929:23:15"
+              }
+            ],
+            "name": "setNetworkFee",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 4648,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4647,
+                  "mutability": "mutable",
+                  "name": "newNetworkFee",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4665,
+                  "src": "2888:20:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 4646,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2888:6:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2887:22:15"
+            },
+            "returnParameters": {
+              "id": 4654,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2953:0:15"
+            },
+            "scope": 4666,
+            "src": "2865:192:15",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 4667,
+        "src": "236:2823:15"
+      }
+    ],
+    "src": "51:3009:15"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/NetworkSettings.sol",
+      "exportedSymbols": {
+        "NetworkSettings": [
+          4666
+        ]
+      },
+      "license": "SEE LICENSE IN LICENSE"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.6",
+            ".12"
+          ]
+        },
+        "id": 4532,
+        "name": "PragmaDirective",
+        "src": "51:23:15"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 4498,
+          "absolutePath": "project:/contracts/INetworkSettings.sol",
+          "file": "./INetworkSettings.sol",
+          "scope": 4667,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 4533,
+        "name": "ImportDirective",
+        "src": "76:32:15"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 32592,
+          "absolutePath": "project:/contracts/utility/Owned.sol",
+          "file": "./utility/Owned.sol",
+          "scope": 4667,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 4534,
+        "name": "ImportDirective",
+        "src": "110:29:15"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 32911,
+          "absolutePath": "project:/contracts/utility/Utils.sol",
+          "file": "./utility/Utils.sol",
+          "scope": 4667,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 4535,
+        "name": "ImportDirective",
+        "src": "140:29:15"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "contractDependencies": [
+            4497,
+            32591,
+            32910,
+            33117
+          ],
+          "contractKind": "contract",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            4666,
+            32910,
+            32591,
+            33117,
+            4497
+          ],
+          "name": "NetworkSettings",
+          "scope": 4667
+        },
+        "children": [
+          {
+            "attributes": {
+              "text": " @dev This contract maintains the network settings."
+            },
+            "id": 4536,
+            "name": "StructuredDocumentation",
+            "src": "171:64:15"
+          },
+          {
+            "attributes": {
+              "arguments": null
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "INetworkSettings",
+                  "referencedDeclaration": 4497,
+                  "type": "contract INetworkSettings"
+                },
+                "id": 4537,
+                "name": "UserDefinedTypeName",
+                "src": "264:16:15"
+              }
+            ],
+            "id": 4538,
+            "name": "InheritanceSpecifier",
+            "src": "264:16:15"
+          },
+          {
+            "attributes": {
+              "arguments": null
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "Owned",
+                  "referencedDeclaration": 32591,
+                  "type": "contract Owned"
+                },
+                "id": 4539,
+                "name": "UserDefinedTypeName",
+                "src": "282:5:15"
+              }
+            ],
+            "id": 4540,
+            "name": "InheritanceSpecifier",
+            "src": "282:5:15"
+          },
+          {
+            "attributes": {
+              "arguments": null
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "Utils",
+                  "referencedDeclaration": 32910,
+                  "type": "contract Utils"
+                },
+                "id": 4541,
+                "name": "UserDefinedTypeName",
+                "src": "289:5:15"
+              }
+            ],
+            "id": 4542,
+            "name": "InheritanceSpecifier",
+            "src": "289:5:15"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "mutability": "mutable",
+              "name": "_networkFeeWallet",
+              "overrides": null,
+              "scope": 4666,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "contract ITokenHolder",
+              "value": null,
+              "visibility": "private"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "ITokenHolder",
+                  "referencedDeclaration": 33147,
+                  "type": "contract ITokenHolder"
+                },
+                "id": 4543,
+                "name": "UserDefinedTypeName",
+                "src": "301:12:15"
+              }
+            ],
+            "id": 4544,
+            "name": "VariableDeclaration",
+            "src": "301:38:15"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "mutability": "mutable",
+              "name": "_networkFee",
+              "overrides": null,
+              "scope": 4666,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint32",
+              "value": null,
+              "visibility": "private"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint32",
+                  "type": "uint32"
+                },
+                "id": 4545,
+                "name": "ElementaryTypeName",
+                "src": "345:6:15"
+              }
+            ],
+            "id": 4546,
+            "name": "VariableDeclaration",
+            "src": "345:26:15"
+          },
+          {
+            "attributes": {
+              "anonymous": false,
+              "name": "NetworkFeeWalletUpdated"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": " @dev triggered when the network fee wallet is updated\n @param prevNetworkFeeWallet  previous network fee wallet\n @param newNetworkFeeWallet   new network fee wallet"
+                },
+                "id": 4547,
+                "name": "StructuredDocumentation",
+                "src": "378:202:15"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "mutability": "mutable",
+                      "name": "prevNetworkFeeWallet",
+                      "overrides": null,
+                      "scope": 4553,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract ITokenHolder",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "ITokenHolder",
+                          "referencedDeclaration": 33147,
+                          "type": "contract ITokenHolder"
+                        },
+                        "id": 4548,
+                        "name": "UserDefinedTypeName",
+                        "src": "615:12:15"
+                      }
+                    ],
+                    "id": 4549,
+                    "name": "VariableDeclaration",
+                    "src": "615:33:15"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "mutability": "mutable",
+                      "name": "newNetworkFeeWallet",
+                      "overrides": null,
+                      "scope": 4553,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract ITokenHolder",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "ITokenHolder",
+                          "referencedDeclaration": 33147,
+                          "type": "contract ITokenHolder"
+                        },
+                        "id": 4550,
+                        "name": "UserDefinedTypeName",
+                        "src": "650:12:15"
+                      }
+                    ],
+                    "id": 4551,
+                    "name": "VariableDeclaration",
+                    "src": "650:32:15"
+                  }
+                ],
+                "id": 4552,
+                "name": "ParameterList",
+                "src": "614:69:15"
+              }
+            ],
+            "id": 4553,
+            "name": "EventDefinition",
+            "src": "585:99:15"
+          },
+          {
+            "attributes": {
+              "anonymous": false,
+              "name": "NetworkFeeUpdated"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": " @dev triggered when the network fee is updated\n @param prevNetworkFee    previous network fee\n @param newNetworkFee     new network fee"
+                },
+                "id": 4554,
+                "name": "StructuredDocumentation",
+                "src": "690:173:15"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "mutability": "mutable",
+                      "name": "prevNetworkFee",
+                      "overrides": null,
+                      "scope": 4560,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint32",
+                          "type": "uint32"
+                        },
+                        "id": 4555,
+                        "name": "ElementaryTypeName",
+                        "src": "892:6:15"
+                      }
+                    ],
+                    "id": 4556,
+                    "name": "VariableDeclaration",
+                    "src": "892:21:15"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "mutability": "mutable",
+                      "name": "newNetworkFee",
+                      "overrides": null,
+                      "scope": 4560,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint32",
+                          "type": "uint32"
+                        },
+                        "id": 4557,
+                        "name": "ElementaryTypeName",
+                        "src": "915:6:15"
+                      }
+                    ],
+                    "id": 4558,
+                    "name": "VariableDeclaration",
+                    "src": "915:20:15"
+                  }
+                ],
+                "id": 4559,
+                "name": "ParameterList",
+                "src": "891:45:15"
+              }
+            ],
+            "id": 4560,
+            "name": "EventDefinition",
+            "src": "868:69:15"
+          },
+          {
+            "attributes": {
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "name": "",
+              "overrides": null,
+              "scope": 4666,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": " @dev initializes a new NetworkSettings contract\n @param initialNetworkFeeWallet initial network fee wallet\n @param initialNetworkFee initial network fee in ppm units"
+                },
+                "id": 4561,
+                "name": "StructuredDocumentation",
+                "src": "943:203:15"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "initialNetworkFeeWallet",
+                      "overrides": null,
+                      "scope": 4586,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract ITokenHolder",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "ITokenHolder",
+                          "referencedDeclaration": 33147,
+                          "type": "contract ITokenHolder"
+                        },
+                        "id": 4562,
+                        "name": "UserDefinedTypeName",
+                        "src": "1163:12:15"
+                      }
+                    ],
+                    "id": 4563,
+                    "name": "VariableDeclaration",
+                    "src": "1163:36:15"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "initialNetworkFee",
+                      "overrides": null,
+                      "scope": 4586,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint32",
+                          "type": "uint32"
+                        },
+                        "id": 4564,
+                        "name": "ElementaryTypeName",
+                        "src": "1201:6:15"
+                      }
+                    ],
+                    "id": 4565,
+                    "name": "VariableDeclaration",
+                    "src": "1201:24:15"
+                  }
+                ],
+                "id": 4566,
+                "name": "ParameterList",
+                "src": "1162:64:15"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4576,
+                "name": "ParameterList",
+                "src": "1337:0:15"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 32795,
+                      "type": "modifier (address)",
+                      "value": "validAddress"
+                    },
+                    "id": 4567,
+                    "name": "Identifier",
+                    "src": "1250:12:15"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "isStructConstructorCall": false,
+                      "lValueRequested": false,
+                      "names": [
+                        null
+                      ],
+                      "tryCall": false,
+                      "type": "address payable",
+                      "type_conversion": true
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                              "typeString": "contract ITokenHolder"
+                            }
+                          ],
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "type": "type(address)"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "address",
+                              "type": null
+                            },
+                            "id": 4568,
+                            "name": "ElementaryTypeName",
+                            "src": "1263:7:15"
+                          }
+                        ],
+                        "id": 4569,
+                        "name": "ElementaryTypeNameExpression",
+                        "src": "1263:7:15"
+                      },
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 4563,
+                          "type": "contract ITokenHolder",
+                          "value": "initialNetworkFeeWallet"
+                        },
+                        "id": 4570,
+                        "name": "Identifier",
+                        "src": "1271:23:15"
+                      }
+                    ],
+                    "id": 4571,
+                    "name": "FunctionCall",
+                    "src": "1263:32:15"
+                  }
+                ],
+                "id": 4572,
+                "name": "ModifierInvocation",
+                "src": "1250:46:15"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 32881,
+                      "type": "modifier (uint32)",
+                      "value": "validFee"
+                    },
+                    "id": 4573,
+                    "name": "Identifier",
+                    "src": "1305:8:15"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 4565,
+                      "type": "uint32",
+                      "value": "initialNetworkFee"
+                    },
+                    "id": 4574,
+                    "name": "Identifier",
+                    "src": "1314:17:15"
+                  }
+                ],
+                "id": 4575,
+                "name": "ModifierInvocation",
+                "src": "1305:27:15"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "contract ITokenHolder"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 4544,
+                              "type": "contract ITokenHolder",
+                              "value": "_networkFeeWallet"
+                            },
+                            "id": 4577,
+                            "name": "Identifier",
+                            "src": "1347:17:15"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 4563,
+                              "type": "contract ITokenHolder",
+                              "value": "initialNetworkFeeWallet"
+                            },
+                            "id": 4578,
+                            "name": "Identifier",
+                            "src": "1367:23:15"
+                          }
+                        ],
+                        "id": 4579,
+                        "name": "Assignment",
+                        "src": "1347:43:15"
+                      }
+                    ],
+                    "id": 4580,
+                    "name": "ExpressionStatement",
+                    "src": "1347:43:15"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint32"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 4546,
+                              "type": "uint32",
+                              "value": "_networkFee"
+                            },
+                            "id": 4581,
+                            "name": "Identifier",
+                            "src": "1400:11:15"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 4565,
+                              "type": "uint32",
+                              "value": "initialNetworkFee"
+                            },
+                            "id": 4582,
+                            "name": "Identifier",
+                            "src": "1414:17:15"
+                          }
+                        ],
+                        "id": 4583,
+                        "name": "Assignment",
+                        "src": "1400:31:15"
+                      }
+                    ],
+                    "id": 4584,
+                    "name": "ExpressionStatement",
+                    "src": "1400:31:15"
+                  }
+                ],
+                "id": 4585,
+                "name": "Block",
+                "src": "1337:101:15"
+              }
+            ],
+            "id": 4586,
+            "name": "FunctionDefinition",
+            "src": "1151:287:15"
+          },
+          {
+            "attributes": {
+              "baseFunctions": [
+                4486
+              ],
+              "functionSelector": "e33b5f5f",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "networkFeeParams",
+              "scope": 4666,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": " @dev returns the network fee parameters\n @return network fee wallet\n @return network fee in ppm units"
+                },
+                "id": 4587,
+                "name": "StructuredDocumentation",
+                "src": "1444:139:15"
+              },
+              {
+                "attributes": {
+                  "overrides": [
+                    null
+                  ]
+                },
+                "id": 4589,
+                "name": "OverrideSpecifier",
+                "src": "1630:8:15"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4588,
+                "name": "ParameterList",
+                "src": "1613:2:15"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 4600,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract ITokenHolder",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "ITokenHolder",
+                          "referencedDeclaration": 33147,
+                          "type": "contract ITokenHolder"
+                        },
+                        "id": 4590,
+                        "name": "UserDefinedTypeName",
+                        "src": "1648:12:15"
+                      }
+                    ],
+                    "id": 4591,
+                    "name": "VariableDeclaration",
+                    "src": "1648:12:15"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 4600,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint32",
+                          "type": "uint32"
+                        },
+                        "id": 4592,
+                        "name": "ElementaryTypeName",
+                        "src": "1662:6:15"
+                      }
+                    ],
+                    "id": 4593,
+                    "name": "VariableDeclaration",
+                    "src": "1662:6:15"
+                  }
+                ],
+                "id": 4594,
+                "name": "ParameterList",
+                "src": "1647:22:15"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 4594
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isInlineArray": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "type": "tuple(contract ITokenHolder,uint32)"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 4544,
+                              "type": "contract ITokenHolder",
+                              "value": "_networkFeeWallet"
+                            },
+                            "id": 4595,
+                            "name": "Identifier",
+                            "src": "1688:17:15"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 4546,
+                              "type": "uint32",
+                              "value": "_networkFee"
+                            },
+                            "id": 4596,
+                            "name": "Identifier",
+                            "src": "1707:11:15"
+                          }
+                        ],
+                        "id": 4597,
+                        "name": "TupleExpression",
+                        "src": "1687:32:15"
+                      }
+                    ],
+                    "id": 4598,
+                    "name": "Return",
+                    "src": "1680:39:15"
+                  }
+                ],
+                "id": 4599,
+                "name": "Block",
+                "src": "1670:56:15"
+              }
+            ],
+            "id": 4600,
+            "name": "FunctionDefinition",
+            "src": "1588:138:15"
+          },
+          {
+            "attributes": {
+              "baseFunctions": [
+                4491
+              ],
+              "functionSelector": "3e456504",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "networkFeeWallet",
+              "scope": 4666,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": " @dev returns the wallet that receives the global network fees\n @return network fee wallet"
+                },
+                "id": 4601,
+                "name": "StructuredDocumentation",
+                "src": "1732:121:15"
+              },
+              {
+                "attributes": {
+                  "overrides": [
+                    null
+                  ]
+                },
+                "id": 4603,
+                "name": "OverrideSpecifier",
+                "src": "1900:8:15"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4602,
+                "name": "ParameterList",
+                "src": "1883:2:15"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 4610,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract ITokenHolder",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "ITokenHolder",
+                          "referencedDeclaration": 33147,
+                          "type": "contract ITokenHolder"
+                        },
+                        "id": 4604,
+                        "name": "UserDefinedTypeName",
+                        "src": "1918:12:15"
+                      }
+                    ],
+                    "id": 4605,
+                    "name": "VariableDeclaration",
+                    "src": "1918:12:15"
+                  }
+                ],
+                "id": 4606,
+                "name": "ParameterList",
+                "src": "1917:14:15"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 4606
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 4544,
+                          "type": "contract ITokenHolder",
+                          "value": "_networkFeeWallet"
+                        },
+                        "id": 4607,
+                        "name": "Identifier",
+                        "src": "1949:17:15"
+                      }
+                    ],
+                    "id": 4608,
+                    "name": "Return",
+                    "src": "1942:24:15"
+                  }
+                ],
+                "id": 4609,
+                "name": "Block",
+                "src": "1932:41:15"
+              }
+            ],
+            "id": 4610,
+            "name": "FunctionDefinition",
+            "src": "1858:115:15"
+          },
+          {
+            "attributes": {
+              "baseFunctions": [
+                4496
+              ],
+              "functionSelector": "9db9e18b",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "networkFee",
+              "scope": 4666,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": " @dev returns the global network fee\n the network fee is a portion of the total fees from each pool\n @return network fee in ppm units"
+                },
+                "id": 4611,
+                "name": "StructuredDocumentation",
+                "src": "1979:170:15"
+              },
+              {
+                "attributes": {
+                  "overrides": [
+                    null
+                  ]
+                },
+                "id": 4613,
+                "name": "OverrideSpecifier",
+                "src": "2190:8:15"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4612,
+                "name": "ParameterList",
+                "src": "2173:2:15"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 4620,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint32",
+                          "type": "uint32"
+                        },
+                        "id": 4614,
+                        "name": "ElementaryTypeName",
+                        "src": "2208:6:15"
+                      }
+                    ],
+                    "id": 4615,
+                    "name": "VariableDeclaration",
+                    "src": "2208:6:15"
+                  }
+                ],
+                "id": 4616,
+                "name": "ParameterList",
+                "src": "2207:8:15"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 4616
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 4546,
+                          "type": "uint32",
+                          "value": "_networkFee"
+                        },
+                        "id": 4617,
+                        "name": "Identifier",
+                        "src": "2233:11:15"
+                      }
+                    ],
+                    "id": 4618,
+                    "name": "Return",
+                    "src": "2226:18:15"
+                  }
+                ],
+                "id": 4619,
+                "name": "Block",
+                "src": "2216:35:15"
+              }
+            ],
+            "id": 4620,
+            "name": "FunctionDefinition",
+            "src": "2154:97:15"
+          },
+          {
+            "attributes": {
+              "functionSelector": "551e9a6f",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "name": "setNetworkFeeWallet",
+              "overrides": null,
+              "scope": 4666,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": " @dev sets the network fee wallet\n can be executed only by the owner\n @param newNetworkFeeWallet new network fee wallet"
+                },
+                "id": 4621,
+                "name": "StructuredDocumentation",
+                "src": "2257:156:15"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "newNetworkFeeWallet",
+                      "overrides": null,
+                      "scope": 4644,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract ITokenHolder",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "ITokenHolder",
+                          "referencedDeclaration": 33147,
+                          "type": "contract ITokenHolder"
+                        },
+                        "id": 4622,
+                        "name": "UserDefinedTypeName",
+                        "src": "2447:12:15"
+                      }
+                    ],
+                    "id": 4623,
+                    "name": "VariableDeclaration",
+                    "src": "2447:32:15"
+                  }
+                ],
+                "id": 4624,
+                "name": "ParameterList",
+                "src": "2446:34:15"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4633,
+                "name": "ParameterList",
+                "src": "2571:0:15"
+              },
+              {
+                "attributes": {
+                  "arguments": null
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 32527,
+                      "type": "modifier ()",
+                      "value": "ownerOnly"
+                    },
+                    "id": 4625,
+                    "name": "Identifier",
+                    "src": "2506:9:15"
+                  }
+                ],
+                "id": 4626,
+                "name": "ModifierInvocation",
+                "src": "2506:9:15"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 32795,
+                      "type": "modifier (address)",
+                      "value": "validAddress"
+                    },
+                    "id": 4627,
+                    "name": "Identifier",
+                    "src": "2524:12:15"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "isStructConstructorCall": false,
+                      "lValueRequested": false,
+                      "names": [
+                        null
+                      ],
+                      "tryCall": false,
+                      "type": "address payable",
+                      "type_conversion": true
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                              "typeString": "contract ITokenHolder"
+                            }
+                          ],
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "type": "type(address)"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "address",
+                              "type": null
+                            },
+                            "id": 4628,
+                            "name": "ElementaryTypeName",
+                            "src": "2537:7:15"
+                          }
+                        ],
+                        "id": 4629,
+                        "name": "ElementaryTypeNameExpression",
+                        "src": "2537:7:15"
+                      },
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 4623,
+                          "type": "contract ITokenHolder",
+                          "value": "newNetworkFeeWallet"
+                        },
+                        "id": 4630,
+                        "name": "Identifier",
+                        "src": "2545:19:15"
+                      }
+                    ],
+                    "id": 4631,
+                    "name": "FunctionCall",
+                    "src": "2537:28:15"
+                  }
+                ],
+                "id": 4632,
+                "name": "ModifierInvocation",
+                "src": "2524:42:15"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                                  "typeString": "contract ITokenHolder"
+                                },
+                                {
+                                  "typeIdentifier": "t_contract$_ITokenHolder_$33147",
+                                  "typeString": "contract ITokenHolder"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 4553,
+                              "type": "function (contract ITokenHolder,contract ITokenHolder)",
+                              "value": "NetworkFeeWalletUpdated"
+                            },
+                            "id": 4634,
+                            "name": "Identifier",
+                            "src": "2586:23:15"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 4544,
+                              "type": "contract ITokenHolder",
+                              "value": "_networkFeeWallet"
+                            },
+                            "id": 4635,
+                            "name": "Identifier",
+                            "src": "2610:17:15"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 4623,
+                              "type": "contract ITokenHolder",
+                              "value": "newNetworkFeeWallet"
+                            },
+                            "id": 4636,
+                            "name": "Identifier",
+                            "src": "2629:19:15"
+                          }
+                        ],
+                        "id": 4637,
+                        "name": "FunctionCall",
+                        "src": "2586:63:15"
+                      }
+                    ],
+                    "id": 4638,
+                    "name": "EmitStatement",
+                    "src": "2581:68:15"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "contract ITokenHolder"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 4544,
+                              "type": "contract ITokenHolder",
+                              "value": "_networkFeeWallet"
+                            },
+                            "id": 4639,
+                            "name": "Identifier",
+                            "src": "2659:17:15"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 4623,
+                              "type": "contract ITokenHolder",
+                              "value": "newNetworkFeeWallet"
+                            },
+                            "id": 4640,
+                            "name": "Identifier",
+                            "src": "2679:19:15"
+                          }
+                        ],
+                        "id": 4641,
+                        "name": "Assignment",
+                        "src": "2659:39:15"
+                      }
+                    ],
+                    "id": 4642,
+                    "name": "ExpressionStatement",
+                    "src": "2659:39:15"
+                  }
+                ],
+                "id": 4643,
+                "name": "Block",
+                "src": "2571:134:15"
+              }
+            ],
+            "id": 4644,
+            "name": "FunctionDefinition",
+            "src": "2418:287:15"
+          },
+          {
+            "attributes": {
+              "functionSelector": "155bb726",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "name": "setNetworkFee",
+              "overrides": null,
+              "scope": 4666,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": " @dev sets the network fee\n can be executed only by the owner\n @param newNetworkFee new network fee in ppm units"
+                },
+                "id": 4645,
+                "name": "StructuredDocumentation",
+                "src": "2711:149:15"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "newNetworkFee",
+                      "overrides": null,
+                      "scope": 4665,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint32",
+                          "type": "uint32"
+                        },
+                        "id": 4646,
+                        "name": "ElementaryTypeName",
+                        "src": "2888:6:15"
+                      }
+                    ],
+                    "id": 4647,
+                    "name": "VariableDeclaration",
+                    "src": "2888:20:15"
+                  }
+                ],
+                "id": 4648,
+                "name": "ParameterList",
+                "src": "2887:22:15"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4654,
+                "name": "ParameterList",
+                "src": "2953:0:15"
+              },
+              {
+                "attributes": {
+                  "arguments": null
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 32527,
+                      "type": "modifier ()",
+                      "value": "ownerOnly"
+                    },
+                    "id": 4649,
+                    "name": "Identifier",
+                    "src": "2919:9:15"
+                  }
+                ],
+                "id": 4650,
+                "name": "ModifierInvocation",
+                "src": "2919:9:15"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 32881,
+                      "type": "modifier (uint32)",
+                      "value": "validFee"
+                    },
+                    "id": 4651,
+                    "name": "Identifier",
+                    "src": "2929:8:15"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 4647,
+                      "type": "uint32",
+                      "value": "newNetworkFee"
+                    },
+                    "id": 4652,
+                    "name": "Identifier",
+                    "src": "2938:13:15"
+                  }
+                ],
+                "id": 4653,
+                "name": "ModifierInvocation",
+                "src": "2929:23:15"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_uint32",
+                                  "typeString": "uint32"
+                                },
+                                {
+                                  "typeIdentifier": "t_uint32",
+                                  "typeString": "uint32"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 4560,
+                              "type": "function (uint32,uint32)",
+                              "value": "NetworkFeeUpdated"
+                            },
+                            "id": 4655,
+                            "name": "Identifier",
+                            "src": "2968:17:15"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 4546,
+                              "type": "uint32",
+                              "value": "_networkFee"
+                            },
+                            "id": 4656,
+                            "name": "Identifier",
+                            "src": "2986:11:15"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 4647,
+                              "type": "uint32",
+                              "value": "newNetworkFee"
+                            },
+                            "id": 4657,
+                            "name": "Identifier",
+                            "src": "2999:13:15"
+                          }
+                        ],
+                        "id": 4658,
+                        "name": "FunctionCall",
+                        "src": "2968:45:15"
+                      }
+                    ],
+                    "id": 4659,
+                    "name": "EmitStatement",
+                    "src": "2963:50:15"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint32"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 4546,
+                              "type": "uint32",
+                              "value": "_networkFee"
+                            },
+                            "id": 4660,
+                            "name": "Identifier",
+                            "src": "3023:11:15"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 4647,
+                              "type": "uint32",
+                              "value": "newNetworkFee"
+                            },
+                            "id": 4661,
+                            "name": "Identifier",
+                            "src": "3037:13:15"
+                          }
+                        ],
+                        "id": 4662,
+                        "name": "Assignment",
+                        "src": "3023:27:15"
+                      }
+                    ],
+                    "id": 4663,
+                    "name": "ExpressionStatement",
+                    "src": "3023:27:15"
+                  }
+                ],
+                "id": 4664,
+                "name": "Block",
+                "src": "2953:104:15"
+              }
+            ],
+            "id": 4665,
+            "name": "FunctionDefinition",
+            "src": "2865:192:15"
+          }
+        ],
+        "id": 4666,
+        "name": "ContractDefinition",
+        "src": "236:2823:15"
+      }
+    ],
+    "id": 4667,
+    "name": "SourceUnit",
+    "src": "51:3009:15"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-08-23T03:19:29.360Z",
+  "devdoc": {
+    "details": "This contract maintains the network settings.",
+    "events": {
+      "NetworkFeeUpdated(uint32,uint32)": {
+        "details": "triggered when the network fee is updated",
+        "params": {
+          "newNetworkFee": "new network fee",
+          "prevNetworkFee": "previous network fee"
+        }
+      },
+      "NetworkFeeWalletUpdated(address,address)": {
+        "details": "triggered when the network fee wallet is updated",
+        "params": {
+          "newNetworkFeeWallet": "new network fee wallet",
+          "prevNetworkFeeWallet": "previous network fee wallet"
+        }
+      }
+    },
+    "kind": "dev",
+    "methods": {
+      "acceptOwnership()": {
+        "details": "used by a new owner to accept an ownership transfer"
+      },
+      "constructor": {
+        "details": "initializes a new NetworkSettings contract",
+        "params": {
+          "initialNetworkFee": "initial network fee in ppm units",
+          "initialNetworkFeeWallet": "initial network fee wallet"
+        }
+      },
+      "networkFee()": {
+        "details": "returns the global network fee the network fee is a portion of the total fees from each pool",
+        "returns": {
+          "_0": "network fee in ppm units"
+        }
+      },
+      "networkFeeParams()": {
+        "details": "returns the network fee parameters",
+        "returns": {
+          "_0": "network fee wallet",
+          "_1": "network fee in ppm units"
+        }
+      },
+      "networkFeeWallet()": {
+        "details": "returns the wallet that receives the global network fees",
+        "returns": {
+          "_0": "network fee wallet"
+        }
+      },
+      "setNetworkFee(uint32)": {
+        "details": "sets the network fee can be executed only by the owner",
+        "params": {
+          "newNetworkFee": "new network fee in ppm units"
+        }
+      },
+      "setNetworkFeeWallet(address)": {
+        "details": "sets the network fee wallet can be executed only by the owner",
+        "params": {
+          "newNetworkFeeWallet": "new network fee wallet"
+        }
+      },
+      "transferOwnership(address)": {
+        "details": "allows transferring the contract ownership the new owner still needs to accept the transfer can only be called by the contract owner",
+        "params": {
+          "_newOwner": "new contract owner"
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

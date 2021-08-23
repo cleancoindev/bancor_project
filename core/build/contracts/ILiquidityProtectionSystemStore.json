@@ -1,0 +1,1408 @@
+{
+  "contractName": "ILiquidityProtectionSystemStore",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract IERC20",
+          "name": "poolToken",
+          "type": "address"
+        }
+      ],
+      "name": "systemBalance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IERC20",
+          "name": "poolToken",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "poolAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "incSystemBalance",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IERC20",
+          "name": "poolToken",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "poolAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "decSystemBalance",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IConverterAnchor",
+          "name": "poolAnchor",
+          "type": "address"
+        }
+      ],
+      "name": "networkTokensMinted",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IConverterAnchor",
+          "name": "poolAnchor",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "incNetworkTokensMinted",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IConverterAnchor",
+          "name": "poolAnchor",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "decNetworkTokensMinted",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract IConverterAnchor\",\"name\":\"poolAnchor\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"decNetworkTokensMinted\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"contract IERC20\",\"name\":\"poolToken\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"poolAmount\",\"type\":\"uint256\"}],\"name\":\"decSystemBalance\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"contract IConverterAnchor\",\"name\":\"poolAnchor\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"incNetworkTokensMinted\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"contract IERC20\",\"name\":\"poolToken\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"poolAmount\",\"type\":\"uint256\"}],\"name\":\"incSystemBalance\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"contract IConverterAnchor\",\"name\":\"poolAnchor\",\"type\":\"address\"}],\"name\":\"networkTokensMinted\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"contract IERC20\",\"name\":\"poolToken\",\"type\":\"address\"}],\"name\":\"systemBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/liquidity-protection/interfaces/ILiquidityProtectionSystemStore.sol\":\"ILiquidityProtectionSystemStore\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x5f02220344881ce43204ae4a6281145a67bc52c2bb1290a791857df3d19d78f5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://24427744bd3e6cb73c17010119af12a318289c0253a4d9acb8576c9fb3797b08\",\"dweb:/ipfs/QmTLDqpKRBuxGxRAmjgXt9AkXyACW3MtKzi7PYjm5iMfGC\"]},\"project:/contracts/converter/interfaces/IConverterAnchor.sol\":{\"keccak256\":\"0x061dffb3cd75b61094c31a8987276b8f6108e29d67d7a55a305eea9f86d5b196\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://478f3b0164b83199eaf6f8c595abf235b742fb2c15d4fad7a241bd4837083f73\",\"dweb:/ipfs/QmcoDjie2cm3iq3bhjrqn6rE6S8o9WXvBY3tcnC5miN2Ut\"]},\"project:/contracts/liquidity-protection/interfaces/ILiquidityProtectionSystemStore.sol\":{\"keccak256\":\"0x98046adca71257ab94b9557f666b97faab98b9f15a8553db38f150ea110cf116\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://6072437e66213a5efab88ef959d6e02de31e972540e2dc5216c2b419e30f80b3\",\"dweb:/ipfs/QmZTBNBgEiCuu6NbkuidPrnon4JrQkHVSR3rd6ARCPaoMQ\"]},\"project:/contracts/utility/interfaces/IOwned.sol\":{\"keccak256\":\"0x4cfffe7abcbf4a0a49d154837711a38e9c34da4891b86167b9e15d80b24f9b14\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://0b398ddfbcae48adc05489f7be940135a14150c38de9b75897ca9193a1ac99d0\",\"dweb:/ipfs/QmXPh5dHCZqshzmCWPRc3TSQsjc6Sr1SG2XFZe3NdKWMRC\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: SEE LICENSE IN LICENSE\npragma solidity 0.6.12;\n\nimport \"@openzeppelin/contracts/token/ERC20/IERC20.sol\";\n\nimport \"../../converter/interfaces/IConverterAnchor.sol\";\n\n/*\n    Liquidity Protection System Store interface\n*/\ninterface ILiquidityProtectionSystemStore {\n    function systemBalance(IERC20 poolToken) external view returns (uint256);\n\n    function incSystemBalance(IERC20 poolToken, uint256 poolAmount) external;\n\n    function decSystemBalance(IERC20 poolToken, uint256 poolAmount) external;\n\n    function networkTokensMinted(IConverterAnchor poolAnchor) external view returns (uint256);\n\n    function incNetworkTokensMinted(IConverterAnchor poolAnchor, uint256 amount) external;\n\n    function decNetworkTokensMinted(IConverterAnchor poolAnchor, uint256 amount) external;\n}\n",
+  "sourcePath": "D:\\Work Space\\bancor_project\\core\\contracts\\liquidity-protection\\interfaces\\ILiquidityProtectionSystemStore.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/liquidity-protection/interfaces/ILiquidityProtectionSystemStore.sol",
+    "exportedSymbols": {
+      "ILiquidityProtectionSystemStore": [
+        30510
+      ]
+    },
+    "id": 30511,
+    "license": "SEE LICENSE IN LICENSE",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 30465,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "51:23:75"
+      },
+      {
+        "absolutePath": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "file": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "id": 30466,
+        "nodeType": "ImportDirective",
+        "scope": 30511,
+        "sourceUnit": 1292,
+        "src": "76:56:75",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "project:/contracts/converter/interfaces/IConverterAnchor.sol",
+        "file": "../../converter/interfaces/IConverterAnchor.sol",
+        "id": 30467,
+        "nodeType": "ImportDirective",
+        "scope": 30511,
+        "sourceUnit": 15416,
+        "src": "134:57:75",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 30510,
+        "linearizedBaseContracts": [
+          30510
+        ],
+        "name": "ILiquidityProtectionSystemStore",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "5121220c",
+            "id": 30474,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "systemBalance",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 30470,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30469,
+                  "mutability": "mutable",
+                  "name": "poolToken",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30474,
+                  "src": "318:16:75",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IERC20_$1291",
+                    "typeString": "contract IERC20"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 30468,
+                    "name": "IERC20",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 1291,
+                    "src": "318:6:75",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IERC20_$1291",
+                      "typeString": "contract IERC20"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "317:18:75"
+            },
+            "returnParameters": {
+              "id": 30473,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30472,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30474,
+                  "src": "359:7:75",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 30471,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "359:7:75",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "358:9:75"
+            },
+            "scope": 30510,
+            "src": "295:73:75",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "332100fa",
+            "id": 30481,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "incSystemBalance",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 30479,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30476,
+                  "mutability": "mutable",
+                  "name": "poolToken",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30481,
+                  "src": "400:16:75",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IERC20_$1291",
+                    "typeString": "contract IERC20"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 30475,
+                    "name": "IERC20",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 1291,
+                    "src": "400:6:75",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IERC20_$1291",
+                      "typeString": "contract IERC20"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 30478,
+                  "mutability": "mutable",
+                  "name": "poolAmount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30481,
+                  "src": "418:18:75",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 30477,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "418:7:75",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "399:38:75"
+            },
+            "returnParameters": {
+              "id": 30480,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "446:0:75"
+            },
+            "scope": 30510,
+            "src": "374:73:75",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "19c6a5e4",
+            "id": 30488,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "decSystemBalance",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 30486,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30483,
+                  "mutability": "mutable",
+                  "name": "poolToken",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30488,
+                  "src": "479:16:75",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IERC20_$1291",
+                    "typeString": "contract IERC20"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 30482,
+                    "name": "IERC20",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 1291,
+                    "src": "479:6:75",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IERC20_$1291",
+                      "typeString": "contract IERC20"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 30485,
+                  "mutability": "mutable",
+                  "name": "poolAmount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30488,
+                  "src": "497:18:75",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 30484,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "497:7:75",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "478:38:75"
+            },
+            "returnParameters": {
+              "id": 30487,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "525:0:75"
+            },
+            "scope": 30510,
+            "src": "453:73:75",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "350ed8e7",
+            "id": 30495,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "networkTokensMinted",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 30491,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30490,
+                  "mutability": "mutable",
+                  "name": "poolAnchor",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30495,
+                  "src": "561:27:75",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IConverterAnchor_$15415",
+                    "typeString": "contract IConverterAnchor"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 30489,
+                    "name": "IConverterAnchor",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 15415,
+                    "src": "561:16:75",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IConverterAnchor_$15415",
+                      "typeString": "contract IConverterAnchor"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "560:29:75"
+            },
+            "returnParameters": {
+              "id": 30494,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30493,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30495,
+                  "src": "613:7:75",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 30492,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "613:7:75",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "612:9:75"
+            },
+            "scope": 30510,
+            "src": "532:90:75",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "deacd84e",
+            "id": 30502,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "incNetworkTokensMinted",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 30500,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30497,
+                  "mutability": "mutable",
+                  "name": "poolAnchor",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30502,
+                  "src": "660:27:75",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IConverterAnchor_$15415",
+                    "typeString": "contract IConverterAnchor"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 30496,
+                    "name": "IConverterAnchor",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 15415,
+                    "src": "660:16:75",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IConverterAnchor_$15415",
+                      "typeString": "contract IConverterAnchor"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 30499,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30502,
+                  "src": "689:14:75",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 30498,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "689:7:75",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "659:45:75"
+            },
+            "returnParameters": {
+              "id": 30501,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "713:0:75"
+            },
+            "scope": 30510,
+            "src": "628:86:75",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "802fa3ba",
+            "id": 30509,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "decNetworkTokensMinted",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 30507,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30504,
+                  "mutability": "mutable",
+                  "name": "poolAnchor",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30509,
+                  "src": "752:27:75",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IConverterAnchor_$15415",
+                    "typeString": "contract IConverterAnchor"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 30503,
+                    "name": "IConverterAnchor",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 15415,
+                    "src": "752:16:75",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IConverterAnchor_$15415",
+                      "typeString": "contract IConverterAnchor"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 30506,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30509,
+                  "src": "781:14:75",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 30505,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "781:7:75",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "751:45:75"
+            },
+            "returnParameters": {
+              "id": 30508,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "805:0:75"
+            },
+            "scope": 30510,
+            "src": "720:86:75",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 30511,
+        "src": "247:561:75"
+      }
+    ],
+    "src": "51:758:75"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/liquidity-protection/interfaces/ILiquidityProtectionSystemStore.sol",
+      "exportedSymbols": {
+        "ILiquidityProtectionSystemStore": [
+          30510
+        ]
+      },
+      "license": "SEE LICENSE IN LICENSE"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.6",
+            ".12"
+          ]
+        },
+        "id": 30465,
+        "name": "PragmaDirective",
+        "src": "51:23:75"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 1292,
+          "absolutePath": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+          "file": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+          "scope": 30511,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 30466,
+        "name": "ImportDirective",
+        "src": "76:56:75"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 15416,
+          "absolutePath": "project:/contracts/converter/interfaces/IConverterAnchor.sol",
+          "file": "../../converter/interfaces/IConverterAnchor.sol",
+          "scope": 30511,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 30467,
+        "name": "ImportDirective",
+        "src": "134:57:75"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            30510
+          ],
+          "name": "ILiquidityProtectionSystemStore",
+          "scope": 30511
+        },
+        "children": [
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "5121220c",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "systemBalance",
+              "overrides": null,
+              "scope": 30510,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "poolToken",
+                      "overrides": null,
+                      "scope": 30474,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IERC20",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IERC20",
+                          "referencedDeclaration": 1291,
+                          "type": "contract IERC20"
+                        },
+                        "id": 30468,
+                        "name": "UserDefinedTypeName",
+                        "src": "318:6:75"
+                      }
+                    ],
+                    "id": 30469,
+                    "name": "VariableDeclaration",
+                    "src": "318:16:75"
+                  }
+                ],
+                "id": 30470,
+                "name": "ParameterList",
+                "src": "317:18:75"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 30474,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 30471,
+                        "name": "ElementaryTypeName",
+                        "src": "359:7:75"
+                      }
+                    ],
+                    "id": 30472,
+                    "name": "VariableDeclaration",
+                    "src": "359:7:75"
+                  }
+                ],
+                "id": 30473,
+                "name": "ParameterList",
+                "src": "358:9:75"
+              }
+            ],
+            "id": 30474,
+            "name": "FunctionDefinition",
+            "src": "295:73:75"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "332100fa",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "incSystemBalance",
+              "overrides": null,
+              "scope": 30510,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "poolToken",
+                      "overrides": null,
+                      "scope": 30481,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IERC20",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IERC20",
+                          "referencedDeclaration": 1291,
+                          "type": "contract IERC20"
+                        },
+                        "id": 30475,
+                        "name": "UserDefinedTypeName",
+                        "src": "400:6:75"
+                      }
+                    ],
+                    "id": 30476,
+                    "name": "VariableDeclaration",
+                    "src": "400:16:75"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "poolAmount",
+                      "overrides": null,
+                      "scope": 30481,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 30477,
+                        "name": "ElementaryTypeName",
+                        "src": "418:7:75"
+                      }
+                    ],
+                    "id": 30478,
+                    "name": "VariableDeclaration",
+                    "src": "418:18:75"
+                  }
+                ],
+                "id": 30479,
+                "name": "ParameterList",
+                "src": "399:38:75"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 30480,
+                "name": "ParameterList",
+                "src": "446:0:75"
+              }
+            ],
+            "id": 30481,
+            "name": "FunctionDefinition",
+            "src": "374:73:75"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "19c6a5e4",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "decSystemBalance",
+              "overrides": null,
+              "scope": 30510,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "poolToken",
+                      "overrides": null,
+                      "scope": 30488,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IERC20",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IERC20",
+                          "referencedDeclaration": 1291,
+                          "type": "contract IERC20"
+                        },
+                        "id": 30482,
+                        "name": "UserDefinedTypeName",
+                        "src": "479:6:75"
+                      }
+                    ],
+                    "id": 30483,
+                    "name": "VariableDeclaration",
+                    "src": "479:16:75"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "poolAmount",
+                      "overrides": null,
+                      "scope": 30488,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 30484,
+                        "name": "ElementaryTypeName",
+                        "src": "497:7:75"
+                      }
+                    ],
+                    "id": 30485,
+                    "name": "VariableDeclaration",
+                    "src": "497:18:75"
+                  }
+                ],
+                "id": 30486,
+                "name": "ParameterList",
+                "src": "478:38:75"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 30487,
+                "name": "ParameterList",
+                "src": "525:0:75"
+              }
+            ],
+            "id": 30488,
+            "name": "FunctionDefinition",
+            "src": "453:73:75"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "350ed8e7",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "networkTokensMinted",
+              "overrides": null,
+              "scope": 30510,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "poolAnchor",
+                      "overrides": null,
+                      "scope": 30495,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IConverterAnchor",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IConverterAnchor",
+                          "referencedDeclaration": 15415,
+                          "type": "contract IConverterAnchor"
+                        },
+                        "id": 30489,
+                        "name": "UserDefinedTypeName",
+                        "src": "561:16:75"
+                      }
+                    ],
+                    "id": 30490,
+                    "name": "VariableDeclaration",
+                    "src": "561:27:75"
+                  }
+                ],
+                "id": 30491,
+                "name": "ParameterList",
+                "src": "560:29:75"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 30495,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 30492,
+                        "name": "ElementaryTypeName",
+                        "src": "613:7:75"
+                      }
+                    ],
+                    "id": 30493,
+                    "name": "VariableDeclaration",
+                    "src": "613:7:75"
+                  }
+                ],
+                "id": 30494,
+                "name": "ParameterList",
+                "src": "612:9:75"
+              }
+            ],
+            "id": 30495,
+            "name": "FunctionDefinition",
+            "src": "532:90:75"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "deacd84e",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "incNetworkTokensMinted",
+              "overrides": null,
+              "scope": 30510,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "poolAnchor",
+                      "overrides": null,
+                      "scope": 30502,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IConverterAnchor",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IConverterAnchor",
+                          "referencedDeclaration": 15415,
+                          "type": "contract IConverterAnchor"
+                        },
+                        "id": 30496,
+                        "name": "UserDefinedTypeName",
+                        "src": "660:16:75"
+                      }
+                    ],
+                    "id": 30497,
+                    "name": "VariableDeclaration",
+                    "src": "660:27:75"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "amount",
+                      "overrides": null,
+                      "scope": 30502,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 30498,
+                        "name": "ElementaryTypeName",
+                        "src": "689:7:75"
+                      }
+                    ],
+                    "id": 30499,
+                    "name": "VariableDeclaration",
+                    "src": "689:14:75"
+                  }
+                ],
+                "id": 30500,
+                "name": "ParameterList",
+                "src": "659:45:75"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 30501,
+                "name": "ParameterList",
+                "src": "713:0:75"
+              }
+            ],
+            "id": 30502,
+            "name": "FunctionDefinition",
+            "src": "628:86:75"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "802fa3ba",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "decNetworkTokensMinted",
+              "overrides": null,
+              "scope": 30510,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "poolAnchor",
+                      "overrides": null,
+                      "scope": 30509,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IConverterAnchor",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IConverterAnchor",
+                          "referencedDeclaration": 15415,
+                          "type": "contract IConverterAnchor"
+                        },
+                        "id": 30503,
+                        "name": "UserDefinedTypeName",
+                        "src": "752:16:75"
+                      }
+                    ],
+                    "id": 30504,
+                    "name": "VariableDeclaration",
+                    "src": "752:27:75"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "amount",
+                      "overrides": null,
+                      "scope": 30509,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 30505,
+                        "name": "ElementaryTypeName",
+                        "src": "781:7:75"
+                      }
+                    ],
+                    "id": 30506,
+                    "name": "VariableDeclaration",
+                    "src": "781:14:75"
+                  }
+                ],
+                "id": 30507,
+                "name": "ParameterList",
+                "src": "751:45:75"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 30508,
+                "name": "ParameterList",
+                "src": "805:0:75"
+              }
+            ],
+            "id": 30509,
+            "name": "FunctionDefinition",
+            "src": "720:86:75"
+          }
+        ],
+        "id": 30510,
+        "name": "ContractDefinition",
+        "src": "247:561:75"
+      }
+    ],
+    "id": 30511,
+    "name": "SourceUnit",
+    "src": "51:758:75"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-08-23T03:19:30.222Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

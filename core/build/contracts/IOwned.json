@@ -1,0 +1,492 @@
+{
+  "contractName": "IOwned",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "acceptOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"acceptOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/utility/interfaces/IOwned.sol\":\"IOwned\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/utility/interfaces/IOwned.sol\":{\"keccak256\":\"0x4cfffe7abcbf4a0a49d154837711a38e9c34da4891b86167b9e15d80b24f9b14\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://0b398ddfbcae48adc05489f7be940135a14150c38de9b75897ca9193a1ac99d0\",\"dweb:/ipfs/QmXPh5dHCZqshzmCWPRc3TSQsjc6Sr1SG2XFZe3NdKWMRC\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: SEE LICENSE IN LICENSE\npragma solidity 0.6.12;\n\n/*\n    Owned contract interface\n*/\ninterface IOwned {\n    // this function isn't since the compiler emits automatically generated getter functions as external\n    function owner() external view returns (address);\n\n    function transferOwnership(address _newOwner) external;\n\n    function acceptOwnership() external;\n}\n",
+  "sourcePath": "D:\\Work Space\\bancor_project\\core\\contracts\\utility\\interfaces\\IOwned.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/utility/interfaces/IOwned.sol",
+    "exportedSymbols": {
+      "IOwned": [
+        33117
+      ]
+    },
+    "id": 33118,
+    "license": "SEE LICENSE IN LICENSE",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 33103,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "51:23:101"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 33117,
+        "linearizedBaseContracts": [
+          33117
+        ],
+        "name": "IOwned",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "8da5cb5b",
+            "id": 33108,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "owner",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 33104,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "253:2:101"
+            },
+            "returnParameters": {
+              "id": 33107,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 33106,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 33108,
+                  "src": "279:7:101",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 33105,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "279:7:101",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "278:9:101"
+            },
+            "scope": 33117,
+            "src": "239:49:101",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "f2fde38b",
+            "id": 33113,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "transferOwnership",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 33111,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 33110,
+                  "mutability": "mutable",
+                  "name": "_newOwner",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 33113,
+                  "src": "321:17:101",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 33109,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "321:7:101",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "320:19:101"
+            },
+            "returnParameters": {
+              "id": 33112,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "348:0:101"
+            },
+            "scope": 33117,
+            "src": "294:55:101",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "79ba5097",
+            "id": 33116,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "acceptOwnership",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 33114,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "379:2:101"
+            },
+            "returnParameters": {
+              "id": 33115,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "390:0:101"
+            },
+            "scope": 33117,
+            "src": "355:36:101",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 33118,
+        "src": "111:282:101"
+      }
+    ],
+    "src": "51:343:101"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/utility/interfaces/IOwned.sol",
+      "exportedSymbols": {
+        "IOwned": [
+          33117
+        ]
+      },
+      "license": "SEE LICENSE IN LICENSE"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.6",
+            ".12"
+          ]
+        },
+        "id": 33103,
+        "name": "PragmaDirective",
+        "src": "51:23:101"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            33117
+          ],
+          "name": "IOwned",
+          "scope": 33118
+        },
+        "children": [
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "8da5cb5b",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "owner",
+              "overrides": null,
+              "scope": 33117,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 33104,
+                "name": "ParameterList",
+                "src": "253:2:101"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 33108,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 33105,
+                        "name": "ElementaryTypeName",
+                        "src": "279:7:101"
+                      }
+                    ],
+                    "id": 33106,
+                    "name": "VariableDeclaration",
+                    "src": "279:7:101"
+                  }
+                ],
+                "id": 33107,
+                "name": "ParameterList",
+                "src": "278:9:101"
+              }
+            ],
+            "id": 33108,
+            "name": "FunctionDefinition",
+            "src": "239:49:101"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "f2fde38b",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "transferOwnership",
+              "overrides": null,
+              "scope": 33117,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_newOwner",
+                      "overrides": null,
+                      "scope": 33113,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 33109,
+                        "name": "ElementaryTypeName",
+                        "src": "321:7:101"
+                      }
+                    ],
+                    "id": 33110,
+                    "name": "VariableDeclaration",
+                    "src": "321:17:101"
+                  }
+                ],
+                "id": 33111,
+                "name": "ParameterList",
+                "src": "320:19:101"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 33112,
+                "name": "ParameterList",
+                "src": "348:0:101"
+              }
+            ],
+            "id": 33113,
+            "name": "FunctionDefinition",
+            "src": "294:55:101"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "79ba5097",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "acceptOwnership",
+              "overrides": null,
+              "scope": 33117,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 33114,
+                "name": "ParameterList",
+                "src": "379:2:101"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 33115,
+                "name": "ParameterList",
+                "src": "390:0:101"
+              }
+            ],
+            "id": 33116,
+            "name": "FunctionDefinition",
+            "src": "355:36:101"
+          }
+        ],
+        "id": 33117,
+        "name": "ContractDefinition",
+        "src": "111:282:101"
+      }
+    ],
+    "id": 33118,
+    "name": "SourceUnit",
+    "src": "51:343:101"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-08-23T03:19:30.308Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

@@ -8,18 +8,20 @@
     <div class="w-100">
       <b-input-group>
         <b-form-input
-          class="text-right custom-input-field pr-1"
+          class="text-right custom-input-field pr-1 btn-outline-gray-dark"
           :class="formInputStyles"
           v-model="custom"
           inputmode="decimal"
           @input="setCustomSlippage"
           :placeholder="$t('custom')"
           :formatter="formatter"
+          style="color:#41b883 !important;border-color:#41b883 !important"
         />
         <b-input-group-append>
           <div
             class="d-flex align-items-center pr-2 custom-input-append"
             :class="formInputStyles"
+            style="color:#41b883 !important;border-color:#41b883 !important"
           >
             %
           </div>

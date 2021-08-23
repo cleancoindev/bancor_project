@@ -87,7 +87,7 @@ export default class SideBarBottom extends Vue {
   width: 100%;
   height: 56px;
   background-color: white;
-  border-top: 1px solid #1f3a55;
+  border-top: 1px solid #171d28;
 
   .side-bar-links {
     width: 100%;
@@ -133,7 +133,7 @@ export default class SideBarBottom extends Vue {
     }
     img {
       filter: invert(0.2) saturate(5) brightness(1);
-      color: #0f59d1;
+      color: #41b883;
     }
     &::before {
       content: none;
@@ -144,12 +144,12 @@ export default class SideBarBottom extends Vue {
   }
   .clicked-link {
     span {
-      color: #0f59d1 !important;
+      color: #41b883 !important;
     }
     img {
       filter: invert(0.6) sepia(1) saturate(5) hue-rotate(195deg)
         brightness(0.7);
-      color: #0f59d1;
+      color: #41b883;
     }
   }
   .btn-more {

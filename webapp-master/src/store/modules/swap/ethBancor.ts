@@ -1461,8 +1461,8 @@ export class EthBancorModule
     );
     const bntToken = findOrThrow(
       tokens,
-      token => compareString(token.symbol, "BNT"),
-      "failed finding BNT token in API data"
+      token => compareString(token.symbol, "OVX"),
+      "failed finding OVX token in API data"
     );
     const totalVolume24h = Number(apiData.total_volume_24h.usd || 0) || 0;
     const totalLiquidityDepth = pools.reduce(

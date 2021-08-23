@@ -103,12 +103,13 @@ export default class SideBarLeft extends Vue {
   flex-grow: 1;
   height: 100%;
   z-index: 10;
+  border-right:1px solid #e6ebf2;
 
   .bancor-icon-wrapper {
     position: absolute;
     width: 230px;
     height: 50px;
-    background-color: #e6ebf2;
+    background-color: #fff;
   }
 
   .side-bar-wrapper {
@@ -117,7 +118,7 @@ export default class SideBarLeft extends Vue {
     grid-template-rows: auto 1fr 30px;
     width: 230px;
     height: 100%;
-    background-color: #e6ebf2;
+    background-color: #fff;
     margin-top: 45px;
 
     -moz-transition: width 0.25s;
@@ -129,7 +130,7 @@ export default class SideBarLeft extends Vue {
 
   .brand-icon {
     margin-top: 10px;
-    margin-left: 23px;
+    margin-left: 43%;
     width: 80.9px;
     height: 28px;
     object-fit: contain;
@@ -177,49 +178,12 @@ export default class SideBarLeft extends Vue {
   }
   .clicked-link {
     span {
-      color: #0f59d1;
     }
     img {
-      filter: invert(0.6) sepia(1) saturate(5) hue-rotate(195deg)
-        brightness(0.7);
-      color: #0f59d1;
+      color: #41b883;
     }
     background-color: #f8f9fd;
-    border-left: 2px solid #0f59d1;
-    &::before {
-      content: "";
-      position: absolute;
-      left: 202px;
-      top: -26px;
-      width: 26px;
-      height: 26px;
-      background-color: transparent;
-      border-bottom-right-radius: 5px;
-      box-shadow: 0 11px 0 0 #f8f9fd;
-
-      -moz-transition: left 0.25s;
-      -ms-transition: left 0.25s;
-      -o-transition: left 0.25s;
-      -webkit-transition: left 0.25s;
-      transition: left 0.25s ease-in-out;
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      left: 202px;
-      top: 40px;
-      width: 26px;
-      height: 26px;
-      background-color: transparent;
-      border-top-right-radius: 5px;
-      box-shadow: 0 -11px 0 0 #f8f9fd;
-
-      -moz-transition: left 0.25s;
-      -ms-transition: left 0.25s;
-      -o-transition: left 0.25s;
-      -webkit-transition: left 0.25s;
-      transition: left 0.25s ease-in-out;
-    }
+    border-left: 2px solid #41b883;
   }
   .btn-toggle {
     cursor: pointer;
@@ -232,13 +196,15 @@ export default class SideBarLeft extends Vue {
   }
 }
 .side-bar-dark {
-  background-color: #1c344e !important;
+  background-color: #080a0f !important;
+  border-right: 1px solid #222a3b!important;
 
   .bancor-icon-wrapper {
-    background-color: #0a2540;
+    background-color: #171d28;
   }
   .side-bar-wrapper {
-    background-color: #0a2540;
+    background-color: #171d28;
+
   }
 }
 
@@ -247,46 +213,12 @@ export default class SideBarLeft extends Vue {
     color: #fff !important;
   }
   img {
-    filter: invert(0.2) saturate(5) brightness(1);
-    color: #0f59d1;
+    color: #fff;
   }
   @media (min-width: 450px) {
-    background-color: #1c344e;
-    border-left: 2px solid #0f59d1;
-    &::before {
-      content: "";
-      position: absolute;
-      left: 202px;
-      top: -26px;
-      width: 26px;
-      height: 26px;
-      background-color: transparent;
-      border-bottom-right-radius: 5px;
-      box-shadow: 0 11px 0 0 #1c344e;
+    background-color: #080a0f;
+    border-left: 2px solid #41b883;
 
-      -moz-transition: left 0.25s;
-      -ms-transition: left 0.25s;
-      -o-transition: left 0.25s;
-      -webkit-transition: left 0.25s;
-      transition: left 0.25s ease-in-out;
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      left: 202px;
-      top: 40px;
-      width: 26px;
-      height: 26px;
-      background-color: transparent;
-      border-top-right-radius: 5px;
-      box-shadow: 0 -11px 0 0 #1c344e;
-
-      -moz-transition: left 0.25s;
-      -ms-transition: left 0.25s;
-      -o-transition: left 0.25s;
-      -webkit-transition: left 0.25s;
-      transition: left 0.25s ease-in-out;
-    }
   }
 }
 </style>

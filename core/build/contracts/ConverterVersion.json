@@ -1,0 +1,228 @@
+{
+  "contractName": "ConverterVersion",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "version",
+      "outputs": [
+        {
+          "internalType": "uint16",
+          "name": "",
+          "type": "uint16"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"version\",\"outputs\":[{\"internalType\":\"uint16\",\"name\":\"\",\"type\":\"uint16\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/converter/ConverterVersion.sol\":\"ConverterVersion\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/converter/ConverterVersion.sol\":{\"keccak256\":\"0x4f6ba4cbf8032d0f196cec9c19412550527d62af3c235cdb97b01bfe863a3907\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://18664036e18ce6f2ed3b26098ea1e4c001686ed383514b0714009f8f0fb7b493\",\"dweb:/ipfs/QmWiMSiYDCYoETp5jfooBe2UjKMpzxrg9cHcZJuGgKpDWR\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b5060888061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806354fd4d5014602d575b600080fd5b6033604d565b604051808261ffff16815260200191505060405180910390f35b602f8156fea2646970667358221220fcde309461c0acf8ac03568908c6ddbb4f2f8e2007cd1277f0a7007177a3200664736f6c634300060c0033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806354fd4d5014602d575b600080fd5b6033604d565b604051808261ffff16815260200191505060405180910390f35b602f8156fea2646970667358221220fcde309461c0acf8ac03568908c6ddbb4f2f8e2007cd1277f0a7007177a3200664736f6c634300060c0033",
+  "immutableReferences": {},
+  "sourceMap": "76:70:26:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "76:70:26:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;108:35;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;141:2;108:35;:::o",
+  "source": "// SPDX-License-Identifier: SEE LICENSE IN LICENSE\npragma solidity 0.6.12;\n\ncontract ConverterVersion {\n    uint16 public constant version = 47;\n}\n",
+  "sourcePath": "D:\\Work Space\\bancor_project\\core\\contracts\\converter\\ConverterVersion.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/converter/ConverterVersion.sol",
+    "exportedSymbols": {
+      "ConverterVersion": [
+        15052
+      ]
+    },
+    "id": 15053,
+    "license": "SEE LICENSE IN LICENSE",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 15048,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "51:23:26"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 15052,
+        "linearizedBaseContracts": [
+          15052
+        ],
+        "name": "ConverterVersion",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": true,
+            "functionSelector": "54fd4d50",
+            "id": 15051,
+            "mutability": "constant",
+            "name": "version",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 15052,
+            "src": "108:35:26",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 15049,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "108:6:26",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "3437",
+              "id": 15050,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "141:2:26",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_47_by_1",
+                "typeString": "int_const 47"
+              },
+              "value": "47"
+            },
+            "visibility": "public"
+          }
+        ],
+        "scope": 15053,
+        "src": "76:70:26"
+      }
+    ],
+    "src": "51:96:26"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/converter/ConverterVersion.sol",
+      "exportedSymbols": {
+        "ConverterVersion": [
+          15052
+        ]
+      },
+      "license": "SEE LICENSE IN LICENSE"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.6",
+            ".12"
+          ]
+        },
+        "id": 15048,
+        "name": "PragmaDirective",
+        "src": "51:23:26"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            15052
+          ],
+          "name": "ConverterVersion",
+          "scope": 15053
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": true,
+              "functionSelector": "54fd4d50",
+              "mutability": "constant",
+              "name": "version",
+              "overrides": null,
+              "scope": 15052,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint16",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint16",
+                  "type": "uint16"
+                },
+                "id": 15049,
+                "name": "ElementaryTypeName",
+                "src": "108:6:26"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "3437",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 47",
+                  "value": "47"
+                },
+                "id": 15050,
+                "name": "Literal",
+                "src": "141:2:26"
+              }
+            ],
+            "id": 15051,
+            "name": "VariableDeclaration",
+            "src": "108:35:26"
+          }
+        ],
+        "id": 15052,
+        "name": "ContractDefinition",
+        "src": "76:70:26"
+      }
+    ],
+    "id": 15053,
+    "name": "SourceUnit",
+    "src": "51:96:26"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-08-23T03:19:29.642Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

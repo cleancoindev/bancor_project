@@ -1,0 +1,349 @@
+{
+  "contractName": "Time",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/utility/Time.sol\":\"Time\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/utility/Time.sol\":{\"keccak256\":\"0x9728e5cbb8b4fb1d5cbb103dbf9b6b8377c2d6cf798fe8c48ec7218249511e39\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://09d2427c29967c48e3d412afece7fbed14782a3d6ea06e7294239e4220f8c3fb\",\"dweb:/ipfs/QmU4UmDUgt1Yw2L3HW9a6RpXkW4mBf3fzEgnejGNwWmDk1\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220a69fb8833a5a28a19ae8bc451cc5507735b87804f9860f667790d2861a5c6f0764736f6c634300060c0033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220a69fb8833a5a28a19ae8bc451cc5507735b87804f9860f667790d2861a5c6f0764736f6c634300060c0033",
+  "immutableReferences": {},
+  "sourceMap": "113:170:94:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "113:170:94:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: SEE LICENSE IN LICENSE\npragma solidity 0.6.12;\n\n/*\n    Time implementing contract\n*/\ncontract Time {\n    /**\n     * @dev returns the current time\n     */\n    function time() internal view virtual returns (uint256) {\n        return block.timestamp;\n    }\n}\n",
+  "sourcePath": "D:\\Work Space\\bancor_project\\core\\contracts\\utility\\Time.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/utility/Time.sol",
+    "exportedSymbols": {
+      "Time": [
+        32648
+      ]
+    },
+    "id": 32649,
+    "license": "SEE LICENSE IN LICENSE",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 32637,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "51:23:94"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 32648,
+        "linearizedBaseContracts": [
+          32648
+        ],
+        "name": "Time",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 32646,
+              "nodeType": "Block",
+              "src": "242:39:94",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 32643,
+                      "name": "block",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": -4,
+                      "src": "259:5:94",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_magic_block",
+                        "typeString": "block"
+                      }
+                    },
+                    "id": 32644,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "timestamp",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": null,
+                    "src": "259:15:94",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 32642,
+                  "id": 32645,
+                  "nodeType": "Return",
+                  "src": "252:22:94"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 32638,
+              "nodeType": "StructuredDocumentation",
+              "src": "133:48:94",
+              "text": " @dev returns the current time"
+            },
+            "id": 32647,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "time",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 32639,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "199:2:94"
+            },
+            "returnParameters": {
+              "id": 32642,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 32641,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 32647,
+                  "src": "233:7:94",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 32640,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "233:7:94",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "232:9:94"
+            },
+            "scope": 32648,
+            "src": "186:95:94",
+            "stateMutability": "view",
+            "virtual": true,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 32649,
+        "src": "113:170:94"
+      }
+    ],
+    "src": "51:233:94"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/utility/Time.sol",
+      "exportedSymbols": {
+        "Time": [
+          32648
+        ]
+      },
+      "license": "SEE LICENSE IN LICENSE"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.6",
+            ".12"
+          ]
+        },
+        "id": 32637,
+        "name": "PragmaDirective",
+        "src": "51:23:94"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            32648
+          ],
+          "name": "Time",
+          "scope": 32649
+        },
+        "children": [
+          {
+            "attributes": {
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "time",
+              "overrides": null,
+              "scope": 32648,
+              "stateMutability": "view",
+              "virtual": true,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": " @dev returns the current time"
+                },
+                "id": 32638,
+                "name": "StructuredDocumentation",
+                "src": "133:48:94"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 32639,
+                "name": "ParameterList",
+                "src": "199:2:94"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 32647,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 32640,
+                        "name": "ElementaryTypeName",
+                        "src": "233:7:94"
+                      }
+                    ],
+                    "id": 32641,
+                    "name": "VariableDeclaration",
+                    "src": "233:7:94"
+                  }
+                ],
+                "id": 32642,
+                "name": "ParameterList",
+                "src": "232:9:94"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 32642
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "member_name": "timestamp",
+                          "referencedDeclaration": null,
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": -4,
+                              "type": "block",
+                              "value": "block"
+                            },
+                            "id": 32643,
+                            "name": "Identifier",
+                            "src": "259:5:94"
+                          }
+                        ],
+                        "id": 32644,
+                        "name": "MemberAccess",
+                        "src": "259:15:94"
+                      }
+                    ],
+                    "id": 32645,
+                    "name": "Return",
+                    "src": "252:22:94"
+                  }
+                ],
+                "id": 32646,
+                "name": "Block",
+                "src": "242:39:94"
+              }
+            ],
+            "id": 32647,
+            "name": "FunctionDefinition",
+            "src": "186:95:94"
+          }
+        ],
+        "id": 32648,
+        "name": "ContractDefinition",
+        "src": "113:170:94"
+      }
+    ],
+    "id": 32649,
+    "name": "SourceUnit",
+    "src": "51:233:94"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-08-23T03:19:30.288Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

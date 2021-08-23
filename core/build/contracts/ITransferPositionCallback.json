@@ -1,0 +1,402 @@
+{
+  "contractName": "ITransferPositionCallback",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "newId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "provider",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "onTransferPosition",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"newId\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"provider\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"onTransferPosition\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Transfer position event callback interface\",\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/liquidity-protection/interfaces/ITransferPositionCallback.sol\":\"ITransferPositionCallback\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/liquidity-protection/interfaces/ITransferPositionCallback.sol\":{\"keccak256\":\"0x4cac551d4b46548d86184e393f28ba9f28875fb334d66bc0cb71452de055c7f3\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://0027698678b3afc95518685c1dc38468cbde1d0a838ed5878a8b1a3fa0ef9869\",\"dweb:/ipfs/QmWyXZQjtheWroaz1j3wjrjVNENxBXmuVQkuCGMmyDdG1W\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: SEE LICENSE IN LICENSE\npragma solidity 0.6.12;\n\n/**\n * @dev Transfer position event callback interface\n */\ninterface ITransferPositionCallback {\n    function onTransferPosition(\n        uint256 newId,\n        address provider,\n        bytes calldata data\n    ) external;\n}\n",
+  "sourcePath": "D:\\Work Space\\bancor_project\\core\\contracts\\liquidity-protection\\interfaces\\ITransferPositionCallback.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/liquidity-protection/interfaces/ITransferPositionCallback.sol",
+    "exportedSymbols": {
+      "ITransferPositionCallback": [
+        30557
+      ]
+    },
+    "id": 30558,
+    "license": "SEE LICENSE IN LICENSE",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 30546,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "51:23:77"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 30547,
+          "nodeType": "StructuredDocumentation",
+          "src": "76:58:77",
+          "text": " @dev Transfer position event callback interface"
+        },
+        "fullyImplemented": false,
+        "id": 30557,
+        "linearizedBaseContracts": [
+          30557
+        ],
+        "name": "ITransferPositionCallback",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "5c2ba845",
+            "id": 30556,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "onTransferPosition",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 30554,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30549,
+                  "mutability": "mutable",
+                  "name": "newId",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30556,
+                  "src": "214:13:77",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 30548,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "214:7:77",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 30551,
+                  "mutability": "mutable",
+                  "name": "provider",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30556,
+                  "src": "237:16:77",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 30550,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "237:7:77",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 30553,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30556,
+                  "src": "263:19:77",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 30552,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "263:5:77",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "204:84:77"
+            },
+            "returnParameters": {
+              "id": 30555,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "297:0:77"
+            },
+            "scope": 30557,
+            "src": "177:121:77",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 30558,
+        "src": "135:165:77"
+      }
+    ],
+    "src": "51:250:77"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/liquidity-protection/interfaces/ITransferPositionCallback.sol",
+      "exportedSymbols": {
+        "ITransferPositionCallback": [
+          30557
+        ]
+      },
+      "license": "SEE LICENSE IN LICENSE"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.6",
+            ".12"
+          ]
+        },
+        "id": 30546,
+        "name": "PragmaDirective",
+        "src": "51:23:77"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            30557
+          ],
+          "name": "ITransferPositionCallback",
+          "scope": 30558
+        },
+        "children": [
+          {
+            "attributes": {
+              "text": " @dev Transfer position event callback interface"
+            },
+            "id": 30547,
+            "name": "StructuredDocumentation",
+            "src": "76:58:77"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "5c2ba845",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "onTransferPosition",
+              "overrides": null,
+              "scope": 30557,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "newId",
+                      "overrides": null,
+                      "scope": 30556,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 30548,
+                        "name": "ElementaryTypeName",
+                        "src": "214:7:77"
+                      }
+                    ],
+                    "id": 30549,
+                    "name": "VariableDeclaration",
+                    "src": "214:13:77"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "provider",
+                      "overrides": null,
+                      "scope": 30556,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 30550,
+                        "name": "ElementaryTypeName",
+                        "src": "237:7:77"
+                      }
+                    ],
+                    "id": 30551,
+                    "name": "VariableDeclaration",
+                    "src": "237:16:77"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "data",
+                      "overrides": null,
+                      "scope": 30556,
+                      "stateVariable": false,
+                      "storageLocation": "calldata",
+                      "type": "bytes",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes",
+                          "type": "bytes"
+                        },
+                        "id": 30552,
+                        "name": "ElementaryTypeName",
+                        "src": "263:5:77"
+                      }
+                    ],
+                    "id": 30553,
+                    "name": "VariableDeclaration",
+                    "src": "263:19:77"
+                  }
+                ],
+                "id": 30554,
+                "name": "ParameterList",
+                "src": "204:84:77"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 30555,
+                "name": "ParameterList",
+                "src": "297:0:77"
+              }
+            ],
+            "id": 30556,
+            "name": "FunctionDefinition",
+            "src": "177:121:77"
+          }
+        ],
+        "id": 30557,
+        "name": "ContractDefinition",
+        "src": "135:165:77"
+      }
+    ],
+    "id": 30558,
+    "name": "SourceUnit",
+    "src": "51:250:77"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-08-23T03:19:30.225Z",
+  "devdoc": {
+    "details": "Transfer position event callback interface",
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

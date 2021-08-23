@@ -400,7 +400,7 @@ export default class DoneProposals extends BaseComponent {
 
 .result {
   &--for {
-    color: #3ec8c8 !important;
+    color: #41b883 !important;
   }
 
   &--against {

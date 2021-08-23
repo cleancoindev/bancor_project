@@ -1,0 +1,677 @@
+{
+  "contractName": "ITypedConverterFactory",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "converterType",
+      "outputs": [
+        {
+          "internalType": "uint16",
+          "name": "",
+          "type": "uint16"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IConverterAnchor",
+          "name": "_anchor",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IContractRegistry",
+          "name": "_registry",
+          "type": "address"
+        },
+        {
+          "internalType": "uint32",
+          "name": "_maxConversionFee",
+          "type": "uint32"
+        }
+      ],
+      "name": "createConverter",
+      "outputs": [
+        {
+          "internalType": "contract IConverter",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"converterType\",\"outputs\":[{\"internalType\":\"uint16\",\"name\":\"\",\"type\":\"uint16\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"contract IConverterAnchor\",\"name\":\"_anchor\",\"type\":\"address\"},{\"internalType\":\"contract IContractRegistry\",\"name\":\"_registry\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"_maxConversionFee\",\"type\":\"uint32\"}],\"name\":\"createConverter\",\"outputs\":[{\"internalType\":\"contract IConverter\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/converter/interfaces/ITypedConverterFactory.sol\":\"ITypedConverterFactory\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x5f02220344881ce43204ae4a6281145a67bc52c2bb1290a791857df3d19d78f5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://24427744bd3e6cb73c17010119af12a318289c0253a4d9acb8576c9fb3797b08\",\"dweb:/ipfs/QmTLDqpKRBuxGxRAmjgXt9AkXyACW3MtKzi7PYjm5iMfGC\"]},\"project:/contracts/converter/interfaces/IConverter.sol\":{\"keccak256\":\"0xf6ca4318684ba49605545bd62f9af845644b4fb3575fb28c52450a638c9d2f29\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://f967ca082897a1fa68cd70ef140a44ddf0376f43c1159b4b06ed02d398201bfe\",\"dweb:/ipfs/QmWrCCc9eXZD8NWUFstVxWcANYMNTmX6Zd1Gf7uftGHHtu\"]},\"project:/contracts/converter/interfaces/IConverterAnchor.sol\":{\"keccak256\":\"0x061dffb3cd75b61094c31a8987276b8f6108e29d67d7a55a305eea9f86d5b196\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://478f3b0164b83199eaf6f8c595abf235b742fb2c15d4fad7a241bd4837083f73\",\"dweb:/ipfs/QmcoDjie2cm3iq3bhjrqn6rE6S8o9WXvBY3tcnC5miN2Ut\"]},\"project:/contracts/converter/interfaces/ITypedConverterFactory.sol\":{\"keccak256\":\"0x9319abc682bc5e9c125d1574be18d223338725266d65747f006916c5f7f43290\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://829c7e00115514467016ac7b194d508d55f7806ff99f47c84987ae6254212953\",\"dweb:/ipfs/QmYfuDJzSWzU5tMRupiEGPBwdWWWpGzq4LjEkHbzD1fXsu\"]},\"project:/contracts/token/interfaces/IReserveToken.sol\":{\"keccak256\":\"0x7380cdd30fc2b427d1dab7f7f30bb93e4562d91b405aecfc5a7b9ef3e24e7cee\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://b728fed30c2d9027e03a5e46cb67932f021851924c47b7cd658431ee8f5bdb15\",\"dweb:/ipfs/QmfLiprUayVjHj9pTUapayU1R4nP3Lm1a6YuyU6LeChBzZ\"]},\"project:/contracts/utility/interfaces/IContractRegistry.sol\":{\"keccak256\":\"0x3551889a83738b621c29ed66f1ecb6a843cca4217e54c9357198559b9cc92259\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://231a59c8f2665adeda8c7e6930832409c9b991fd27ad84b3a24335e7bf269bbe\",\"dweb:/ipfs/QmeJJbn1EAUbZenruTEdJAnwUn3dxsVNeJvxPe81qKEGqL\"]},\"project:/contracts/utility/interfaces/IOwned.sol\":{\"keccak256\":\"0x4cfffe7abcbf4a0a49d154837711a38e9c34da4891b86167b9e15d80b24f9b14\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://0b398ddfbcae48adc05489f7be940135a14150c38de9b75897ca9193a1ac99d0\",\"dweb:/ipfs/QmXPh5dHCZqshzmCWPRc3TSQsjc6Sr1SG2XFZe3NdKWMRC\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: SEE LICENSE IN LICENSE\npragma solidity 0.6.12;\nimport \"./IConverter.sol\";\nimport \"./IConverterAnchor.sol\";\nimport \"../../utility/interfaces/IContractRegistry.sol\";\n\n/*\n    Typed Converter Factory interface\n*/\ninterface ITypedConverterFactory {\n    function converterType() external pure returns (uint16);\n\n    function createConverter(\n        IConverterAnchor _anchor,\n        IContractRegistry _registry,\n        uint32 _maxConversionFee\n    ) external returns (IConverter);\n}\n",
+  "sourcePath": "D:\\Work Space\\bancor_project\\core\\contracts\\converter\\interfaces\\ITypedConverterFactory.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/converter/interfaces/ITypedConverterFactory.sol",
+    "exportedSymbols": {
+      "ITypedConverterFactory": [
+        15775
+      ]
+    },
+    "id": 15776,
+    "license": "SEE LICENSE IN LICENSE",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 15755,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "51:23:36"
+      },
+      {
+        "absolutePath": "project:/contracts/converter/interfaces/IConverter.sol",
+        "file": "./IConverter.sol",
+        "id": 15756,
+        "nodeType": "ImportDirective",
+        "scope": 15776,
+        "sourceUnit": 15410,
+        "src": "75:26:36",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "project:/contracts/converter/interfaces/IConverterAnchor.sol",
+        "file": "./IConverterAnchor.sol",
+        "id": 15757,
+        "nodeType": "ImportDirective",
+        "scope": 15776,
+        "sourceUnit": 15416,
+        "src": "102:32:36",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "project:/contracts/utility/interfaces/IContractRegistry.sol",
+        "file": "../../utility/interfaces/IContractRegistry.sol",
+        "id": 15758,
+        "nodeType": "ImportDirective",
+        "scope": 15776,
+        "sourceUnit": 33102,
+        "src": "135:56:36",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 15775,
+        "linearizedBaseContracts": [
+          15775
+        ],
+        "name": "ITypedConverterFactory",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "3e8ff43f",
+            "id": 15763,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "converterType",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 15759,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "298:2:36"
+            },
+            "returnParameters": {
+              "id": 15762,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15761,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 15763,
+                  "src": "324:6:36",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  },
+                  "typeName": {
+                    "id": 15760,
+                    "name": "uint16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "324:6:36",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "323:8:36"
+            },
+            "scope": 15775,
+            "src": "276:56:36",
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "11413958",
+            "id": 15774,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createConverter",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 15770,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15765,
+                  "mutability": "mutable",
+                  "name": "_anchor",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 15774,
+                  "src": "372:24:36",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IConverterAnchor_$15415",
+                    "typeString": "contract IConverterAnchor"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 15764,
+                    "name": "IConverterAnchor",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 15415,
+                    "src": "372:16:36",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IConverterAnchor_$15415",
+                      "typeString": "contract IConverterAnchor"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15767,
+                  "mutability": "mutable",
+                  "name": "_registry",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 15774,
+                  "src": "406:27:36",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IContractRegistry_$33101",
+                    "typeString": "contract IContractRegistry"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 15766,
+                    "name": "IContractRegistry",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 33101,
+                    "src": "406:17:36",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IContractRegistry_$33101",
+                      "typeString": "contract IContractRegistry"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15769,
+                  "mutability": "mutable",
+                  "name": "_maxConversionFee",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 15774,
+                  "src": "443:24:36",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 15768,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "443:6:36",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "362:111:36"
+            },
+            "returnParameters": {
+              "id": 15773,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15772,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 15774,
+                  "src": "492:10:36",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IConverter_$15409",
+                    "typeString": "contract IConverter"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 15771,
+                    "name": "IConverter",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 15409,
+                    "src": "492:10:36",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IConverter_$15409",
+                      "typeString": "contract IConverter"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "491:12:36"
+            },
+            "scope": 15775,
+            "src": "338:166:36",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 15776,
+        "src": "237:269:36"
+      }
+    ],
+    "src": "51:456:36"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/converter/interfaces/ITypedConverterFactory.sol",
+      "exportedSymbols": {
+        "ITypedConverterFactory": [
+          15775
+        ]
+      },
+      "license": "SEE LICENSE IN LICENSE"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.6",
+            ".12"
+          ]
+        },
+        "id": 15755,
+        "name": "PragmaDirective",
+        "src": "51:23:36"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 15410,
+          "absolutePath": "project:/contracts/converter/interfaces/IConverter.sol",
+          "file": "./IConverter.sol",
+          "scope": 15776,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 15756,
+        "name": "ImportDirective",
+        "src": "75:26:36"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 15416,
+          "absolutePath": "project:/contracts/converter/interfaces/IConverterAnchor.sol",
+          "file": "./IConverterAnchor.sol",
+          "scope": 15776,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 15757,
+        "name": "ImportDirective",
+        "src": "102:32:36"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 33102,
+          "absolutePath": "project:/contracts/utility/interfaces/IContractRegistry.sol",
+          "file": "../../utility/interfaces/IContractRegistry.sol",
+          "scope": 15776,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 15758,
+        "name": "ImportDirective",
+        "src": "135:56:36"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            15775
+          ],
+          "name": "ITypedConverterFactory",
+          "scope": 15776
+        },
+        "children": [
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "3e8ff43f",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "converterType",
+              "overrides": null,
+              "scope": 15775,
+              "stateMutability": "pure",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 15759,
+                "name": "ParameterList",
+                "src": "298:2:36"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 15763,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint16",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint16",
+                          "type": "uint16"
+                        },
+                        "id": 15760,
+                        "name": "ElementaryTypeName",
+                        "src": "324:6:36"
+                      }
+                    ],
+                    "id": 15761,
+                    "name": "VariableDeclaration",
+                    "src": "324:6:36"
+                  }
+                ],
+                "id": 15762,
+                "name": "ParameterList",
+                "src": "323:8:36"
+              }
+            ],
+            "id": 15763,
+            "name": "FunctionDefinition",
+            "src": "276:56:36"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "11413958",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "createConverter",
+              "overrides": null,
+              "scope": 15775,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_anchor",
+                      "overrides": null,
+                      "scope": 15774,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IConverterAnchor",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IConverterAnchor",
+                          "referencedDeclaration": 15415,
+                          "type": "contract IConverterAnchor"
+                        },
+                        "id": 15764,
+                        "name": "UserDefinedTypeName",
+                        "src": "372:16:36"
+                      }
+                    ],
+                    "id": 15765,
+                    "name": "VariableDeclaration",
+                    "src": "372:24:36"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_registry",
+                      "overrides": null,
+                      "scope": 15774,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IContractRegistry",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IContractRegistry",
+                          "referencedDeclaration": 33101,
+                          "type": "contract IContractRegistry"
+                        },
+                        "id": 15766,
+                        "name": "UserDefinedTypeName",
+                        "src": "406:17:36"
+                      }
+                    ],
+                    "id": 15767,
+                    "name": "VariableDeclaration",
+                    "src": "406:27:36"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_maxConversionFee",
+                      "overrides": null,
+                      "scope": 15774,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint32",
+                          "type": "uint32"
+                        },
+                        "id": 15768,
+                        "name": "ElementaryTypeName",
+                        "src": "443:6:36"
+                      }
+                    ],
+                    "id": 15769,
+                    "name": "VariableDeclaration",
+                    "src": "443:24:36"
+                  }
+                ],
+                "id": 15770,
+                "name": "ParameterList",
+                "src": "362:111:36"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 15774,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IConverter",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IConverter",
+                          "referencedDeclaration": 15409,
+                          "type": "contract IConverter"
+                        },
+                        "id": 15771,
+                        "name": "UserDefinedTypeName",
+                        "src": "492:10:36"
+                      }
+                    ],
+                    "id": 15772,
+                    "name": "VariableDeclaration",
+                    "src": "492:10:36"
+                  }
+                ],
+                "id": 15773,
+                "name": "ParameterList",
+                "src": "491:12:36"
+              }
+            ],
+            "id": 15774,
+            "name": "FunctionDefinition",
+            "src": "338:166:36"
+          }
+        ],
+        "id": 15775,
+        "name": "ContractDefinition",
+        "src": "237:269:36"
+      }
+    ],
+    "id": 15776,
+    "name": "SourceUnit",
+    "src": "51:456:36"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-08-23T03:19:29.667Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

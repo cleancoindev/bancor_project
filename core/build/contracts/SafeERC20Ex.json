@@ -1,0 +1,1629 @@
+{
+  "contractName": "SafeERC20Ex",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"details\":\"Extends the SafeERC20 library with additional operations\",\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/token/SafeERC20Ex.sol\":\"SafeERC20Ex\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xcc78a17dd88fa5a2edc60c8489e2f405c0913b377216a5b26b35656b2d0dab52\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://526dc85e1f9b9b45830e202568d267d93dde7a4fcccf4ad7798dadcd92304d3c\",\"dweb:/ipfs/QmaoXMB972J3cSDLtBq3xBo4jLwqD2uzXTwujtSPqkYVhR\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x5f02220344881ce43204ae4a6281145a67bc52c2bb1290a791857df3d19d78f5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://24427744bd3e6cb73c17010119af12a318289c0253a4d9acb8576c9fb3797b08\",\"dweb:/ipfs/QmTLDqpKRBuxGxRAmjgXt9AkXyACW3MtKzi7PYjm5iMfGC\"]},\"@openzeppelin/contracts/token/ERC20/SafeERC20.sol\":{\"keccak256\":\"0xf12dfbe97e6276980b83d2830bb0eb75e0cf4f3e626c2471137f82158ae6a0fc\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b3a849c2d95e85463909e5b5c920b13e7a11216ca14127085e16d22b9379d52a\",\"dweb:/ipfs/QmUg3CZDbCCcQdroEpexBy5ZFd5vD1UWijWQq9qHZjtJNQ\"]},\"@openzeppelin/contracts/utils/Address.sol\":{\"keccak256\":\"0x28911e614500ae7c607a432a709d35da25f3bc5ddc8bd12b278b66358070c0ea\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://256c8c8af5eb072bc473226ab2b2187149b8fc04f5f4a4820db22527f5ce8e3c\",\"dweb:/ipfs/QmRvi5BhnL7Rxf85KrJhwM6RRhukm4tzoctRdgQEheNyiN\"]},\"project:/contracts/token/SafeERC20Ex.sol\":{\"keccak256\":\"0x071a405f72a001a330d5bcd2e26735c2d7dc09282379ebbe6e4bbf825293e190\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://91fc3788ba8981c840555dd2a605c5277570a5fbe12f3da9e5a03734d477fb6b\",\"dweb:/ipfs/QmbNy1YRL5HRFVyHt1h22YsQX9XCRghsL2u6pYAHqLHtSh\"]}},\"version\":1}",
+  "bytecode": "0x60566023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212204b9c11d125e8ba57c6d943442d958831bf7f1f1cdc228019bf2e5df0d1d81e1964736f6c634300060c0033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212204b9c11d125e8ba57c6d943442d958831bf7f1f1cdc228019bf2e5df0d1d81e1964736f6c634300060c0033",
+  "immutableReferences": {},
+  "sourceMap": "210:736:85:-:0;;;;;;;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "210:736:85:-:0;;;;;;;;",
+  "source": "// SPDX-License-Identifier: SEE LICENSE IN LICENSE\npragma solidity 0.6.12;\n\nimport \"@openzeppelin/contracts/token/ERC20/SafeERC20.sol\";\n\n/**\n * @dev Extends the SafeERC20 library with additional operations\n */\nlibrary SafeERC20Ex {\n    using SafeERC20 for IERC20;\n\n    /**\n     * @dev ensures that the spender has sufficient allowance\n     *\n     * @param token the address of the token to ensure\n     * @param spender the address allowed to spend\n     * @param amount the allowed amount to spend\n     */\n    function ensureApprove(\n        IERC20 token,\n        address spender,\n        uint256 amount\n    ) internal {\n        if (amount == 0) {\n            return;\n        }\n\n        uint256 allowance = token.allowance(address(this), spender);\n        if (allowance >= amount) {\n            return;\n        }\n\n        if (allowance > 0) {\n            token.safeApprove(spender, 0);\n        }\n        token.safeApprove(spender, amount);\n    }\n}\n",
+  "sourcePath": "D:\\Work Space\\bancor_project\\core\\contracts\\token\\SafeERC20Ex.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/token/SafeERC20Ex.sol",
+    "exportedSymbols": {
+      "SafeERC20Ex": [
+        31112
+      ]
+    },
+    "id": 31113,
+    "license": "SEE LICENSE IN LICENSE",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 31053,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "51:23:85"
+      },
+      {
+        "absolutePath": "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "file": "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "id": 31054,
+        "nodeType": "ImportDirective",
+        "scope": 31113,
+        "sourceUnit": 1505,
+        "src": "76:59:85",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "library",
+        "documentation": {
+          "id": 31055,
+          "nodeType": "StructuredDocumentation",
+          "src": "137:72:85",
+          "text": " @dev Extends the SafeERC20 library with additional operations"
+        },
+        "fullyImplemented": true,
+        "id": 31112,
+        "linearizedBaseContracts": [
+          31112
+        ],
+        "name": "SafeERC20Ex",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 31058,
+            "libraryName": {
+              "contractScope": null,
+              "id": 31056,
+              "name": "SafeERC20",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1504,
+              "src": "242:9:85",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SafeERC20_$1504",
+                "typeString": "library SafeERC20"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "236:27:85",
+            "typeName": {
+              "contractScope": null,
+              "id": 31057,
+              "name": "IERC20",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1291,
+              "src": "256:6:85",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IERC20_$1291",
+                "typeString": "contract IERC20"
+              }
+            }
+          },
+          {
+            "body": {
+              "id": 31110,
+              "nodeType": "Block",
+              "src": "618:326:85",
+              "statements": [
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 31070,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 31068,
+                      "name": "amount",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 31065,
+                      "src": "632:6:85",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 31069,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "642:1:85",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "632:11:85",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": null,
+                  "id": 31073,
+                  "nodeType": "IfStatement",
+                  "src": "628:48:85",
+                  "trueBody": {
+                    "id": 31072,
+                    "nodeType": "Block",
+                    "src": "645:31:85",
+                    "statements": [
+                      {
+                        "expression": null,
+                        "functionReturnParameters": 31067,
+                        "id": 31071,
+                        "nodeType": "Return",
+                        "src": "659:7:85"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "assignments": [
+                    31075
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 31075,
+                      "mutability": "mutable",
+                      "name": "allowance",
+                      "nodeType": "VariableDeclaration",
+                      "overrides": null,
+                      "scope": 31110,
+                      "src": "686:17:85",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 31074,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "686:7:85",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 31084,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 31080,
+                            "name": "this",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": -28,
+                            "src": "730:4:85",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_SafeERC20Ex_$31112",
+                              "typeString": "library SafeERC20Ex"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_contract$_SafeERC20Ex_$31112",
+                              "typeString": "library SafeERC20Ex"
+                            }
+                          ],
+                          "id": 31079,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "722:7:85",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_address_$",
+                            "typeString": "type(address)"
+                          },
+                          "typeName": {
+                            "id": 31078,
+                            "name": "address",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "722:7:85",
+                            "typeDescriptions": {
+                              "typeIdentifier": null,
+                              "typeString": null
+                            }
+                          }
+                        },
+                        "id": 31081,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "722:13:85",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 31082,
+                        "name": "spender",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 31063,
+                        "src": "737:7:85",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 31076,
+                        "name": "token",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 31061,
+                        "src": "706:5:85",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IERC20_$1291",
+                          "typeString": "contract IERC20"
+                        }
+                      },
+                      "id": 31077,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "allowance",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 1250,
+                      "src": "706:15:85",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_view$_t_address_$_t_address_$returns$_t_uint256_$",
+                        "typeString": "function (address,address) view external returns (uint256)"
+                      }
+                    },
+                    "id": 31083,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "706:39:85",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "686:59:85"
+                },
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 31087,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 31085,
+                      "name": "allowance",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 31075,
+                      "src": "759:9:85",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": ">=",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "id": 31086,
+                      "name": "amount",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 31065,
+                      "src": "772:6:85",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "759:19:85",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": null,
+                  "id": 31090,
+                  "nodeType": "IfStatement",
+                  "src": "755:56:85",
+                  "trueBody": {
+                    "id": 31089,
+                    "nodeType": "Block",
+                    "src": "780:31:85",
+                    "statements": [
+                      {
+                        "expression": null,
+                        "functionReturnParameters": 31067,
+                        "id": 31088,
+                        "nodeType": "Return",
+                        "src": "794:7:85"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 31093,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 31091,
+                      "name": "allowance",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 31075,
+                      "src": "825:9:85",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": ">",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 31092,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "837:1:85",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "825:13:85",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": null,
+                  "id": 31102,
+                  "nodeType": "IfStatement",
+                  "src": "821:73:85",
+                  "trueBody": {
+                    "id": 31101,
+                    "nodeType": "Block",
+                    "src": "840:54:85",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "id": 31097,
+                              "name": "spender",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 31063,
+                              "src": "872:7:85",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            },
+                            {
+                              "argumentTypes": null,
+                              "hexValue": "30",
+                              "id": 31098,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "number",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "881:1:85",
+                              "subdenomination": null,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_rational_0_by_1",
+                                "typeString": "int_const 0"
+                              },
+                              "value": "0"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              },
+                              {
+                                "typeIdentifier": "t_rational_0_by_1",
+                                "typeString": "int_const 0"
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 31094,
+                              "name": "token",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 31061,
+                              "src": "854:5:85",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_IERC20_$1291",
+                                "typeString": "contract IERC20"
+                              }
+                            },
+                            "id": 31096,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "safeApprove",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 1393,
+                            "src": "854:17:85",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_internal_nonpayable$_t_contract$_IERC20_$1291_$_t_address_$_t_uint256_$returns$__$bound_to$_t_contract$_IERC20_$1291_$",
+                              "typeString": "function (contract IERC20,address,uint256)"
+                            }
+                          },
+                          "id": 31099,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "854:29:85",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$__$",
+                            "typeString": "tuple()"
+                          }
+                        },
+                        "id": 31100,
+                        "nodeType": "ExpressionStatement",
+                        "src": "854:29:85"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 31106,
+                        "name": "spender",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 31063,
+                        "src": "921:7:85",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 31107,
+                        "name": "amount",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 31065,
+                        "src": "930:6:85",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 31103,
+                        "name": "token",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 31061,
+                        "src": "903:5:85",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IERC20_$1291",
+                          "typeString": "contract IERC20"
+                        }
+                      },
+                      "id": 31105,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "safeApprove",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 1393,
+                      "src": "903:17:85",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_contract$_IERC20_$1291_$_t_address_$_t_uint256_$returns$__$bound_to$_t_contract$_IERC20_$1291_$",
+                        "typeString": "function (contract IERC20,address,uint256)"
+                      }
+                    },
+                    "id": 31108,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "903:34:85",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 31109,
+                  "nodeType": "ExpressionStatement",
+                  "src": "903:34:85"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 31059,
+              "nodeType": "StructuredDocumentation",
+              "src": "269:235:85",
+              "text": " @dev ensures that the spender has sufficient allowance\n @param token the address of the token to ensure\n @param spender the address allowed to spend\n @param amount the allowed amount to spend"
+            },
+            "id": 31111,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "ensureApprove",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 31066,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 31061,
+                  "mutability": "mutable",
+                  "name": "token",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 31111,
+                  "src": "541:12:85",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IERC20_$1291",
+                    "typeString": "contract IERC20"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 31060,
+                    "name": "IERC20",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 1291,
+                    "src": "541:6:85",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IERC20_$1291",
+                      "typeString": "contract IERC20"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 31063,
+                  "mutability": "mutable",
+                  "name": "spender",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 31111,
+                  "src": "563:15:85",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 31062,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "563:7:85",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 31065,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 31111,
+                  "src": "588:14:85",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 31064,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "588:7:85",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "531:77:85"
+            },
+            "returnParameters": {
+              "id": 31067,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "618:0:85"
+            },
+            "scope": 31112,
+            "src": "509:435:85",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 31113,
+        "src": "210:736:85"
+      }
+    ],
+    "src": "51:896:85"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/token/SafeERC20Ex.sol",
+      "exportedSymbols": {
+        "SafeERC20Ex": [
+          31112
+        ]
+      },
+      "license": "SEE LICENSE IN LICENSE"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.6",
+            ".12"
+          ]
+        },
+        "id": 31053,
+        "name": "PragmaDirective",
+        "src": "51:23:85"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 1505,
+          "absolutePath": "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+          "file": "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+          "scope": 31113,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 31054,
+        "name": "ImportDirective",
+        "src": "76:59:85"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "library",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            31112
+          ],
+          "name": "SafeERC20Ex",
+          "scope": 31113
+        },
+        "children": [
+          {
+            "attributes": {
+              "text": " @dev Extends the SafeERC20 library with additional operations"
+            },
+            "id": 31055,
+            "name": "StructuredDocumentation",
+            "src": "137:72:85"
+          },
+          {
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "SafeERC20",
+                  "referencedDeclaration": 1504,
+                  "type": "library SafeERC20"
+                },
+                "id": 31056,
+                "name": "UserDefinedTypeName",
+                "src": "242:9:85"
+              },
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "IERC20",
+                  "referencedDeclaration": 1291,
+                  "type": "contract IERC20"
+                },
+                "id": 31057,
+                "name": "UserDefinedTypeName",
+                "src": "256:6:85"
+              }
+            ],
+            "id": 31058,
+            "name": "UsingForDirective",
+            "src": "236:27:85"
+          },
+          {
+            "attributes": {
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "ensureApprove",
+              "overrides": null,
+              "scope": 31112,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": " @dev ensures that the spender has sufficient allowance\n @param token the address of the token to ensure\n @param spender the address allowed to spend\n @param amount the allowed amount to spend"
+                },
+                "id": 31059,
+                "name": "StructuredDocumentation",
+                "src": "269:235:85"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "token",
+                      "overrides": null,
+                      "scope": 31111,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IERC20",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IERC20",
+                          "referencedDeclaration": 1291,
+                          "type": "contract IERC20"
+                        },
+                        "id": 31060,
+                        "name": "UserDefinedTypeName",
+                        "src": "541:6:85"
+                      }
+                    ],
+                    "id": 31061,
+                    "name": "VariableDeclaration",
+                    "src": "541:12:85"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "spender",
+                      "overrides": null,
+                      "scope": 31111,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 31062,
+                        "name": "ElementaryTypeName",
+                        "src": "563:7:85"
+                      }
+                    ],
+                    "id": 31063,
+                    "name": "VariableDeclaration",
+                    "src": "563:15:85"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "amount",
+                      "overrides": null,
+                      "scope": 31111,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 31064,
+                        "name": "ElementaryTypeName",
+                        "src": "588:7:85"
+                      }
+                    ],
+                    "id": 31065,
+                    "name": "VariableDeclaration",
+                    "src": "588:14:85"
+                  }
+                ],
+                "id": 31066,
+                "name": "ParameterList",
+                "src": "531:77:85"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 31067,
+                "name": "ParameterList",
+                "src": "618:0:85"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "falseBody": null
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "commonType": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "==",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 31065,
+                              "type": "uint256",
+                              "value": "amount"
+                            },
+                            "id": 31068,
+                            "name": "Identifier",
+                            "src": "632:6:85"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "30",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 0",
+                              "value": "0"
+                            },
+                            "id": 31069,
+                            "name": "Literal",
+                            "src": "642:1:85"
+                          }
+                        ],
+                        "id": 31070,
+                        "name": "BinaryOperation",
+                        "src": "632:11:85"
+                      },
+                      {
+                        "children": [
+                          {
+                            "attributes": {
+                              "expression": null,
+                              "functionReturnParameters": 31067
+                            },
+                            "id": 31071,
+                            "name": "Return",
+                            "src": "659:7:85"
+                          }
+                        ],
+                        "id": 31072,
+                        "name": "Block",
+                        "src": "645:31:85"
+                      }
+                    ],
+                    "id": 31073,
+                    "name": "IfStatement",
+                    "src": "628:48:85"
+                  },
+                  {
+                    "attributes": {
+                      "assignments": [
+                        31075
+                      ]
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "constant": false,
+                          "mutability": "mutable",
+                          "name": "allowance",
+                          "overrides": null,
+                          "scope": 31110,
+                          "stateVariable": false,
+                          "storageLocation": "default",
+                          "type": "uint256",
+                          "value": null,
+                          "visibility": "internal"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "uint256",
+                              "type": "uint256"
+                            },
+                            "id": 31074,
+                            "name": "ElementaryTypeName",
+                            "src": "686:7:85"
+                          }
+                        ],
+                        "id": 31075,
+                        "name": "VariableDeclaration",
+                        "src": "686:17:85"
+                      },
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "uint256",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                },
+                                {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "allowance",
+                              "referencedDeclaration": 1250,
+                              "type": "function (address,address) view external returns (uint256)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 31061,
+                                  "type": "contract IERC20",
+                                  "value": "token"
+                                },
+                                "id": 31076,
+                                "name": "Identifier",
+                                "src": "706:5:85"
+                              }
+                            ],
+                            "id": 31077,
+                            "name": "MemberAccess",
+                            "src": "706:15:85"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": false,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "tryCall": false,
+                              "type": "address",
+                              "type_conversion": true
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_contract$_SafeERC20Ex_$31112",
+                                      "typeString": "library SafeERC20Ex"
+                                    }
+                                  ],
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "type": "type(address)"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "name": "address",
+                                      "type": null
+                                    },
+                                    "id": 31078,
+                                    "name": "ElementaryTypeName",
+                                    "src": "722:7:85"
+                                  }
+                                ],
+                                "id": 31079,
+                                "name": "ElementaryTypeNameExpression",
+                                "src": "722:7:85"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": -28,
+                                  "type": "library SafeERC20Ex",
+                                  "value": "this"
+                                },
+                                "id": 31080,
+                                "name": "Identifier",
+                                "src": "730:4:85"
+                              }
+                            ],
+                            "id": 31081,
+                            "name": "FunctionCall",
+                            "src": "722:13:85"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 31063,
+                              "type": "address",
+                              "value": "spender"
+                            },
+                            "id": 31082,
+                            "name": "Identifier",
+                            "src": "737:7:85"
+                          }
+                        ],
+                        "id": 31083,
+                        "name": "FunctionCall",
+                        "src": "706:39:85"
+                      }
+                    ],
+                    "id": 31084,
+                    "name": "VariableDeclarationStatement",
+                    "src": "686:59:85"
+                  },
+                  {
+                    "attributes": {
+                      "falseBody": null
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "commonType": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": ">=",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 31075,
+                              "type": "uint256",
+                              "value": "allowance"
+                            },
+                            "id": 31085,
+                            "name": "Identifier",
+                            "src": "759:9:85"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 31065,
+                              "type": "uint256",
+                              "value": "amount"
+                            },
+                            "id": 31086,
+                            "name": "Identifier",
+                            "src": "772:6:85"
+                          }
+                        ],
+                        "id": 31087,
+                        "name": "BinaryOperation",
+                        "src": "759:19:85"
+                      },
+                      {
+                        "children": [
+                          {
+                            "attributes": {
+                              "expression": null,
+                              "functionReturnParameters": 31067
+                            },
+                            "id": 31088,
+                            "name": "Return",
+                            "src": "794:7:85"
+                          }
+                        ],
+                        "id": 31089,
+                        "name": "Block",
+                        "src": "780:31:85"
+                      }
+                    ],
+                    "id": 31090,
+                    "name": "IfStatement",
+                    "src": "755:56:85"
+                  },
+                  {
+                    "attributes": {
+                      "falseBody": null
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "commonType": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": ">",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 31075,
+                              "type": "uint256",
+                              "value": "allowance"
+                            },
+                            "id": 31091,
+                            "name": "Identifier",
+                            "src": "825:9:85"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "30",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 0",
+                              "value": "0"
+                            },
+                            "id": 31092,
+                            "name": "Literal",
+                            "src": "837:1:85"
+                          }
+                        ],
+                        "id": 31093,
+                        "name": "BinaryOperation",
+                        "src": "825:13:85"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "isStructConstructorCall": false,
+                                  "lValueRequested": false,
+                                  "names": [
+                                    null
+                                  ],
+                                  "tryCall": false,
+                                  "type": "tuple()",
+                                  "type_conversion": false
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_address",
+                                          "typeString": "address"
+                                        },
+                                        {
+                                          "typeIdentifier": "t_rational_0_by_1",
+                                          "typeString": "int_const 0"
+                                        }
+                                      ],
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "member_name": "safeApprove",
+                                      "referencedDeclaration": 1393,
+                                      "type": "function (contract IERC20,address,uint256)"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 31061,
+                                          "type": "contract IERC20",
+                                          "value": "token"
+                                        },
+                                        "id": 31094,
+                                        "name": "Identifier",
+                                        "src": "854:5:85"
+                                      }
+                                    ],
+                                    "id": 31096,
+                                    "name": "MemberAccess",
+                                    "src": "854:17:85"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 31063,
+                                      "type": "address",
+                                      "value": "spender"
+                                    },
+                                    "id": 31097,
+                                    "name": "Identifier",
+                                    "src": "872:7:85"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "hexvalue": "30",
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "subdenomination": null,
+                                      "token": "number",
+                                      "type": "int_const 0",
+                                      "value": "0"
+                                    },
+                                    "id": 31098,
+                                    "name": "Literal",
+                                    "src": "881:1:85"
+                                  }
+                                ],
+                                "id": 31099,
+                                "name": "FunctionCall",
+                                "src": "854:29:85"
+                              }
+                            ],
+                            "id": 31100,
+                            "name": "ExpressionStatement",
+                            "src": "854:29:85"
+                          }
+                        ],
+                        "id": 31101,
+                        "name": "Block",
+                        "src": "840:54:85"
+                      }
+                    ],
+                    "id": 31102,
+                    "name": "IfStatement",
+                    "src": "821:73:85"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                },
+                                {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "safeApprove",
+                              "referencedDeclaration": 1393,
+                              "type": "function (contract IERC20,address,uint256)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 31061,
+                                  "type": "contract IERC20",
+                                  "value": "token"
+                                },
+                                "id": 31103,
+                                "name": "Identifier",
+                                "src": "903:5:85"
+                              }
+                            ],
+                            "id": 31105,
+                            "name": "MemberAccess",
+                            "src": "903:17:85"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 31063,
+                              "type": "address",
+                              "value": "spender"
+                            },
+                            "id": 31106,
+                            "name": "Identifier",
+                            "src": "921:7:85"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 31065,
+                              "type": "uint256",
+                              "value": "amount"
+                            },
+                            "id": 31107,
+                            "name": "Identifier",
+                            "src": "930:6:85"
+                          }
+                        ],
+                        "id": 31108,
+                        "name": "FunctionCall",
+                        "src": "903:34:85"
+                      }
+                    ],
+                    "id": 31109,
+                    "name": "ExpressionStatement",
+                    "src": "903:34:85"
+                  }
+                ],
+                "id": 31110,
+                "name": "Block",
+                "src": "618:326:85"
+              }
+            ],
+            "id": 31111,
+            "name": "FunctionDefinition",
+            "src": "509:435:85"
+          }
+        ],
+        "id": 31112,
+        "name": "ContractDefinition",
+        "src": "210:736:85"
+      }
+    ],
+    "id": 31113,
+    "name": "SourceUnit",
+    "src": "51:896:85"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-08-23T03:19:30.245Z",
+  "devdoc": {
+    "details": "Extends the SafeERC20 library with additional operations",
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

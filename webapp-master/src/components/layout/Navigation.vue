@@ -4,7 +4,7 @@
       <!--img src="https://ovidex.network/img/logo-light-svg.da696bae.svg" style="height:28px;margin-left:-50px"-->
       <b-btn
         @click="loginAction"
-        :variant="darkMode ? 'outline-dark' : 'outline-light'"
+        :variant="darkMode ? 'outline-gray-dark' : 'outline-gray-dark'"
         class="block-rounded"
         size="sm"
       >

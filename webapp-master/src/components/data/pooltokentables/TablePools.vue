@@ -8,13 +8,14 @@
     default-sort="liqDepth"
   >
     <template #head(liquidityProtection)>
-      <img :src="require(`@/assets/media/icons/liquidity.svg`)" class="mr-1" />
+      <img :src="require(`@/assets/media/icons/liquidity.svg`)" class="mr-1" style="max-height:20px"/>
     </template>
 
     <template #cell(liquidityProtection)="{ value }">
       <img
         v-if="value"
         :src="require(`@/assets/media/icons/liquidity_active.svg`)"
+        style="max-height:20px"
       />
       <span v-else />
     </template>

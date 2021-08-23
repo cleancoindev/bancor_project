@@ -4,7 +4,7 @@
       <multi-input-field
         v-model="stepTwoProps.poolName"
         :label="$t('pool_name')"
-        placeholder="eg. BNTDMG Smart Relay"
+        placeholder="eg. OVXDMG Smart Relay"
         height="48"
       />
     </b-col>
@@ -12,7 +12,7 @@
       <multi-input-field
         v-model="stepTwoProps.poolSymbol"
         :label="$t('token_symbol')"
-        placeholder="eg. BNTDMG"
+        placeholder="eg. OVXDMG"
         height="48"
       />
     </b-col>

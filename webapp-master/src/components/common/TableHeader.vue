@@ -22,6 +22,7 @@
           v-else
           :src="require(`@/assets/media/icons/liquidity.svg`)"
           class="mr-1"
+          style="max-height:20px"
         />
         <font-awesome-icon
           v-if="column.key && column.key === sortByKey"

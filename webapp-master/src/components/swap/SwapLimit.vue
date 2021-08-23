@@ -61,7 +61,7 @@
           >
             <div class="d-flex align-items-center" style="padding-right: 6px">
               <img
-                class="img-avatar img-avatar32 border-colouring bg-white"
+                class="img-avatar bg-white logo-shadow overlap img-avatar32"
                 :src="token2.logo"
                 alt="Token Logo"
               />
@@ -757,14 +757,14 @@ export default class SwapLimit extends BaseTxAction {
 .inactive {
   pointer-events: none;
   cursor: default;
-  color: #86b0f4;
+  color: #41b883;
   opacity: 0.6;
   font-size: 1rem;
 }
 
 .active {
   cursor: pointer;
-  color: #86b0f4;
+  color: #41b883;
   font-size: 1rem;
 }
 </style>

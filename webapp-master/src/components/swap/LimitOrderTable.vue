@@ -55,7 +55,7 @@
 
         <template #cell(from)="{ value }">
           <img
-            class="img-avatar img-avatar32 bg-white logo-shadow mr-2"
+            class="img-avatar bg-white logo-shadow overlap img-avatar32 mr-2"
             :src="value.logo"
             :alt="value.symbol"
           />
@@ -64,7 +64,7 @@
 
         <template #cell(to)="{ value }">
           <img
-            class="img-avatar img-avatar32 bg-white logo-shadow mr-2"
+            class="img-avatar bg-white logo-shadow overlap img-avatar32 mr-2"
             :src="value.logo"
             :alt="value.symbol"
           />

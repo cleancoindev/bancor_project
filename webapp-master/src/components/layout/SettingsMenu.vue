@@ -3,7 +3,7 @@
     id="dropdown-settings"
     ref="dropdown"
     right
-    :variant="darkMode ? 'outline-dark' : 'outline-light'"
+    :variant="darkMode ? 'outline-gray-dark' : 'outline-gray-dark'"
     class="limited-dropdown-settings"
     size="sm"
     toggle-class="block-rounded"
@@ -63,7 +63,7 @@
                 : 'muted-light'
             "
             class="px-4 block-rounded btn-block ml-1"
-          >
+          disabled="">
             EOS
           </b-btn>
         </div>

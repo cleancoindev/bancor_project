@@ -1,0 +1,2558 @@
+{
+  "contractName": "ILiquidityProtectionStats",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "provider",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IDSToken",
+          "name": "poolToken",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IReserveToken",
+          "name": "reserveToken",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "poolAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "reserveAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "increaseTotalAmounts",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "provider",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IDSToken",
+          "name": "poolToken",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IReserveToken",
+          "name": "reserveToken",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "poolAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "reserveAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "decreaseTotalAmounts",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "provider",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IDSToken",
+          "name": "poolToken",
+          "type": "address"
+        }
+      ],
+      "name": "addProviderPool",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "provider",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IDSToken",
+          "name": "poolToken",
+          "type": "address"
+        }
+      ],
+      "name": "removeProviderPool",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IDSToken",
+          "name": "poolToken",
+          "type": "address"
+        }
+      ],
+      "name": "totalPoolAmount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IDSToken",
+          "name": "poolToken",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IReserveToken",
+          "name": "reserveToken",
+          "type": "address"
+        }
+      ],
+      "name": "totalReserveAmount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "provider",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IDSToken",
+          "name": "poolToken",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IReserveToken",
+          "name": "reserveToken",
+          "type": "address"
+        }
+      ],
+      "name": "totalProviderAmount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "provider",
+          "type": "address"
+        }
+      ],
+      "name": "providerPools",
+      "outputs": [
+        {
+          "internalType": "contract IDSToken[]",
+          "name": "",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"provider\",\"type\":\"address\"},{\"internalType\":\"contract IDSToken\",\"name\":\"poolToken\",\"type\":\"address\"}],\"name\":\"addProviderPool\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"provider\",\"type\":\"address\"},{\"internalType\":\"contract IDSToken\",\"name\":\"poolToken\",\"type\":\"address\"},{\"internalType\":\"contract IReserveToken\",\"name\":\"reserveToken\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"poolAmount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"reserveAmount\",\"type\":\"uint256\"}],\"name\":\"decreaseTotalAmounts\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"provider\",\"type\":\"address\"},{\"internalType\":\"contract IDSToken\",\"name\":\"poolToken\",\"type\":\"address\"},{\"internalType\":\"contract IReserveToken\",\"name\":\"reserveToken\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"poolAmount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"reserveAmount\",\"type\":\"uint256\"}],\"name\":\"increaseTotalAmounts\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"provider\",\"type\":\"address\"}],\"name\":\"providerPools\",\"outputs\":[{\"internalType\":\"contract IDSToken[]\",\"name\":\"\",\"type\":\"address[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"provider\",\"type\":\"address\"},{\"internalType\":\"contract IDSToken\",\"name\":\"poolToken\",\"type\":\"address\"}],\"name\":\"removeProviderPool\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"contract IDSToken\",\"name\":\"poolToken\",\"type\":\"address\"}],\"name\":\"totalPoolAmount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"provider\",\"type\":\"address\"},{\"internalType\":\"contract IDSToken\",\"name\":\"poolToken\",\"type\":\"address\"},{\"internalType\":\"contract IReserveToken\",\"name\":\"reserveToken\",\"type\":\"address\"}],\"name\":\"totalProviderAmount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"contract IDSToken\",\"name\":\"poolToken\",\"type\":\"address\"},{\"internalType\":\"contract IReserveToken\",\"name\":\"reserveToken\",\"type\":\"address\"}],\"name\":\"totalReserveAmount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/liquidity-protection/interfaces/ILiquidityProtectionStats.sol\":\"ILiquidityProtectionStats\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x5f02220344881ce43204ae4a6281145a67bc52c2bb1290a791857df3d19d78f5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://24427744bd3e6cb73c17010119af12a318289c0253a4d9acb8576c9fb3797b08\",\"dweb:/ipfs/QmTLDqpKRBuxGxRAmjgXt9AkXyACW3MtKzi7PYjm5iMfGC\"]},\"project:/contracts/converter/interfaces/IConverterAnchor.sol\":{\"keccak256\":\"0x061dffb3cd75b61094c31a8987276b8f6108e29d67d7a55a305eea9f86d5b196\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://478f3b0164b83199eaf6f8c595abf235b742fb2c15d4fad7a241bd4837083f73\",\"dweb:/ipfs/QmcoDjie2cm3iq3bhjrqn6rE6S8o9WXvBY3tcnC5miN2Ut\"]},\"project:/contracts/liquidity-protection/interfaces/ILiquidityProtectionStats.sol\":{\"keccak256\":\"0x6e52a976ce6025264b85eb2765e239c60f559d0323e56911edcdf6b9c3bd6817\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://3c35ce84d6c6f3299f69d73444707f3e5f7dddf3bcb5cbf0e90d7f6f52098796\",\"dweb:/ipfs/Qmb7PVEr5TzEzUXS8nWUWteAH9QtaR3fNu8HP2Sdkybwjs\"]},\"project:/contracts/token/interfaces/IDSToken.sol\":{\"keccak256\":\"0xbf2d1edad898df2177b9329ac2e81d1fb859e168c3e273703d4c5676f4891d1f\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://616f6a33f5822e0b031df175aa3d7cc60ee20fa4ed10d0a18a6ef66e1886c47f\",\"dweb:/ipfs/QmNn7TbWVsB9njMnyggLv2fopEUmmcz91K3Ai1c7h7gbD2\"]},\"project:/contracts/token/interfaces/IReserveToken.sol\":{\"keccak256\":\"0x7380cdd30fc2b427d1dab7f7f30bb93e4562d91b405aecfc5a7b9ef3e24e7cee\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://b728fed30c2d9027e03a5e46cb67932f021851924c47b7cd658431ee8f5bdb15\",\"dweb:/ipfs/QmfLiprUayVjHj9pTUapayU1R4nP3Lm1a6YuyU6LeChBzZ\"]},\"project:/contracts/utility/interfaces/IOwned.sol\":{\"keccak256\":\"0x4cfffe7abcbf4a0a49d154837711a38e9c34da4891b86167b9e15d80b24f9b14\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://0b398ddfbcae48adc05489f7be940135a14150c38de9b75897ca9193a1ac99d0\",\"dweb:/ipfs/QmXPh5dHCZqshzmCWPRc3TSQsjc6Sr1SG2XFZe3NdKWMRC\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: SEE LICENSE IN LICENSE\npragma solidity 0.6.12;\n\nimport \"../../converter/interfaces/IConverterAnchor.sol\";\n\nimport \"../../token/interfaces/IDSToken.sol\";\nimport \"../../token/interfaces/IReserveToken.sol\";\n\n/*\n    Liquidity Protection Stats interface\n*/\ninterface ILiquidityProtectionStats {\n    function increaseTotalAmounts(\n        address provider,\n        IDSToken poolToken,\n        IReserveToken reserveToken,\n        uint256 poolAmount,\n        uint256 reserveAmount\n    ) external;\n\n    function decreaseTotalAmounts(\n        address provider,\n        IDSToken poolToken,\n        IReserveToken reserveToken,\n        uint256 poolAmount,\n        uint256 reserveAmount\n    ) external;\n\n    function addProviderPool(address provider, IDSToken poolToken) external returns (bool);\n\n    function removeProviderPool(address provider, IDSToken poolToken) external returns (bool);\n\n    function totalPoolAmount(IDSToken poolToken) external view returns (uint256);\n\n    function totalReserveAmount(IDSToken poolToken, IReserveToken reserveToken) external view returns (uint256);\n\n    function totalProviderAmount(\n        address provider,\n        IDSToken poolToken,\n        IReserveToken reserveToken\n    ) external view returns (uint256);\n\n    function providerPools(address provider) external view returns (IDSToken[] memory);\n}\n",
+  "sourcePath": "D:\\Work Space\\bancor_project\\core\\contracts\\liquidity-protection\\interfaces\\ILiquidityProtectionStats.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/liquidity-protection/interfaces/ILiquidityProtectionStats.sol",
+    "exportedSymbols": {
+      "ILiquidityProtectionStats": [
+        30324
+      ]
+    },
+    "id": 30325,
+    "license": "SEE LICENSE IN LICENSE",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 30241,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "51:23:73"
+      },
+      {
+        "absolutePath": "project:/contracts/converter/interfaces/IConverterAnchor.sol",
+        "file": "../../converter/interfaces/IConverterAnchor.sol",
+        "id": 30242,
+        "nodeType": "ImportDirective",
+        "scope": 30325,
+        "sourceUnit": 15416,
+        "src": "76:57:73",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "project:/contracts/token/interfaces/IDSToken.sol",
+        "file": "../../token/interfaces/IDSToken.sol",
+        "id": 30243,
+        "nodeType": "ImportDirective",
+        "scope": 30325,
+        "sourceUnit": 31137,
+        "src": "135:45:73",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "project:/contracts/token/interfaces/IReserveToken.sol",
+        "file": "../../token/interfaces/IReserveToken.sol",
+        "id": 30244,
+        "nodeType": "ImportDirective",
+        "scope": 30325,
+        "sourceUnit": 31141,
+        "src": "181:50:73",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 30324,
+        "linearizedBaseContracts": [
+          30324
+        ],
+        "name": "ILiquidityProtectionStats",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "aa558ef0",
+            "id": 30257,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "increaseTotalAmounts",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 30255,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30246,
+                  "mutability": "mutable",
+                  "name": "provider",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30257,
+                  "src": "361:16:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 30245,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "361:7:73",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 30248,
+                  "mutability": "mutable",
+                  "name": "poolToken",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30257,
+                  "src": "387:18:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IDSToken_$31136",
+                    "typeString": "contract IDSToken"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 30247,
+                    "name": "IDSToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 31136,
+                    "src": "387:8:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IDSToken_$31136",
+                      "typeString": "contract IDSToken"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 30250,
+                  "mutability": "mutable",
+                  "name": "reserveToken",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30257,
+                  "src": "415:26:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                    "typeString": "contract IReserveToken"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 30249,
+                    "name": "IReserveToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 31140,
+                    "src": "415:13:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                      "typeString": "contract IReserveToken"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 30252,
+                  "mutability": "mutable",
+                  "name": "poolAmount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30257,
+                  "src": "451:18:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 30251,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "451:7:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 30254,
+                  "mutability": "mutable",
+                  "name": "reserveAmount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30257,
+                  "src": "479:21:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 30253,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "479:7:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "351:155:73"
+            },
+            "returnParameters": {
+              "id": 30256,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "515:0:73"
+            },
+            "scope": 30324,
+            "src": "322:194:73",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "27396b6d",
+            "id": 30270,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "decreaseTotalAmounts",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 30268,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30259,
+                  "mutability": "mutable",
+                  "name": "provider",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30270,
+                  "src": "561:16:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 30258,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "561:7:73",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 30261,
+                  "mutability": "mutable",
+                  "name": "poolToken",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30270,
+                  "src": "587:18:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IDSToken_$31136",
+                    "typeString": "contract IDSToken"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 30260,
+                    "name": "IDSToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 31136,
+                    "src": "587:8:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IDSToken_$31136",
+                      "typeString": "contract IDSToken"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 30263,
+                  "mutability": "mutable",
+                  "name": "reserveToken",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30270,
+                  "src": "615:26:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                    "typeString": "contract IReserveToken"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 30262,
+                    "name": "IReserveToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 31140,
+                    "src": "615:13:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                      "typeString": "contract IReserveToken"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 30265,
+                  "mutability": "mutable",
+                  "name": "poolAmount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30270,
+                  "src": "651:18:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 30264,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "651:7:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 30267,
+                  "mutability": "mutable",
+                  "name": "reserveAmount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30270,
+                  "src": "679:21:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 30266,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "679:7:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "551:155:73"
+            },
+            "returnParameters": {
+              "id": 30269,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "715:0:73"
+            },
+            "scope": 30324,
+            "src": "522:194:73",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "fd4bc1e6",
+            "id": 30279,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addProviderPool",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 30275,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30272,
+                  "mutability": "mutable",
+                  "name": "provider",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30279,
+                  "src": "747:16:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 30271,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "747:7:73",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 30274,
+                  "mutability": "mutable",
+                  "name": "poolToken",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30279,
+                  "src": "765:18:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IDSToken_$31136",
+                    "typeString": "contract IDSToken"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 30273,
+                    "name": "IDSToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 31136,
+                    "src": "765:8:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IDSToken_$31136",
+                      "typeString": "contract IDSToken"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "746:38:73"
+            },
+            "returnParameters": {
+              "id": 30278,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30277,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30279,
+                  "src": "803:4:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 30276,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "803:4:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "802:6:73"
+            },
+            "scope": 30324,
+            "src": "722:87:73",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "4a91787c",
+            "id": 30288,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "removeProviderPool",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 30284,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30281,
+                  "mutability": "mutable",
+                  "name": "provider",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30288,
+                  "src": "843:16:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 30280,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "843:7:73",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 30283,
+                  "mutability": "mutable",
+                  "name": "poolToken",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30288,
+                  "src": "861:18:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IDSToken_$31136",
+                    "typeString": "contract IDSToken"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 30282,
+                    "name": "IDSToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 31136,
+                    "src": "861:8:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IDSToken_$31136",
+                      "typeString": "contract IDSToken"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "842:38:73"
+            },
+            "returnParameters": {
+              "id": 30287,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30286,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30288,
+                  "src": "899:4:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 30285,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "899:4:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "898:6:73"
+            },
+            "scope": 30324,
+            "src": "815:90:73",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "b9571ddb",
+            "id": 30295,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "totalPoolAmount",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 30291,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30290,
+                  "mutability": "mutable",
+                  "name": "poolToken",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30295,
+                  "src": "936:18:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IDSToken_$31136",
+                    "typeString": "contract IDSToken"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 30289,
+                    "name": "IDSToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 31136,
+                    "src": "936:8:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IDSToken_$31136",
+                      "typeString": "contract IDSToken"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "935:20:73"
+            },
+            "returnParameters": {
+              "id": 30294,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30293,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30295,
+                  "src": "979:7:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 30292,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "979:7:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "978:9:73"
+            },
+            "scope": 30324,
+            "src": "911:77:73",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "22677c52",
+            "id": 30304,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "totalReserveAmount",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 30300,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30297,
+                  "mutability": "mutable",
+                  "name": "poolToken",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30304,
+                  "src": "1022:18:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IDSToken_$31136",
+                    "typeString": "contract IDSToken"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 30296,
+                    "name": "IDSToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 31136,
+                    "src": "1022:8:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IDSToken_$31136",
+                      "typeString": "contract IDSToken"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 30299,
+                  "mutability": "mutable",
+                  "name": "reserveToken",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30304,
+                  "src": "1042:26:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                    "typeString": "contract IReserveToken"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 30298,
+                    "name": "IReserveToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 31140,
+                    "src": "1042:13:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                      "typeString": "contract IReserveToken"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1021:48:73"
+            },
+            "returnParameters": {
+              "id": 30303,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30302,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30304,
+                  "src": "1093:7:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 30301,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1093:7:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1092:9:73"
+            },
+            "scope": 30324,
+            "src": "994:108:73",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "42d16abf",
+            "id": 30315,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "totalProviderAmount",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 30311,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30306,
+                  "mutability": "mutable",
+                  "name": "provider",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30315,
+                  "src": "1146:16:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 30305,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1146:7:73",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 30308,
+                  "mutability": "mutable",
+                  "name": "poolToken",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30315,
+                  "src": "1172:18:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IDSToken_$31136",
+                    "typeString": "contract IDSToken"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 30307,
+                    "name": "IDSToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 31136,
+                    "src": "1172:8:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IDSToken_$31136",
+                      "typeString": "contract IDSToken"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 30310,
+                  "mutability": "mutable",
+                  "name": "reserveToken",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30315,
+                  "src": "1200:26:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                    "typeString": "contract IReserveToken"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 30309,
+                    "name": "IReserveToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 31140,
+                    "src": "1200:13:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                      "typeString": "contract IReserveToken"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1136:96:73"
+            },
+            "returnParameters": {
+              "id": 30314,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30313,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30315,
+                  "src": "1256:7:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 30312,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1256:7:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1255:9:73"
+            },
+            "scope": 30324,
+            "src": "1108:157:73",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "5408b440",
+            "id": 30323,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "providerPools",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 30318,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30317,
+                  "mutability": "mutable",
+                  "name": "provider",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30323,
+                  "src": "1294:16:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 30316,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1294:7:73",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1293:18:73"
+            },
+            "returnParameters": {
+              "id": 30322,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30321,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30323,
+                  "src": "1335:17:73",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_contract$_IDSToken_$31136_$dyn_memory_ptr",
+                    "typeString": "contract IDSToken[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "contractScope": null,
+                      "id": 30319,
+                      "name": "IDSToken",
+                      "nodeType": "UserDefinedTypeName",
+                      "referencedDeclaration": 31136,
+                      "src": "1335:8:73",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IDSToken_$31136",
+                        "typeString": "contract IDSToken"
+                      }
+                    },
+                    "id": 30320,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1335:10:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_contract$_IDSToken_$31136_$dyn_storage_ptr",
+                      "typeString": "contract IDSToken[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1334:19:73"
+            },
+            "scope": 30324,
+            "src": "1271:83:73",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 30325,
+        "src": "280:1076:73"
+      }
+    ],
+    "src": "51:1306:73"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/liquidity-protection/interfaces/ILiquidityProtectionStats.sol",
+      "exportedSymbols": {
+        "ILiquidityProtectionStats": [
+          30324
+        ]
+      },
+      "license": "SEE LICENSE IN LICENSE"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.6",
+            ".12"
+          ]
+        },
+        "id": 30241,
+        "name": "PragmaDirective",
+        "src": "51:23:73"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 15416,
+          "absolutePath": "project:/contracts/converter/interfaces/IConverterAnchor.sol",
+          "file": "../../converter/interfaces/IConverterAnchor.sol",
+          "scope": 30325,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 30242,
+        "name": "ImportDirective",
+        "src": "76:57:73"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 31137,
+          "absolutePath": "project:/contracts/token/interfaces/IDSToken.sol",
+          "file": "../../token/interfaces/IDSToken.sol",
+          "scope": 30325,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 30243,
+        "name": "ImportDirective",
+        "src": "135:45:73"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 31141,
+          "absolutePath": "project:/contracts/token/interfaces/IReserveToken.sol",
+          "file": "../../token/interfaces/IReserveToken.sol",
+          "scope": 30325,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 30244,
+        "name": "ImportDirective",
+        "src": "181:50:73"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            30324
+          ],
+          "name": "ILiquidityProtectionStats",
+          "scope": 30325
+        },
+        "children": [
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "aa558ef0",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "increaseTotalAmounts",
+              "overrides": null,
+              "scope": 30324,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "provider",
+                      "overrides": null,
+                      "scope": 30257,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 30245,
+                        "name": "ElementaryTypeName",
+                        "src": "361:7:73"
+                      }
+                    ],
+                    "id": 30246,
+                    "name": "VariableDeclaration",
+                    "src": "361:16:73"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "poolToken",
+                      "overrides": null,
+                      "scope": 30257,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IDSToken",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IDSToken",
+                          "referencedDeclaration": 31136,
+                          "type": "contract IDSToken"
+                        },
+                        "id": 30247,
+                        "name": "UserDefinedTypeName",
+                        "src": "387:8:73"
+                      }
+                    ],
+                    "id": 30248,
+                    "name": "VariableDeclaration",
+                    "src": "387:18:73"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "reserveToken",
+                      "overrides": null,
+                      "scope": 30257,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IReserveToken",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IReserveToken",
+                          "referencedDeclaration": 31140,
+                          "type": "contract IReserveToken"
+                        },
+                        "id": 30249,
+                        "name": "UserDefinedTypeName",
+                        "src": "415:13:73"
+                      }
+                    ],
+                    "id": 30250,
+                    "name": "VariableDeclaration",
+                    "src": "415:26:73"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "poolAmount",
+                      "overrides": null,
+                      "scope": 30257,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 30251,
+                        "name": "ElementaryTypeName",
+                        "src": "451:7:73"
+                      }
+                    ],
+                    "id": 30252,
+                    "name": "VariableDeclaration",
+                    "src": "451:18:73"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "reserveAmount",
+                      "overrides": null,
+                      "scope": 30257,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 30253,
+                        "name": "ElementaryTypeName",
+                        "src": "479:7:73"
+                      }
+                    ],
+                    "id": 30254,
+                    "name": "VariableDeclaration",
+                    "src": "479:21:73"
+                  }
+                ],
+                "id": 30255,
+                "name": "ParameterList",
+                "src": "351:155:73"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 30256,
+                "name": "ParameterList",
+                "src": "515:0:73"
+              }
+            ],
+            "id": 30257,
+            "name": "FunctionDefinition",
+            "src": "322:194:73"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "27396b6d",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "decreaseTotalAmounts",
+              "overrides": null,
+              "scope": 30324,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "provider",
+                      "overrides": null,
+                      "scope": 30270,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 30258,
+                        "name": "ElementaryTypeName",
+                        "src": "561:7:73"
+                      }
+                    ],
+                    "id": 30259,
+                    "name": "VariableDeclaration",
+                    "src": "561:16:73"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "poolToken",
+                      "overrides": null,
+                      "scope": 30270,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IDSToken",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IDSToken",
+                          "referencedDeclaration": 31136,
+                          "type": "contract IDSToken"
+                        },
+                        "id": 30260,
+                        "name": "UserDefinedTypeName",
+                        "src": "587:8:73"
+                      }
+                    ],
+                    "id": 30261,
+                    "name": "VariableDeclaration",
+                    "src": "587:18:73"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "reserveToken",
+                      "overrides": null,
+                      "scope": 30270,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IReserveToken",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IReserveToken",
+                          "referencedDeclaration": 31140,
+                          "type": "contract IReserveToken"
+                        },
+                        "id": 30262,
+                        "name": "UserDefinedTypeName",
+                        "src": "615:13:73"
+                      }
+                    ],
+                    "id": 30263,
+                    "name": "VariableDeclaration",
+                    "src": "615:26:73"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "poolAmount",
+                      "overrides": null,
+                      "scope": 30270,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 30264,
+                        "name": "ElementaryTypeName",
+                        "src": "651:7:73"
+                      }
+                    ],
+                    "id": 30265,
+                    "name": "VariableDeclaration",
+                    "src": "651:18:73"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "reserveAmount",
+                      "overrides": null,
+                      "scope": 30270,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 30266,
+                        "name": "ElementaryTypeName",
+                        "src": "679:7:73"
+                      }
+                    ],
+                    "id": 30267,
+                    "name": "VariableDeclaration",
+                    "src": "679:21:73"
+                  }
+                ],
+                "id": 30268,
+                "name": "ParameterList",
+                "src": "551:155:73"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 30269,
+                "name": "ParameterList",
+                "src": "715:0:73"
+              }
+            ],
+            "id": 30270,
+            "name": "FunctionDefinition",
+            "src": "522:194:73"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "fd4bc1e6",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "addProviderPool",
+              "overrides": null,
+              "scope": 30324,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "provider",
+                      "overrides": null,
+                      "scope": 30279,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 30271,
+                        "name": "ElementaryTypeName",
+                        "src": "747:7:73"
+                      }
+                    ],
+                    "id": 30272,
+                    "name": "VariableDeclaration",
+                    "src": "747:16:73"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "poolToken",
+                      "overrides": null,
+                      "scope": 30279,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IDSToken",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IDSToken",
+                          "referencedDeclaration": 31136,
+                          "type": "contract IDSToken"
+                        },
+                        "id": 30273,
+                        "name": "UserDefinedTypeName",
+                        "src": "765:8:73"
+                      }
+                    ],
+                    "id": 30274,
+                    "name": "VariableDeclaration",
+                    "src": "765:18:73"
+                  }
+                ],
+                "id": 30275,
+                "name": "ParameterList",
+                "src": "746:38:73"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 30279,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 30276,
+                        "name": "ElementaryTypeName",
+                        "src": "803:4:73"
+                      }
+                    ],
+                    "id": 30277,
+                    "name": "VariableDeclaration",
+                    "src": "803:4:73"
+                  }
+                ],
+                "id": 30278,
+                "name": "ParameterList",
+                "src": "802:6:73"
+              }
+            ],
+            "id": 30279,
+            "name": "FunctionDefinition",
+            "src": "722:87:73"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "4a91787c",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "removeProviderPool",
+              "overrides": null,
+              "scope": 30324,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "provider",
+                      "overrides": null,
+                      "scope": 30288,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 30280,
+                        "name": "ElementaryTypeName",
+                        "src": "843:7:73"
+                      }
+                    ],
+                    "id": 30281,
+                    "name": "VariableDeclaration",
+                    "src": "843:16:73"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "poolToken",
+                      "overrides": null,
+                      "scope": 30288,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IDSToken",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IDSToken",
+                          "referencedDeclaration": 31136,
+                          "type": "contract IDSToken"
+                        },
+                        "id": 30282,
+                        "name": "UserDefinedTypeName",
+                        "src": "861:8:73"
+                      }
+                    ],
+                    "id": 30283,
+                    "name": "VariableDeclaration",
+                    "src": "861:18:73"
+                  }
+                ],
+                "id": 30284,
+                "name": "ParameterList",
+                "src": "842:38:73"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 30288,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 30285,
+                        "name": "ElementaryTypeName",
+                        "src": "899:4:73"
+                      }
+                    ],
+                    "id": 30286,
+                    "name": "VariableDeclaration",
+                    "src": "899:4:73"
+                  }
+                ],
+                "id": 30287,
+                "name": "ParameterList",
+                "src": "898:6:73"
+              }
+            ],
+            "id": 30288,
+            "name": "FunctionDefinition",
+            "src": "815:90:73"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "b9571ddb",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "totalPoolAmount",
+              "overrides": null,
+              "scope": 30324,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "poolToken",
+                      "overrides": null,
+                      "scope": 30295,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IDSToken",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IDSToken",
+                          "referencedDeclaration": 31136,
+                          "type": "contract IDSToken"
+                        },
+                        "id": 30289,
+                        "name": "UserDefinedTypeName",
+                        "src": "936:8:73"
+                      }
+                    ],
+                    "id": 30290,
+                    "name": "VariableDeclaration",
+                    "src": "936:18:73"
+                  }
+                ],
+                "id": 30291,
+                "name": "ParameterList",
+                "src": "935:20:73"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 30295,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 30292,
+                        "name": "ElementaryTypeName",
+                        "src": "979:7:73"
+                      }
+                    ],
+                    "id": 30293,
+                    "name": "VariableDeclaration",
+                    "src": "979:7:73"
+                  }
+                ],
+                "id": 30294,
+                "name": "ParameterList",
+                "src": "978:9:73"
+              }
+            ],
+            "id": 30295,
+            "name": "FunctionDefinition",
+            "src": "911:77:73"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "22677c52",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "totalReserveAmount",
+              "overrides": null,
+              "scope": 30324,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "poolToken",
+                      "overrides": null,
+                      "scope": 30304,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IDSToken",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IDSToken",
+                          "referencedDeclaration": 31136,
+                          "type": "contract IDSToken"
+                        },
+                        "id": 30296,
+                        "name": "UserDefinedTypeName",
+                        "src": "1022:8:73"
+                      }
+                    ],
+                    "id": 30297,
+                    "name": "VariableDeclaration",
+                    "src": "1022:18:73"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "reserveToken",
+                      "overrides": null,
+                      "scope": 30304,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IReserveToken",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IReserveToken",
+                          "referencedDeclaration": 31140,
+                          "type": "contract IReserveToken"
+                        },
+                        "id": 30298,
+                        "name": "UserDefinedTypeName",
+                        "src": "1042:13:73"
+                      }
+                    ],
+                    "id": 30299,
+                    "name": "VariableDeclaration",
+                    "src": "1042:26:73"
+                  }
+                ],
+                "id": 30300,
+                "name": "ParameterList",
+                "src": "1021:48:73"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 30304,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 30301,
+                        "name": "ElementaryTypeName",
+                        "src": "1093:7:73"
+                      }
+                    ],
+                    "id": 30302,
+                    "name": "VariableDeclaration",
+                    "src": "1093:7:73"
+                  }
+                ],
+                "id": 30303,
+                "name": "ParameterList",
+                "src": "1092:9:73"
+              }
+            ],
+            "id": 30304,
+            "name": "FunctionDefinition",
+            "src": "994:108:73"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "42d16abf",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "totalProviderAmount",
+              "overrides": null,
+              "scope": 30324,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "provider",
+                      "overrides": null,
+                      "scope": 30315,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 30305,
+                        "name": "ElementaryTypeName",
+                        "src": "1146:7:73"
+                      }
+                    ],
+                    "id": 30306,
+                    "name": "VariableDeclaration",
+                    "src": "1146:16:73"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "poolToken",
+                      "overrides": null,
+                      "scope": 30315,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IDSToken",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IDSToken",
+                          "referencedDeclaration": 31136,
+                          "type": "contract IDSToken"
+                        },
+                        "id": 30307,
+                        "name": "UserDefinedTypeName",
+                        "src": "1172:8:73"
+                      }
+                    ],
+                    "id": 30308,
+                    "name": "VariableDeclaration",
+                    "src": "1172:18:73"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "reserveToken",
+                      "overrides": null,
+                      "scope": 30315,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IReserveToken",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IReserveToken",
+                          "referencedDeclaration": 31140,
+                          "type": "contract IReserveToken"
+                        },
+                        "id": 30309,
+                        "name": "UserDefinedTypeName",
+                        "src": "1200:13:73"
+                      }
+                    ],
+                    "id": 30310,
+                    "name": "VariableDeclaration",
+                    "src": "1200:26:73"
+                  }
+                ],
+                "id": 30311,
+                "name": "ParameterList",
+                "src": "1136:96:73"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 30315,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 30312,
+                        "name": "ElementaryTypeName",
+                        "src": "1256:7:73"
+                      }
+                    ],
+                    "id": 30313,
+                    "name": "VariableDeclaration",
+                    "src": "1256:7:73"
+                  }
+                ],
+                "id": 30314,
+                "name": "ParameterList",
+                "src": "1255:9:73"
+              }
+            ],
+            "id": 30315,
+            "name": "FunctionDefinition",
+            "src": "1108:157:73"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "5408b440",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "providerPools",
+              "overrides": null,
+              "scope": 30324,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "provider",
+                      "overrides": null,
+                      "scope": 30323,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 30316,
+                        "name": "ElementaryTypeName",
+                        "src": "1294:7:73"
+                      }
+                    ],
+                    "id": 30317,
+                    "name": "VariableDeclaration",
+                    "src": "1294:16:73"
+                  }
+                ],
+                "id": 30318,
+                "name": "ParameterList",
+                "src": "1293:18:73"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 30323,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "contract IDSToken[]",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "length": null,
+                          "type": "contract IDSToken[]"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "contractScope": null,
+                              "name": "IDSToken",
+                              "referencedDeclaration": 31136,
+                              "type": "contract IDSToken"
+                            },
+                            "id": 30319,
+                            "name": "UserDefinedTypeName",
+                            "src": "1335:8:73"
+                          }
+                        ],
+                        "id": 30320,
+                        "name": "ArrayTypeName",
+                        "src": "1335:10:73"
+                      }
+                    ],
+                    "id": 30321,
+                    "name": "VariableDeclaration",
+                    "src": "1335:17:73"
+                  }
+                ],
+                "id": 30322,
+                "name": "ParameterList",
+                "src": "1334:19:73"
+              }
+            ],
+            "id": 30323,
+            "name": "FunctionDefinition",
+            "src": "1271:83:73"
+          }
+        ],
+        "id": 30324,
+        "name": "ContractDefinition",
+        "src": "280:1076:73"
+      }
+    ],
+    "id": 30325,
+    "name": "SourceUnit",
+    "src": "51:1306:73"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-08-23T03:19:30.216Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

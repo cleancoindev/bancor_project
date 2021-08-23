@@ -224,7 +224,7 @@ export default class ModalVoteDetails extends BaseComponent {
 @import "@/assets/_scss/custom/_variables";
 
 #vote-details .voted-for {
-  color: #3ec8c8;
+  color: #41b883;
 }
 
 #vote-details .voted-against {
@@ -236,7 +236,7 @@ export default class ModalVoteDetails extends BaseComponent {
 }
 
 #vote-details .proposal-title-light {
-  color: #0a2540;
+  color: #171d28;
 }
 
 #vote-details .modal-body {
@@ -245,6 +245,6 @@ export default class ModalVoteDetails extends BaseComponent {
 }
 
 #vote-details a {
-  color: #0f59d1;
+  color: #41b883;
 }
 </style>

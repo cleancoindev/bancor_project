@@ -1,0 +1,442 @@
+{
+  "contractName": "IConversionPathFinder",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract IReserveToken",
+          "name": "_sourceToken",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IReserveToken",
+          "name": "_targetToken",
+          "type": "address"
+        }
+      ],
+      "name": "findPath",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract IReserveToken\",\"name\":\"_sourceToken\",\"type\":\"address\"},{\"internalType\":\"contract IReserveToken\",\"name\":\"_targetToken\",\"type\":\"address\"}],\"name\":\"findPath\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"\",\"type\":\"address[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/IConversionPathFinder.sol\":\"IConversionPathFinder\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/IConversionPathFinder.sol\":{\"keccak256\":\"0xf54d2769e41c7f666ec02873da87ba779ab92e74d731eed6a9dc88941da84f06\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://93c1a46b1338f3b95d4ecb2bd1e91ab6a1a1b01c16edb76287a400e7323bec10\",\"dweb:/ipfs/QmSnGvkAbAcu2q8HCbqYz2SsfFb6Me79hWsSESxnAL1EnQ\"]},\"project:/contracts/token/interfaces/IReserveToken.sol\":{\"keccak256\":\"0x7380cdd30fc2b427d1dab7f7f30bb93e4562d91b405aecfc5a7b9ef3e24e7cee\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://b728fed30c2d9027e03a5e46cb67932f021851924c47b7cd658431ee8f5bdb15\",\"dweb:/ipfs/QmfLiprUayVjHj9pTUapayU1R4nP3Lm1a6YuyU6LeChBzZ\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: SEE LICENSE IN LICENSE\npragma solidity 0.6.12;\n\nimport \"./token/interfaces/IReserveToken.sol\";\n\n/*\n    Conversion Path Finder interface\n*/\ninterface IConversionPathFinder {\n    function findPath(IReserveToken _sourceToken, IReserveToken _targetToken) external view returns (address[] memory);\n}\n",
+  "sourcePath": "D:\\Work Space\\bancor_project\\core\\contracts\\IConversionPathFinder.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/IConversionPathFinder.sol",
+    "exportedSymbols": {
+      "IConversionPathFinder": [
+        4476
+      ]
+    },
+    "id": 4477,
+    "license": "SEE LICENSE IN LICENSE",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 4464,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "51:23:12"
+      },
+      {
+        "absolutePath": "project:/contracts/token/interfaces/IReserveToken.sol",
+        "file": "./token/interfaces/IReserveToken.sol",
+        "id": 4465,
+        "nodeType": "ImportDirective",
+        "scope": 4477,
+        "sourceUnit": 31141,
+        "src": "76:46:12",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 4476,
+        "linearizedBaseContracts": [
+          4476
+        ],
+        "name": "IConversionPathFinder",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "a1c421cd",
+            "id": 4475,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "findPath",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 4470,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4467,
+                  "mutability": "mutable",
+                  "name": "_sourceToken",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4475,
+                  "src": "223:26:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                    "typeString": "contract IReserveToken"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 4466,
+                    "name": "IReserveToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 31140,
+                    "src": "223:13:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                      "typeString": "contract IReserveToken"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4469,
+                  "mutability": "mutable",
+                  "name": "_targetToken",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4475,
+                  "src": "251:26:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                    "typeString": "contract IReserveToken"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 4468,
+                    "name": "IReserveToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 31140,
+                    "src": "251:13:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                      "typeString": "contract IReserveToken"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "222:56:12"
+            },
+            "returnParameters": {
+              "id": 4474,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4473,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4475,
+                  "src": "302:16:12",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 4471,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "302:7:12",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 4472,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "302:9:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "301:18:12"
+            },
+            "scope": 4476,
+            "src": "205:115:12",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 4477,
+        "src": "167:155:12"
+      }
+    ],
+    "src": "51:272:12"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/IConversionPathFinder.sol",
+      "exportedSymbols": {
+        "IConversionPathFinder": [
+          4476
+        ]
+      },
+      "license": "SEE LICENSE IN LICENSE"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.6",
+            ".12"
+          ]
+        },
+        "id": 4464,
+        "name": "PragmaDirective",
+        "src": "51:23:12"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 31141,
+          "absolutePath": "project:/contracts/token/interfaces/IReserveToken.sol",
+          "file": "./token/interfaces/IReserveToken.sol",
+          "scope": 4477,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 4465,
+        "name": "ImportDirective",
+        "src": "76:46:12"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            4476
+          ],
+          "name": "IConversionPathFinder",
+          "scope": 4477
+        },
+        "children": [
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "a1c421cd",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "findPath",
+              "overrides": null,
+              "scope": 4476,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_sourceToken",
+                      "overrides": null,
+                      "scope": 4475,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IReserveToken",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IReserveToken",
+                          "referencedDeclaration": 31140,
+                          "type": "contract IReserveToken"
+                        },
+                        "id": 4466,
+                        "name": "UserDefinedTypeName",
+                        "src": "223:13:12"
+                      }
+                    ],
+                    "id": 4467,
+                    "name": "VariableDeclaration",
+                    "src": "223:26:12"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_targetToken",
+                      "overrides": null,
+                      "scope": 4475,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IReserveToken",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IReserveToken",
+                          "referencedDeclaration": 31140,
+                          "type": "contract IReserveToken"
+                        },
+                        "id": 4468,
+                        "name": "UserDefinedTypeName",
+                        "src": "251:13:12"
+                      }
+                    ],
+                    "id": 4469,
+                    "name": "VariableDeclaration",
+                    "src": "251:26:12"
+                  }
+                ],
+                "id": 4470,
+                "name": "ParameterList",
+                "src": "222:56:12"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 4475,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "address[]",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "length": null,
+                          "type": "address[]"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "address",
+                              "stateMutability": "nonpayable",
+                              "type": "address"
+                            },
+                            "id": 4471,
+                            "name": "ElementaryTypeName",
+                            "src": "302:7:12"
+                          }
+                        ],
+                        "id": 4472,
+                        "name": "ArrayTypeName",
+                        "src": "302:9:12"
+                      }
+                    ],
+                    "id": 4473,
+                    "name": "VariableDeclaration",
+                    "src": "302:16:12"
+                  }
+                ],
+                "id": 4474,
+                "name": "ParameterList",
+                "src": "301:18:12"
+              }
+            ],
+            "id": 4475,
+            "name": "FunctionDefinition",
+            "src": "205:115:12"
+          }
+        ],
+        "id": 4476,
+        "name": "ContractDefinition",
+        "src": "167:155:12"
+      }
+    ],
+    "id": 4477,
+    "name": "SourceUnit",
+    "src": "51:272:12"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-08-23T03:19:29.355Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

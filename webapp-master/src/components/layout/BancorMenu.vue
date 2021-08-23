@@ -2,7 +2,7 @@
   <b-dropdown
     id="dropdown-menu"
     right
-    :variant="darkMode ? 'outline-dark' : 'outline-light'"
+    :variant="darkMode ? 'outline-gray-dark' : 'outline-gray-dark'"
     size="sm"
     toggle-class="block-rounded"
     :menu-class="darkMode ? 'bg-block-dark shadow' : 'bg-block-light shadow'"

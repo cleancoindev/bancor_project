@@ -526,7 +526,7 @@ export default class OpenProposals extends BaseComponent {
 
 @mixin vote-bg() {
   &--for {
-    background: #3ec8c8 !important;
+    background: #41b883 !important;
   }
   &--against {
     background: #de4a5c !important;
@@ -572,7 +572,7 @@ export default class OpenProposals extends BaseComponent {
   }
 
   &__text {
-    color: #0a2540;
+    color: #171d28;
   }
 }
 
@@ -586,7 +586,7 @@ export default class OpenProposals extends BaseComponent {
   height: 24px;
 
   &--for {
-    color: #3ec8c8;
+    color: #41b883;
 
     &:before {
       content: "For";
@@ -612,7 +612,7 @@ export default class OpenProposals extends BaseComponent {
   font-size: 0.65rem;
 
   &__progress {
-    background: #3ec8c8;
+    background: #41b883;
     position: absolute;
     top: 0;
     left: 0;
@@ -637,7 +637,7 @@ export default class OpenProposals extends BaseComponent {
   }
 
   &--for {
-    color: #3ec8c8;
+    color: #41b883;
   }
 
   &--against {
@@ -653,6 +653,6 @@ export default class OpenProposals extends BaseComponent {
 .tiny-text {
   font-size: 10px;
   line-height: 12px;
-  color: #0a2540;
+  color: #171d28;
 }
 </style>

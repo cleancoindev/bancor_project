@@ -15,7 +15,7 @@
       :class="[darkMode ? 'text-dark' : 'text-light', cursor ? 'cursor' : '']"
     >
       <img
-        class="img-avatar img-avatar32 bg-white"
+        class="img-avatar bg-white logo-shadow overlap img-avatar32"
         :src="token.logo"
         :alt="$t('token_logo')"
         style="

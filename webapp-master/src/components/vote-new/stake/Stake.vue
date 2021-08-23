@@ -1,12 +1,12 @@
 <template>
-  <content-block title="Stake your vBNT" :shadow-light="true">
+  <content-block title="Stake your OVX" :shadow-light="true">
     <div>
       <p
         class="mt-4 font-w500 font-size-14"
         :class="darkMode ? 'text-dark' : 'text-light'"
       >
-        In order to participate in Bancor governance activities, you should
-        first stake your vBNT tokens.
+        In order to participate in Ovidex governance activities, you should
+        first stake your OVX tokens.
       </p>
 
       <b-row class="mt-5">

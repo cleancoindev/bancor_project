@@ -1,0 +1,326 @@
+{
+  "contractName": "IContractRegistry",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_contractName",
+          "type": "bytes32"
+        }
+      ],
+      "name": "addressOf",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_contractName\",\"type\":\"bytes32\"}],\"name\":\"addressOf\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/utility/interfaces/IContractRegistry.sol\":\"IContractRegistry\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/utility/interfaces/IContractRegistry.sol\":{\"keccak256\":\"0x3551889a83738b621c29ed66f1ecb6a843cca4217e54c9357198559b9cc92259\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://231a59c8f2665adeda8c7e6930832409c9b991fd27ad84b3a24335e7bf269bbe\",\"dweb:/ipfs/QmeJJbn1EAUbZenruTEdJAnwUn3dxsVNeJvxPe81qKEGqL\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: SEE LICENSE IN LICENSE\npragma solidity 0.6.12;\n\n/*\n    Contract Registry interface\n*/\ninterface IContractRegistry {\n    function addressOf(bytes32 _contractName) external view returns (address);\n}\n",
+  "sourcePath": "D:\\Work Space\\bancor_project\\core\\contracts\\utility\\interfaces\\IContractRegistry.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/utility/interfaces/IContractRegistry.sol",
+    "exportedSymbols": {
+      "IContractRegistry": [
+        33101
+      ]
+    },
+    "id": 33102,
+    "license": "SEE LICENSE IN LICENSE",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 33093,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "51:23:100"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 33101,
+        "linearizedBaseContracts": [
+          33101
+        ],
+        "name": "IContractRegistry",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "bb34534c",
+            "id": 33100,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addressOf",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 33096,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 33095,
+                  "mutability": "mutable",
+                  "name": "_contractName",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 33100,
+                  "src": "167:21:100",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 33094,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "167:7:100",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "166:23:100"
+            },
+            "returnParameters": {
+              "id": 33099,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 33098,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 33100,
+                  "src": "213:7:100",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 33097,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "213:7:100",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "212:9:100"
+            },
+            "scope": 33101,
+            "src": "148:74:100",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 33102,
+        "src": "114:110:100"
+      }
+    ],
+    "src": "51:174:100"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/utility/interfaces/IContractRegistry.sol",
+      "exportedSymbols": {
+        "IContractRegistry": [
+          33101
+        ]
+      },
+      "license": "SEE LICENSE IN LICENSE"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.6",
+            ".12"
+          ]
+        },
+        "id": 33093,
+        "name": "PragmaDirective",
+        "src": "51:23:100"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            33101
+          ],
+          "name": "IContractRegistry",
+          "scope": 33102
+        },
+        "children": [
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "bb34534c",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "addressOf",
+              "overrides": null,
+              "scope": 33101,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_contractName",
+                      "overrides": null,
+                      "scope": 33100,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 33094,
+                        "name": "ElementaryTypeName",
+                        "src": "167:7:100"
+                      }
+                    ],
+                    "id": 33095,
+                    "name": "VariableDeclaration",
+                    "src": "167:21:100"
+                  }
+                ],
+                "id": 33096,
+                "name": "ParameterList",
+                "src": "166:23:100"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 33100,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 33097,
+                        "name": "ElementaryTypeName",
+                        "src": "213:7:100"
+                      }
+                    ],
+                    "id": 33098,
+                    "name": "VariableDeclaration",
+                    "src": "213:7:100"
+                  }
+                ],
+                "id": 33099,
+                "name": "ParameterList",
+                "src": "212:9:100"
+              }
+            ],
+            "id": 33100,
+            "name": "FunctionDefinition",
+            "src": "148:74:100"
+          }
+        ],
+        "id": 33101,
+        "name": "ContractDefinition",
+        "src": "114:110:100"
+      }
+    ],
+    "id": 33102,
+    "name": "SourceUnit",
+    "src": "51:174:100"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-08-23T03:19:30.307Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

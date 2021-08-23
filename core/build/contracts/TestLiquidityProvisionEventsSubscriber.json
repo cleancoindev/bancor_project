@@ -1,0 +1,4154 @@
+{
+  "contractName": "TestLiquidityProvisionEventsSubscriber",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "provider",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IConverterAnchor",
+          "name": "poolAnchor",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IReserveToken",
+          "name": "reserveToken",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "poolAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "reserveAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "onAddingLiquidity",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "provider",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IConverterAnchor",
+          "name": "poolAnchor",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IReserveToken",
+          "name": "reserveToken",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "poolAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "reserveAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "onRemovingLiquidity",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "reset",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "name": "events",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IConverterAnchor",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IReserveToken",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "eventCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"eventCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"events\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"contract IConverterAnchor\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"contract IReserveToken\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"provider\",\"type\":\"address\"},{\"internalType\":\"contract IConverterAnchor\",\"name\":\"poolAnchor\",\"type\":\"address\"},{\"internalType\":\"contract IReserveToken\",\"name\":\"reserveToken\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"poolAmount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"reserveAmount\",\"type\":\"uint256\"}],\"name\":\"onAddingLiquidity\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"provider\",\"type\":\"address\"},{\"internalType\":\"contract IConverterAnchor\",\"name\":\"poolAnchor\",\"type\":\"address\"},{\"internalType\":\"contract IReserveToken\",\"name\":\"reserveToken\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"poolAmount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"reserveAmount\",\"type\":\"uint256\"}],\"name\":\"onRemovingLiquidity\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"reset\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/helpers/TestLiquidityProvisionEventsSubscriber.sol\":\"TestLiquidityProvisionEventsSubscriber\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/converter/interfaces/IConverterAnchor.sol\":{\"keccak256\":\"0x061dffb3cd75b61094c31a8987276b8f6108e29d67d7a55a305eea9f86d5b196\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://478f3b0164b83199eaf6f8c595abf235b742fb2c15d4fad7a241bd4837083f73\",\"dweb:/ipfs/QmcoDjie2cm3iq3bhjrqn6rE6S8o9WXvBY3tcnC5miN2Ut\"]},\"project:/contracts/helpers/TestLiquidityProvisionEventsSubscriber.sol\":{\"keccak256\":\"0xd0da4077031afc3e90b161b7f1bfde82b57bd99cbfb2686902be22ba47abb3db\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://0e42bd2b0aeacd2d96459bfaf56809cc2af8a10f5fdb4ebc4c2c2a023acc5b4a\",\"dweb:/ipfs/QmVBzigUYUybrRhDVgXgNJvqrWK9bzWGY1zqLgLGaEdcHb\"]},\"project:/contracts/liquidity-protection/interfaces/ILiquidityProvisionEventsSubscriber.sol\":{\"keccak256\":\"0x31d336217661461b3925005f778d302c87e79971d6ad1fc323c6437f7de53553\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://cc622e9a245970c7e18332b957dfffdae6d0dae43098544c1bad0e9cd5cf2082\",\"dweb:/ipfs/Qmefv7rYDyhkrKa6PyLUdib7UWXBrJTEPRxxo8ZVSxipww\"]},\"project:/contracts/token/interfaces/IReserveToken.sol\":{\"keccak256\":\"0x7380cdd30fc2b427d1dab7f7f30bb93e4562d91b405aecfc5a7b9ef3e24e7cee\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://b728fed30c2d9027e03a5e46cb67932f021851924c47b7cd658431ee8f5bdb15\",\"dweb:/ipfs/QmfLiprUayVjHj9pTUapayU1R4nP3Lm1a6YuyU6LeChBzZ\"]},\"project:/contracts/utility/interfaces/IOwned.sol\":{\"keccak256\":\"0x4cfffe7abcbf4a0a49d154837711a38e9c34da4891b86167b9e15d80b24f9b14\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://0b398ddfbcae48adc05489f7be940135a14150c38de9b75897ca9193a1ac99d0\",\"dweb:/ipfs/QmXPh5dHCZqshzmCWPRc3TSQsjc6Sr1SG2XFZe3NdKWMRC\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061094f806100206000396000f3fe608060405234801561001057600080fd5b50600436106100575760003560e01c80630b7914301461005c578063139c22ea1461010c57806371be2e4a146101a4578063b8128fe6146101c2578063d826f88f14610264575b600080fd5b6100886004803603602081101561007257600080fd5b810190808035906020019092919050505061026e565b604051808881526020018773ffffffffffffffffffffffffffffffffffffffff1681526020018673ffffffffffffffffffffffffffffffffffffffff1681526020018573ffffffffffffffffffffffffffffffffffffffff168152602001848152602001838152602001821515815260200197505050505050505060405180910390f35b6101a2600480360360a081101561012257600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff1690602001909291908035906020019092919080359060200190929190505050610421565b005b6101ac6105e1565b6040518082815260200191505060405180910390f35b610262600480360360c08110156101d857600080fd5b8101908080359060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190803590602001909291905050506105ed565b005b61026c6107ad565b005b60008060008060008060006102816107bc565b6000898154811061028e57fe5b90600052602060002090600702016040518060e0016040529081600082015481526020016001820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020016002820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020016003820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200160048201548152602001600582015481526020016006820160009054906101000a900460ff1615151515815250509050806000015181602001518260400151836060015184608001518560a001518660c00151975097509750975097509750975050919395979092949650565b60006040518060e00160405280600081526020018773ffffffffffffffffffffffffffffffffffffffff1681526020018673ffffffffffffffffffffffffffffffffffffffff1681526020018573ffffffffffffffffffffffffffffffffffffffff1681526020018481526020018381526020016001151581525090806001815401808255809150506001900390600052602060002090600702016000909190919091506000820151816000015560208201518160010160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060408201518160020160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060608201518160030160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506080820151816004015560a0820151816005015560c08201518160060160006101000a81548160ff02191690831515021790555050505050505050565b60008080549050905090565b60006040518060e001604052808881526020018773ffffffffffffffffffffffffffffffffffffffff1681526020018673ffffffffffffffffffffffffffffffffffffffff1681526020018573ffffffffffffffffffffffffffffffffffffffff1681526020018481526020018381526020016000151581525090806001815401808255809150506001900390600052602060002090600702016000909190919091506000820151816000015560208201518160010160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060408201518160020160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060608201518160030160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506080820151816004015560a0820151816005015560c08201518160060160006101000a81548160ff0219169083151502179055505050505050505050565b6000806107ba919061083d565b565b6040518060e0016040528060008152602001600073ffffffffffffffffffffffffffffffffffffffff168152602001600073ffffffffffffffffffffffffffffffffffffffff168152602001600073ffffffffffffffffffffffffffffffffffffffff16815260200160008152602001600081526020016000151581525090565b508054600082556007029060005260206000209081019061085e9190610861565b50565b5b80821115610915576000808201600090556001820160006101000a81549073ffffffffffffffffffffffffffffffffffffffff02191690556002820160006101000a81549073ffffffffffffffffffffffffffffffffffffffff02191690556003820160006101000a81549073ffffffffffffffffffffffffffffffffffffffff0219169055600482016000905560058201600090556006820160006101000a81549060ff021916905550600701610862565b509056fea2646970667358221220d7ef0a34d6fb25c3486059062d38d8fefcd6ef4d2ca2cfafcbe7f05dbaff0e3164736f6c634300060c0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100575760003560e01c80630b7914301461005c578063139c22ea1461010c57806371be2e4a146101a4578063b8128fe6146101c2578063d826f88f14610264575b600080fd5b6100886004803603602081101561007257600080fd5b810190808035906020019092919050505061026e565b604051808881526020018773ffffffffffffffffffffffffffffffffffffffff1681526020018673ffffffffffffffffffffffffffffffffffffffff1681526020018573ffffffffffffffffffffffffffffffffffffffff168152602001848152602001838152602001821515815260200197505050505050505060405180910390f35b6101a2600480360360a081101561012257600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff1690602001909291908035906020019092919080359060200190929190505050610421565b005b6101ac6105e1565b6040518082815260200191505060405180910390f35b610262600480360360c08110156101d857600080fd5b8101908080359060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190803590602001909291905050506105ed565b005b61026c6107ad565b005b60008060008060008060006102816107bc565b6000898154811061028e57fe5b90600052602060002090600702016040518060e0016040529081600082015481526020016001820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020016002820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020016003820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200160048201548152602001600582015481526020016006820160009054906101000a900460ff1615151515815250509050806000015181602001518260400151836060015184608001518560a001518660c00151975097509750975097509750975050919395979092949650565b60006040518060e00160405280600081526020018773ffffffffffffffffffffffffffffffffffffffff1681526020018673ffffffffffffffffffffffffffffffffffffffff1681526020018573ffffffffffffffffffffffffffffffffffffffff1681526020018481526020018381526020016001151581525090806001815401808255809150506001900390600052602060002090600702016000909190919091506000820151816000015560208201518160010160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060408201518160020160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060608201518160030160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506080820151816004015560a0820151816005015560c08201518160060160006101000a81548160ff02191690831515021790555050505050505050565b60008080549050905090565b60006040518060e001604052808881526020018773ffffffffffffffffffffffffffffffffffffffff1681526020018673ffffffffffffffffffffffffffffffffffffffff1681526020018573ffffffffffffffffffffffffffffffffffffffff1681526020018481526020018381526020016000151581525090806001815401808255809150506001900390600052602060002090600702016000909190919091506000820151816000015560208201518160010160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060408201518160020160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060608201518160030160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506080820151816004015560a0820151816005015560c08201518160060160006101000a81548160ff0219169083151502179055505050505050505050565b6000806107ba919061083d565b565b6040518060e0016040528060008152602001600073ffffffffffffffffffffffffffffffffffffffff168152602001600073ffffffffffffffffffffffffffffffffffffffff168152602001600073ffffffffffffffffffffffffffffffffffffffff16815260200160008152602001600081526020016000151581525090565b508054600082556007029060005260206000209081019061085e9190610861565b50565b5b80821115610915576000808201600090556001820160006101000a81549073ffffffffffffffffffffffffffffffffffffffff02191690556002820160006101000a81549073ffffffffffffffffffffffffffffffffffffffff02191690556003820160006101000a81549073ffffffffffffffffffffffffffffffffffffffff0219169055600482016000905560058201600090556006820160006101000a81549060ff021916905550600701610862565b509056fea2646970667358221220d7ef0a34d6fb25c3486059062d38d8fefcd6ef4d2ca2cfafcbe7f05dbaff0e3164736f6c634300060c0033",
+  "immutableReferences": {},
+  "sourceMap": "162:2126:54:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "162:2126:54:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1769:419;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;548:561;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;2194:92;;;:::i;:::-;;;;;;;;;;;;;;;;;;;1115:585;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;1706:57;;;:::i;:::-;;1769:419;1857:7;1878;1899:16;1929:13;1956:7;1977;1998:4;2027:33;;:::i;:::-;2063:7;2071:2;2063:11;;;;;;;;;;;;;;;;;;2027:47;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2093:1;:4;;;2099:1;:10;;;2111:1;:12;;;2125:1;:14;;;2141:1;:12;;;2155:1;:15;;;2172:1;:8;;;2085:96;;;;;;;;;;;;;;;1769:419;;;;;;;;;:::o;548:561::-;767:7;793:299;;;;;;;;840:1;793:299;;;;869:8;793:299;;;;;;907:10;793:299;;;;;;949:12;793:299;;;;;;991:10;793:299;;;;1034:13;793:299;;;;1073:4;793:299;;;;;767:335;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;548:561;;;;;:::o;2194:92::-;2239:7;2265;:14;;;;2258:21;;2194:92;:::o;1115:585::-;1356:7;1382:301;;;;;;;;1429:2;1382:301;;;;1459:8;1382:301;;;;;;1497:10;1382:301;;;;;;1539:12;1382:301;;;;;;1581:10;1382:301;;;;1624:13;1382:301;;;;1663:5;1382:301;;;;;1356:337;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1115:585;;;;;;:::o;1706:57::-;1749:7;;1742:14;;;;:::i;:::-;1706:57::o;-1:-1:-1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "// SPDX-License-Identifier: SEE LICENSE IN LICENSE\npragma solidity 0.6.12;\n\nimport \"../liquidity-protection/interfaces/ILiquidityProvisionEventsSubscriber.sol\";\n\ncontract TestLiquidityProvisionEventsSubscriber is ILiquidityProvisionEventsSubscriber {\n    struct LiquidityProtectionEvent {\n        uint256 id;\n        address provider;\n        IConverterAnchor poolAnchor;\n        IReserveToken reserveToken;\n        uint256 poolAmount;\n        uint256 reserveAmount;\n        bool adding;\n    }\n\n    LiquidityProtectionEvent[] private _events;\n\n    function onAddingLiquidity(\n        address provider,\n        IConverterAnchor poolAnchor,\n        IReserveToken reserveToken,\n        uint256 poolAmount,\n        uint256 reserveAmount\n    ) external override {\n        _events.push(\n            LiquidityProtectionEvent({\n                id: 0,\n                provider: provider,\n                poolAnchor: poolAnchor,\n                reserveToken: reserveToken,\n                poolAmount: poolAmount,\n                reserveAmount: reserveAmount,\n                adding: true\n            })\n        );\n    }\n\n    function onRemovingLiquidity(\n        uint256 id,\n        address provider,\n        IConverterAnchor poolAnchor,\n        IReserveToken reserveToken,\n        uint256 poolAmount,\n        uint256 reserveAmount\n    ) external override {\n        _events.push(\n            LiquidityProtectionEvent({\n                id: id,\n                provider: provider,\n                poolAnchor: poolAnchor,\n                reserveToken: reserveToken,\n                poolAmount: poolAmount,\n                reserveAmount: reserveAmount,\n                adding: false\n            })\n        );\n    }\n\n    function reset() external {\n        delete _events;\n    }\n\n    function events(uint256 id)\n        external\n        view\n        returns (\n            uint256,\n            address,\n            IConverterAnchor,\n            IReserveToken,\n            uint256,\n            uint256,\n            bool\n        )\n    {\n        LiquidityProtectionEvent memory e = _events[id];\n\n        return (e.id, e.provider, e.poolAnchor, e.reserveToken, e.poolAmount, e.reserveAmount, e.adding);\n    }\n\n    function eventCount() external view returns (uint256) {\n        return _events.length;\n    }\n}\n",
+  "sourcePath": "D:\\Work Space\\bancor_project\\core\\contracts\\helpers\\TestLiquidityProvisionEventsSubscriber.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/helpers/TestLiquidityProvisionEventsSubscriber.sol",
+    "exportedSymbols": {
+      "TestLiquidityProvisionEventsSubscriber": [
+        22796
+      ]
+    },
+    "id": 22797,
+    "license": "SEE LICENSE IN LICENSE",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 22656,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "51:23:54"
+      },
+      {
+        "absolutePath": "project:/contracts/liquidity-protection/interfaces/ILiquidityProvisionEventsSubscriber.sol",
+        "file": "../liquidity-protection/interfaces/ILiquidityProvisionEventsSubscriber.sol",
+        "id": 22657,
+        "nodeType": "ImportDirective",
+        "scope": 22797,
+        "sourceUnit": 30545,
+        "src": "76:84:54",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 22658,
+              "name": "ILiquidityProvisionEventsSubscriber",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 30544,
+              "src": "213:35:54",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ILiquidityProvisionEventsSubscriber_$30544",
+                "typeString": "contract ILiquidityProvisionEventsSubscriber"
+              }
+            },
+            "id": 22659,
+            "nodeType": "InheritanceSpecifier",
+            "src": "213:35:54"
+          }
+        ],
+        "contractDependencies": [
+          30544
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 22796,
+        "linearizedBaseContracts": [
+          22796,
+          30544
+        ],
+        "name": "TestLiquidityProvisionEventsSubscriber",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent",
+            "id": 22674,
+            "members": [
+              {
+                "constant": false,
+                "id": 22661,
+                "mutability": "mutable",
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 22674,
+                "src": "297:10:54",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 22660,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "297:7:54",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 22663,
+                "mutability": "mutable",
+                "name": "provider",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 22674,
+                "src": "317:16:54",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 22662,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "317:7:54",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 22665,
+                "mutability": "mutable",
+                "name": "poolAnchor",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 22674,
+                "src": "343:27:54",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_contract$_IConverterAnchor_$15415",
+                  "typeString": "contract IConverterAnchor"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 22664,
+                  "name": "IConverterAnchor",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 15415,
+                  "src": "343:16:54",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IConverterAnchor_$15415",
+                    "typeString": "contract IConverterAnchor"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 22667,
+                "mutability": "mutable",
+                "name": "reserveToken",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 22674,
+                "src": "380:26:54",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                  "typeString": "contract IReserveToken"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 22666,
+                  "name": "IReserveToken",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 31140,
+                  "src": "380:13:54",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                    "typeString": "contract IReserveToken"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 22669,
+                "mutability": "mutable",
+                "name": "poolAmount",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 22674,
+                "src": "416:18:54",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 22668,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "416:7:54",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 22671,
+                "mutability": "mutable",
+                "name": "reserveAmount",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 22674,
+                "src": "444:21:54",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 22670,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "444:7:54",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 22673,
+                "mutability": "mutable",
+                "name": "adding",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 22674,
+                "src": "475:11:54",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 22672,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "475:4:54",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "LiquidityProtectionEvent",
+            "nodeType": "StructDefinition",
+            "scope": 22796,
+            "src": "255:238:54",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 22677,
+            "mutability": "mutable",
+            "name": "_events",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 22796,
+            "src": "499:42:54",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_LiquidityProtectionEvent_$22674_storage_$dyn_storage",
+              "typeString": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent[]"
+            },
+            "typeName": {
+              "baseType": {
+                "contractScope": null,
+                "id": 22675,
+                "name": "LiquidityProtectionEvent",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 22674,
+                "src": "499:24:54",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_LiquidityProtectionEvent_$22674_storage_ptr",
+                  "typeString": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent"
+                }
+              },
+              "id": 22676,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "499:26:54",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_LiquidityProtectionEvent_$22674_storage_$dyn_storage_ptr",
+                "typeString": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent[]"
+              }
+            },
+            "value": null,
+            "visibility": "private"
+          },
+          {
+            "baseFunctions": [
+              30528
+            ],
+            "body": {
+              "id": 22705,
+              "nodeType": "Block",
+              "src": "757:352:54",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "hexValue": "30",
+                            "id": 22695,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "840:1:54",
+                            "subdenomination": null,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_rational_0_by_1",
+                              "typeString": "int_const 0"
+                            },
+                            "value": "0"
+                          },
+                          {
+                            "argumentTypes": null,
+                            "id": 22696,
+                            "name": "provider",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 22679,
+                            "src": "869:8:54",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "id": 22697,
+                            "name": "poolAnchor",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 22681,
+                            "src": "907:10:54",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_IConverterAnchor_$15415",
+                              "typeString": "contract IConverterAnchor"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "id": 22698,
+                            "name": "reserveToken",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 22683,
+                            "src": "949:12:54",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                              "typeString": "contract IReserveToken"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "id": 22699,
+                            "name": "poolAmount",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 22685,
+                            "src": "991:10:54",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "id": 22700,
+                            "name": "reserveAmount",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 22687,
+                            "src": "1034:13:54",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "hexValue": "74727565",
+                            "id": 22701,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "bool",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "1073:4:54",
+                            "subdenomination": null,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            },
+                            "value": "true"
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_rational_0_by_1",
+                              "typeString": "int_const 0"
+                            },
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            },
+                            {
+                              "typeIdentifier": "t_contract$_IConverterAnchor_$15415",
+                              "typeString": "contract IConverterAnchor"
+                            },
+                            {
+                              "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                              "typeString": "contract IReserveToken"
+                            },
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            },
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            },
+                            {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            }
+                          ],
+                          "id": 22694,
+                          "name": "LiquidityProtectionEvent",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 22674,
+                          "src": "793:24:54",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_struct$_LiquidityProtectionEvent_$22674_storage_ptr_$",
+                            "typeString": "type(struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent storage pointer)"
+                          }
+                        },
+                        "id": 22702,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "structConstructorCall",
+                        "lValueRequested": false,
+                        "names": [
+                          "id",
+                          "provider",
+                          "poolAnchor",
+                          "reserveToken",
+                          "poolAmount",
+                          "reserveAmount",
+                          "adding"
+                        ],
+                        "nodeType": "FunctionCall",
+                        "src": "793:299:54",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_LiquidityProtectionEvent_$22674_memory_ptr",
+                          "typeString": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_LiquidityProtectionEvent_$22674_memory_ptr",
+                          "typeString": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent memory"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 22691,
+                        "name": "_events",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 22677,
+                        "src": "767:7:54",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_LiquidityProtectionEvent_$22674_storage_$dyn_storage",
+                          "typeString": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent storage ref[] storage ref"
+                        }
+                      },
+                      "id": 22693,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "push",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "767:12:54",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_LiquidityProtectionEvent_$22674_storage_$returns$__$",
+                        "typeString": "function (struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent storage ref)"
+                      }
+                    },
+                    "id": 22703,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "767:335:54",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 22704,
+                  "nodeType": "ExpressionStatement",
+                  "src": "767:335:54"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "139c22ea",
+            "id": 22706,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "onAddingLiquidity",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 22689,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "748:8:54"
+            },
+            "parameters": {
+              "id": 22688,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 22679,
+                  "mutability": "mutable",
+                  "name": "provider",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 22706,
+                  "src": "584:16:54",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 22678,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "584:7:54",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 22681,
+                  "mutability": "mutable",
+                  "name": "poolAnchor",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 22706,
+                  "src": "610:27:54",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IConverterAnchor_$15415",
+                    "typeString": "contract IConverterAnchor"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 22680,
+                    "name": "IConverterAnchor",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 15415,
+                    "src": "610:16:54",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IConverterAnchor_$15415",
+                      "typeString": "contract IConverterAnchor"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 22683,
+                  "mutability": "mutable",
+                  "name": "reserveToken",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 22706,
+                  "src": "647:26:54",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                    "typeString": "contract IReserveToken"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 22682,
+                    "name": "IReserveToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 31140,
+                    "src": "647:13:54",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                      "typeString": "contract IReserveToken"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 22685,
+                  "mutability": "mutable",
+                  "name": "poolAmount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 22706,
+                  "src": "683:18:54",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 22684,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "683:7:54",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 22687,
+                  "mutability": "mutable",
+                  "name": "reserveAmount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 22706,
+                  "src": "711:21:54",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 22686,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "711:7:54",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "574:164:54"
+            },
+            "returnParameters": {
+              "id": 22690,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "757:0:54"
+            },
+            "scope": 22796,
+            "src": "548:561:54",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "baseFunctions": [
+              30543
+            ],
+            "body": {
+              "id": 22736,
+              "nodeType": "Block",
+              "src": "1346:354:54",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 22726,
+                            "name": "id",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 22708,
+                            "src": "1429:2:54",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "id": 22727,
+                            "name": "provider",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 22710,
+                            "src": "1459:8:54",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "id": 22728,
+                            "name": "poolAnchor",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 22712,
+                            "src": "1497:10:54",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_IConverterAnchor_$15415",
+                              "typeString": "contract IConverterAnchor"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "id": 22729,
+                            "name": "reserveToken",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 22714,
+                            "src": "1539:12:54",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                              "typeString": "contract IReserveToken"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "id": 22730,
+                            "name": "poolAmount",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 22716,
+                            "src": "1581:10:54",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "id": 22731,
+                            "name": "reserveAmount",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 22718,
+                            "src": "1624:13:54",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "hexValue": "66616c7365",
+                            "id": 22732,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "bool",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "1663:5:54",
+                            "subdenomination": null,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            },
+                            "value": "false"
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            },
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            },
+                            {
+                              "typeIdentifier": "t_contract$_IConverterAnchor_$15415",
+                              "typeString": "contract IConverterAnchor"
+                            },
+                            {
+                              "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                              "typeString": "contract IReserveToken"
+                            },
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            },
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            },
+                            {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            }
+                          ],
+                          "id": 22725,
+                          "name": "LiquidityProtectionEvent",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 22674,
+                          "src": "1382:24:54",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_struct$_LiquidityProtectionEvent_$22674_storage_ptr_$",
+                            "typeString": "type(struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent storage pointer)"
+                          }
+                        },
+                        "id": 22733,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "structConstructorCall",
+                        "lValueRequested": false,
+                        "names": [
+                          "id",
+                          "provider",
+                          "poolAnchor",
+                          "reserveToken",
+                          "poolAmount",
+                          "reserveAmount",
+                          "adding"
+                        ],
+                        "nodeType": "FunctionCall",
+                        "src": "1382:301:54",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_LiquidityProtectionEvent_$22674_memory_ptr",
+                          "typeString": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_LiquidityProtectionEvent_$22674_memory_ptr",
+                          "typeString": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent memory"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 22722,
+                        "name": "_events",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 22677,
+                        "src": "1356:7:54",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_LiquidityProtectionEvent_$22674_storage_$dyn_storage",
+                          "typeString": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent storage ref[] storage ref"
+                        }
+                      },
+                      "id": 22724,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "push",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "1356:12:54",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_LiquidityProtectionEvent_$22674_storage_$returns$__$",
+                        "typeString": "function (struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent storage ref)"
+                      }
+                    },
+                    "id": 22734,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1356:337:54",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 22735,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1356:337:54"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "b8128fe6",
+            "id": 22737,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "onRemovingLiquidity",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 22720,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "1337:8:54"
+            },
+            "parameters": {
+              "id": 22719,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 22708,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 22737,
+                  "src": "1153:10:54",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 22707,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1153:7:54",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 22710,
+                  "mutability": "mutable",
+                  "name": "provider",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 22737,
+                  "src": "1173:16:54",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 22709,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1173:7:54",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 22712,
+                  "mutability": "mutable",
+                  "name": "poolAnchor",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 22737,
+                  "src": "1199:27:54",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IConverterAnchor_$15415",
+                    "typeString": "contract IConverterAnchor"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 22711,
+                    "name": "IConverterAnchor",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 15415,
+                    "src": "1199:16:54",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IConverterAnchor_$15415",
+                      "typeString": "contract IConverterAnchor"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 22714,
+                  "mutability": "mutable",
+                  "name": "reserveToken",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 22737,
+                  "src": "1236:26:54",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                    "typeString": "contract IReserveToken"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 22713,
+                    "name": "IReserveToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 31140,
+                    "src": "1236:13:54",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                      "typeString": "contract IReserveToken"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 22716,
+                  "mutability": "mutable",
+                  "name": "poolAmount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 22737,
+                  "src": "1272:18:54",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 22715,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1272:7:54",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 22718,
+                  "mutability": "mutable",
+                  "name": "reserveAmount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 22737,
+                  "src": "1300:21:54",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 22717,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1300:7:54",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1143:184:54"
+            },
+            "returnParameters": {
+              "id": 22721,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1346:0:54"
+            },
+            "scope": 22796,
+            "src": "1115:585:54",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 22743,
+              "nodeType": "Block",
+              "src": "1732:31:54",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 22741,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "delete",
+                    "prefix": true,
+                    "src": "1742:14:54",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 22740,
+                      "name": "_events",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 22677,
+                      "src": "1749:7:54",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_struct$_LiquidityProtectionEvent_$22674_storage_$dyn_storage",
+                        "typeString": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent storage ref[] storage ref"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 22742,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1742:14:54"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "d826f88f",
+            "id": 22744,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "reset",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 22738,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1720:2:54"
+            },
+            "returnParameters": {
+              "id": 22739,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1732:0:54"
+            },
+            "scope": 22796,
+            "src": "1706:57:54",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 22785,
+              "nodeType": "Block",
+              "src": "2017:171:54",
+              "statements": [
+                {
+                  "assignments": [
+                    22764
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 22764,
+                      "mutability": "mutable",
+                      "name": "e",
+                      "nodeType": "VariableDeclaration",
+                      "overrides": null,
+                      "scope": 22785,
+                      "src": "2027:33:54",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_LiquidityProtectionEvent_$22674_memory_ptr",
+                        "typeString": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 22763,
+                        "name": "LiquidityProtectionEvent",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 22674,
+                        "src": "2027:24:54",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_LiquidityProtectionEvent_$22674_storage_ptr",
+                          "typeString": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 22768,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 22765,
+                      "name": "_events",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 22677,
+                      "src": "2063:7:54",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_struct$_LiquidityProtectionEvent_$22674_storage_$dyn_storage",
+                        "typeString": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent storage ref[] storage ref"
+                      }
+                    },
+                    "id": 22767,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 22766,
+                      "name": "id",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 22746,
+                      "src": "2071:2:54",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "2063:11:54",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_LiquidityProtectionEvent_$22674_storage",
+                      "typeString": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent storage ref"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "2027:47:54"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "components": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 22769,
+                          "name": "e",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 22764,
+                          "src": "2093:1:54",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_LiquidityProtectionEvent_$22674_memory_ptr",
+                            "typeString": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent memory"
+                          }
+                        },
+                        "id": 22770,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "id",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 22661,
+                        "src": "2093:4:54",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 22771,
+                          "name": "e",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 22764,
+                          "src": "2099:1:54",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_LiquidityProtectionEvent_$22674_memory_ptr",
+                            "typeString": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent memory"
+                          }
+                        },
+                        "id": 22772,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "provider",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 22663,
+                        "src": "2099:10:54",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 22773,
+                          "name": "e",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 22764,
+                          "src": "2111:1:54",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_LiquidityProtectionEvent_$22674_memory_ptr",
+                            "typeString": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent memory"
+                          }
+                        },
+                        "id": 22774,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "poolAnchor",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 22665,
+                        "src": "2111:12:54",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IConverterAnchor_$15415",
+                          "typeString": "contract IConverterAnchor"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 22775,
+                          "name": "e",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 22764,
+                          "src": "2125:1:54",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_LiquidityProtectionEvent_$22674_memory_ptr",
+                            "typeString": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent memory"
+                          }
+                        },
+                        "id": 22776,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "reserveToken",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 22667,
+                        "src": "2125:14:54",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                          "typeString": "contract IReserveToken"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 22777,
+                          "name": "e",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 22764,
+                          "src": "2141:1:54",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_LiquidityProtectionEvent_$22674_memory_ptr",
+                            "typeString": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent memory"
+                          }
+                        },
+                        "id": 22778,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "poolAmount",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 22669,
+                        "src": "2141:12:54",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 22779,
+                          "name": "e",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 22764,
+                          "src": "2155:1:54",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_LiquidityProtectionEvent_$22674_memory_ptr",
+                            "typeString": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent memory"
+                          }
+                        },
+                        "id": 22780,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "reserveAmount",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 22671,
+                        "src": "2155:15:54",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 22781,
+                          "name": "e",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 22764,
+                          "src": "2172:1:54",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_LiquidityProtectionEvent_$22674_memory_ptr",
+                            "typeString": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent memory"
+                          }
+                        },
+                        "id": 22782,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "adding",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 22673,
+                        "src": "2172:8:54",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "id": 22783,
+                    "isConstant": false,
+                    "isInlineArray": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "TupleExpression",
+                    "src": "2092:89:54",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_uint256_$_t_address_$_t_contract$_IConverterAnchor_$15415_$_t_contract$_IReserveToken_$31140_$_t_uint256_$_t_uint256_$_t_bool_$",
+                      "typeString": "tuple(uint256,address,contract IConverterAnchor,contract IReserveToken,uint256,uint256,bool)"
+                    }
+                  },
+                  "functionReturnParameters": 22762,
+                  "id": 22784,
+                  "nodeType": "Return",
+                  "src": "2085:96:54"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "0b791430",
+            "id": 22786,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "events",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 22747,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 22746,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 22786,
+                  "src": "1785:10:54",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 22745,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1785:7:54",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1784:12:54"
+            },
+            "returnParameters": {
+              "id": 22762,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 22749,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 22786,
+                  "src": "1857:7:54",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 22748,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1857:7:54",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 22751,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 22786,
+                  "src": "1878:7:54",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 22750,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1878:7:54",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 22753,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 22786,
+                  "src": "1899:16:54",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IConverterAnchor_$15415",
+                    "typeString": "contract IConverterAnchor"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 22752,
+                    "name": "IConverterAnchor",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 15415,
+                    "src": "1899:16:54",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IConverterAnchor_$15415",
+                      "typeString": "contract IConverterAnchor"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 22755,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 22786,
+                  "src": "1929:13:54",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                    "typeString": "contract IReserveToken"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 22754,
+                    "name": "IReserveToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 31140,
+                    "src": "1929:13:54",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                      "typeString": "contract IReserveToken"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 22757,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 22786,
+                  "src": "1956:7:54",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 22756,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1956:7:54",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 22759,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 22786,
+                  "src": "1977:7:54",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 22758,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1977:7:54",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 22761,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 22786,
+                  "src": "1998:4:54",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 22760,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1998:4:54",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1843:169:54"
+            },
+            "scope": 22796,
+            "src": "1769:419:54",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 22794,
+              "nodeType": "Block",
+              "src": "2248:38:54",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 22791,
+                      "name": "_events",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 22677,
+                      "src": "2265:7:54",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_struct$_LiquidityProtectionEvent_$22674_storage_$dyn_storage",
+                        "typeString": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent storage ref[] storage ref"
+                      }
+                    },
+                    "id": 22792,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "length",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": null,
+                    "src": "2265:14:54",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 22790,
+                  "id": 22793,
+                  "nodeType": "Return",
+                  "src": "2258:21:54"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "71be2e4a",
+            "id": 22795,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "eventCount",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 22787,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2213:2:54"
+            },
+            "returnParameters": {
+              "id": 22790,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 22789,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 22795,
+                  "src": "2239:7:54",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 22788,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2239:7:54",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2238:9:54"
+            },
+            "scope": 22796,
+            "src": "2194:92:54",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 22797,
+        "src": "162:2126:54"
+      }
+    ],
+    "src": "51:2238:54"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/helpers/TestLiquidityProvisionEventsSubscriber.sol",
+      "exportedSymbols": {
+        "TestLiquidityProvisionEventsSubscriber": [
+          22796
+        ]
+      },
+      "license": "SEE LICENSE IN LICENSE"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.6",
+            ".12"
+          ]
+        },
+        "id": 22656,
+        "name": "PragmaDirective",
+        "src": "51:23:54"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 30545,
+          "absolutePath": "project:/contracts/liquidity-protection/interfaces/ILiquidityProvisionEventsSubscriber.sol",
+          "file": "../liquidity-protection/interfaces/ILiquidityProvisionEventsSubscriber.sol",
+          "scope": 22797,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 22657,
+        "name": "ImportDirective",
+        "src": "76:84:54"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "contractDependencies": [
+            30544
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            22796,
+            30544
+          ],
+          "name": "TestLiquidityProvisionEventsSubscriber",
+          "scope": 22797
+        },
+        "children": [
+          {
+            "attributes": {
+              "arguments": null
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "ILiquidityProvisionEventsSubscriber",
+                  "referencedDeclaration": 30544,
+                  "type": "contract ILiquidityProvisionEventsSubscriber"
+                },
+                "id": 22658,
+                "name": "UserDefinedTypeName",
+                "src": "213:35:54"
+              }
+            ],
+            "id": 22659,
+            "name": "InheritanceSpecifier",
+            "src": "213:35:54"
+          },
+          {
+            "attributes": {
+              "canonicalName": "TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent",
+              "name": "LiquidityProtectionEvent",
+              "scope": 22796,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "overrides": null,
+                  "scope": 22674,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 22660,
+                    "name": "ElementaryTypeName",
+                    "src": "297:7:54"
+                  }
+                ],
+                "id": 22661,
+                "name": "VariableDeclaration",
+                "src": "297:10:54"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "provider",
+                  "overrides": null,
+                  "scope": 22674,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "address",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "stateMutability": "nonpayable",
+                      "type": "address"
+                    },
+                    "id": 22662,
+                    "name": "ElementaryTypeName",
+                    "src": "317:7:54"
+                  }
+                ],
+                "id": 22663,
+                "name": "VariableDeclaration",
+                "src": "317:16:54"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "poolAnchor",
+                  "overrides": null,
+                  "scope": 22674,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "contract IConverterAnchor",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "IConverterAnchor",
+                      "referencedDeclaration": 15415,
+                      "type": "contract IConverterAnchor"
+                    },
+                    "id": 22664,
+                    "name": "UserDefinedTypeName",
+                    "src": "343:16:54"
+                  }
+                ],
+                "id": 22665,
+                "name": "VariableDeclaration",
+                "src": "343:27:54"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "reserveToken",
+                  "overrides": null,
+                  "scope": 22674,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "contract IReserveToken",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "IReserveToken",
+                      "referencedDeclaration": 31140,
+                      "type": "contract IReserveToken"
+                    },
+                    "id": 22666,
+                    "name": "UserDefinedTypeName",
+                    "src": "380:13:54"
+                  }
+                ],
+                "id": 22667,
+                "name": "VariableDeclaration",
+                "src": "380:26:54"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "poolAmount",
+                  "overrides": null,
+                  "scope": 22674,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 22668,
+                    "name": "ElementaryTypeName",
+                    "src": "416:7:54"
+                  }
+                ],
+                "id": 22669,
+                "name": "VariableDeclaration",
+                "src": "416:18:54"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "reserveAmount",
+                  "overrides": null,
+                  "scope": 22674,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 22670,
+                    "name": "ElementaryTypeName",
+                    "src": "444:7:54"
+                  }
+                ],
+                "id": 22671,
+                "name": "VariableDeclaration",
+                "src": "444:21:54"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "adding",
+                  "overrides": null,
+                  "scope": 22674,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "bool",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "bool",
+                      "type": "bool"
+                    },
+                    "id": 22672,
+                    "name": "ElementaryTypeName",
+                    "src": "475:4:54"
+                  }
+                ],
+                "id": 22673,
+                "name": "VariableDeclaration",
+                "src": "475:11:54"
+              }
+            ],
+            "id": 22674,
+            "name": "StructDefinition",
+            "src": "255:238:54"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "mutability": "mutable",
+              "name": "_events",
+              "overrides": null,
+              "scope": 22796,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent[]",
+              "value": null,
+              "visibility": "private"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "length": null,
+                  "type": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent[]"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "LiquidityProtectionEvent",
+                      "referencedDeclaration": 22674,
+                      "type": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent"
+                    },
+                    "id": 22675,
+                    "name": "UserDefinedTypeName",
+                    "src": "499:24:54"
+                  }
+                ],
+                "id": 22676,
+                "name": "ArrayTypeName",
+                "src": "499:26:54"
+              }
+            ],
+            "id": 22677,
+            "name": "VariableDeclaration",
+            "src": "499:42:54"
+          },
+          {
+            "attributes": {
+              "baseFunctions": [
+                30528
+              ],
+              "documentation": null,
+              "functionSelector": "139c22ea",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "onAddingLiquidity",
+              "scope": 22796,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "overrides": [
+                    null
+                  ]
+                },
+                "id": 22689,
+                "name": "OverrideSpecifier",
+                "src": "748:8:54"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "provider",
+                      "overrides": null,
+                      "scope": 22706,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 22678,
+                        "name": "ElementaryTypeName",
+                        "src": "584:7:54"
+                      }
+                    ],
+                    "id": 22679,
+                    "name": "VariableDeclaration",
+                    "src": "584:16:54"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "poolAnchor",
+                      "overrides": null,
+                      "scope": 22706,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IConverterAnchor",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IConverterAnchor",
+                          "referencedDeclaration": 15415,
+                          "type": "contract IConverterAnchor"
+                        },
+                        "id": 22680,
+                        "name": "UserDefinedTypeName",
+                        "src": "610:16:54"
+                      }
+                    ],
+                    "id": 22681,
+                    "name": "VariableDeclaration",
+                    "src": "610:27:54"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "reserveToken",
+                      "overrides": null,
+                      "scope": 22706,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IReserveToken",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IReserveToken",
+                          "referencedDeclaration": 31140,
+                          "type": "contract IReserveToken"
+                        },
+                        "id": 22682,
+                        "name": "UserDefinedTypeName",
+                        "src": "647:13:54"
+                      }
+                    ],
+                    "id": 22683,
+                    "name": "VariableDeclaration",
+                    "src": "647:26:54"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "poolAmount",
+                      "overrides": null,
+                      "scope": 22706,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 22684,
+                        "name": "ElementaryTypeName",
+                        "src": "683:7:54"
+                      }
+                    ],
+                    "id": 22685,
+                    "name": "VariableDeclaration",
+                    "src": "683:18:54"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "reserveAmount",
+                      "overrides": null,
+                      "scope": 22706,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 22686,
+                        "name": "ElementaryTypeName",
+                        "src": "711:7:54"
+                      }
+                    ],
+                    "id": 22687,
+                    "name": "VariableDeclaration",
+                    "src": "711:21:54"
+                  }
+                ],
+                "id": 22688,
+                "name": "ParameterList",
+                "src": "574:164:54"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 22690,
+                "name": "ParameterList",
+                "src": "757:0:54"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_struct$_LiquidityProtectionEvent_$22674_memory_ptr",
+                                  "typeString": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent memory"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "push",
+                              "referencedDeclaration": null,
+                              "type": "function (struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent storage ref)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 22677,
+                                  "type": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent storage ref[] storage ref",
+                                  "value": "_events"
+                                },
+                                "id": 22691,
+                                "name": "Identifier",
+                                "src": "767:7:54"
+                              }
+                            ],
+                            "id": 22693,
+                            "name": "MemberAccess",
+                            "src": "767:12:54"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": true,
+                              "lValueRequested": false,
+                              "names": [
+                                "id",
+                                "provider",
+                                "poolAnchor",
+                                "reserveToken",
+                                "poolAmount",
+                                "reserveAmount",
+                                "adding"
+                              ],
+                              "tryCall": false,
+                              "type": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_rational_0_by_1",
+                                      "typeString": "int_const 0"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_address",
+                                      "typeString": "address"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_contract$_IConverterAnchor_$15415",
+                                      "typeString": "contract IConverterAnchor"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                                      "typeString": "contract IReserveToken"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_bool",
+                                      "typeString": "bool"
+                                    }
+                                  ],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 22674,
+                                  "type": "type(struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent storage pointer)",
+                                  "value": "LiquidityProtectionEvent"
+                                },
+                                "id": 22694,
+                                "name": "Identifier",
+                                "src": "793:24:54"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "30",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "number",
+                                  "type": "int_const 0",
+                                  "value": "0"
+                                },
+                                "id": 22695,
+                                "name": "Literal",
+                                "src": "840:1:54"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 22679,
+                                  "type": "address",
+                                  "value": "provider"
+                                },
+                                "id": 22696,
+                                "name": "Identifier",
+                                "src": "869:8:54"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 22681,
+                                  "type": "contract IConverterAnchor",
+                                  "value": "poolAnchor"
+                                },
+                                "id": 22697,
+                                "name": "Identifier",
+                                "src": "907:10:54"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 22683,
+                                  "type": "contract IReserveToken",
+                                  "value": "reserveToken"
+                                },
+                                "id": 22698,
+                                "name": "Identifier",
+                                "src": "949:12:54"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 22685,
+                                  "type": "uint256",
+                                  "value": "poolAmount"
+                                },
+                                "id": 22699,
+                                "name": "Identifier",
+                                "src": "991:10:54"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 22687,
+                                  "type": "uint256",
+                                  "value": "reserveAmount"
+                                },
+                                "id": 22700,
+                                "name": "Identifier",
+                                "src": "1034:13:54"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "74727565",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "bool",
+                                  "type": "bool",
+                                  "value": "true"
+                                },
+                                "id": 22701,
+                                "name": "Literal",
+                                "src": "1073:4:54"
+                              }
+                            ],
+                            "id": 22702,
+                            "name": "FunctionCall",
+                            "src": "793:299:54"
+                          }
+                        ],
+                        "id": 22703,
+                        "name": "FunctionCall",
+                        "src": "767:335:54"
+                      }
+                    ],
+                    "id": 22704,
+                    "name": "ExpressionStatement",
+                    "src": "767:335:54"
+                  }
+                ],
+                "id": 22705,
+                "name": "Block",
+                "src": "757:352:54"
+              }
+            ],
+            "id": 22706,
+            "name": "FunctionDefinition",
+            "src": "548:561:54"
+          },
+          {
+            "attributes": {
+              "baseFunctions": [
+                30543
+              ],
+              "documentation": null,
+              "functionSelector": "b8128fe6",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "onRemovingLiquidity",
+              "scope": 22796,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "overrides": [
+                    null
+                  ]
+                },
+                "id": 22720,
+                "name": "OverrideSpecifier",
+                "src": "1337:8:54"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "id",
+                      "overrides": null,
+                      "scope": 22737,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 22707,
+                        "name": "ElementaryTypeName",
+                        "src": "1153:7:54"
+                      }
+                    ],
+                    "id": 22708,
+                    "name": "VariableDeclaration",
+                    "src": "1153:10:54"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "provider",
+                      "overrides": null,
+                      "scope": 22737,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 22709,
+                        "name": "ElementaryTypeName",
+                        "src": "1173:7:54"
+                      }
+                    ],
+                    "id": 22710,
+                    "name": "VariableDeclaration",
+                    "src": "1173:16:54"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "poolAnchor",
+                      "overrides": null,
+                      "scope": 22737,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IConverterAnchor",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IConverterAnchor",
+                          "referencedDeclaration": 15415,
+                          "type": "contract IConverterAnchor"
+                        },
+                        "id": 22711,
+                        "name": "UserDefinedTypeName",
+                        "src": "1199:16:54"
+                      }
+                    ],
+                    "id": 22712,
+                    "name": "VariableDeclaration",
+                    "src": "1199:27:54"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "reserveToken",
+                      "overrides": null,
+                      "scope": 22737,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IReserveToken",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IReserveToken",
+                          "referencedDeclaration": 31140,
+                          "type": "contract IReserveToken"
+                        },
+                        "id": 22713,
+                        "name": "UserDefinedTypeName",
+                        "src": "1236:13:54"
+                      }
+                    ],
+                    "id": 22714,
+                    "name": "VariableDeclaration",
+                    "src": "1236:26:54"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "poolAmount",
+                      "overrides": null,
+                      "scope": 22737,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 22715,
+                        "name": "ElementaryTypeName",
+                        "src": "1272:7:54"
+                      }
+                    ],
+                    "id": 22716,
+                    "name": "VariableDeclaration",
+                    "src": "1272:18:54"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "reserveAmount",
+                      "overrides": null,
+                      "scope": 22737,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 22717,
+                        "name": "ElementaryTypeName",
+                        "src": "1300:7:54"
+                      }
+                    ],
+                    "id": 22718,
+                    "name": "VariableDeclaration",
+                    "src": "1300:21:54"
+                  }
+                ],
+                "id": 22719,
+                "name": "ParameterList",
+                "src": "1143:184:54"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 22721,
+                "name": "ParameterList",
+                "src": "1346:0:54"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_struct$_LiquidityProtectionEvent_$22674_memory_ptr",
+                                  "typeString": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent memory"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "push",
+                              "referencedDeclaration": null,
+                              "type": "function (struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent storage ref)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 22677,
+                                  "type": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent storage ref[] storage ref",
+                                  "value": "_events"
+                                },
+                                "id": 22722,
+                                "name": "Identifier",
+                                "src": "1356:7:54"
+                              }
+                            ],
+                            "id": 22724,
+                            "name": "MemberAccess",
+                            "src": "1356:12:54"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": true,
+                              "lValueRequested": false,
+                              "names": [
+                                "id",
+                                "provider",
+                                "poolAnchor",
+                                "reserveToken",
+                                "poolAmount",
+                                "reserveAmount",
+                                "adding"
+                              ],
+                              "tryCall": false,
+                              "type": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_address",
+                                      "typeString": "address"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_contract$_IConverterAnchor_$15415",
+                                      "typeString": "contract IConverterAnchor"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                                      "typeString": "contract IReserveToken"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_bool",
+                                      "typeString": "bool"
+                                    }
+                                  ],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 22674,
+                                  "type": "type(struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent storage pointer)",
+                                  "value": "LiquidityProtectionEvent"
+                                },
+                                "id": 22725,
+                                "name": "Identifier",
+                                "src": "1382:24:54"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 22708,
+                                  "type": "uint256",
+                                  "value": "id"
+                                },
+                                "id": 22726,
+                                "name": "Identifier",
+                                "src": "1429:2:54"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 22710,
+                                  "type": "address",
+                                  "value": "provider"
+                                },
+                                "id": 22727,
+                                "name": "Identifier",
+                                "src": "1459:8:54"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 22712,
+                                  "type": "contract IConverterAnchor",
+                                  "value": "poolAnchor"
+                                },
+                                "id": 22728,
+                                "name": "Identifier",
+                                "src": "1497:10:54"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 22714,
+                                  "type": "contract IReserveToken",
+                                  "value": "reserveToken"
+                                },
+                                "id": 22729,
+                                "name": "Identifier",
+                                "src": "1539:12:54"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 22716,
+                                  "type": "uint256",
+                                  "value": "poolAmount"
+                                },
+                                "id": 22730,
+                                "name": "Identifier",
+                                "src": "1581:10:54"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 22718,
+                                  "type": "uint256",
+                                  "value": "reserveAmount"
+                                },
+                                "id": 22731,
+                                "name": "Identifier",
+                                "src": "1624:13:54"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "66616c7365",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "bool",
+                                  "type": "bool",
+                                  "value": "false"
+                                },
+                                "id": 22732,
+                                "name": "Literal",
+                                "src": "1663:5:54"
+                              }
+                            ],
+                            "id": 22733,
+                            "name": "FunctionCall",
+                            "src": "1382:301:54"
+                          }
+                        ],
+                        "id": 22734,
+                        "name": "FunctionCall",
+                        "src": "1356:337:54"
+                      }
+                    ],
+                    "id": 22735,
+                    "name": "ExpressionStatement",
+                    "src": "1356:337:54"
+                  }
+                ],
+                "id": 22736,
+                "name": "Block",
+                "src": "1346:354:54"
+              }
+            ],
+            "id": 22737,
+            "name": "FunctionDefinition",
+            "src": "1115:585:54"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "functionSelector": "d826f88f",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "reset",
+              "overrides": null,
+              "scope": 22796,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 22738,
+                "name": "ParameterList",
+                "src": "1720:2:54"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 22739,
+                "name": "ParameterList",
+                "src": "1732:0:54"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "delete",
+                          "prefix": true,
+                          "type": "tuple()"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 22677,
+                              "type": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent storage ref[] storage ref",
+                              "value": "_events"
+                            },
+                            "id": 22740,
+                            "name": "Identifier",
+                            "src": "1749:7:54"
+                          }
+                        ],
+                        "id": 22741,
+                        "name": "UnaryOperation",
+                        "src": "1742:14:54"
+                      }
+                    ],
+                    "id": 22742,
+                    "name": "ExpressionStatement",
+                    "src": "1742:14:54"
+                  }
+                ],
+                "id": 22743,
+                "name": "Block",
+                "src": "1732:31:54"
+              }
+            ],
+            "id": 22744,
+            "name": "FunctionDefinition",
+            "src": "1706:57:54"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "functionSelector": "0b791430",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "events",
+              "overrides": null,
+              "scope": 22796,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "id",
+                      "overrides": null,
+                      "scope": 22786,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 22745,
+                        "name": "ElementaryTypeName",
+                        "src": "1785:7:54"
+                      }
+                    ],
+                    "id": 22746,
+                    "name": "VariableDeclaration",
+                    "src": "1785:10:54"
+                  }
+                ],
+                "id": 22747,
+                "name": "ParameterList",
+                "src": "1784:12:54"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 22786,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 22748,
+                        "name": "ElementaryTypeName",
+                        "src": "1857:7:54"
+                      }
+                    ],
+                    "id": 22749,
+                    "name": "VariableDeclaration",
+                    "src": "1857:7:54"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 22786,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 22750,
+                        "name": "ElementaryTypeName",
+                        "src": "1878:7:54"
+                      }
+                    ],
+                    "id": 22751,
+                    "name": "VariableDeclaration",
+                    "src": "1878:7:54"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 22786,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IConverterAnchor",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IConverterAnchor",
+                          "referencedDeclaration": 15415,
+                          "type": "contract IConverterAnchor"
+                        },
+                        "id": 22752,
+                        "name": "UserDefinedTypeName",
+                        "src": "1899:16:54"
+                      }
+                    ],
+                    "id": 22753,
+                    "name": "VariableDeclaration",
+                    "src": "1899:16:54"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 22786,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IReserveToken",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IReserveToken",
+                          "referencedDeclaration": 31140,
+                          "type": "contract IReserveToken"
+                        },
+                        "id": 22754,
+                        "name": "UserDefinedTypeName",
+                        "src": "1929:13:54"
+                      }
+                    ],
+                    "id": 22755,
+                    "name": "VariableDeclaration",
+                    "src": "1929:13:54"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 22786,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 22756,
+                        "name": "ElementaryTypeName",
+                        "src": "1956:7:54"
+                      }
+                    ],
+                    "id": 22757,
+                    "name": "VariableDeclaration",
+                    "src": "1956:7:54"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 22786,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 22758,
+                        "name": "ElementaryTypeName",
+                        "src": "1977:7:54"
+                      }
+                    ],
+                    "id": 22759,
+                    "name": "VariableDeclaration",
+                    "src": "1977:7:54"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 22786,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 22760,
+                        "name": "ElementaryTypeName",
+                        "src": "1998:4:54"
+                      }
+                    ],
+                    "id": 22761,
+                    "name": "VariableDeclaration",
+                    "src": "1998:4:54"
+                  }
+                ],
+                "id": 22762,
+                "name": "ParameterList",
+                "src": "1843:169:54"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "assignments": [
+                        22764
+                      ]
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "constant": false,
+                          "mutability": "mutable",
+                          "name": "e",
+                          "overrides": null,
+                          "scope": 22785,
+                          "stateVariable": false,
+                          "storageLocation": "memory",
+                          "type": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent",
+                          "value": null,
+                          "visibility": "internal"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "contractScope": null,
+                              "name": "LiquidityProtectionEvent",
+                              "referencedDeclaration": 22674,
+                              "type": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent"
+                            },
+                            "id": 22763,
+                            "name": "UserDefinedTypeName",
+                            "src": "2027:24:54"
+                          }
+                        ],
+                        "id": 22764,
+                        "name": "VariableDeclaration",
+                        "src": "2027:33:54"
+                      },
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "type": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 22677,
+                              "type": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent storage ref[] storage ref",
+                              "value": "_events"
+                            },
+                            "id": 22765,
+                            "name": "Identifier",
+                            "src": "2063:7:54"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 22746,
+                              "type": "uint256",
+                              "value": "id"
+                            },
+                            "id": 22766,
+                            "name": "Identifier",
+                            "src": "2071:2:54"
+                          }
+                        ],
+                        "id": 22767,
+                        "name": "IndexAccess",
+                        "src": "2063:11:54"
+                      }
+                    ],
+                    "id": 22768,
+                    "name": "VariableDeclarationStatement",
+                    "src": "2027:47:54"
+                  },
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 22762
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isInlineArray": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "type": "tuple(uint256,address,contract IConverterAnchor,contract IReserveToken,uint256,uint256,bool)"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "id",
+                              "referencedDeclaration": 22661,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 22764,
+                                  "type": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent memory",
+                                  "value": "e"
+                                },
+                                "id": 22769,
+                                "name": "Identifier",
+                                "src": "2093:1:54"
+                              }
+                            ],
+                            "id": 22770,
+                            "name": "MemberAccess",
+                            "src": "2093:4:54"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "provider",
+                              "referencedDeclaration": 22663,
+                              "type": "address"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 22764,
+                                  "type": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent memory",
+                                  "value": "e"
+                                },
+                                "id": 22771,
+                                "name": "Identifier",
+                                "src": "2099:1:54"
+                              }
+                            ],
+                            "id": 22772,
+                            "name": "MemberAccess",
+                            "src": "2099:10:54"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "poolAnchor",
+                              "referencedDeclaration": 22665,
+                              "type": "contract IConverterAnchor"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 22764,
+                                  "type": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent memory",
+                                  "value": "e"
+                                },
+                                "id": 22773,
+                                "name": "Identifier",
+                                "src": "2111:1:54"
+                              }
+                            ],
+                            "id": 22774,
+                            "name": "MemberAccess",
+                            "src": "2111:12:54"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "reserveToken",
+                              "referencedDeclaration": 22667,
+                              "type": "contract IReserveToken"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 22764,
+                                  "type": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent memory",
+                                  "value": "e"
+                                },
+                                "id": 22775,
+                                "name": "Identifier",
+                                "src": "2125:1:54"
+                              }
+                            ],
+                            "id": 22776,
+                            "name": "MemberAccess",
+                            "src": "2125:14:54"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "poolAmount",
+                              "referencedDeclaration": 22669,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 22764,
+                                  "type": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent memory",
+                                  "value": "e"
+                                },
+                                "id": 22777,
+                                "name": "Identifier",
+                                "src": "2141:1:54"
+                              }
+                            ],
+                            "id": 22778,
+                            "name": "MemberAccess",
+                            "src": "2141:12:54"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "reserveAmount",
+                              "referencedDeclaration": 22671,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 22764,
+                                  "type": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent memory",
+                                  "value": "e"
+                                },
+                                "id": 22779,
+                                "name": "Identifier",
+                                "src": "2155:1:54"
+                              }
+                            ],
+                            "id": 22780,
+                            "name": "MemberAccess",
+                            "src": "2155:15:54"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "adding",
+                              "referencedDeclaration": 22673,
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 22764,
+                                  "type": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent memory",
+                                  "value": "e"
+                                },
+                                "id": 22781,
+                                "name": "Identifier",
+                                "src": "2172:1:54"
+                              }
+                            ],
+                            "id": 22782,
+                            "name": "MemberAccess",
+                            "src": "2172:8:54"
+                          }
+                        ],
+                        "id": 22783,
+                        "name": "TupleExpression",
+                        "src": "2092:89:54"
+                      }
+                    ],
+                    "id": 22784,
+                    "name": "Return",
+                    "src": "2085:96:54"
+                  }
+                ],
+                "id": 22785,
+                "name": "Block",
+                "src": "2017:171:54"
+              }
+            ],
+            "id": 22786,
+            "name": "FunctionDefinition",
+            "src": "1769:419:54"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "functionSelector": "71be2e4a",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "eventCount",
+              "overrides": null,
+              "scope": 22796,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 22787,
+                "name": "ParameterList",
+                "src": "2213:2:54"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 22795,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 22788,
+                        "name": "ElementaryTypeName",
+                        "src": "2239:7:54"
+                      }
+                    ],
+                    "id": 22789,
+                    "name": "VariableDeclaration",
+                    "src": "2239:7:54"
+                  }
+                ],
+                "id": 22790,
+                "name": "ParameterList",
+                "src": "2238:9:54"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 22790
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "member_name": "length",
+                          "referencedDeclaration": null,
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 22677,
+                              "type": "struct TestLiquidityProvisionEventsSubscriber.LiquidityProtectionEvent storage ref[] storage ref",
+                              "value": "_events"
+                            },
+                            "id": 22791,
+                            "name": "Identifier",
+                            "src": "2265:7:54"
+                          }
+                        ],
+                        "id": 22792,
+                        "name": "MemberAccess",
+                        "src": "2265:14:54"
+                      }
+                    ],
+                    "id": 22793,
+                    "name": "Return",
+                    "src": "2258:21:54"
+                  }
+                ],
+                "id": 22794,
+                "name": "Block",
+                "src": "2248:38:54"
+              }
+            ],
+            "id": 22795,
+            "name": "FunctionDefinition",
+            "src": "2194:92:54"
+          }
+        ],
+        "id": 22796,
+        "name": "ContractDefinition",
+        "src": "162:2126:54"
+      }
+    ],
+    "id": 22797,
+    "name": "SourceUnit",
+    "src": "51:2238:54"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-08-23T03:19:29.900Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

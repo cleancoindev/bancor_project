@@ -1,0 +1,1040 @@
+{
+  "contractName": "ILiquidityProvisionEventsSubscriber",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "provider",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IConverterAnchor",
+          "name": "poolAnchor",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IReserveToken",
+          "name": "reserveToken",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "poolAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "reserveAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "onAddingLiquidity",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "provider",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IConverterAnchor",
+          "name": "poolAnchor",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IReserveToken",
+          "name": "reserveToken",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "poolAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "reserveAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "onRemovingLiquidity",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"provider\",\"type\":\"address\"},{\"internalType\":\"contract IConverterAnchor\",\"name\":\"poolAnchor\",\"type\":\"address\"},{\"internalType\":\"contract IReserveToken\",\"name\":\"reserveToken\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"poolAmount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"reserveAmount\",\"type\":\"uint256\"}],\"name\":\"onAddingLiquidity\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"provider\",\"type\":\"address\"},{\"internalType\":\"contract IConverterAnchor\",\"name\":\"poolAnchor\",\"type\":\"address\"},{\"internalType\":\"contract IReserveToken\",\"name\":\"reserveToken\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"poolAmount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"reserveAmount\",\"type\":\"uint256\"}],\"name\":\"onRemovingLiquidity\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Liquidity provision events subscriber interface\",\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/liquidity-protection/interfaces/ILiquidityProvisionEventsSubscriber.sol\":\"ILiquidityProvisionEventsSubscriber\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/converter/interfaces/IConverterAnchor.sol\":{\"keccak256\":\"0x061dffb3cd75b61094c31a8987276b8f6108e29d67d7a55a305eea9f86d5b196\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://478f3b0164b83199eaf6f8c595abf235b742fb2c15d4fad7a241bd4837083f73\",\"dweb:/ipfs/QmcoDjie2cm3iq3bhjrqn6rE6S8o9WXvBY3tcnC5miN2Ut\"]},\"project:/contracts/liquidity-protection/interfaces/ILiquidityProvisionEventsSubscriber.sol\":{\"keccak256\":\"0x31d336217661461b3925005f778d302c87e79971d6ad1fc323c6437f7de53553\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://cc622e9a245970c7e18332b957dfffdae6d0dae43098544c1bad0e9cd5cf2082\",\"dweb:/ipfs/Qmefv7rYDyhkrKa6PyLUdib7UWXBrJTEPRxxo8ZVSxipww\"]},\"project:/contracts/token/interfaces/IReserveToken.sol\":{\"keccak256\":\"0x7380cdd30fc2b427d1dab7f7f30bb93e4562d91b405aecfc5a7b9ef3e24e7cee\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://b728fed30c2d9027e03a5e46cb67932f021851924c47b7cd658431ee8f5bdb15\",\"dweb:/ipfs/QmfLiprUayVjHj9pTUapayU1R4nP3Lm1a6YuyU6LeChBzZ\"]},\"project:/contracts/utility/interfaces/IOwned.sol\":{\"keccak256\":\"0x4cfffe7abcbf4a0a49d154837711a38e9c34da4891b86167b9e15d80b24f9b14\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://0b398ddfbcae48adc05489f7be940135a14150c38de9b75897ca9193a1ac99d0\",\"dweb:/ipfs/QmXPh5dHCZqshzmCWPRc3TSQsjc6Sr1SG2XFZe3NdKWMRC\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: SEE LICENSE IN LICENSE\npragma solidity 0.6.12;\n\nimport \"../../converter/interfaces/IConverterAnchor.sol\";\n\nimport \"../../token/interfaces/IReserveToken.sol\";\n\n/**\n * @dev Liquidity provision events subscriber interface\n */\ninterface ILiquidityProvisionEventsSubscriber {\n    function onAddingLiquidity(\n        address provider,\n        IConverterAnchor poolAnchor,\n        IReserveToken reserveToken,\n        uint256 poolAmount,\n        uint256 reserveAmount\n    ) external;\n\n    function onRemovingLiquidity(\n        uint256 id,\n        address provider,\n        IConverterAnchor poolAnchor,\n        IReserveToken reserveToken,\n        uint256 poolAmount,\n        uint256 reserveAmount\n    ) external;\n}\n",
+  "sourcePath": "D:\\Work Space\\bancor_project\\core\\contracts\\liquidity-protection\\interfaces\\ILiquidityProvisionEventsSubscriber.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/liquidity-protection/interfaces/ILiquidityProvisionEventsSubscriber.sol",
+    "exportedSymbols": {
+      "ILiquidityProvisionEventsSubscriber": [
+        30544
+      ]
+    },
+    "id": 30545,
+    "license": "SEE LICENSE IN LICENSE",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 30512,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "51:23:76"
+      },
+      {
+        "absolutePath": "project:/contracts/converter/interfaces/IConverterAnchor.sol",
+        "file": "../../converter/interfaces/IConverterAnchor.sol",
+        "id": 30513,
+        "nodeType": "ImportDirective",
+        "scope": 30545,
+        "sourceUnit": 15416,
+        "src": "76:57:76",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "project:/contracts/token/interfaces/IReserveToken.sol",
+        "file": "../../token/interfaces/IReserveToken.sol",
+        "id": 30514,
+        "nodeType": "ImportDirective",
+        "scope": 30545,
+        "sourceUnit": 31141,
+        "src": "135:50:76",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 30515,
+          "nodeType": "StructuredDocumentation",
+          "src": "187:63:76",
+          "text": " @dev Liquidity provision events subscriber interface"
+        },
+        "fullyImplemented": false,
+        "id": 30544,
+        "linearizedBaseContracts": [
+          30544
+        ],
+        "name": "ILiquidityProvisionEventsSubscriber",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "139c22ea",
+            "id": 30528,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "onAddingLiquidity",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 30526,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30517,
+                  "mutability": "mutable",
+                  "name": "provider",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30528,
+                  "src": "339:16:76",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 30516,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "339:7:76",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 30519,
+                  "mutability": "mutable",
+                  "name": "poolAnchor",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30528,
+                  "src": "365:27:76",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IConverterAnchor_$15415",
+                    "typeString": "contract IConverterAnchor"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 30518,
+                    "name": "IConverterAnchor",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 15415,
+                    "src": "365:16:76",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IConverterAnchor_$15415",
+                      "typeString": "contract IConverterAnchor"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 30521,
+                  "mutability": "mutable",
+                  "name": "reserveToken",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30528,
+                  "src": "402:26:76",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                    "typeString": "contract IReserveToken"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 30520,
+                    "name": "IReserveToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 31140,
+                    "src": "402:13:76",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                      "typeString": "contract IReserveToken"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 30523,
+                  "mutability": "mutable",
+                  "name": "poolAmount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30528,
+                  "src": "438:18:76",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 30522,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "438:7:76",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 30525,
+                  "mutability": "mutable",
+                  "name": "reserveAmount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30528,
+                  "src": "466:21:76",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 30524,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "466:7:76",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "329:164:76"
+            },
+            "returnParameters": {
+              "id": 30527,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "502:0:76"
+            },
+            "scope": 30544,
+            "src": "303:200:76",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "b8128fe6",
+            "id": 30543,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "onRemovingLiquidity",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 30541,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30530,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30543,
+                  "src": "547:10:76",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 30529,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "547:7:76",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 30532,
+                  "mutability": "mutable",
+                  "name": "provider",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30543,
+                  "src": "567:16:76",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 30531,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "567:7:76",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 30534,
+                  "mutability": "mutable",
+                  "name": "poolAnchor",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30543,
+                  "src": "593:27:76",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IConverterAnchor_$15415",
+                    "typeString": "contract IConverterAnchor"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 30533,
+                    "name": "IConverterAnchor",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 15415,
+                    "src": "593:16:76",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IConverterAnchor_$15415",
+                      "typeString": "contract IConverterAnchor"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 30536,
+                  "mutability": "mutable",
+                  "name": "reserveToken",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30543,
+                  "src": "630:26:76",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                    "typeString": "contract IReserveToken"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 30535,
+                    "name": "IReserveToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 31140,
+                    "src": "630:13:76",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                      "typeString": "contract IReserveToken"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 30538,
+                  "mutability": "mutable",
+                  "name": "poolAmount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30543,
+                  "src": "666:18:76",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 30537,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "666:7:76",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 30540,
+                  "mutability": "mutable",
+                  "name": "reserveAmount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30543,
+                  "src": "694:21:76",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 30539,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "694:7:76",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "537:184:76"
+            },
+            "returnParameters": {
+              "id": 30542,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "730:0:76"
+            },
+            "scope": 30544,
+            "src": "509:222:76",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 30545,
+        "src": "251:482:76"
+      }
+    ],
+    "src": "51:683:76"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/liquidity-protection/interfaces/ILiquidityProvisionEventsSubscriber.sol",
+      "exportedSymbols": {
+        "ILiquidityProvisionEventsSubscriber": [
+          30544
+        ]
+      },
+      "license": "SEE LICENSE IN LICENSE"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.6",
+            ".12"
+          ]
+        },
+        "id": 30512,
+        "name": "PragmaDirective",
+        "src": "51:23:76"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 15416,
+          "absolutePath": "project:/contracts/converter/interfaces/IConverterAnchor.sol",
+          "file": "../../converter/interfaces/IConverterAnchor.sol",
+          "scope": 30545,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 30513,
+        "name": "ImportDirective",
+        "src": "76:57:76"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 31141,
+          "absolutePath": "project:/contracts/token/interfaces/IReserveToken.sol",
+          "file": "../../token/interfaces/IReserveToken.sol",
+          "scope": 30545,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 30514,
+        "name": "ImportDirective",
+        "src": "135:50:76"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            30544
+          ],
+          "name": "ILiquidityProvisionEventsSubscriber",
+          "scope": 30545
+        },
+        "children": [
+          {
+            "attributes": {
+              "text": " @dev Liquidity provision events subscriber interface"
+            },
+            "id": 30515,
+            "name": "StructuredDocumentation",
+            "src": "187:63:76"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "139c22ea",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "onAddingLiquidity",
+              "overrides": null,
+              "scope": 30544,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "provider",
+                      "overrides": null,
+                      "scope": 30528,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 30516,
+                        "name": "ElementaryTypeName",
+                        "src": "339:7:76"
+                      }
+                    ],
+                    "id": 30517,
+                    "name": "VariableDeclaration",
+                    "src": "339:16:76"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "poolAnchor",
+                      "overrides": null,
+                      "scope": 30528,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IConverterAnchor",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IConverterAnchor",
+                          "referencedDeclaration": 15415,
+                          "type": "contract IConverterAnchor"
+                        },
+                        "id": 30518,
+                        "name": "UserDefinedTypeName",
+                        "src": "365:16:76"
+                      }
+                    ],
+                    "id": 30519,
+                    "name": "VariableDeclaration",
+                    "src": "365:27:76"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "reserveToken",
+                      "overrides": null,
+                      "scope": 30528,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IReserveToken",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IReserveToken",
+                          "referencedDeclaration": 31140,
+                          "type": "contract IReserveToken"
+                        },
+                        "id": 30520,
+                        "name": "UserDefinedTypeName",
+                        "src": "402:13:76"
+                      }
+                    ],
+                    "id": 30521,
+                    "name": "VariableDeclaration",
+                    "src": "402:26:76"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "poolAmount",
+                      "overrides": null,
+                      "scope": 30528,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 30522,
+                        "name": "ElementaryTypeName",
+                        "src": "438:7:76"
+                      }
+                    ],
+                    "id": 30523,
+                    "name": "VariableDeclaration",
+                    "src": "438:18:76"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "reserveAmount",
+                      "overrides": null,
+                      "scope": 30528,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 30524,
+                        "name": "ElementaryTypeName",
+                        "src": "466:7:76"
+                      }
+                    ],
+                    "id": 30525,
+                    "name": "VariableDeclaration",
+                    "src": "466:21:76"
+                  }
+                ],
+                "id": 30526,
+                "name": "ParameterList",
+                "src": "329:164:76"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 30527,
+                "name": "ParameterList",
+                "src": "502:0:76"
+              }
+            ],
+            "id": 30528,
+            "name": "FunctionDefinition",
+            "src": "303:200:76"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "b8128fe6",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "onRemovingLiquidity",
+              "overrides": null,
+              "scope": 30544,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "id",
+                      "overrides": null,
+                      "scope": 30543,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 30529,
+                        "name": "ElementaryTypeName",
+                        "src": "547:7:76"
+                      }
+                    ],
+                    "id": 30530,
+                    "name": "VariableDeclaration",
+                    "src": "547:10:76"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "provider",
+                      "overrides": null,
+                      "scope": 30543,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 30531,
+                        "name": "ElementaryTypeName",
+                        "src": "567:7:76"
+                      }
+                    ],
+                    "id": 30532,
+                    "name": "VariableDeclaration",
+                    "src": "567:16:76"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "poolAnchor",
+                      "overrides": null,
+                      "scope": 30543,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IConverterAnchor",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IConverterAnchor",
+                          "referencedDeclaration": 15415,
+                          "type": "contract IConverterAnchor"
+                        },
+                        "id": 30533,
+                        "name": "UserDefinedTypeName",
+                        "src": "593:16:76"
+                      }
+                    ],
+                    "id": 30534,
+                    "name": "VariableDeclaration",
+                    "src": "593:27:76"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "reserveToken",
+                      "overrides": null,
+                      "scope": 30543,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IReserveToken",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IReserveToken",
+                          "referencedDeclaration": 31140,
+                          "type": "contract IReserveToken"
+                        },
+                        "id": 30535,
+                        "name": "UserDefinedTypeName",
+                        "src": "630:13:76"
+                      }
+                    ],
+                    "id": 30536,
+                    "name": "VariableDeclaration",
+                    "src": "630:26:76"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "poolAmount",
+                      "overrides": null,
+                      "scope": 30543,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 30537,
+                        "name": "ElementaryTypeName",
+                        "src": "666:7:76"
+                      }
+                    ],
+                    "id": 30538,
+                    "name": "VariableDeclaration",
+                    "src": "666:18:76"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "reserveAmount",
+                      "overrides": null,
+                      "scope": 30543,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 30539,
+                        "name": "ElementaryTypeName",
+                        "src": "694:7:76"
+                      }
+                    ],
+                    "id": 30540,
+                    "name": "VariableDeclaration",
+                    "src": "694:21:76"
+                  }
+                ],
+                "id": 30541,
+                "name": "ParameterList",
+                "src": "537:184:76"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 30542,
+                "name": "ParameterList",
+                "src": "730:0:76"
+              }
+            ],
+            "id": 30543,
+            "name": "FunctionDefinition",
+            "src": "509:222:76"
+          }
+        ],
+        "id": 30544,
+        "name": "ContractDefinition",
+        "src": "251:482:76"
+      }
+    ],
+    "id": 30545,
+    "name": "SourceUnit",
+    "src": "51:683:76"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-08-23T03:19:30.224Z",
+  "devdoc": {
+    "details": "Liquidity provision events subscriber interface",
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

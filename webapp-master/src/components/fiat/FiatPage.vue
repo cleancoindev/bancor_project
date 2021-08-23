@@ -6,7 +6,7 @@
           class="font-size-20 font-w600"
           :class="darkMode ? 'text-dark' : 'text-light'"
          >
-          {{ `Crypto \<> Fiat Gateway Providers` }} 
+          {{ `Crypto \<> Fiat Gateway Providers` }}
         </span>
       </div>
 
@@ -22,8 +22,8 @@
       <alert-block
         class="my-2"
       >
-        Crypto<>fiat gateway services on Bancor are provided by third-parties. Bancor is not associated with, responsible or liable for the performance of these third-party services. Any claims and questions should be addressed with the selected provider directly.
-      </alert-block>  
+        Crypto<>fiat gateway services on Ovidex are provided by third-parties. Ovidex is not associated with, responsible or liable for the performance of these third-party services. Any claims and questions should be addressed with the selected provider directly.
+      </alert-block>
     </b-col>
 
     <b-col cols="12">

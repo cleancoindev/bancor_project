@@ -1,0 +1,505 @@
+{
+  "contractName": "IClaimable",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "acceptOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"acceptOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"title\":\"Claimable contract interface\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/token-governance/IClaimable.sol\":\"IClaimable\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/token-governance/IClaimable.sol\":{\"keccak256\":\"0x17620afd14ae6f799589f76369ab27e95110f8ce47cf26979394aba6fd3f07a2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ba8a42b6f6d645d40a90c655a4b2de34cefa609891443d60746969a2c731b113\",\"dweb:/ipfs/QmNdYvF3NcfchDtA8wzDXpt93u9tUMUnBVKjeXnUdhajJ6\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity 0.6.12;\n\n/// @title Claimable contract interface\ninterface IClaimable {\n    function owner() external view returns (address);\n\n    function transferOwnership(address newOwner) external;\n\n    function acceptOwnership() external;\n}\n",
+  "sourcePath": "D:\\Work Space\\bancor_project\\core\\contracts\\token-governance\\IClaimable.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/token-governance/IClaimable.sol",
+    "exportedSymbols": {
+      "IClaimable": [
+        30574
+      ]
+    },
+    "id": 30575,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 30559,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:78"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 30560,
+          "nodeType": "StructuredDocumentation",
+          "src": "57:40:78",
+          "text": "@title Claimable contract interface"
+        },
+        "fullyImplemented": false,
+        "id": 30574,
+        "linearizedBaseContracts": [
+          30574
+        ],
+        "name": "IClaimable",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "8da5cb5b",
+            "id": 30565,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "owner",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 30561,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "138:2:78"
+            },
+            "returnParameters": {
+              "id": 30564,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30563,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30565,
+                  "src": "164:7:78",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 30562,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "164:7:78",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "163:9:78"
+            },
+            "scope": 30574,
+            "src": "124:49:78",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "f2fde38b",
+            "id": 30570,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "transferOwnership",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 30568,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30567,
+                  "mutability": "mutable",
+                  "name": "newOwner",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 30570,
+                  "src": "206:16:78",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 30566,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "206:7:78",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "205:18:78"
+            },
+            "returnParameters": {
+              "id": 30569,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "232:0:78"
+            },
+            "scope": 30574,
+            "src": "179:54:78",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "79ba5097",
+            "id": 30573,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "acceptOwnership",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 30571,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "263:2:78"
+            },
+            "returnParameters": {
+              "id": 30572,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "274:0:78"
+            },
+            "scope": 30574,
+            "src": "239:36:78",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 30575,
+        "src": "97:180:78"
+      }
+    ],
+    "src": "32:246:78"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/token-governance/IClaimable.sol",
+      "exportedSymbols": {
+        "IClaimable": [
+          30574
+        ]
+      },
+      "license": "MIT"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.6",
+            ".12"
+          ]
+        },
+        "id": 30559,
+        "name": "PragmaDirective",
+        "src": "32:23:78"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            30574
+          ],
+          "name": "IClaimable",
+          "scope": 30575
+        },
+        "children": [
+          {
+            "attributes": {
+              "text": "@title Claimable contract interface"
+            },
+            "id": 30560,
+            "name": "StructuredDocumentation",
+            "src": "57:40:78"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "8da5cb5b",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "owner",
+              "overrides": null,
+              "scope": 30574,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 30561,
+                "name": "ParameterList",
+                "src": "138:2:78"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 30565,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 30562,
+                        "name": "ElementaryTypeName",
+                        "src": "164:7:78"
+                      }
+                    ],
+                    "id": 30563,
+                    "name": "VariableDeclaration",
+                    "src": "164:7:78"
+                  }
+                ],
+                "id": 30564,
+                "name": "ParameterList",
+                "src": "163:9:78"
+              }
+            ],
+            "id": 30565,
+            "name": "FunctionDefinition",
+            "src": "124:49:78"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "f2fde38b",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "transferOwnership",
+              "overrides": null,
+              "scope": 30574,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "newOwner",
+                      "overrides": null,
+                      "scope": 30570,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 30566,
+                        "name": "ElementaryTypeName",
+                        "src": "206:7:78"
+                      }
+                    ],
+                    "id": 30567,
+                    "name": "VariableDeclaration",
+                    "src": "206:16:78"
+                  }
+                ],
+                "id": 30568,
+                "name": "ParameterList",
+                "src": "205:18:78"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 30569,
+                "name": "ParameterList",
+                "src": "232:0:78"
+              }
+            ],
+            "id": 30570,
+            "name": "FunctionDefinition",
+            "src": "179:54:78"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "79ba5097",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "acceptOwnership",
+              "overrides": null,
+              "scope": 30574,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 30571,
+                "name": "ParameterList",
+                "src": "263:2:78"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 30572,
+                "name": "ParameterList",
+                "src": "274:0:78"
+              }
+            ],
+            "id": 30573,
+            "name": "FunctionDefinition",
+            "src": "239:36:78"
+          }
+        ],
+        "id": 30574,
+        "name": "ContractDefinition",
+        "src": "97:180:78"
+      }
+    ],
+    "id": 30575,
+    "name": "SourceUnit",
+    "src": "32:246:78"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-08-23T03:19:30.226Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "title": "Claimable contract interface",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

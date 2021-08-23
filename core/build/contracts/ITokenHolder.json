@@ -1,0 +1,907 @@
+{
+  "contractName": "ITokenHolder",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "acceptOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "receive"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IReserveToken",
+          "name": "reserveToken",
+          "type": "address"
+        },
+        {
+          "internalType": "address payable",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdrawTokens",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IReserveToken[]",
+          "name": "reserveTokens",
+          "type": "address[]"
+        },
+        {
+          "internalType": "address payable",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "amounts",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "withdrawTokensMultiple",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"acceptOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"contract IReserveToken\",\"name\":\"reserveToken\",\"type\":\"address\"},{\"internalType\":\"address payable\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"withdrawTokens\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"contract IReserveToken[]\",\"name\":\"reserveTokens\",\"type\":\"address[]\"},{\"internalType\":\"address payable\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256[]\",\"name\":\"amounts\",\"type\":\"uint256[]\"}],\"name\":\"withdrawTokensMultiple\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"stateMutability\":\"payable\",\"type\":\"receive\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/utility/interfaces/ITokenHolder.sol\":\"ITokenHolder\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/token/interfaces/IReserveToken.sol\":{\"keccak256\":\"0x7380cdd30fc2b427d1dab7f7f30bb93e4562d91b405aecfc5a7b9ef3e24e7cee\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://b728fed30c2d9027e03a5e46cb67932f021851924c47b7cd658431ee8f5bdb15\",\"dweb:/ipfs/QmfLiprUayVjHj9pTUapayU1R4nP3Lm1a6YuyU6LeChBzZ\"]},\"project:/contracts/utility/interfaces/IOwned.sol\":{\"keccak256\":\"0x4cfffe7abcbf4a0a49d154837711a38e9c34da4891b86167b9e15d80b24f9b14\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://0b398ddfbcae48adc05489f7be940135a14150c38de9b75897ca9193a1ac99d0\",\"dweb:/ipfs/QmXPh5dHCZqshzmCWPRc3TSQsjc6Sr1SG2XFZe3NdKWMRC\"]},\"project:/contracts/utility/interfaces/ITokenHolder.sol\":{\"keccak256\":\"0x4dbfa5edbbe28ebd0183fca763184956132e68d9d0842f13d4b9ef9475c01d87\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://a2cf433e0c003c730b7f15b9ed76d8b36cfaa26ed12cacb4ad91d7afa0c0b8da\",\"dweb:/ipfs/QmYXWZhAHEA1WqrP5AnyGSarjndaeSfWzDrwYxhd9wgk4m\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: SEE LICENSE IN LICENSE\npragma solidity 0.6.12;\n\nimport \"../../token/interfaces/IReserveToken.sol\";\n\nimport \"./IOwned.sol\";\n\n/*\n    Token Holder interface\n*/\ninterface ITokenHolder is IOwned {\n    receive() external payable;\n\n    function withdrawTokens(\n        IReserveToken reserveToken,\n        address payable to,\n        uint256 amount\n    ) external;\n\n    function withdrawTokensMultiple(\n        IReserveToken[] calldata reserveTokens,\n        address payable to,\n        uint256[] calldata amounts\n    ) external;\n}\n",
+  "sourcePath": "D:\\Work Space\\bancor_project\\core\\contracts\\utility\\interfaces\\ITokenHolder.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/utility/interfaces/ITokenHolder.sol",
+    "exportedSymbols": {
+      "ITokenHolder": [
+        33147
+      ]
+    },
+    "id": 33148,
+    "license": "SEE LICENSE IN LICENSE",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 33119,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "51:23:102"
+      },
+      {
+        "absolutePath": "project:/contracts/token/interfaces/IReserveToken.sol",
+        "file": "../../token/interfaces/IReserveToken.sol",
+        "id": 33120,
+        "nodeType": "ImportDirective",
+        "scope": 33148,
+        "sourceUnit": 31141,
+        "src": "76:50:102",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "project:/contracts/utility/interfaces/IOwned.sol",
+        "file": "./IOwned.sol",
+        "id": 33121,
+        "nodeType": "ImportDirective",
+        "scope": 33148,
+        "sourceUnit": 33118,
+        "src": "128:22:102",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 33122,
+              "name": "IOwned",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 33117,
+              "src": "211:6:102",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IOwned_$33117",
+                "typeString": "contract IOwned"
+              }
+            },
+            "id": 33123,
+            "nodeType": "InheritanceSpecifier",
+            "src": "211:6:102"
+          }
+        ],
+        "contractDependencies": [
+          33117
+        ],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 33147,
+        "linearizedBaseContracts": [
+          33147,
+          33117
+        ],
+        "name": "ITokenHolder",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 33126,
+            "implemented": false,
+            "kind": "receive",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 33124,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "231:2:102"
+            },
+            "returnParameters": {
+              "id": 33125,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "250:0:102"
+            },
+            "scope": 33147,
+            "src": "224:27:102",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "5e35359e",
+            "id": 33135,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdrawTokens",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 33133,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 33128,
+                  "mutability": "mutable",
+                  "name": "reserveToken",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 33135,
+                  "src": "290:26:102",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                    "typeString": "contract IReserveToken"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 33127,
+                    "name": "IReserveToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 31140,
+                    "src": "290:13:102",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                      "typeString": "contract IReserveToken"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 33130,
+                  "mutability": "mutable",
+                  "name": "to",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 33135,
+                  "src": "326:18:102",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address_payable",
+                    "typeString": "address payable"
+                  },
+                  "typeName": {
+                    "id": 33129,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "326:15:102",
+                    "stateMutability": "payable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address_payable",
+                      "typeString": "address payable"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 33132,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 33135,
+                  "src": "354:14:102",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 33131,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "354:7:102",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "280:94:102"
+            },
+            "returnParameters": {
+              "id": 33134,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "383:0:102"
+            },
+            "scope": 33147,
+            "src": "257:127:102",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "08506df7",
+            "id": 33146,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdrawTokensMultiple",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 33144,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 33138,
+                  "mutability": "mutable",
+                  "name": "reserveTokens",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 33146,
+                  "src": "431:38:102",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_contract$_IReserveToken_$31140_$dyn_calldata_ptr",
+                    "typeString": "contract IReserveToken[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "contractScope": null,
+                      "id": 33136,
+                      "name": "IReserveToken",
+                      "nodeType": "UserDefinedTypeName",
+                      "referencedDeclaration": 31140,
+                      "src": "431:13:102",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IReserveToken_$31140",
+                        "typeString": "contract IReserveToken"
+                      }
+                    },
+                    "id": 33137,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "431:15:102",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_contract$_IReserveToken_$31140_$dyn_storage_ptr",
+                      "typeString": "contract IReserveToken[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 33140,
+                  "mutability": "mutable",
+                  "name": "to",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 33146,
+                  "src": "479:18:102",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address_payable",
+                    "typeString": "address payable"
+                  },
+                  "typeName": {
+                    "id": 33139,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "479:15:102",
+                    "stateMutability": "payable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address_payable",
+                      "typeString": "address payable"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 33143,
+                  "mutability": "mutable",
+                  "name": "amounts",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 33146,
+                  "src": "507:26:102",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 33141,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "507:7:102",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 33142,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "507:9:102",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "421:118:102"
+            },
+            "returnParameters": {
+              "id": 33145,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "548:0:102"
+            },
+            "scope": 33147,
+            "src": "390:159:102",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 33148,
+        "src": "185:366:102"
+      }
+    ],
+    "src": "51:501:102"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/utility/interfaces/ITokenHolder.sol",
+      "exportedSymbols": {
+        "ITokenHolder": [
+          33147
+        ]
+      },
+      "license": "SEE LICENSE IN LICENSE"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.6",
+            ".12"
+          ]
+        },
+        "id": 33119,
+        "name": "PragmaDirective",
+        "src": "51:23:102"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 31141,
+          "absolutePath": "project:/contracts/token/interfaces/IReserveToken.sol",
+          "file": "../../token/interfaces/IReserveToken.sol",
+          "scope": 33148,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 33120,
+        "name": "ImportDirective",
+        "src": "76:50:102"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 33118,
+          "absolutePath": "project:/contracts/utility/interfaces/IOwned.sol",
+          "file": "./IOwned.sol",
+          "scope": 33148,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 33121,
+        "name": "ImportDirective",
+        "src": "128:22:102"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "contractDependencies": [
+            33117
+          ],
+          "contractKind": "interface",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            33147,
+            33117
+          ],
+          "name": "ITokenHolder",
+          "scope": 33148
+        },
+        "children": [
+          {
+            "attributes": {
+              "arguments": null
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "IOwned",
+                  "referencedDeclaration": 33117,
+                  "type": "contract IOwned"
+                },
+                "id": 33122,
+                "name": "UserDefinedTypeName",
+                "src": "211:6:102"
+              }
+            ],
+            "id": 33123,
+            "name": "InheritanceSpecifier",
+            "src": "211:6:102"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "receive",
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "overrides": null,
+              "scope": 33147,
+              "stateMutability": "payable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 33124,
+                "name": "ParameterList",
+                "src": "231:2:102"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 33125,
+                "name": "ParameterList",
+                "src": "250:0:102"
+              }
+            ],
+            "id": 33126,
+            "name": "FunctionDefinition",
+            "src": "224:27:102"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "5e35359e",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "withdrawTokens",
+              "overrides": null,
+              "scope": 33147,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "reserveToken",
+                      "overrides": null,
+                      "scope": 33135,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IReserveToken",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IReserveToken",
+                          "referencedDeclaration": 31140,
+                          "type": "contract IReserveToken"
+                        },
+                        "id": 33127,
+                        "name": "UserDefinedTypeName",
+                        "src": "290:13:102"
+                      }
+                    ],
+                    "id": 33128,
+                    "name": "VariableDeclaration",
+                    "src": "290:26:102"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "to",
+                      "overrides": null,
+                      "scope": 33135,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address payable",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "payable",
+                          "type": "address payable"
+                        },
+                        "id": 33129,
+                        "name": "ElementaryTypeName",
+                        "src": "326:15:102"
+                      }
+                    ],
+                    "id": 33130,
+                    "name": "VariableDeclaration",
+                    "src": "326:18:102"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "amount",
+                      "overrides": null,
+                      "scope": 33135,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 33131,
+                        "name": "ElementaryTypeName",
+                        "src": "354:7:102"
+                      }
+                    ],
+                    "id": 33132,
+                    "name": "VariableDeclaration",
+                    "src": "354:14:102"
+                  }
+                ],
+                "id": 33133,
+                "name": "ParameterList",
+                "src": "280:94:102"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 33134,
+                "name": "ParameterList",
+                "src": "383:0:102"
+              }
+            ],
+            "id": 33135,
+            "name": "FunctionDefinition",
+            "src": "257:127:102"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "08506df7",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "withdrawTokensMultiple",
+              "overrides": null,
+              "scope": 33147,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "reserveTokens",
+                      "overrides": null,
+                      "scope": 33146,
+                      "stateVariable": false,
+                      "storageLocation": "calldata",
+                      "type": "contract IReserveToken[]",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "length": null,
+                          "type": "contract IReserveToken[]"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "contractScope": null,
+                              "name": "IReserveToken",
+                              "referencedDeclaration": 31140,
+                              "type": "contract IReserveToken"
+                            },
+                            "id": 33136,
+                            "name": "UserDefinedTypeName",
+                            "src": "431:13:102"
+                          }
+                        ],
+                        "id": 33137,
+                        "name": "ArrayTypeName",
+                        "src": "431:15:102"
+                      }
+                    ],
+                    "id": 33138,
+                    "name": "VariableDeclaration",
+                    "src": "431:38:102"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "to",
+                      "overrides": null,
+                      "scope": 33146,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address payable",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "payable",
+                          "type": "address payable"
+                        },
+                        "id": 33139,
+                        "name": "ElementaryTypeName",
+                        "src": "479:15:102"
+                      }
+                    ],
+                    "id": 33140,
+                    "name": "VariableDeclaration",
+                    "src": "479:18:102"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "amounts",
+                      "overrides": null,
+                      "scope": 33146,
+                      "stateVariable": false,
+                      "storageLocation": "calldata",
+                      "type": "uint256[]",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "length": null,
+                          "type": "uint256[]"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "uint256",
+                              "type": "uint256"
+                            },
+                            "id": 33141,
+                            "name": "ElementaryTypeName",
+                            "src": "507:7:102"
+                          }
+                        ],
+                        "id": 33142,
+                        "name": "ArrayTypeName",
+                        "src": "507:9:102"
+                      }
+                    ],
+                    "id": 33143,
+                    "name": "VariableDeclaration",
+                    "src": "507:26:102"
+                  }
+                ],
+                "id": 33144,
+                "name": "ParameterList",
+                "src": "421:118:102"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 33145,
+                "name": "ParameterList",
+                "src": "548:0:102"
+              }
+            ],
+            "id": 33146,
+            "name": "FunctionDefinition",
+            "src": "390:159:102"
+          }
+        ],
+        "id": 33147,
+        "name": "ContractDefinition",
+        "src": "185:366:102"
+      }
+    ],
+    "id": 33148,
+    "name": "SourceUnit",
+    "src": "51:501:102"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-08-23T03:19:30.309Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

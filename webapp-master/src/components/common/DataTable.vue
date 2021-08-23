@@ -266,10 +266,10 @@ export default class DataTable extends BaseComponent {
 
 .dark-table {
   .table-row:hover {
-    background-color: #1c344e !important;
+    background-color: #171d28 !important;
   }
   .table-row-active {
-    background-color: #1c344e !important;
+    background-color: #171d28 !important;
   }
 }
 

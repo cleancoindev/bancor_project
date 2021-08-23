@@ -32,7 +32,7 @@ $progress-line-bar---background: $gray-border;
 $progress-line-bar__progress---background: $primary;
 $progress-line-bar--warn__progress---background: $text-warning-light;
 $progress-line-bar--error__progress---background: $text-error-light;
-$progress-line-bar--info__progress---background: #3ec8c8;
+$progress-line-bar--info__progress---background: #41b883;
 
 .progress-line-bar {
   border-radius: $progress-line-bar---border-radius;

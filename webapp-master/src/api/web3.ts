@@ -16,7 +16,7 @@ const buildAlchemyUrl = (
   `${wss ? "wss" : "https"}://eth-${network}${
     wss ? ".ws" : ""
   }.alchemyapi.io/v2/${projectId}`;
-
+  
 export const getAlchemyUrl = (network: EthNetworks, wss: boolean = true) => {
   if (network == EthNetworks.Mainnet) {
     return buildAlchemyUrl(
@@ -24,12 +24,14 @@ export const getAlchemyUrl = (network: EthNetworks, wss: boolean = true) => {
       getNetworkVariables(network).alchemyKey,
       wss
     );
+    // return 'https://eth-ropsten.alchemyapi.io/v2/_oP95Un9XuPgn4lqMadEt3XeAwV7Mf6D';
   } else if (network == EthNetworks.Ropsten) {
-    return buildAlchemyUrl(
-      "ropsten",
-      getNetworkVariables(network).alchemyKey,
-      wss
-    );
+    // return buildAlchemyUrl(
+    //   "ropsten",
+    //   getNetworkVariables(network).alchemyKey,
+    //   wss
+    // );
+    return 'wss://eth-ropsten.alchemyapi.io/v2/_oP95Un9XuPgn4lqMadEt3XeAwV7Mf6D';
   }
   throw new Error("alchemy address for network not supported ");
 };
@@ -74,7 +76,8 @@ export const getWeb3 = (
   return new Web3(wssProvider);
 };
 
-const projectId = "da059c364a2f4e6eb89bfd89600bce07";
+// const projectId = "da059c364a2f4e6eb89bfd89600bce07";
+const projectId = "_oP95Un9XuPgn4lqMadEt3XeAwV7Mf6D";
 
 const buildInfuraAddress = (
   subdomain: string,

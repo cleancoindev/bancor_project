@@ -221,7 +221,7 @@ export default class LayoutProposals extends BaseComponent {
   }
 
   &-dark {
-    background-color: #1f3a55;
+    background-color: #2d2d42;
   }
 
   .colb {
@@ -240,7 +240,7 @@ export default class LayoutProposals extends BaseComponent {
     font-size: 14px;
     font-weight: 500;
     padding: 0.75rem 0.3rem;
-    color: #0a2540;
+    color: #171d28;
     vertical-align: middle !important;
     margin-right: -15px;
   }
@@ -254,7 +254,7 @@ export default class LayoutProposals extends BaseComponent {
     }
 
     &-dark {
-      background: #1f3a55;
+      background: #2d2d42;
     }
   }
 }

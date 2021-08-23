@@ -40,7 +40,7 @@
             class="d-flex align-items-center"
           >
             <img
-              class="img-avatar img-avatar32 border-colouring bg-white mr-1"
+              class="img-avatar bg-white logo-shadow overlap img-avatar32 mr-1"
               :src="token.logo"
               alt="Token Logo"
             />
@@ -57,7 +57,7 @@
           </div>
           <div v-if="!pool && !token">
             <img
-              class="img-avatar img-avatar32 border-colouring bg-white mr-1"
+              class="img-avatar bg-white logo-shadow overlap img-avatar32 mr-1"
               :src="defaultImage"
               :alt="$t('token_logo')"
             />
